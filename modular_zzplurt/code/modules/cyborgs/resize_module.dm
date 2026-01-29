@@ -30,7 +30,7 @@
 // Lets a roboticist pick the size for the borg itself if they know about the feature, will also let them make ai shells have a setting
 /obj/item/borg/upgrade/resize/attack_self(mob/user, modifiers)
 	if(src && !user.incapacitated && in_range(user,src))
-		resize_amount = resize_amount = tgui_input_number(user, "Choose the percentage size of Resizing (70-250)","Resizer size setting")
+		resize_amount = resize_amount = tgui_input_number(user, "Choose the percentage size of Resizing (70-1000)","Resizer size setting")
 		if(src && resize_amount && !user.incapacitated && in_range(user,src))
 			sanitize_integer(resize_amount, 70, 1000, 160) //sanitize_integer won't work!
 			if(resize_amount >= 1000 || !isnum(resize_amount) || resize_amount == null)

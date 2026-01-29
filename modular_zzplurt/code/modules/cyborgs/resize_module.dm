@@ -32,9 +32,9 @@
 	if(src && !user.incapacitated && in_range(user,src))
 		resize_amount = resize_amount = tgui_input_number(user, "Choose the percentage size of Resizing (70-250)","Resizer size setting")
 		if(src && resize_amount && !user.incapacitated && in_range(user,src))
-			sanitize_integer(resize_amount, 70, 250, 160) //sanitize_integer won't work!
-			if(resize_amount >= 250 || !isnum(resize_amount) || resize_amount == null)
-				resize_amount = 250
+			sanitize_integer(resize_amount, 70, 1000, 160) //sanitize_integer won't work!
+			if(resize_amount >= 1000 || !isnum(resize_amount) || resize_amount == null)
+				resize_amount = 1000
 			if(resize_amount <= 70)
 				resize_amount = 70
 			to_chat(user, span_notice("Expand set to [resize_amount]%."))

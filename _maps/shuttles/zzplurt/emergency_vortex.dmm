@@ -374,6 +374,9 @@
 /obj/item/stock_parts/power_store/cell/hyper,
 /obj/item/stock_parts/power_store/cell/hyper,
 /obj/item/stock_parts/power_store/cell/hyper,
+/obj/machinery/camera/directional/south{
+	c_tag = "Evacuation Shuttle Command E.V.A."
+	},
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "ev" = (
@@ -528,6 +531,21 @@
 	},
 /obj/effect/turf_decal/tile/dark_blue/diagonal_centre,
 /turf/open/floor/iron/dark/diagonal,
+/area/shuttle/escape)
+"fQ" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark/end{
+	dir = 8
+	},
+/obj/machinery/light/cold/dim/directional/east,
+/obj/effect/turf_decal/trimline/white/filled,
+/obj/effect/turf_decal/trimline/white{
+	color = "#232323"
+	},
+/obj/structure/hedge,
+/obj/machinery/camera/directional/east{
+	c_tag = "Evacuation Shuttle Common Seating - Starboard Bow"
+	},
+/turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "fR" = (
 /obj/machinery/suit_storage_unit/hos{
@@ -820,13 +838,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
-"hD" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line,
-/obj/effect/turf_decal/siding/thinplating_new/corner{
-	dir = 1
-	},
-/turf/open/floor/iron,
-/area/shuttle/escape)
 "hI" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark,
 /obj/effect/turf_decal/trimline/white/filled/warning,
@@ -957,6 +968,9 @@
 	color = "#232323"
 	},
 /obj/structure/hedge,
+/obj/machinery/camera/directional/east{
+	c_tag = "Evacuation Shuttle Common Seating - Starboard Quarter"
+	},
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "jc" = (
@@ -1204,6 +1218,9 @@
 "ln" = (
 /obj/effect/turf_decal/trimline/yellow/filled/line{
 	dir = 6
+	},
+/obj/machinery/camera/directional/east{
+	c_tag = "Evacuation Shuttle Engineering - Starboard"
 	},
 /turf/open/floor/iron,
 /area/shuttle/escape)
@@ -2084,6 +2101,12 @@
 	},
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
+"rR" = (
+/obj/machinery/camera/directional/south{
+	c_tag = "Evacuation Shuttle External - Forward"
+	},
+/turf/template_noop,
+/area/template_noop)
 "rS" = (
 /obj/machinery/newscaster/directional/north,
 /obj/effect/turf_decal/siding/wood{
@@ -2381,6 +2404,9 @@
 	dir = 10
 	},
 /obj/machinery/light/floor,
+/obj/machinery/camera/directional/north{
+	c_tag = "Evacuation Shuttle External - Aft"
+	},
 /turf/open/floor/iron/dark/textured_large/airless,
 /area/shuttle/escape)
 "vD" = (
@@ -2873,6 +2899,9 @@
 	name = "Brig Flasher Control";
 	id = "vortexevacflash2"
 	},
+/obj/machinery/camera/directional/west{
+	c_tag = "Evacuation Shuttle Brig"
+	},
 /turf/open/floor/iron/dark,
 /area/shuttle/escape/brig)
 "Am" = (
@@ -2895,6 +2924,9 @@
 /obj/machinery/light/cold/dim/directional/west,
 /obj/machinery/airalarm/directional/west,
 /obj/machinery/rnd/production/protolathe/department/engineering,
+/obj/machinery/camera/directional/west{
+	c_tag = "Evacuation Shuttle Engineering - Port"
+	},
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "Au" = (
@@ -2904,6 +2936,12 @@
 /obj/machinery/computer/communications,
 /turf/open/floor/wood/large,
 /area/shuttle/escape)
+"Ax" = (
+/obj/machinery/camera/directional/west{
+	c_tag = "Evacuation Shuttle External - Starboard"
+	},
+/turf/template_noop,
+/area/template_noop)
 "Ay" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark,
 /obj/structure/cable,
@@ -3151,6 +3189,9 @@
 	pixel_x = -25;
 	req_access = list("medical")
 	},
+/obj/machinery/camera/directional/west{
+	c_tag = "Evacuation Shuttle Infirmary"
+	},
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "Df" = (
@@ -3239,6 +3280,12 @@
 	dir = 8
 	},
 /area/shuttle/escape)
+"DU" = (
+/obj/machinery/camera/directional/east{
+	c_tag = "Evacuation Shuttle External - Port Quarter"
+	},
+/turf/template_noop,
+/area/template_noop)
 "DV" = (
 /obj/effect/spawner/structure/window/reinforced/shuttle,
 /obj/structure/cable,
@@ -3449,13 +3496,6 @@
 	},
 /turf/open/floor/wood/parquet,
 /area/shuttle/escape)
-"Ge" = (
-/obj/effect/turf_decal/trimline/yellow/filled/line,
-/obj/effect/turf_decal/siding/thinplating_new{
-	dir = 1
-	},
-/turf/open/floor/iron,
-/area/shuttle/escape)
 "Gl" = (
 /obj/structure/table/reinforced/titaniumglass,
 /obj/item/reagent_containers/blood/o_minus,
@@ -3494,6 +3534,9 @@
 	name = "Window Shutters Control";
 	req_access = list("command");
 	pixel_y = -25
+	},
+/obj/machinery/camera/directional/south{
+	c_tag = "Evacuation Shuttle Bridge"
 	},
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
@@ -3837,8 +3880,17 @@
 /obj/structure/sign/flag/nanotrasen/directional/north,
 /obj/machinery/light/directional/north,
 /obj/machinery/suit_storage_unit/spaceruin,
+/obj/machinery/camera/directional/north{
+	c_tag = "Evacuation Shuttle E.V.A."
+	},
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
+"JZ" = (
+/obj/machinery/camera/directional/west{
+	c_tag = "Evacuation Shuttle External - Starboard Bow"
+	},
+/turf/template_noop,
+/area/template_noop)
 "Kd" = (
 /obj/machinery/space_heater/wall_mounted/directional/north,
 /obj/effect/turf_decal/siding/wood,
@@ -3921,6 +3973,15 @@
 /obj/structure/chair/comfy/black,
 /turf/open/floor/carpet/blue,
 /area/shuttle/escape)
+"KD" = (
+/obj/structure/sign/nanotrasen{
+	pixel_x = -32
+	},
+/obj/machinery/camera/directional/west{
+	c_tag = "Evacuation Shuttle External - Starboard Quarter"
+	},
+/turf/template_noop,
+/area/template_noop)
 "KF" = (
 /obj/machinery/button/door{
 	id = "vortexevac";
@@ -3931,6 +3992,9 @@
 	dir = 8
 	},
 /obj/machinery/light/cold/dim/directional/west,
+/obj/machinery/camera/directional/west{
+	c_tag = "Evacuation Shuttle Common Seating - Port Quarter"
+	},
 /turf/open/floor/wood,
 /area/shuttle/escape)
 "KL" = (
@@ -4087,6 +4151,9 @@
 	dir = 4
 	},
 /obj/structure/window/reinforced/survival_pod/spawner/directional/west,
+/obj/machinery/camera/directional/north{
+	c_tag = "Evacuation Shuttle Atmospherics"
+	},
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "My" = (
@@ -4305,6 +4372,9 @@
 	dir = 8
 	},
 /obj/machinery/light/cold/dim/directional/west,
+/obj/machinery/camera/directional/west{
+	c_tag = "Evacuation Shuttle Common Seating - Port Bow"
+	},
 /turf/open/floor/wood/parquet,
 /area/shuttle/escape)
 "Oy" = (
@@ -4474,6 +4544,9 @@
 	},
 /obj/effect/turf_decal/siding/thinplating_new/dark,
 /obj/effect/turf_decal/trimline/yellow/filled/warning,
+/obj/machinery/camera/directional/north{
+	c_tag = "Evacuation Shuttle Engineering - Central"
+	},
 /turf/open/floor/iron/dark,
 /area/shuttle/escape)
 "QH" = (
@@ -4484,6 +4557,12 @@
 	dir = 8
 	},
 /area/shuttle/escape)
+"QJ" = (
+/obj/machinery/camera/directional/east{
+	c_tag = "Evacuation Shuttle External - Port Bow"
+	},
+/turf/template_noop,
+/area/template_noop)
 "QO" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 1
@@ -4697,6 +4776,12 @@
 /obj/structure/disposalpipe/trunk,
 /turf/open/floor/wood,
 /area/shuttle/escape)
+"SN" = (
+/obj/machinery/camera/directional/east{
+	c_tag = "Evacuation Shuttle External - Port"
+	},
+/turf/template_noop,
+/area/template_noop)
 "SR" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 1
@@ -5188,6 +5273,13 @@
 /obj/machinery/computer/security/telescreen/entertainment/directional/south,
 /turf/open/floor/iron/dark/smooth_large,
 /area/shuttle/escape)
+"Xa" = (
+/obj/effect/turf_decal/trimline/yellow/filled/line,
+/obj/effect/turf_decal/siding/thinplating_new/corner{
+	dir = 1
+	},
+/turf/open/floor/iron,
+/area/shuttle/escape)
 "Xb" = (
 /obj/effect/turf_decal/trimline/red/real_red/line,
 /obj/effect/turf_decal/trimline/red/real_red/filled/line{
@@ -5314,6 +5406,13 @@
 	dir = 8
 	},
 /turf/open/floor/wood/parquet,
+/area/shuttle/escape)
+"Yz" = (
+/obj/effect/turf_decal/trimline/yellow/filled/line,
+/obj/effect/turf_decal/siding/thinplating_new{
+	dir = 1
+	},
+/turf/open/floor/iron,
 /area/shuttle/escape)
 "YB" = (
 /obj/effect/turf_decal/stripes/corner,
@@ -5465,7 +5564,7 @@ VX
 pZ
 xW
 sq
-sq
+SN
 sq
 xW
 Zb
@@ -5526,7 +5625,7 @@ sq
 sq
 jK
 sq
-sq
+DU
 sq
 sq
 sq
@@ -5545,7 +5644,7 @@ sq
 sq
 sq
 sq
-sq
+QJ
 jK
 xW
 VX
@@ -5667,7 +5766,7 @@ xO
 lg
 US
 sL
-Ge
+Yz
 kh
 XZ
 bw
@@ -5713,7 +5812,7 @@ ah
 ah
 Kv
 sL
-Ge
+Yz
 kh
 fe
 bw
@@ -5759,7 +5858,7 @@ Za
 VX
 mv
 sL
-Ge
+Yz
 kh
 fe
 bw
@@ -5805,7 +5904,7 @@ WE
 WE
 sn
 sL
-Ge
+Yz
 mD
 fe
 tu
@@ -5851,7 +5950,7 @@ WE
 WE
 sn
 sL
-Ge
+Yz
 kh
 fe
 bw
@@ -5897,7 +5996,7 @@ go
 VX
 Wr
 HV
-hD
+Xa
 kh
 fq
 Il
@@ -6057,7 +6156,7 @@ VX
 ni
 dl
 wT
-iZ
+fQ
 YO
 xb
 kX
@@ -6091,7 +6190,7 @@ Oz
 RD
 "}
 (15,1,1) = {"
-sq
+rR
 VX
 VX
 gj
@@ -6373,7 +6472,7 @@ sq
 sq
 sq
 sq
-sq
+JZ
 YW
 xW
 VX
@@ -6431,6 +6530,14 @@ sq
 YW
 sq
 sq
+Ax
+sq
+sq
+YW
+sq
+sq
+sq
+sq
 sq
 sq
 sq
@@ -6438,15 +6545,7 @@ YW
 sq
 sq
 sq
-sq
-sq
-sq
-sq
-YW
-sq
-sq
-sq
-YW
+KD
 sq
 sq
 sq

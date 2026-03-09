@@ -46,7 +46,7 @@
 /datum/armor/jacket_corrections_officer
 	melee = 10
 	melee = 10
-  SPLURT DELETION END */
+SPLURT DELETION END */
 /obj/structure/closet/secure_closet/corrections_officer
 	name = "corrections officer riot gear"
 	icon = 'modular_skyrat/master_files/icons/obj/closet.dmi'

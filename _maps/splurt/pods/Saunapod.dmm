@@ -1,0 +1,294 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"d" = (
+/obj/structure/chair/pew/left{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/misc/survivalpod)
+"e" = (
+/obj/structure/chair/pew/right{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/misc/survivalpod)
+"f" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 5
+	},
+/turf/open/water/hot_spring,
+/area/misc/survivalpod)
+"h" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 9
+	},
+/turf/open/water/hot_spring,
+/area/misc/survivalpod)
+"j" = (
+/obj/structure/wall_torch/spawns_lit/directional/north,
+/turf/open/floor/wood,
+/area/misc/survivalpod)
+"m" = (
+/obj/machinery/door/airlock/wood/glass,
+/obj/structure/fans/tiny/invisible,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood,
+/area/misc/survivalpod)
+"n" = (
+/obj/structure/chair/pew/left{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/turf/open/floor/wood,
+/area/misc/survivalpod)
+"o" = (
+/obj/structure/sauna_oven,
+/turf/open/floor/wood,
+/area/misc/survivalpod)
+"p" = (
+/obj/structure/wall_torch/spawns_lit/directional/south,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood,
+/area/misc/survivalpod)
+"q" = (
+/obj/machinery/airalarm/directional/south,
+/obj/effect/mapping_helpers/airalarm/unlocked,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/wood,
+/area/misc/survivalpod)
+"u" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/turf/open/water/hot_spring,
+/area/misc/survivalpod)
+"w" = (
+/obj/structure/chair/pew{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/misc/survivalpod)
+"A" = (
+/obj/effect/spawner/structure/window,
+/turf/open/floor/wood,
+/area/misc/survivalpod)
+"B" = (
+/turf/open/floor/wood,
+/area/misc/survivalpod)
+"C" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
+/turf/open/water/hot_spring,
+/area/misc/survivalpod)
+"D" = (
+/obj/structure/table/wood,
+/turf/open/floor/wood,
+/area/misc/survivalpod)
+"E" = (
+/obj/structure/table/wood,
+/obj/item/reagent_containers/cup/glass/waterbottle/large{
+	pixel_y = 12
+	},
+/turf/open/floor/wood,
+/area/misc/survivalpod)
+"F" = (
+/obj/machinery/light/floor,
+/obj/structure/chair/pew/left{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/misc/survivalpod)
+"G" = (
+/obj/structure/wall_torch/spawns_lit/directional/north,
+/obj/structure/table/wood,
+/obj/structure/towel_bin{
+	pixel_y = 8
+	},
+/turf/open/floor/wood,
+/area/misc/survivalpod)
+"H" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/wood,
+/area/misc/survivalpod)
+"I" = (
+/obj/structure/chair/pew/right{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
+/turf/open/floor/wood,
+/area/misc/survivalpod)
+"J" = (
+/obj/structure/wall_torch/spawns_lit/directional/south,
+/turf/open/floor/wood,
+/area/misc/survivalpod)
+"K" = (
+/obj/structure/wall_torch/spawns_lit/directional/west,
+/obj/structure/chair/pew/right{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/misc/survivalpod)
+"M" = (
+/turf/closed/wall/mineral/wood,
+/area/misc/survivalpod)
+"N" = (
+/obj/structure/table/wood,
+/obj/item/toy/plush/red_mut{
+	pixel_y = 9
+	},
+/turf/open/floor/wood,
+/area/misc/survivalpod)
+"P" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 10
+	},
+/turf/open/water/hot_spring,
+/area/misc/survivalpod)
+"R" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 6
+	},
+/turf/open/water/hot_spring,
+/area/misc/survivalpod)
+"T" = (
+/obj/machinery/computer/security/wooden_tv{
+	pixel_y = 9;
+	layer = 3.3
+	},
+/obj/structure/table/wood,
+/turf/open/floor/wood,
+/area/misc/survivalpod)
+"V" = (
+/obj/structure/table/wood,
+/obj/item/toy/plush/suspicious_protogen{
+	pixel_y = 8
+	},
+/turf/open/floor/wood,
+/area/misc/survivalpod)
+"X" = (
+/obj/structure/wall_torch/spawns_lit/directional/west,
+/obj/structure/chair/pew/left{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/misc/survivalpod)
+"Y" = (
+/obj/structure/chair/pew/right{
+	dir = 1
+	},
+/turf/open/floor/wood,
+/area/misc/survivalpod)
+"Z" = (
+/obj/structure/closet/cabinet,
+/obj/item/clothing/under/misc/skyrat/gear_harness,
+/obj/item/clothing/under/misc/skyrat/gear_harness,
+/obj/item/clothing/under/misc/skyrat/gear_harness,
+/obj/item/clothing/under/misc/skyrat/gear_harness,
+/obj/item/clothing/under/misc/skyrat/gear_harness,
+/obj/item/clothing/under/misc/skyrat/gear_harness,
+/obj/item/clothing/under/misc/skyrat/gear_harness,
+/turf/open/floor/wood,
+/area/misc/survivalpod)
+
+(1,1,1) = {"
+M
+M
+A
+M
+M
+A
+M
+M
+"}
+(2,1,1) = {"
+M
+Z
+B
+K
+X
+B
+B
+M
+"}
+(3,1,1) = {"
+A
+B
+d
+D
+N
+n
+q
+M
+"}
+(4,1,1) = {"
+A
+T
+w
+o
+E
+w
+H
+m
+"}
+(5,1,1) = {"
+M
+j
+Y
+D
+V
+I
+p
+M
+"}
+(6,1,1) = {"
+M
+G
+B
+F
+e
+B
+J
+M
+"}
+(7,1,1) = {"
+A
+B
+B
+B
+B
+B
+B
+A
+"}
+(8,1,1) = {"
+A
+h
+u
+u
+u
+u
+P
+A
+"}
+(9,1,1) = {"
+M
+f
+C
+C
+C
+C
+R
+M
+"}
+(10,1,1) = {"
+M
+M
+A
+M
+M
+A
+M
+M
+"}

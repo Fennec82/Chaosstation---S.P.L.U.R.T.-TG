@@ -27,12 +27,6 @@
 /obj/structure/wall_torch/spawns_lit/directional/north,
 /turf/open/floor/wood,
 /area/misc/survivalpod)
-"k" = (
-/obj/effect/spawner/structure/window{
-	layer = 0.8
-	},
-/turf/open/floor/wood,
-/area/misc/survivalpod)
 "m" = (
 /obj/machinery/door/airlock/wood/glass,
 /obj/structure/fans/tiny/invisible,
@@ -228,7 +222,7 @@ q
 M
 "}
 (4,1,1) = {"
-k
+A
 T
 w
 o

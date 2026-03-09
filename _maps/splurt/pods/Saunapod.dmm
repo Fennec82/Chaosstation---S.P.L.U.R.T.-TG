@@ -27,6 +27,12 @@
 /obj/structure/wall_torch/spawns_lit/directional/north,
 /turf/open/floor/wood,
 /area/misc/survivalpod)
+"k" = (
+/obj/effect/spawner/structure/window{
+	layer = 0.8
+	},
+/turf/open/floor/wood,
+/area/misc/survivalpod)
 "m" = (
 /obj/machinery/door/airlock/wood/glass,
 /obj/structure/fans/tiny/invisible,
@@ -153,11 +159,10 @@
 /turf/open/water/hot_spring,
 /area/misc/survivalpod)
 "T" = (
-/obj/machinery/computer/security/wooden_tv{
-	pixel_y = 9;
-	layer = 3.3
-	},
 /obj/structure/table/wood,
+/obj/machinery/computer/security/wooden_tv{
+	pixel_y = 9
+	},
 /turf/open/floor/wood,
 /area/misc/survivalpod)
 "V" = (
@@ -223,7 +228,7 @@ q
 M
 "}
 (4,1,1) = {"
-A
+k
 T
 w
 o

@@ -1,4 +1,0 @@
-author: "kagiatti"
-delete-after: True
-changes:
-  - bugfix: "fixed cybernetic bladder not being flagged as a robotic organ"

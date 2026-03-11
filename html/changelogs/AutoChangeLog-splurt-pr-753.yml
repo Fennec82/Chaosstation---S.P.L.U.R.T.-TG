@@ -1,4 +1,0 @@
-author: "Bam4000"
-delete-after: True
-changes:
-  - rscadd: "Added a preference choice to choose a preferred announcer"

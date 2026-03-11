@@ -1,0 +1,5 @@
+author: "DBurro"
+delete-after: True
+changes:
+  - rscadd: "Added obsessed to the storyteller controller"
+  - refactor: "Now you can choose your obsession target"

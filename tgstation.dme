@@ -10153,6 +10153,7 @@
 #include "modular_zzplurt\code\game\objects\items\storage\fancy.dm"
 #include "modular_zzplurt\code\game\objects\items\storage\sixpack.dm"
 #include "modular_zzplurt\code\game\objects\items\storage\boxes\clothes_boxes.dm"
+#include "modular_zzplurt\code\game\objects\machinery\lizard_gas.dm"
 #include "modular_zzplurt\code\game\objects\structures\billboard.dm"
 #include "modular_zzplurt\code\game\objects\structures\fauna.dm"
 #include "modular_zzplurt\code\game\objects\structures\medieval_deco.dm"

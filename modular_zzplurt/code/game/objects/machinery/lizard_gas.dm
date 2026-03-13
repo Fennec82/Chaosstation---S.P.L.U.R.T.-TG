@@ -1,2 +1,2 @@
-//EXAMPLE TEXT
+/obj/item
 

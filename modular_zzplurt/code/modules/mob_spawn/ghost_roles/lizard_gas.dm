@@ -1,5 +1,9 @@
 #define ROLE_LZGAS "Lizard Gas Station Manager"
 
+/datum/id_trim/away/lizardgas
+	assignment = "Lizard Gas Employee"
+	access = list(ACCESS_LZGAS)
+
 /obj/effect/mob_spawn/ghost_role/human/lavaland_gasstation
 	name = "Gas Station Attendant"
 	desc = "Seems like there's somebody inside, peacefully sleeping."

@@ -38,6 +38,12 @@
 	worn_icon = 'modular_skyrat/master_files/icons/mob/clothing/suit.dmi'
 	icon_state = "co_coat"
 
+//SPLURT ADDITION START
+/obj/item/clothing/suit/armor/vest/secjacket/worn_overlays(mutable_appearance/standing, isinhands, icon_file)
+	. = ..()
+	if(!isinhands)
+		. += emissive_appearance(icon_file, "secjacket-emissive", src, alpha = src.alpha, effect_type = EMISSIVE_SPECULAR)
+//SPLURT ADDITION END
 
 // LOCKER
 /*SPLURT DELETION START

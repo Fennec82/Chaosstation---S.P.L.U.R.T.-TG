@@ -69,7 +69,7 @@
 		This model has been customized for the day-to-day operations of a gas station, it contains an expanded stock of \
 		items, and ready to cook ingredients for serving customers on the spot, gas station quality guaranteed."
 	icon = 'modular_zzplurt/icons/obj/machines/biogen.dmi'
-	circuit = /obj/machinery/biogenerator/smartfridge
+	circuit = /obj/item/circuitboard/machine/lizard_gas_smartfridge
 	anchored = FALSE
 	efficiency = 1
 	productivity = 1

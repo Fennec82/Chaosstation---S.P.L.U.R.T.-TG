@@ -129,14 +129,8 @@
 	},
 /turf/open/water/hot_spring,
 /area/misc/survivalpod)
-"R" = (
-/obj/machinery/light/floor,
-/obj/machinery/light/floor,
-/obj/effect/spawner/structure/window,
-/turf/open/floor/wood,
-/area/misc/survivalpod)
 "T" = (
-/obj/machinery/light/floor,
+/obj/effect/spawner/structure/window,
 /obj/effect/spawner/structure/window,
 /turf/open/floor/wood,
 /area/misc/survivalpod)
@@ -225,7 +219,7 @@ A
 (8,1,1) = {"
 M
 A
-R
+T
 T
 A
 M

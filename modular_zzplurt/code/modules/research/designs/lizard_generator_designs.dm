@@ -1,1 +1,0 @@
-#define RND_CATEGORY_EXAMPLE_FOOD "RND Example Food"

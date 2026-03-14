@@ -262,7 +262,7 @@
 	build_type = BIOGENERATOR
 	materials = list(/datum/material/biomass = 15)
 	build_path = /obj/item/stack/sheet/cloth
-	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_CMR_MATERIALS)	
+	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_CMR_MATERIALS)
 
 /datum/design/cmf_cardboard
 	name = "Sheet of Cardboard"

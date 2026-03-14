@@ -14,7 +14,7 @@
 		compounds; normally from large-scale crops or waste product. This one has been heavily modified to focus on making clothing, accessories, and also \
 		a variety, of materials to make up for the unreliable rate of deliveries to Lizard's Gas, at the cost of not being able to make the other items it \
 		is well known for producing."
-	icon = 'modular_zzplurt/icons/obj/machines/biogen.dmi'
+	icon = 'icons/obj/machines/biogenerator.dmi'
 	circuit = /obj/machinery/biogenerator/lizard_gas_colonial
 	anchored = FALSE
 	efficiency = 1
@@ -40,7 +40,7 @@
 	desc = "An advanced machine seen in frontier outposts and colonies capable of turning organic plant matter into \
 		various emergency medical supplies and injectors. This one has been customized to provide for the harsh needs \
 		of lavaland, mostly in the hopes of being able to sell the products to those who travel through it."
-	icon = 'modular_zzplurt/icons/obj/machines/biogen.dmi'
+	icon = 'icons/obj/machines/biogenerator.dmi'
 	circuit = /obj/machinery/biogenerator/lizard_gas_medvendor
 	anchored = FALSE
 	efficiency = 1
@@ -68,8 +68,8 @@
 		various foods or ingredients. The best friend of a chef where deliveries are inconsistent or simply don't exist. \
 		This model has been customized for the day-to-day operations of a gas station, it contains an expanded stock of \
 		items, and ready to cook ingredients for serving customers on the spot, gas station quality guaranteed."
-	icon = 'modular_zzplurt/icons/obj/machines/biogen.dmi'
-	circuit = /obj/machinery/biogenerator/smartfridge
+	icon = 'icons/obj/machines/biogenerator.dmi'
+	circuit = /obj/machinery/biogenerator/lizard_gas_smartfridge
 	anchored = FALSE
 	efficiency = 1
 	productivity = 1

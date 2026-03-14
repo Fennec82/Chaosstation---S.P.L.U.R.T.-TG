@@ -18,6 +18,7 @@
 	id = "cmf_frontier_jumpsuit"
 	build_type = BIOGENERATOR
 	materials = list(/datum/material/biomass = 100)
+	build_path = /obj/item/clothing/under/frontier_colonist
 	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_CMR_APPAREL)
 
 // Boots

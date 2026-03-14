@@ -10544,7 +10544,6 @@
 #include "modular_zzplurt\code\modules\reagents\reagent_containers\cups\sizeitems.dm"
 #include "modular_zzplurt\code\modules\research\designs\colonial_marine_resequencer_designs.dm"
 #include "modular_zzplurt\code\modules\research\designs\deforest_brand_bioregen_designs.dm"
-#include "modular_zzplurt\code\modules\research\designs\lizard_generator_designs.dm"
 #include "modular_zzplurt\code\modules\research\designs\machine_designs.dm"
 #include "modular_zzplurt\code\modules\research\designs\medical_designs.dm"
 #include "modular_zzplurt\code\modules\research\designs\smartfridge_organic_fab_designs.dm"

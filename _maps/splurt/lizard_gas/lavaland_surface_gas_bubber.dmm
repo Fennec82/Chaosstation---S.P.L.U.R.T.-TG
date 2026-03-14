@@ -121,17 +121,9 @@
 /area/ruin/thelizardsgas_lavaland)
 "cg" = (
 /obj/structure/rack,
-/obj/item/flatpacked_machine/organics_ration_printer{
-	pixel_x = 0;
-	pixel_y = 5
-	},
-/obj/item/flatpacked_machine/sustenance_machine{
-	pixel_x = -8;
-	pixel_y = 2
-	},
-/obj/item/circuitboard/machine/biogenerator/food_replicator{
-	pixel_x = 5;
-	pixel_y = -5
+/obj/item/circuitboard/machine/lizard_gas_colonial{
+	pixel_x = 4;
+	pixel_y = -8
 	},
 /turf/open/floor/plating,
 /area/ruin/thelizardsgas_lavaland)
@@ -2157,7 +2149,9 @@
 /turf/open/floor/iron/smooth_large,
 /area/ruin/thelizardsgas_lavaland)
 "Is" = (
-/obj/machinery/door/window/left/directional/north,
+/obj/machinery/door/window/left/directional/north{
+	req_access = "ACCESS_LZGAS"
+	},
 /obj/effect/turf_decal/siding/dark{
 	dir = 9
 	},
@@ -3089,8 +3083,12 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
-/obj/machinery/door/window/right/directional/north,
-/obj/machinery/door/window/left/directional/south,
+/obj/machinery/door/window/right/directional/north{
+	req_access = "ACCESS_LZGAS"
+	},
+/obj/machinery/door/window/left/directional/south{
+	req_access = "ACCESS_LZGAS"
+	},
 /turf/open/floor/iron/smooth_large,
 /area/ruin/thelizardsgas_lavaland)
 "Vn" = (
@@ -3300,7 +3298,9 @@
 /area/ruin/thelizardsgas_lavaland)
 "Yl" = (
 /obj/structure/table/wood/fancy/green,
-/obj/machinery/door/window/right/directional/north,
+/obj/machinery/door/window/right/directional/north{
+	req_access = "ACCESS_LZGAS"
+	},
 /obj/item/stamp/denied{
 	pixel_x = -12;
 	pixel_y = 6

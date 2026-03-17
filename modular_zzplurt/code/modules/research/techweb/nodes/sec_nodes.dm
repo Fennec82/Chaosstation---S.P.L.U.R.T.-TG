@@ -6,6 +6,6 @@
 	design_ids += "m9x17mm_mag_ap"
 	. = ..()
 
-/datum/techweb_node/ballistic_tech/New()
+/datum/techweb_node/ballistic/New()
 	design_ids += "wt458_kit"
 	. = ..()

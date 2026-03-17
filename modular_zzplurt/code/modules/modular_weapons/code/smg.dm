@@ -56,6 +56,7 @@
 	AddElement(/datum/element/examine_lore, \
 		lore_hint = span_notice("You can [EXAMINE_HINT("look closer")] to learn a little more about [src]."), \
 		lore = "The WT-458 is a one-of-a-kind select fire 2 round bursts firearm chambered in low power cartridges.<br>\
+		2-rounds burst was chosen for close quarter combat back when it was common for any particular force to actually occupy and hold any station they captured, rather than destroying it with a nuclear device.\
 		<br>\
 		This particular design suffered from the same issue as the RTA Prototype CMG, \
 		Nanotrasen also struggled to come to terms with the new way of mass-producing ballistic weapons. The precision parts of the Romulus Technology and the Solarian First Expedition Company (its predecessor) were machined by hand out of solid metal. \
@@ -72,7 +73,7 @@
 		Despite this, the existence of this weapon was a testament to the creativity of the people working for this company." \
 	)
 	register_context()
-//To whom it may concerns, Yes, this is essentially just me  venting out my frustration with working on the CMG for TG which was supposed to be done back in 2025
+//To whom it may concerns, Yes, this lore is essentially just me  venting out my frustration with working on the CMG for TG which was supposed to be done back in 2025
 //However the design requirement vs what I actually want got really complicated and we could not finalise it.
 
 /obj/item/gun/ballistic/automatic/wt458/give_manufacturer_examine()

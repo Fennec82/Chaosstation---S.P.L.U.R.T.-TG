@@ -65,7 +65,7 @@
 		<br>\
 		It's hard to cover up everything about its troubled development, though.<br>\
 		<br>\
-		People that were in charge were demanding tolerances from plastic moulding that could really only be achieved by the precision of being carved from solid steel.  \
+		Originally in production by Romulus Technology under the name PDW Mk1 right after the success of the CMG. People that were in charge were demanding tolerances from plastic moulding that could really only be achieved by the precision of being carved from solid steel.  \
 		This weapon has a straight blowback system and ejects the round vertically down safetly behind the user, unlike the Prototype CMG which ejected casing directly into the shoulder of the user should they be left handed (Although this was addressed by making the rifle a caseless flechette launcher),\
 		The CMG does not exist anymore due to the systematic eradication of the company workers, leaving this the few surviving design from those time.\
 		Nanotrasen RND Department have been unable to mass-produce proper intermediate cartridges. With any rifle properly chambered in such caliber only reserved for the Military Branch \

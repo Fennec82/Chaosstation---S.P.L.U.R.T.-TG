@@ -22,3 +22,43 @@
 
 /obj/item/gun/ballistic/automatic/mps5/give_manufacturer_examine()
 	AddElement(/datum/element/manufacturer_examine, COMPANY_NANOTRASEN)
+
+/obj/item/gun/ballistic/automatic/mps5/add_seclight_point()
+	AddComponent(/datum/component/seclite_attachable, \
+		light_overlay_icon = 'icons/obj/weapons/guns/flashlights.dmi', \
+		light_overlay = "flight", \
+		overlay_x = 18, \
+		overlay_y = 12)
+
+/obj/item/gun/ballistic/automatic/wt458
+	name = "\improper WT-458 Bullpup Rifle"
+	desc = "Recalled by Nanotrasen due to public backlash around heat distribution resulting in unintended discombobulation. \
+		This outcry was fabricated through various Syndicate-backed misinformation operations to force Nanotrasen to abandon \
+		its ballistics weapon program, cornering them into the energy weapons market. Most often found today in the hands of pirates, \
+		underfunded security personnel, cargo technicians, theoretical physicists, and gang bangers out on the rim. \
+		Light-weight and fully automatic. Uses 4.6x30mm rounds."
+	icon_state = "wt550"
+	w_class = WEIGHT_CLASS_BULKY
+	inhand_icon_state = "arg"
+	accepted_magazine_type = /obj/item/ammo_box/magazine/wt550m9
+	burst_delay = 2
+	can_suppress = FALSE
+	burst_size = 2
+	fire_delay = 3.3
+	actions_types = list()
+	mag_display = TRUE
+	mag_display_ammo = TRUE
+	empty_indicator = TRUE
+
+/obj/item/gun/ballistic/automatic/wt458/give_manufacturer_examine()
+	AddElement(/datum/element/manufacturer_examine, COMPANY_NANOTRASEN)
+
+/obj/item/gun/ballistic/automatic/wt458/add_bayonet_point()
+	AddComponent(/datum/component/bayonet_attachable, offset_x = 25, offset_y = 12)
+
+/obj/item/gun/ballistic/automatic/wt458/add_seclight_point()
+	AddComponent(/datum/component/seclite_attachable, \
+		light_overlay_icon = 'icons/obj/weapons/guns/flashlights.dmi', \
+		light_overlay = "flight", \
+		overlay_x = 18, \
+		overlay_y = 12)

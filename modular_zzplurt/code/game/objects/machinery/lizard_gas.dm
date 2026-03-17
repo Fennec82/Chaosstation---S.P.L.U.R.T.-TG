@@ -4,8 +4,8 @@
 	icon = 'modular_zzplurt/icons/obj/machines/resequencer.dmi'
 	icon_state = "circuitboard"
 	req_components = list(
-		/datum/stock_part/matter_bin = 2,
-		/datum/stock_part/servo = 2,
+		/datum/stock_part/matter_bin = 1,
+		/datum/stock_part/servo = 1,
 		/obj/item/stack/cable_coil = 1,
 		/obj/item/stack/sheet/glass = 1)
 
@@ -33,8 +33,8 @@
 	icon = 'modular_zzplurt/icons/obj/machines/bioregenerator.dmi'
 	icon_state = "circuitboard"
 	req_components = list(
-		/datum/stock_part/matter_bin = 2,
-		/datum/stock_part/servo = 2,
+		/datum/stock_part/matter_bin = 1,
+		/datum/stock_part/servo = 1,
 		/obj/item/stack/cable_coil = 1,
 		/obj/item/stack/sheet/glass = 1)
 
@@ -61,8 +61,8 @@
 	icon = 'modular_zzplurt/icons/obj/machines/smartfridge_fab.dmi'
 	icon_state = "circuitboard"
 	req_components = list(
-		/datum/stock_part/matter_bin = 2,
-		/datum/stock_part/servo = 2,
+		/datum/stock_part/matter_bin = 1,
+		/datum/stock_part/servo = 1,
 		/obj/item/stack/cable_coil = 1,
 		/obj/item/stack/sheet/glass = 1)
 

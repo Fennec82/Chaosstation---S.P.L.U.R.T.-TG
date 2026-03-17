@@ -236,7 +236,7 @@
 /obj/effect/spawner/structure/window/reinforced/plasma,
 /obj/structure/cable,
 /obj/machinery/door/poddoor/shutters{
-	id = "lizardshutters";
+	id = "lizardshutters_breakroom";
 	dir = 8
 	},
 /turf/open/floor/plating,
@@ -296,7 +296,8 @@
 /area/icemoon/underground/unexplored)
 "fw" = (
 /obj/machinery/camera/autoname/directional/east{
-	network = list("lizardgas")
+	network = list("lizardgas");
+	c_tag = "Lizard Gas - Manager Office"
 	},
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -403,7 +404,8 @@
 /obj/effect/spawner/random/food_or_drink/booze,
 /obj/machinery/computer/security/telescreen/entertainment/directional/north,
 /obj/machinery/camera/autoname/directional/west{
-	network = list("lizardgas")
+	network = list("lizardgas");
+	c_tag = "Lizard Gas - Shop North"
 	},
 /obj/structure/sign/poster/official/festive/directional/west,
 /turf/open/floor/iron/textured_large,
@@ -788,7 +790,8 @@
 "mh" = (
 /obj/structure/rack,
 /obj/machinery/camera/autoname/directional/south{
-	network = list("lizardgas")
+	network = list("lizardgas");
+	c_tag = "Lizard Gas - Utility Room"
 	},
 /obj/item/stack/sheet/mineral/plasma/thirty{
 	pixel_x = -1;
@@ -798,22 +801,27 @@
 	pixel_x = -4
 	},
 /obj/item/flatpacked_machine/fuel_generator{
-	pixel_x = -3;
+	pixel_x = -6;
 	pixel_y = 3
 	},
 /obj/item/paper{
-	pixel_x = -7;
-	pixel_y = -4;
+	pixel_x = 6;
+	pixel_y = -5;
 	default_raw_text = "Hey there official team member of Lizard Gas! On the shelf you found this letter on is a deployable plasma-generator to keep the lights on around here. Set it up outback, <B>NOT INSIDE</B>, and slap some of the Plasma Shards Nanotrasen has so kindly sold off to us in it and turn it on.. <BR><BR> P.S, A team member perished to Carbon Monoxide inhalation after sticking the deployable generator inside. You'll have to pull double-shifts until we find a replacement. Good luck!<BR><BR>-General Manager, Ra'Tahul Rekinov";
 	name = "Generator Note"
 	},
 /obj/item/stack/cable_coil/thirty{
-	pixel_x = 0;
-	pixel_y = 4
+	pixel_x = -5;
+	pixel_y = -2
 	},
 /turf/open/floor/plating,
 /area/ruin/thelizardsgas_lavaland)
 "mi" = (
+/obj/structure/cable,
+/obj/structure/bookcase/random,
+/turf/open/floor/wood/large,
+/area/ruin/thelizardsgas_lavaland)
+"ms" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 1
 	},
@@ -823,20 +831,7 @@
 /obj/structure/chair/sofa/corp/left{
 	color = "#4cc78e"
 	},
-/obj/structure/cable,
 /turf/open/floor/wood,
-/area/ruin/thelizardsgas_lavaland)
-"ms" = (
-/obj/effect/turf_decal/siding/wideplating_new/dark{
-	dir = 1
-	},
-/obj/structure/chair/sofa/corp/right{
-	color = "#4cc78e"
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/turf/open/floor/wood/large,
 /area/ruin/thelizardsgas_lavaland)
 "mt" = (
 /obj/structure/window/reinforced/spawner/directional/west,
@@ -1560,6 +1555,22 @@
 /obj/effect/turf_decal/trimline/dark_green/filled/mid_joiner{
 	dir = 8
 	},
+/obj/machinery/button/door/directional/east{
+	id = "lizardshutters";
+	pixel_y = 7;
+	name = "Exterior Shutters";
+	req_access = list(9512);
+	pixel_x = -24
+	},
+/obj/machinery/button/door/directional/east{
+	pixel_y = -3;
+	name = "Entrance Doorbolts";
+	id = "lizardgasbolt";
+	normaldoorcontrol = 1;
+	specialfunctions = 4;
+	req_access = list(9512);
+	pixel_x = -24
+	},
 /turf/open/floor/iron/dark/smooth_corner{
 	dir = 4
 	},
@@ -1585,6 +1596,7 @@
 	color = "#595959"
 	},
 /obj/machinery/space_heater,
+/obj/structure/cable,
 /turf/open/floor/iron{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -1628,7 +1640,7 @@
 	amount = 15
 	},
 /obj/item/stack/sheet/glass{
-	amount = 20
+	amount = 35
 	},
 /obj/item/stack/sheet/iron/fifty{
 	pixel_x = 6;
@@ -1744,7 +1756,8 @@
 "zO" = (
 /obj/machinery/camera/autoname/directional/west{
 	network = list("lizardgas");
-	dir = 8
+	dir = 8;
+	c_tag = "Exterior - East"
 	},
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/ruin/thelizardsgas_lavaland)
@@ -1831,7 +1844,8 @@
 /obj/machinery/duct,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
 /obj/machinery/camera/autoname/directional/south{
-	network = list("lizardgas")
+	network = list("lizardgas");
+	c_tag = "Lizard Gas - Shop South"
 	},
 /obj/effect/turf_decal/siding/thinplating_new{
 	color = "#595959"
@@ -1847,7 +1861,7 @@
 /obj/structure/sign/warning/electric_shock/directional/south,
 /obj/machinery/camera/autoname/directional/south{
 	network = list("lizardgas");
-	c_tag = LizardGas-GeneratorSocket
+	c_tag = "Exterior - North"
 	},
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/ruin/thelizardsgas_lavaland)
@@ -1976,10 +1990,11 @@
 /obj/structure/table,
 /obj/item/flatpacked_machine/ore_silo{
 	pixel_x = 4;
-	pixel_y = 5
+	pixel_y = 6
 	},
 /obj/machinery/camera/autoname/directional/east{
-	network = list("lizardgas")
+	network = list("lizardgas");
+	c_tag = "Lizard Gas - Garage"
 	},
 /obj/item/flatpacked_machine{
 	pixel_x = -17;
@@ -2147,7 +2162,15 @@
 /turf/open/floor/tram/plate,
 /area/ruin/thelizardsgas_lavaland)
 "GB" = (
-/obj/structure/bookcase/random,
+/obj/effect/turf_decal/siding/wideplating_new/dark{
+	dir = 1
+	},
+/obj/structure/chair/sofa/corp/right{
+	color = "#4cc78e"
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /turf/open/floor/wood/large,
 /area/ruin/thelizardsgas_lavaland)
@@ -2256,6 +2279,16 @@
 "HA" = (
 /obj/structure/table/wood/fancy/green,
 /obj/structure/window/reinforced/spawner/directional/north,
+/obj/item/stack/spacecash/c500{
+	pixel_x = 2;
+	pixel_y = 7;
+	max_amount = 500
+	},
+/obj/item/stack/spacecash/c500{
+	pixel_x = -2;
+	pixel_y = 2;
+	max_amount = 500
+	},
 /obj/effect/turf_decal/siding/dark{
 	dir = 5
 	},
@@ -2268,14 +2301,6 @@
 	},
 /obj/effect/turf_decal/trimline/dark_green/filled/mid_joiner{
 	dir = 4
-	},
-/obj/item/cargo_teleporter{
-	pixel_x = -7;
-	pixel_y = 2
-	},
-/obj/item/reagent_containers/cup/maunamug{
-	pixel_x = 8;
-	pixel_y = 1
 	},
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/thelizardsgas_lavaland)
@@ -2494,6 +2519,18 @@
 /obj/machinery/door/window/right/directional/north{
 	req_access = list(9512)
 	},
+/obj/item/stamp/denied{
+	pixel_x = -12;
+	pixel_y = 6
+	},
+/obj/item/stamp/granted{
+	pixel_x = -12;
+	pixel_y = 1
+	},
+/obj/item/reagent_containers/cup/maunamug{
+	pixel_x = 14;
+	pixel_y = 2
+	},
 /obj/effect/turf_decal/siding/dark{
 	dir = 1
 	},
@@ -2504,24 +2541,6 @@
 	dir = 1
 	},
 /obj/structure/cable,
-/obj/item/stack/spacecash/c500{
-	pixel_x = -2;
-	pixel_y = 2;
-	max_amount = 500
-	},
-/obj/item/stack/spacecash/c500{
-	pixel_x = 2;
-	pixel_y = 7;
-	max_amount = 500
-	},
-/obj/item/stamp/denied{
-	pixel_x = -12;
-	pixel_y = 6
-	},
-/obj/item/stamp/granted{
-	pixel_x = -12;
-	pixel_y = 1
-	},
 /turf/open/floor/iron/dark/textured_large,
 /area/ruin/thelizardsgas_lavaland)
 "KZ" = (
@@ -2631,10 +2650,6 @@
 	},
 /area/ruin/thelizardsgas_lavaland)
 "MA" = (
-/obj/item/stack/wrapping_paper{
-	pixel_x = 0;
-	pixel_y = -3
-	},
 /obj/effect/turf_decal/siding/thinplating_new{
 	dir = 10;
 	color = "#595959"
@@ -2695,11 +2710,11 @@
 "Nd" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/paperwork{
-	pixel_x = -2;
+	pixel_x = -4;
 	pixel_y = 3
 	},
 /obj/item/paper{
-	pixel_x = 11;
+	pixel_x = 12;
 	default_raw_text = "The gosh darn safe is on the fritz again! Do me a favor and count these bills for me, and stuff them in the stafe whe you're done. Thanks a bunch, and have a Lizardrific Day!<BR><BR>-General Manager, Ra'Tahul Rekinov";
 	name = "Manager Note";
 	pixel_y = 0
@@ -2831,23 +2846,24 @@
 	pixel_y = -3
 	},
 /obj/item/paper{
-	pixel_x = 7;
-	pixel_y = -4;
-	default_raw_text = "Great news folks, your station was picked as the lucky team to test out the brand new selection that our R&D boys been working on, you may be able to recognize a brand or two there, but do not worry. I been reassured by our legal team that the modifications we have made are perfectly legal for commercial use, as long as you <B>DO NOT</B> resell those boards. Anyway, try out those bad boys, they were designed to make each station completely self-sufficient and not have to rely on infrequent shipments to remote locations, and completely place any medical issues experienced inside the gas stations the sole responsibility of the staff within and not the chain as a whole, <B>innovation!</B><BR><BR>-Supply Manager, Jasper 'Jas' Statham";
+	pixel_x = 9;
+	pixel_y = -6;
+	default_raw_text = "Great news folks, your station was picked as the lucky team to test out the brand new selection that our R&D boys been working on, you may be able to recognize a brand or two there, but do not worry. I been reassured by our legal team that the modifications we have made are perfectly legal for commercial use, as long as you <B>DO NOT</B> resell those boards. Anyway, try out those bad boys, they were designed to make each station completely self-sufficient and not have to rely on infrequent shipments to remote locations, and completely turns any medical issues experienced inside the gas stations into the sole responsibility of the staff within and not the chain as a whole, <B>innovation!</B><BR><BR>-Supply Manager, Jasper 'Jas' Statham";
 	name = "Circuitboard Shipment"
 	},
 /turf/open/floor/plating,
 /area/ruin/thelizardsgas_lavaland)
 "NL" = (
 /obj/machinery/camera/autoname/directional/west{
-	network = list("lizardgas")
+	network = list("lizardgas");
+	c_tag = "Lizard Gas - Breakroom"
 	},
 /obj/effect/turf_decal/siding/thinplating_new{
 	dir = 8;
 	color = "#595959"
 	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
 /turf/open/floor/iron{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -2863,7 +2879,8 @@
 "Ov" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/pink/hidden,
 /obj/machinery/camera/autoname/directional/east{
-	network = list("lizardgas")
+	network = list("lizardgas");
+	c_tag = "Exterior - West"
 	},
 /turf/open/floor/asphalt/lavaland/outdoors,
 /area/ruin/thelizardsgas_lavaland)
@@ -3117,20 +3134,6 @@
 	pixel_x = 4;
 	pixel_y = 3
 	},
-/obj/machinery/button/door/directional/east{
-	id = "lizardshutters";
-	pixel_y = 7;
-	name = "Privacy Shutters";
-	req_access = list(9512)
-	},
-/obj/machinery/button/door/directional/east{
-	pixel_y = -3;
-	name = "Entrance Doorbolts";
-	id = "lizardgasbolt";
-	normaldoorcontrol = 1;
-	specialfunctions = 4;
-	req_access = list(9512)
-	},
 /obj/effect/turf_decal/siding/wideplating/dark/corner,
 /obj/effect/turf_decal/siding/thinplating_new{
 	dir = 5;
@@ -3142,6 +3145,13 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
+	},
+/obj/machinery/button/door/directional/east{
+	id = "lizardshutters_breakroom";
+	pixel_y = 0;
+	name = "Privacy Shutters";
+	req_access = list(9512);
+	pixel_x = 24
 	},
 /turf/open/floor/iron/large,
 /area/ruin/thelizardsgas_lavaland)
@@ -3255,27 +3265,31 @@
 /obj/structure/sign/poster/contraband/smoke/directional/west,
 /obj/item/flatpack{
 	board = /obj/item/circuitboard/machine/quantumpad;
-	pixel_x = -6;
-	pixel_y = -5;
+	pixel_x = -7;
+	pixel_y = -3;
 	name = "a conveniently placed quantum pad flatpack"
 	},
 /obj/item/flatpack{
 	board = /obj/item/circuitboard/machine/quantumpad;
 	pixel_x = -7;
-	pixel_y = 7;
+	pixel_y = 8;
 	name = "a conveniently placed quantum pad flatpack"
 	},
-/obj/item/paper{
-	pixel_x = 9;
-	default_raw_text = "Management decided that you guys need to attract more customers in a convenient, efficient, and especially <B>cost-cutting</B> method. Solution? Quantum pads! Honestly, I have no clue what the science behind this stuff is, all I care is that it basically links two places together. So, if you get a customer who you <B>think</B> could <B>potentially</B> bring others along, hand it over to them along with a multitool, make sure it is linked properly. As it turns out that the activity of plasma-operated vehicles on this ice moon is much lower than we predicted, so we're hoping trying to expand our trade with spacefaring folks will bring in that extra revenue we want.<BR><BR>-Supply Manager, Jasper 'Jas' Statham";
-	name = "Quantum Pad Shipment";
-	pixel_y = 7
-	},
 /obj/item/multitool{
-	pixel_x = 8;
-	pixel_y = -7
+	pixel_x = 9;
+	pixel_y = 5
 	},
 /obj/effect/decal/cleanable/wrapping,
+/obj/item/stack/package_wrap{
+	pixel_x = -5;
+	pixel_y = -8
+	},
+/obj/item/paper{
+	pixel_x = 11;
+	default_raw_text = "Management decided that you guys need to attract more customers in a convenient, efficient, and especially <B>cost-cutting</B> method. Solution? Quantum pads! Honestly, I have no clue what the science behind this stuff is, all I care is that it basically links two places together. So, if you get a customer who you <B>think</B> could <B>potentially</B> bring others along, hand it over to them along with a multitool, make sure it is linked properly. As it turns out that the activity of plasma-operated vehicles on this ice moon is much lower than we predicted, so we're hoping trying to expand our trade with spacefaring folks will bring in that extra revenue we want.<BR><BR>-Supply Manager, Jasper 'Jas' Statham";
+	name = "Quantum Pad Shipment";
+	pixel_y = -10
+	},
 /turf/open/floor/carpet/purple,
 /area/ruin/thelizardsgas_lavaland)
 "Uh" = (
@@ -3695,7 +3709,8 @@
 /area/ruin/thelizardsgas_lavaland)
 "ZV" = (
 /obj/machinery/camera/autoname/directional/north{
-	network = list("lizardgas")
+	network = list("lizardgas");
+	c_tag = "Lizard Gas - Plasmatank"
 	},
 /turf/open/floor/engine/plasma{
 	initial_gas_mix = "plasma=30000;TEMP=293.15"

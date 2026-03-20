@@ -95,4 +95,7 @@
 
 /datum/job/cyborg/security/after_spawn(mob/living/spawned, client/player_client)
 	return ..()
+
+/datum/job/cyborg/security/get_lobby_icon()
+	return icon('icons/mob/huds/hud.dmi', "hudcyborg")
 //SPLURT ADDITION END

@@ -101,6 +101,7 @@
 	design_ids += list(
 		"blanksynth",
 		"dominatrixmodule",
+		"hypnoticmodule", //SPLURT ADDITION - BORG HYPNOTIC MODULE
 		"obediencemodule",
 		"borg_upgrade_expand",
 		"borg_upgrade_shrink",

@@ -88,8 +88,8 @@
 	departmental_flags = DEPARTMENT_BITFLAG_SECURITY
 
 /datum/design/wt458_kit
-	name = "WT-458 Conversaion Part Kit (Very Lethal)"
-	desc = "Turn your full auto gun into a 2 rounds burst-firing gun."
+	name = "WT-458 Conversion Kit (Very Lethal)"
+	desc = "Turn your fully automatic gun into a 2 round burst-firing gun."
 	id = "wt458_kit"
 	build_type = PROTOLATHE | AWAY_LATHE
 	materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT * 15,  /datum/material/plastic =SHEET_MATERIAL_AMOUNT * 20, /datum/material/titanium =HALF_SHEET_MATERIAL_AMOUNT * 8)

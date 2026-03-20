@@ -32,9 +32,9 @@
 
 /obj/item/gun/ballistic/automatic/wt458
 	name = "\improper WT-458 Bullpup Rifle"
-	desc = "A 2-rounds burst rifle fielded by Nanotrasen Naval Infantry, it is no longer in use as space combat required higher rate of fire, and this did not meet that demands.\
-		leading to this gun being slowly de-serviced. However, this weapon is exceptionally useful in close range and in maintenance tunnel of Nanotrasen Station<br>\
-		It is Light-weight and can be fired one handed. Uses 4.6x30mm rounds."
+	desc = "A 2-round burst rifle fielded by Nanotrasen Naval Infantry, taken out of service over time due to failing to meet EVA combat's rate of fire demands.\
+		It is still incredibly useful for close range or tight quarters combat, such as on NT Station's infamous maintenance tunnels.<br>\
+		Lightweight and can be fired one-handed. Uses 4.6x30mm rounds."
 	icon = 'modular_zzplurt/icons/obj/weapons/guns/ballistic.dmi'
 	icon_state = "wt458"
 	w_class = WEIGHT_CLASS_BULKY
@@ -56,23 +56,23 @@
 /obj/item/gun/ballistic/automatic/wt458/Initialize(mapload)
 	. = ..()
 	AddElement(/datum/element/examine_lore, \
-		lore_hint = span_notice("You can [EXAMINE_HINT("look closer")] to learn a little more about [src]."), \
-		lore = "The WT-458 is a one-of-a-kind select fire 2 round bursts firearm chambered in low power cartridges.<br>\
-		2-rounds burst was chosen for close quarter combat back when it was common for any particular force to actually occupy and hold any station they captured, rather than destroying it with a nuclear device.\
+		lore_hint = span_notice("You can [EXAMINE_HINT("examine closer")] to learn a little more about [src]."), \
+		lore = "The WT-458 is a unique, select fire, 2 round burst firearm chambered in low power cartridges. Its burst mechanism was chosen for closer quarters station \
+		combat, from back when the capture and occupation of space stations was militarily <i>en vogue</i> rather than destroying them with a nuclear device. \
+		The weapon's small caliber makes it more of a carbine than any assault rifle, but long debates among the marketing team led to the name it holds today.\
 		<br>\
-		This particular design suffered from the same issue as the RTA Prototype CMG, \
-		Nanotrasen also struggled to come to terms with the new way of mass-producing ballistic weapons. The precision parts of the Romulus Technology and the Solarian First Expedition Company (its predecessor) were machined by hand out of solid metal. \
-		with the other parts made of wood. However, the new method was performed by pressing together thin sheets of steel with a stamping machine that would then weld the parts together as it went\
-		Even though the small caliber this uses makes this more of a pistol-caliber carbine than any assault rifle, countless arguments in both the marketing office \
-		and the corporate boardroom about the name meant that something had to give; in this case, the RnD team was ruled in favour of rather than against.<br>\
 		<br>\
-		It's hard to cover up everything about its troubled development, though.<br>\
+		Originally under manufacture by Romulus Technology under the name 'PDW Mk-1', riding off the success of their CMG weapons platform, the weapon features \
+		a straight blowback system which vertically ejects the round safetly behind the user, unlike the CMG Prototypes, which would eject their casings into a left-handed \
+		user's shoulder. The production of the weapon was troubled, even in its early stages, with those in charge demanding tolerances from plastic moulding that \
+		were only realistically achieveable by precisely carved steel; though this pales in comparison to the eventual systematic eradication of the company's workforce.\
 		<br>\
-		Originally in production by Romulus Technology under the name PDW Mk1 right after the success of the CMG. People that were in charge were demanding tolerances from plastic moulding that could really only be achieved by the precision of being carved from solid steel.  \
-		This weapon has a straight blowback system and ejects the round vertically down safetly behind the user, unlike the Prototype CMG which ejected casing directly into the shoulder of the user should they be left handed, although this was addressed by making the rifle a caseless flechette launcher.\
-		The CMG does not exist anymore due to the systematic eradication of the company workers, leaving this the few surviving design from those time.\
-		Nanotrasen RND Department have been unable to mass-produce proper intermediate cartridges. With any rifle properly chambered in such caliber only reserved for the Military Branch \
-		Despite this, the existence of this weapon was a testament to the creativity of the people working for this company." \
+		<br>\
+		Nanotrasen's eventual adoption of the design came with its own problems, severely hampered by the company's struggle to come to terms with modern ballistic \
+		mass-production. Precision parts of the Romulus Technology and the Solarian First Expedition Company (its predecessor) were machined by hand out of solid metal \
+		with other parts carved out of wood, whereas modern firearms utilized stamping machines which would shape and weld thin sheets of steel into shape. \
+		NT's RND have also been unable to mass-produce proper intermediate cartridges, with any rifle chambered in large caliber reserved only for its military branch. \
+		Despite this, its continued existence is a testament to the creativity of the people working for the company." \
 	)
 
 //To whom it may concerns, Yes, this lore is essentially just me  venting out my frustration with working on the CMG for TG which was supposed to be done back in 2025

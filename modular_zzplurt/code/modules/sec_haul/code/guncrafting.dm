@@ -1,6 +1,6 @@
 /obj/item/weaponcrafting/gunkit/wt458_kit
 	name = "WT-458 conversion kit"
-	desc = "Contains all the necessary parts, components and disposable tool. Feels strangely lightweight despite some of the titanium bits"
+	desc = "Contains all the necessary parts, components and disposable tools. Feels strangely lightweight despite some of the titanium bits."
 
 /datum/crafting_recipe/wt458
 	name = "WT-458 Conversion Kit"

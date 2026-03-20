@@ -24,3 +24,11 @@
   - rscadd: new job titles for the Detective and Security Officer.
   kagiatti:
   - bugfix: fixed cybernetic bladder not being flagged as a robotic organ
+2026-03-19:
+  Dwight_LOL:
+  - sound: Replaced the bad sex interaction sounds with new epic ones.
+  SapphoQueer:
+  - bugfix: fugu glands will increase the size of mobs again.
+  elric225:
+  - rscadd: Added several new job titles
+  - spellcheck: Fixed 'cooperate auditor' to 'corporate auditor'

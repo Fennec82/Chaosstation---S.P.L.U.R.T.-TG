@@ -271,7 +271,7 @@
 		"Android",
 		"Robot",
 		"Synthetic",
-    	"Servitor",
+		"Servitor",
 	)
 
 /datum/job/detective

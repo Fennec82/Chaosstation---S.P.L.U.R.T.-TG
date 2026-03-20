@@ -161,7 +161,17 @@
 	SEND_SIGNAL(target, COMSIG_MOB_HANDCUFFED) //BUBBER EDIT ADDITION
 
 	if(dispense)
-		qdel(src)
+		//qdel(src)
+		//SPLURT ADDITION START
+		var/should_delete_source = TRUE
+		if(iscyborg(user))
+			var/mob/living/silicon/robot/borg_user = user
+			if(src in borg_user.model?.modules)
+				should_delete_source = FALSE
+
+		if(should_delete_source)
+			qdel(src)
+		//SPLURT ADDITION END
 
 /obj/item/restraints/handcuffs/equipped(mob/living/user, slot)
 	. = ..()

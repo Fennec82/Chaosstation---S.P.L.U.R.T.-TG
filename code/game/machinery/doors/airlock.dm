@@ -1829,8 +1829,18 @@
 /obj/machinery/door/airlock/proc/user_allowed(mob/user)
 	return (HAS_SILICON_ACCESS(user) && canAIControl(user)) || isAdminGhostAI(user)
 
+/obj/machinery/door/airlock/proc/user_allowed_to_remote_shock(mob/user) //SPLURT EDIT, ORIGINAL: /obj/machinery/door/airlock/proc/shock_restore(mob/user)
+	if(!user_allowed(user)) //SPLURT ADDITION START
+		return FALSE
+	if(iscyborg(user))
+		var/mob/living/silicon/robot/cyborg = user
+		if(cyborg.is_security_cyborg_role())
+			to_chat(user, span_warning("Peacekeeper cyborgs cannot remotely electrify airlocks."))
+			return FALSE
+	return TRUE
+//SPLURT ADDITION END
 /obj/machinery/door/airlock/proc/shock_restore(mob/user)
-	if(!user_allowed(user))
+	if(!user_allowed_to_remote_shock(user)) //SPLURT EDIT, ORIGINAL: if(!user_allowed(user))
 		return
 	if(wires.is_cut(WIRE_SHOCK))
 		to_chat(user, span_warning("Can't un-electrify the airlock - The electrification wire is cut."))
@@ -1838,7 +1848,7 @@
 		set_electrified(MACHINE_NOT_ELECTRIFIED, user)
 
 /obj/machinery/door/airlock/proc/shock_temp(mob/user)
-	if(!user_allowed(user))
+	if(!user_allowed_to_remote_shock(user)) //SPLURT EDIT, ORIGINAL: if(!user_allowed(user))
 		return
 	if(wires.is_cut(WIRE_SHOCK))
 		to_chat(user, span_warning("The electrification wire has been cut."))
@@ -1846,7 +1856,7 @@
 		set_electrified(MACHINE_DEFAULT_ELECTRIFY_TIME, user)
 
 /obj/machinery/door/airlock/proc/shock_perm(mob/user)
-	if(!user_allowed(user))
+	if(!user_allowed_to_remote_shock(user)) //SPLURT EDIT, ORIGINAL: if(!user_allowed(user))
 		return
 	if(wires.is_cut(WIRE_SHOCK))
 		to_chat(user, span_warning("The electrification wire has been cut."))

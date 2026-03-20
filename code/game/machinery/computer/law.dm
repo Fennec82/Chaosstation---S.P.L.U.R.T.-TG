@@ -79,6 +79,10 @@
 /obj/machinery/computer/upload/borg/can_upload_to(mob/living/silicon/robot/B)
 	if(!B || !iscyborg(B))
 		return FALSE
+	//SPLURT ADDITION START
+	if(B.is_security_cyborg_role())
+		return FALSE
+	//SPLURT ADDITION END
 	if(B.scrambledcodes || B.emagged)
 		return FALSE
 	return ..()

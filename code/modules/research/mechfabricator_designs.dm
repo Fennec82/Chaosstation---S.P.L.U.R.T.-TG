@@ -1,3 +1,4 @@
+/* SPLURT REMOVAL
 /datum/design/borg_baton
 	name = "Peacekeeper Baton Module"
 	id = "borg_baton"
@@ -12,3 +13,4 @@
 	category = list(
 		RND_CATEGORY_MECHFAB_CYBORG_MODULES + RND_SUBCATEGORY_MECHFAB_CYBORG_MODULES_ALL
 	)
+	*/

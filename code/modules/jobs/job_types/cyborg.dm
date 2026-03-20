@@ -30,6 +30,16 @@
 	robot_spawn.notify_ai(AI_NOTIFICATION_NEW_BORG)
 	if(player_client)
 		robot_spawn.set_gender(player_client)
+	//SPLURT ADDITION START
+	if(robot_spawn.is_security_cyborg_role())
+		robot_spawn.set_connected_ai(null)
+		robot_spawn.lawupdate = FALSE
+		robot_spawn.laws = new /datum/ai_laws/security_cyborg()
+		robot_spawn.laws.associate(robot_spawn)
+		robot_spawn.show_laws()
+		robot_spawn.log_current_laws()
+		return
+	//SPLURT ADDITION END
 	//SKYRAT EDIT START
 	robot_spawn.set_connected_ai(select_priority_ai())
 	if(robot_spawn.connected_ai)
@@ -57,3 +67,31 @@
 
 /datum/job/cyborg/get_lobby_icon()
 	return icon('icons/mob/huds/hud.dmi', "hudcyborg")
+
+//SPLURT ADDITION START - Security Cyborg Job
+/datum/job/cyborg/security
+	title = JOB_SECURITY_CYBORG
+	description = "Assist Security and the station, follow your laws."
+	alt_titles = list(JOB_SECURITY_CYBORG)
+	total_positions = 2
+	spawn_positions = 2
+	config_tag = "SECURITY_CYBORG"
+	display_order = JOB_DISPLAY_ORDER_SECURITY_CYBORG
+	antagonist_restricted = TRUE
+	restricted_antagonists = list("ALL")
+
+/datum/job/cyborg/security/get_job_ban_check_roles()
+	. = ..()
+	. |= JOB_CYBORG
+
+	var/datum/job_department/security/security_department = SSjob.get_department_type(/datum/job_department/security)
+	if(!security_department)
+		. |= JOB_SECURITY_OFFICER
+		return
+
+	for(var/datum/job/security_job as anything in security_department.get_jobban_jobs())
+		. |= security_job.title
+
+/datum/job/cyborg/security/after_spawn(mob/living/spawned, client/player_client)
+	return ..()
+//SPLURT ADDITION END

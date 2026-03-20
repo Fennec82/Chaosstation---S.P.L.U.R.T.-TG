@@ -552,6 +552,8 @@ GLOBAL_LIST_INIT(skin_tone_names, list(
 /proc/active_free_borgs()
 	. = list()
 	for(var/mob/living/silicon/robot/borg in GLOB.silicon_mobs)
+		if(borg.is_security_cyborg_role()) //SPLURT ADDITION
+			continue //SPLURT ADDITION
 		if(borg.connected_ai || borg.shell)
 			continue
 		if(borg.stat == DEAD)

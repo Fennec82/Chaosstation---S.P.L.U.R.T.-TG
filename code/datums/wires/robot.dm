@@ -31,6 +31,13 @@
 
 /datum/wires/robot/on_pulse(wire, user)
 	var/mob/living/silicon/robot/R = holder
+	//SPLURT ADDITION START
+	if(R.is_security_cyborg_role() && (wire == WIRE_AI || wire == WIRE_LAWSYNC))
+		if(user)
+			R.balloon_alert(user, "protected wiring")
+		return
+	//SPLURT ADDITION END
+
 	switch(wire)
 		if(WIRE_AI) // Pulse to pick a new AI.
 			if(!R.emagged)
@@ -71,6 +78,12 @@
 
 /datum/wires/robot/on_cut(wire, mend, source)
 	var/mob/living/silicon/robot/R = holder
+	//SPLURT ADDITION START
+	if(R.is_security_cyborg_role() && (wire == WIRE_AI || wire == WIRE_LAWSYNC))
+		if(usr)
+			R.balloon_alert(usr, "protected wiring")
+		return
+	//SPLURT ADDITION END
 	switch(wire)
 		if(WIRE_AI) // Cut the AI wire to reset AI control.
 			if(!mend)

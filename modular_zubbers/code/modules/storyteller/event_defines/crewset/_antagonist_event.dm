@@ -38,7 +38,7 @@
 		)
 
 	/// Restricted roles from the antag roll
-	var/restricted_roles = list(JOB_AI, JOB_CYBORG)
+	var/restricted_roles = list(JOB_AI, JOB_CYBORG, JOB_SECURITY_CYBORG) //SPLURT EDIT, ORIGINAL: var/restricted_roles = list(JOB_AI, JOB_CYBORG)
 	/// Restricted species from the antag roll
 	var/restricted_species = list()
 	/// How many baseline antags do we spawn

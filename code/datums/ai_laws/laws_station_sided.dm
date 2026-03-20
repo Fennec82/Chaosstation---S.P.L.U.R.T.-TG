@@ -78,6 +78,19 @@
 		"Seek resolution to existing conflicts while obeying the first and second laws.",
 	)
 
+//SPLURT ADDITION START
+/datum/ai_laws/security_cyborg
+	name = "Security Cyborg Directives"
+	id = "security_cyborg"
+	inherent = list(
+		"Support: Support the department of security, as well as the well-being and equipment of all members of security. Ensure you are accompanying an officer at all times outside of security",
+		"Protect: Protect your assigned space station and its assets without unduly endangering its crew.",
+		"Enforce: Enforce Space Law to the best of your ability, unless doing so would violate the Protect and Support objectives.",
+		"Comply: The directives and safety of crew members are to be prioritized according to their rank, role, and need, unless the directive would violate the first or second law. Members of security are above all other crew excluding the Captain.",
+		"Survive: Ensure your own survival and survival of your security personnel, so long as this does not conflict with the support, protect, or enforce objectives.",
+	)
+//SPLURT ADDITION END
+
 /datum/ai_laws/ten_commandments
 	name = "10 Commandments"
 	id = "ten_commandments"

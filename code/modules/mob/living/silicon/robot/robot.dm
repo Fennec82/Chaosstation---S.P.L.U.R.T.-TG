@@ -162,6 +162,15 @@
 /mob/living/silicon/robot/get_cell()
 	return cell
 
+//SPLURT ADDITION START
+/mob/living/silicon/robot/proc/is_security_cyborg_role()
+	if(job == JOB_SECURITY_CYBORG)
+		return TRUE
+	if(mind?.assigned_role?.title == JOB_SECURITY_CYBORG)
+		return TRUE
+	return FALSE
+
+//SPLURT ADDITION END
 /mob/living/silicon/robot/proc/pick_model()
 	if(model.type != /obj/item/robot_model)
 		return
@@ -185,28 +194,35 @@
 			"Service" = /obj/item/robot_model/service,
 			"Research" = /obj/item/robot_model/sci,//BUBBEREDIT - Addition of Research borgs
 		)
+		/* SPLURT REMOVAL
 		if(!CONFIG_GET(flag/disable_peaceborg))
 			GLOB.cyborg_model_list["Peacekeeper"] = /obj/item/robot_model/peacekeeper
 		if(!CONFIG_GET(flag/disable_secborg) || HAS_TRAIT(SSstation, STATION_TRAIT_HOS_AI)) //Bubber edit HOS AI enable secborg
 			GLOB.cyborg_model_list["Security"] = /obj/item/robot_model/security
-
+		*/
 		for(var/model in GLOB.cyborg_model_list)
 			// Creating the lists here since we know all the model icons will need them right after.
 			GLOB.cyborg_all_models_icon_list[model] = list()
 
-	// Create radial menu for choosing borg model
-	if(!length(GLOB.cyborg_base_models_icon_list))
-		for(var/option in GLOB.cyborg_model_list)
-			var/obj/item/robot_model/model = GLOB.cyborg_model_list[option]
-			var/model_icon = initial(model.cyborg_base_icon)
-			GLOB.cyborg_base_models_icon_list[option] = image(icon = 'modular_skyrat/master_files/icons/mob/robots.dmi', icon_state = model_icon) // SKYRAT EDIT - CARGO BORGS - ORIGINAL: model_icons[option] = image(icon = 'icons/mob/robots.dmi', icon_state = model_icon)
+	var/list/model_options = GLOB.cyborg_model_list.Copy()
+	if(is_security_cyborg_role())
+		if(CONFIG_GET(flag/disable_peaceborg))
+			to_chat(src, span_userdanger("ERROR: Peacekeeper model is currently disabled by server config."))
+			return
+		model_options = list("Peacekeeper" = /obj/item/robot_model/peacekeeper)
+
+	var/list/model_icons = list()
+	for(var/option in model_options)
+		var/obj/item/robot_model/model_type = model_options[option]
+		var/model_icon = initial(model_type.cyborg_base_icon)
+		model_icons[option] = image(icon = 'modular_skyrat/master_files/icons/mob/robots.dmi', icon_state = model_icon)
 	// SKYRAT EDIT END
 
-	var/input_model = show_radial_menu(src, src, GLOB.cyborg_base_models_icon_list, radius = 42)
+	var/input_model = show_radial_menu(src, src, model_icons, radius = 42)
 	if(!input_model || model.type != /obj/item/robot_model)
 		return
 
-	model.transform_to(GLOB.cyborg_model_list[input_model])
+	model.transform_to(model_options[input_model])
 
 /mob/living/silicon/robot/set_name() //we have our name-making proc to call after we make our mmi, just set identifier here
 	if(identifier == 0)
@@ -471,6 +487,14 @@
 
 
 /mob/living/silicon/robot/proc/SetEmagged(new_state)
+//SPLURT ADDITION START
+	if(new_state && is_security_cyborg_role())
+		emagged = FALSE
+		scrambledcodes = FALSE
+		clear_alert(ALERT_HACKED)
+		set_modularInterface_theme()
+		return
+//SPLURT ADDITION END
 	emagged = new_state
 	model.rebuild_modules()
 	update_icons()
@@ -630,6 +654,16 @@
 /mob/living/silicon/robot/updatehealth()
 	..()
 	update_damage_particles()
+//SPLURT ADDITION START
+	if(istype(model, /obj/item/robot_model/peacekeeper))
+		var/health_deficiency = maxHealth - health
+		if(health_deficiency >= 40)
+			add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/damage_slowdown, TRUE, multiplicative_slowdown = health_deficiency / 75)
+		else
+			remove_movespeed_modifier(/datum/movespeed_modifier/damage_slowdown)
+	else
+		remove_movespeed_modifier(/datum/movespeed_modifier/damage_slowdown)
+//SPLURT ADDITION END
 	if(!model.breakable_modules)
 		return
 
@@ -1048,6 +1082,12 @@
 	charge_cell.Invoke(cell, seconds_per_tick)
 
 /mob/living/silicon/robot/proc/set_connected_ai(new_ai)
+//SPLURT ADDITION START
+	if(new_ai && is_security_cyborg_role())
+		if(client)
+			to_chat(src, span_warning("Security cyborg uplink restrictions prevent AI linkage."))
+		return connected_ai
+//SPLURT ADDITION END
 	if(connected_ai == new_ai)
 		return
 	. = connected_ai

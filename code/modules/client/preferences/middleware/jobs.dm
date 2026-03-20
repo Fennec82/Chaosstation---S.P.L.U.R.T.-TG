@@ -143,7 +143,7 @@
 	var/list/data = list()
 
 	for (var/datum/job/job as anything in SSjob.all_occupations)
-		if (is_banned_from(user.client?.ckey, job.title))
+		if (is_banned_from(user.client?.ckey, job.get_job_ban_check_roles())) //SPLURT EDIT, ORIGINAL: if (is_banned_from(user.client?.ckey, job.title))
 			data += job.title
 
 	return data

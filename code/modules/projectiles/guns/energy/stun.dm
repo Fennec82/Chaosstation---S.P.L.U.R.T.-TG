@@ -16,8 +16,10 @@
 /obj/item/gun/energy/e_gun/advtaser/cyborg
 	name = "cyborg taser"
 	desc = "An integrated hybrid taser that draws directly from a cyborg's power cell. The weapon contains a limiter to prevent the cyborg's power cell from overheating."
+	ammo_type = list(/obj/item/ammo_casing/energy/disabler/cyborg, /obj/item/ammo_casing/energy/electrode/cyborg) //SPLURT ADDITION
 	can_charge = FALSE
 	use_cyborg_cell = TRUE
+	pin = /obj/item/firing_pin/alert_level/blue //SPLURT ADDITION
 
 /obj/item/gun/energy/e_gun/advtaser/cyborg/Initialize(mapload)
 	. = ..()

@@ -80,5 +80,11 @@
 	picturesync()
 
 /mob/living/silicon/robot/post_lawchange(announce = TRUE)
+//SPLURT ADDITION START
+	if(is_security_cyborg_role())
+		laws = new /datum/ai_laws/security_cyborg()
+		laws.associate(src)
+		return
+//SPLURT ADDITION END
 	. = ..()
 	addtimer(CALLBACK(src, PROC_REF(logevent),"Law update processed."), 0, TIMER_UNIQUE | TIMER_OVERRIDE) //Post_Lawchange gets spammed by some law boards, so let's wait it out

@@ -211,6 +211,12 @@
 /datum/job/proc/special_check_latejoin(client/latejoin)
 	return TRUE
 
+//SPLURT ADDITION START
+/// Returns a list of role-ban entries that should block this job.
+/// By default this only checks the job's own title.
+/datum/job/proc/get_job_ban_check_roles()
+	return list(title)
+//SPLURT ADDITION END
 
 /mob/living/proc/on_job_equipping(datum/job/equipping, client/player_client)
 	return

@@ -25,6 +25,13 @@
 /obj/item/ammo_casing/energy/electrode/ai_turrets
 	projectile_type = /obj/projectile/energy/electrode/ai_turrets
 
+//SPLURT ADDITION START
+/obj/item/ammo_casing/energy/electrode/cyborg
+	projectile_type = /obj/projectile/energy/electrode/sec
+	e_cost = STANDARD_CELL_CHARGE
+	delay = 1 SECONDS
+//SPLURT ADDITION END
+
 /obj/item/ammo_casing/energy/disabler
 	projectile_type = /obj/projectile/beam/disabler
 	select_name = "disable"
@@ -40,6 +47,11 @@
 
 /obj/item/ammo_casing/energy/disabler/hos
 	e_cost = LASER_SHOTS(20, STANDARD_CELL_CHARGE * 1.2)
+
+//SPLURT ADDITION START
+/obj/item/ammo_casing/energy/disabler/cyborg
+	delay = 1 SECONDS
+//SPLURT ADDITION END
 
 /obj/item/ammo_casing/energy/disabler/smoothbore
 	projectile_type = /obj/projectile/beam/disabler/smoothbore

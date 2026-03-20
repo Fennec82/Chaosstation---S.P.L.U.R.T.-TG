@@ -424,6 +424,14 @@ GLOBAL_LIST_INIT(blacklisted_borg_hats, typecacheof(list( //Hats that don't real
 /mob/living/silicon/robot/emag_act(mob/user, obj/item/card/emag/emag_card)
 	if(user == src)//To prevent syndieborgs from emagging themselves
 		return FALSE
+	//SPLURT EDIT START
+	if(is_security_cyborg_role())
+		if(user)
+			balloon_alert(user, "tamper protections active")
+		to_chat(src, span_warning("ALERT: Unauthorized tamper attempt blocked."))
+		log_silicon("EMAG: [key_name(user)] attempted to emag protected security cyborg [key_name(src)]")
+		return FALSE
+	//SPLURT EDIT END
 	if(!opened)//Cover is closed
 		if(locked)
 			balloon_alert(user, "cover lock destroyed")

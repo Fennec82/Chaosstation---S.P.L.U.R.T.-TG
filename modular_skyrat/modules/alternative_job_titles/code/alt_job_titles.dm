@@ -316,6 +316,7 @@
 		"Crew Supervisor",
 		"Employment Officer",
 		"Executive Officer",
+		"Head of Fursonnel",
 	)
 
 /datum/job/head_of_security

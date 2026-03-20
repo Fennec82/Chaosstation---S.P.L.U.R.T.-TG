@@ -73,6 +73,7 @@
 	title = JOB_SECURITY_CYBORG
 	job_spawn_title = JOB_SECURITY_OFFICER
 	description = "Assist Security and the station, follow your laws."
+	supervisors = SUPERVISOR_HOS
 	alt_titles = list(JOB_SECURITY_CYBORG)
 	total_positions = 2
 	spawn_positions = 2
@@ -95,7 +96,4 @@
 
 /datum/job/cyborg/security/after_spawn(mob/living/spawned, client/player_client)
 	return ..()
-
-/datum/job/cyborg/security/get_lobby_icon()
-	return icon('icons/mob/huds/hud.dmi', "hudcyborg")
 //SPLURT ADDITION END

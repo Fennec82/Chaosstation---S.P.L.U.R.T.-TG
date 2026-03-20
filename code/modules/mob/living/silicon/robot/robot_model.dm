@@ -877,7 +877,7 @@
 	..()
 	//SPLURT EDIT START
 	to_chat(loc, span_userdanger("While you have chosen the security model, you are an auxiliary officer. You follow Space Law and your assigned objectives. \
-	 While you may not be connected to the AI, you are still a machine. Keep this in mind when entering combat in support of your fellow officers. You should pull your punches if you need to."))
+	While you may not be connected to the AI, you are still a machine. Keep this in mind when entering combat in support of your fellow officers. You should pull your punches if you need to."))
 	//SPLURT EDIT END
 /obj/item/robot_model/security
 	name = "Security"

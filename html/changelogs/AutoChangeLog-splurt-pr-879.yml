@@ -1,0 +1,10 @@
+author: "projectkepler-ru"
+delete-after: True
+changes:
+  - rscadd: "WT-458, a variant upgrade kit for the WT-550 which can be obtained from ballistic research"
+  - balance: "4.8x30mm are now more effective, having +10% AP"
+  - balance: "MPS5 VIG magazine only accept the round it started off with, however, you get more mag in the security smg crate"
+  - balance: "9x17mm IHDF and Rubber are now more effective"
+  - balance: "all 9x17mm SMG magazine requires plastic to print, making it more inline with other advanced ballistic options"
+  - balance: "MPS5 VIG now fire slower at 0.21 SECONDS autofire  but is better compared to 0.3 SECONDS autofire of WT-550"
+  - sound: "added a new unique firing sound from paradise station, attribution unknown as I could not find out where does it come from"

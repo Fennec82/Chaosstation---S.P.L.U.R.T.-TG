@@ -1,0 +1,4 @@
+author: "UvvU"
+delete-after: True
+changes:
+  - bugfix: "People in the same container are now allowed to use verbs on eachother."

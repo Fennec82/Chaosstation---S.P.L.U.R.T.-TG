@@ -31,7 +31,6 @@
 
 /datum/wires/robot/on_pulse(wire, user)
 	var/mob/living/silicon/robot/R = holder
-
 	switch(wire)
 		if(WIRE_AI) // Pulse to pick a new AI.
 			if(!R.emagged)

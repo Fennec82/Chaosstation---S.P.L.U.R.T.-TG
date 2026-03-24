@@ -19,7 +19,7 @@
 		"Cuntpitain",
 		"Senator",
 		"Station Director",
-		"Station Governor"
+		"Station Governor",
 		"Station Master",
 		"Station Mistress",
 		"Station Overseer",
@@ -204,6 +204,8 @@
 	var/list/extra_titles = list(
 		"Bar Owner",
 		"Barmaid",
+		"Drinklady",
+		"Drinkman",
 		"Expediter",
 		"Sommelier",
 		// "Mixologist",
@@ -450,7 +452,7 @@
 	var/list/extra_titles = list(
 		"Cinder Dick",
 		"Cooperate Auditor",
-		"Counterintelligence Agent"
+		"Counterintelligence Agent",
 		"Forensic Investigator",
 		"RHIB Agent",
 		"Slutective",

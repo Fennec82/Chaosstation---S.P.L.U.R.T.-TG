@@ -39,10 +39,36 @@
 	icon_state = "co_coat"
 
 //SPLURT ADDITION START
-/obj/item/clothing/suit/armor/vest/secjacket/worn_overlays(mutable_appearance/standing, isinhands, icon_file)
-	. = ..()
+/obj/item/clothing/suit/armor/vest/secjacket/corrections_officer/worn_overlays(mutable_appearance/standing, isinhands = FALSE, icon_file, mutant_styles = NONE)
+	// Keep co_coat visuals while using an emissive state that actually exists.
+	. = list()
+	if(blocks_emissive != EMISSIVE_BLOCK_NONE)
+		. += emissive_blocker(standing.icon, standing.icon_state, src)
+	SEND_SIGNAL(src, COMSIG_ITEM_GET_WORN_OVERLAYS, ., standing, isinhands, icon_file)
+
 	if(!isinhands)
-		. += emissive_appearance(icon_file, "secjacket-emissive", src, alpha = src.alpha, effect_type = EMISSIVE_SPECULAR)
+		. += emissive_appearance('icons/mob/clothing/suits/armor.dmi', "secjacket-emissive", src, alpha = src.alpha, effect_type = EMISSIVE_SPECULAR)
+
+	if(isinhands)
+		return
+
+	if(damaged_clothes)
+		var/damagefile2use = (mutant_styles & STYLE_TAUR_ALL) ? 'modular_skyrat/master_files/icons/mob/64x32_item_damage.dmi' : 'icons/effects/item_damage.dmi'
+		. += mutable_appearance(damagefile2use, "damaged[blood_overlay_type]")
+	if(GET_ATOM_BLOOD_DNA_LENGTH(src))
+		var/bloodfile2use = (mutant_styles & STYLE_TAUR_ALL) ? 'modular_skyrat/master_files/icons/mob/64x32_blood.dmi' : 'icons/effects/blood.dmi'
+		. += mutable_appearance(bloodfile2use, "[blood_overlay_type]blood")
+
+	var/mob/living/carbon/human/wearer = loc
+	if(!ishuman(wearer) || !wearer.w_uniform)
+		return
+	var/obj/item/clothing/under/undershirt = wearer.w_uniform
+	if(!istype(undershirt) || !LAZYLEN(undershirt.attached_accessories))
+		return
+
+	var/obj/item/clothing/accessory/displayed = undershirt.attached_accessories[1]
+	if(displayed.above_suit && undershirt.accessory_overlay)
+		. += undershirt.accessory_overlay
 //SPLURT ADDITION END
 
 // LOCKER

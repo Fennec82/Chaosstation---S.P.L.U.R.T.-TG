@@ -115,3 +115,9 @@
 	icon = 'modular_skyrat/modules/borgs/icons/robot_items.dmi'
 	icon_state = "module_lust"
 	custom_price = 0
+
+/datum/techweb_node/augmentation/New()
+	. = ..()
+	design_ids += list(
+		"hypnoticmodule",
+	)

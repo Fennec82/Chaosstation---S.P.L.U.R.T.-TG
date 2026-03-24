@@ -240,17 +240,6 @@
 
 /obj/item/robot_model/proc/transform_to(new_config_type, forced = FALSE, transform = TRUE)
 	var/mob/living/silicon/robot/cyborg = loc
-	//SPLURT ADDITION START
-	if(!forced && istype(cyborg))
-		if(cyborg.is_security_cyborg_role())
-			if(new_config_type != /obj/item/robot_model && !ispath(new_config_type, /obj/item/robot_model/peacekeeper))
-				to_chat(cyborg, span_warning("Security cyborgs are locked to the Peacekeeper module."))
-				return
-		else if(ispath(new_config_type, /obj/item/robot_model/peacekeeper))
-			to_chat(cyborg, span_warning("Only security cyborgs can use the Peacekeeper module."))
-			return
-	//SPLURT ADDITION END
-
 	var/obj/item/robot_model/new_model = new new_config_type(cyborg)
 	if(!new_model.be_transformed_to(src, forced))
 		qdel(new_model)
@@ -845,12 +834,6 @@
 /obj/item/robot_model/peacekeeper
 	name = "Peacekeeper"
 	basic_modules = list(
-		//SPLURT EDIT START
-		/obj/item/melee/baton/security/loaded,
-		/obj/item/gun/energy/e_gun/advtaser/cyborg,
-		/obj/item/assembly/flash/cyborg,
-		/obj/item/extinguisher/mini,
-		/* SPLURT EDIT END, ORIGNIAL:
 		/obj/item/assembly/flash/cyborg,
 		/obj/item/rsf/cookiesynth,
 		/obj/item/harmalarm/bubbers, //BUBBERTATION CHANGE
@@ -859,38 +842,21 @@
 		/obj/item/borg/cyborghug/peacekeeper,
 		/obj/item/extinguisher,
 		/obj/item/borg/projectile_dampen,
-		*/
 		/obj/item/restraints/handcuffs/cable/zipties //SPLURT CHANGE - ADDS Zipties to Peacekeeper Model
 	)
-	/*SPLURT REMOVAL
 	emag_modules = list(
 		/obj/item/reagent_containers/borghypo/peace/hacked,
 	)
-	*/
 	cyborg_base_icon = "peace"
 	model_select_icon = "standard"
-	radio_channels = list(RADIO_CHANNEL_SECURITY) //SPLURT ADDITION
 	model_traits = list(TRAIT_PUSHIMMUNE)
 	hat_offset = list("north" = list(0, -2), "south" = list(0, -2), "east" = list(1, -2), "west" = list(-1, -2))
 
 /obj/item/robot_model/peacekeeper/do_transform_animation()
 	..()
-	//SPLURT EDIT START
-	to_chat(loc, span_userdanger("While you have chosen the security model, you are an auxiliary officer. You follow Space Law and your assigned objectives. \
-	While you may not be connected to the AI, you are still a machine. Keep this in mind when entering combat in support of your fellow officers. You should pull your punches if you need to."))
+	to_chat(loc, span_userdanger("Under Safeguard, you are an enforcer of the PEACE and preventer of HARM. \
+	You are not a security member and you are expected to follow orders and prevent harm above all else. Space law means nothing to you.")) // SKYRAT EDIT Changes verbiage off ASIMOV/HUMAN Focus
 
-/obj/item/robot_model/peacekeeper/respawn_consumable(mob/living/silicon/robot/cyborg, coeff = 1)
-	..()
-	var/obj/item/gun/energy/e_gun/advtaser/cyborg/taser = locate(/obj/item/gun/energy/e_gun/advtaser/cyborg) in basic_modules
-	if(taser)
-		if(taser.cell.charge < taser.cell.maxcharge)
-			. = TRUE
-			var/obj/item/ammo_casing/energy/shot = taser.ammo_type[taser.select]
-			taser.cell.give(shot.e_cost * coeff)
-			taser.update_appearance()
-		else
-			taser.charge_timer = 0
-//SPLURT EDIT END
 /obj/item/robot_model/security
 	name = "Security"
 	basic_modules = list(

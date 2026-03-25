@@ -1,7 +1,0 @@
-author: "orcawa"
-delete-after: True
-changes:
-  - rscadd: "various role alt-titles"
-  - qol: "reorganized role alt-titles"
-  - bugfix: "two instances of role alt-title duplicates"
-  - spellcheck: "some role alt-titles"

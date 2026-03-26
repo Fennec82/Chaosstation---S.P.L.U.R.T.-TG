@@ -144,12 +144,11 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	if(!other_ipod_ref)
 		return
 	var/obj/item/clothing/ears/ipod/other_ipod = other_ipod_ref.resolve()
-	if(other_ipod.other_ipod_ref != src) // other headphones have linked to another set of headphones, unlink it locally
-		other_ipod_ref = null
-		return
 	if(!QDELETED(other_ipod) && istype(other_ipod)) // other headphones ref is valid
-		if(!isnull(other_ipod.music_player.active_song_sound))
+		if(other_ipod.playing && !isnull(other_ipod.music_player.active_song_sound))
 			other_ipod.music_player.unlisten_all()
+		other_ipod.playing = FALSE
+		other_ipod.update_icon()
 		if(do_unlink)
 			other_ipod.other_ipod_ref = null
 	if(do_unlink)
@@ -159,30 +158,32 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	if(!other_ipod_ref)
 		return
 	var/obj/item/clothing/ears/ipod/other_ipod = other_ipod_ref.resolve()
-	if(other_ipod.other_ipod_ref != src) // other headphones have linked to another set of headphones, unlink it locally
+	if(QDELETED(other_ipod) || !istype(other_ipod)) // other headphones ref has been deleted
 		other_ipod_ref = null
 		return
-	if(!QDELETED(other_ipod) && istype(other_ipod) && other_ipod.is_worn) // other headphones ref is valid
-		var/mob/living/carbon/human/wearer = other_ipod.loc
-		if(!istype(wearer))
-			return
-		if(!isnull(other_ipod.music_player.active_song_sound))
-			other_ipod.music_player.unlisten_all()
-		GLOB.ipod_last_play = world.time
-		other_ipod.playing = TRUE
-		other_ipod.music_player.selection.song_path = other_ipod.curfile = curfile
-		other_ipod.music_player.selection.song_length = 12000 // 20 minutes to force a loop. File size determines server load, not audio length. Low bitrate .ogg files can run long and have their uses as ambient sound.
-		other_ipod.music_player.start_music(wearer)
+	if(!other_ipod.is_worn)
+		return
+	var/mob/living/carbon/human/wearer = other_ipod.loc
+	if(!istype(wearer))
+		return
+	if(other_ipod.playing && !isnull(other_ipod.music_player.active_song_sound))
+		other_ipod.music_player.unlisten_all()
+	GLOB.ipod_last_play = world.time
+	other_ipod.playing = TRUE
+	other_ipod.music_player.selection.song_path = other_ipod.curfile = curfile
+	other_ipod.music_player.selection.song_length = 12000 // 20 minutes to force a loop. File size determines server load, not audio length. Low bitrate .ogg files can run long and have their uses as ambient sound.
+	other_ipod.music_player.start_music(wearer)
+	other_ipod.update_icon()
 
 /obj/item/clothing/ears/ipod/attackby(obj/item/attacking_item, mob/user, list/modifiers, list/attack_modifiers)
 	if(istype(attacking_item, /obj/item/clothing/ears/ipod))
 		var/obj/item/clothing/ears/ipod/other_ipod
 		if(other_ipod_ref) // if there exists a linked headphones, unlink it
 			other_ipod = other_ipod_ref.resolve()
-			if(!QDELETED(other_ipod) && istype(other_ipod) && other_ipod.other_ipod_ref == src)
+			if(!QDELETED(other_ipod) && istype(other_ipod) && other_ipod != attacking_item) // other headphones is valid
 				if(!isnull(other_ipod.music_player.active_song_sound)) // turn off music
 					other_ipod.music_player.unlisten_all()
-					to_chat(user, span_warning("The shared headphones link was disconnected."))
+				to_chat(user, span_warning("The shared headphones link was replaced."))
 				other_ipod.other_ipod_ref = null
 		other_ipod = attacking_item
 		other_ipod_ref = WEAKREF(other_ipod)

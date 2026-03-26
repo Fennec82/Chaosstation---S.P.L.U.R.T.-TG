@@ -76,6 +76,10 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 			to_chat(user, span_warning("You've uploaded a new track too recently, try again later!"))
 			return
 
+	if(world.time < uploadattempt + 10 SECONDS) // automatically cancel any attempt to reattempt an upload in less than 10 seconds
+		to_chat(user, span_warning("Please wait while attempting to reupload."))
+		return
+
 	uploadattempt = world.time
 	playsound(loc, 'sound/misc/menu/ui_select1.ogg', 100, FALSE, -1)
 	var/infile = input(user, "CHOOSE A NEW SONG", src) as null|file
@@ -116,6 +120,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 
 	lastfilechange = world.time
 	GLOB.ipod_last_upload = world.time
+	playsound(loc, 'sound/misc/escape_menu/esc_close.ogg', 100, FALSE, -1)
 
 	var/datum/track/new_song = new()
 	new_song.song_name = "custom track"

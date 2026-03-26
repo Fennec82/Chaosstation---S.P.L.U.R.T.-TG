@@ -10,7 +10,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	inhand_icon_state = "headphones"
 	slot_flags = ITEM_SLOT_EARS | ITEM_SLOT_HEAD | ITEM_SLOT_NECK		//Fluff item, put it whereever you want!
 	actions_types = list(/datum/action/item_action/upload_ipod, /datum/action/item_action/toggle_ipod)
-	custom_price = 60
+	custom_price = PAYCHECK_CREW * 10
 
 	/// The current file path
 	var/curfile

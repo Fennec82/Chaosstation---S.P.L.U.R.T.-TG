@@ -137,7 +137,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		return
 	if(!playing)
 		if(curfile)
-			if(world.time < GLOB.ipod_last_play + 10 SECONDS)
+			if(world.time < GLOB.ipod_last_play + 7 SECONDS)
 				to_chat(user, span_warning("Headphones are buffering..."))
 				return
 			GLOB.ipod_last_play = world.time

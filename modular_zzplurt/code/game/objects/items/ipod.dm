@@ -27,7 +27,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	/// What actually plays music to us
 	var/datum/jukebox/single_mob/music_player
 	/// Current song track selected
-	VAR_FINAL/datum/track/current_song
+	VAR_FINAL/datum/track/current_song = null
 
 /obj/item/clothing/ears/ipod/Initialize(mapload)
 	. = ..()
@@ -42,7 +42,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	playing = FALSE
 	is_worn = FALSE
 	if(current_song)
-		qdel(current_song)
+		QDEL_NULL(current_song)
 	stop_other_headphones(TRUE)
 	QDEL_NULL(music_player)
 	return ..()
@@ -190,9 +190,13 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	GLOB.ipod_last_play = world.time
 	other_ipod.playing = TRUE
 	other_ipod.curfile = curfile
+	var/datum/track/new_song = new()
+	new_song.song_name = current_song.song_name
+	new_song.song_path = current_song.song_path
+	new_song.song_length = current_song.song_length
 	if(other_ipod.current_song)
 		qdel(other_ipod.current_song)
-	other_ipod.current_song = current_song
+	other_ipod.current_song = new_song
 	other_ipod.music_player.selection = other_ipod.current_song
 	other_ipod.music_player.start_music(wearer)
 	other_ipod.update_icon()

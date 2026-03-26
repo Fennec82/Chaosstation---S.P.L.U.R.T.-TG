@@ -147,14 +147,14 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	if(!QDELETED(other_ipod) && istype(other_ipod)) // other headphones ref is valid
 		if(other_ipod.playing && !isnull(other_ipod.music_player.active_song_sound))
 			other_ipod.music_player.unlisten_all()
-		if(other_ipod.is_worn)
-			var/mob/living/carbon/human/wearer = other_ipod.loc
-			if(istype(wearer))
-				to_chat(wearer, span_notice("The headphone's connection suddenly disconnects."))
 		other_ipod.playing = FALSE
 		other_ipod.update_icon()
 		if(do_unlink)
 			other_ipod.other_ipod_ref = null
+			if(other_ipod.is_worn)
+				var/mob/living/carbon/human/wearer = other_ipod.loc
+				if(istype(wearer))
+					to_chat(wearer, span_notice("The headphone's connection suddenly disconnects."))
 	if(do_unlink)
 		other_ipod_ref = null
 

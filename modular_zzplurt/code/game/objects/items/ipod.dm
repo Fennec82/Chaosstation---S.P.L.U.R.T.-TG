@@ -176,22 +176,18 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	other_ipod.update_icon()
 
 /obj/item/clothing/ears/ipod/proc/unlink_refs()
+	if(playing && !isnull(music_player.active_song_sound)) // turn off music
+		playing = FALSE
+		music_player.unlisten_all()
+		update_icon()
 	if(!other_ipod_ref) // if there doesn't exists any linked headphones
 		return
 	var/obj/item/clothing/ears/ipod/other_ipod = other_ipod_ref.resolve()
-	if(!QDELETED(other_ipod) && istype(other_ipod)) // other headphones is valid
-		if(other_ipod.playing && !isnull(other_ipod.music_player.active_song_sound)) // turn off music
+	if(!QDELETED(other_ipod) && istype(other_ipod))
+		if(other_ipod.playing && !isnull(other_ipod.music_player.active_song_sound)) // turn off music for other headphones
 			other_ipod.playing = FALSE
 			other_ipod.music_player.unlisten_all()
 			other_ipod.update_icon()
-		if(other_ipod.other_ipod_ref)
-			var/obj/item/clothing/ears/ipod/other_other_ipod = other_ipod.other_ipod_ref.resolve()
-			if(!QDELETED(other_other_ipod) && istype(other_other_ipod)) // other other headphones is valid
-				if(other_other_ipod.playing && !isnull(other_other_ipod.music_player.active_song_sound)) // turn off music
-					playing = FALSE
-					other_other_ipod.music_player.unlisten_all()
-					other_other_ipod.update_icon()
-				other_other_ipod.other_ipod_ref = null
 		other_ipod.other_ipod_ref = null
 	other_ipod_ref = null
 

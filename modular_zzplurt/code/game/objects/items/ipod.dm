@@ -132,6 +132,15 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 
 	var/obj/item/clothing/ears/ipod/other_ipod = other_ipod_ref.resolve()
 	if(!QDELETED(other_ipod) && istype(other_ipod)) // other headphones ref is valid, prepare it for playback as well
+		var/datum/track/new_song_other = new()
+		other_ipod.stop_other_headphones()
+		new_song_other.song_name = current_song.song_name
+		new_song_other.song_path = current_song.song_path
+		new_song_other.song_length = current_song.song_length
+		if(other_ipod.current_song)
+			qdel(other_ipod.current_song)
+		other_ipod.current_song = new_song_other
+		other_ipod.curfile = curfile
 		if(other_ipod.is_worn)
 			var/mob/living/carbon/human/wearer = other_ipod.loc
 			if(istype(wearer))

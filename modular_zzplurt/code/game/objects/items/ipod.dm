@@ -175,17 +175,35 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	other_ipod.music_player.start_music(wearer)
 	other_ipod.update_icon()
 
+/obj/item/clothing/ears/ipod/proc/unlink_refs()
+	if(!other_ipod_ref) // if there doesn't exists any linked headphones
+		return
+	var/obj/item/clothing/ears/ipod/other_ipod = other_ipod_ref.resolve()
+	if(!QDELETED(other_ipod) && istype(other_ipod)) // other headphones is valid
+		if(other_ipod.playing && !isnull(other_ipod.music_player.active_song_sound)) // turn off music
+			other_ipod.playing = FALSE
+			other_ipod.music_player.unlisten_all()
+			other_ipod.update_icon()
+		if(other_ipod_ref)
+			var/obj/item/clothing/ears/ipod/other_other_ipod = other_ipod_ref.resolve()
+			if(!QDELETED(other_other_ipod) && istype(other_other_ipod)) // other other headphones is valid
+				if(other_other_ipod.playing && !isnull(other_other_ipod.music_player.active_song_sound)) // turn off music
+					playing = FALSE
+					other_other_ipod.music_player.unlisten_all()
+					other_other_ipod.update_icon()
+				other_other_ipod.other_ipod_ref = null
+		other_ipod.other_ipod_ref = null
+	other_ipod_ref = null
+
 /obj/item/clothing/ears/ipod/attackby(obj/item/attacking_item, mob/user, list/modifiers, list/attack_modifiers)
 	if(istype(attacking_item, /obj/item/clothing/ears/ipod))
 		var/obj/item/clothing/ears/ipod/other_ipod
 		if(other_ipod_ref) // if there exists a linked headphones, unlink it
 			other_ipod = other_ipod_ref.resolve()
-			if(!QDELETED(other_ipod) && istype(other_ipod) && other_ipod != attacking_item) // other headphones is valid
-				if(!isnull(other_ipod.music_player.active_song_sound)) // turn off music
-					other_ipod.music_player.unlisten_all()
-				to_chat(user, span_warning("The shared headphones link was replaced."))
-				other_ipod.other_ipod_ref = null
+			if(!QDELETED(other_ipod) && istype(other_ipod)) // other headphones is valid
+				other_ipod.unlink_refs()
 		other_ipod = attacking_item
+		other_ipod.unlink_refs()
 		other_ipod_ref = WEAKREF(other_ipod)
 		other_ipod.other_ipod_ref = WEAKREF(src)
 		balloon_alert(user, "successfully linked headphones")

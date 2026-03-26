@@ -121,6 +121,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	lastfilechange = world.time
 	GLOB.ipod_last_upload = world.time
 	playsound(loc, 'sound/misc/escape_menu/esc_close.ogg', 100, FALSE, -1)
+	to_chat(user, span_warning("The song has been uploaded, ready to play!"))
 
 	var/datum/track/new_song = new()
 	new_song.song_name = "custom track"

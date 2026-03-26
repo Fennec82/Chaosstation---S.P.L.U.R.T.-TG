@@ -1,4 +1,10 @@
+/mob/living/silicon/robot
+	/// Set to TRUE when this cyborg has been fired from its security role via the communications console.
+	var/was_fired_from_security_role = FALSE
+
 /mob/living/silicon/robot/proc/is_security_cyborg_role()
+	if(was_fired_from_security_role)
+		return FALSE
 	if(job == JOB_SECURITY_CYBORG)
 		return TRUE
 	if(mind?.assigned_role?.title == JOB_SECURITY_CYBORG)
@@ -383,6 +389,10 @@
 		/obj/item/borg/projectile_dampen,
 		/obj/item/restraints/handcuffs/cable/zipties
 	)
+	cyborg_base_icon = "peace"
+	model_select_icon = "standard"
+	model_traits = list(TRAIT_PUSHIMMUNE)
+	hat_offset = list("north" = list(0, -2), "south" = list(0, -2), "east" = list(1, -2), "west" = list(-1, -2))
 
 /obj/item/robot_model/security
 	name = "Security"
@@ -397,6 +407,10 @@
 		/obj/item/extinguisher/mini,
 	)
 	radio_channels = list(RADIO_CHANNEL_SECURITY)
+	cyborg_base_icon = "sec"
+	model_select_icon = "security"
+	model_traits = list(TRAIT_PUSHIMMUNE)
+	hat_offset = list("north" = list(0, 3), "south" = list(0, 3), "east" = list(1, 3), "west" = list(-1, 3))
 
 /obj/item/robot_model/security/respawn_consumable(mob/living/silicon/robot/cyborg, coeff = 1)
 	. = ..()
@@ -450,6 +464,21 @@
 	display_order = JOB_DISPLAY_ORDER_SECURITY_CYBORG
 	antagonist_restricted = TRUE
 	restricted_antagonists = list("ALL")
+
+/* Commented out for now, but config changes should be made to accomadate this. If you see this comment and it's fullmerged, I forgot, oops!
+/datum/job/cyborg/security/New()
+	. = ..()
+	// Collapse all positions to zero and hide the job entirely if the secborg role is globally disabled.
+	if(CONFIG_GET(flag/disable_secborg))
+		total_positions = 0
+		spawn_positions = 0
+		job_flags |= JOB_HIDE_WHEN_EMPTY
+
+/datum/job/cyborg/security/special_check_latejoin(client/latejoin)
+	if(CONFIG_GET(flag/disable_secborg))
+		return FALSE
+	return ..()
+*/
 
 /datum/job/cyborg/after_spawn(mob/living/spawned, client/player_client)
 	if(iscyborg(spawned))

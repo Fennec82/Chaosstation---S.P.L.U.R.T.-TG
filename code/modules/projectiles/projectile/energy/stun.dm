@@ -140,10 +140,6 @@
 		return FALSE
 	if(istype(with_what, /obj/item/gun/energy))
 		var/obj/item/gun/energy/taser_gun = with_what
-		//SPLURT ADDITION START
-		if(istype(taser_gun, /obj/item/gun/energy/e_gun/advtaser/cyborg))
-			return TRUE
-		//SPLURT ADDITION END
 		if(!taser_gun.cell?.use(energy_drain * seconds_between_ticks))
 			return FALSE
 		taser_gun.update_appearance()

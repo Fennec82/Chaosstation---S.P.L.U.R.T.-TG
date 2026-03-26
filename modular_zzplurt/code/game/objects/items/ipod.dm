@@ -130,6 +130,13 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		qdel(current_song)
 	current_song = new_song
 
+	var/obj/item/clothing/ears/ipod/other_ipod = other_ipod_ref.resolve()
+	if(!QDELETED(other_ipod) && istype(other_ipod)) // other headphones ref is valid, prepare it for playback as well
+		if(other_ipod.is_worn)
+			var/mob/living/carbon/human/wearer = other_ipod.loc
+			if(istype(wearer))
+				to_chat(wearer, span_warning("A new song has been uploaded."))
+
 /obj/item/clothing/ears/ipod/proc/toggle(owner)
 	var/mob/user = owner
 	if(user.stat != CONSCIOUS || !is_worn)

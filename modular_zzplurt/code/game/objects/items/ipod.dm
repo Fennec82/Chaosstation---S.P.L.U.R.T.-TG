@@ -72,7 +72,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 			music_player.unlisten_all()
 	if(lastfilechange)
 		if(world.time < lastfilechange + 3 MINUTES)
-			say("You've uploaded a new track too recently, try again later!")
+			to_chat(user, span_warning("You've uploaded a new track too recently, try again later!"))
 			return
 
 	uploadattempt = world.time
@@ -80,11 +80,11 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	var/infile = input(user, "CHOOSE A NEW SONG", src) as null|file
 
 	if(world.time > uploadattempt + 30 SECONDS) // automatically cancel any attempt to upload if taken more than 30 seconds
-		say("Your connect was timed out, try uploading again!")
+		to_chat(user, span_warning("Your connect was timed out, try uploading again!"))
 		return
 
 	if(world.time < GLOB.ipod_last_upload + 30 SECONDS)
-		say("Another user has uploaded a new track recently, try again soon!")
+		to_chat(user, span_warning("Another user has uploaded a new track recently, try again soon!"))
 		return
 
 	if(loc != user)

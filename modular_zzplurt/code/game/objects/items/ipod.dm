@@ -20,8 +20,6 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	var/lastfilechange = 0
 	/// Time of the last upload attempt
 	var/uploadattempt  = 0
-	/// Current volume
-	var/curvol = 100
 	/// Currently worn
 	var/is_worn = FALSE
 	/// Shared listening mode

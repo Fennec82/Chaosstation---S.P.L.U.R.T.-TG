@@ -5,6 +5,47 @@
 		return TRUE
 	return FALSE
 
+/mob/living/silicon/robot/adjust_stamina_loss(amount, updating_stamina = TRUE, forced = FALSE, required_biotype = ALL)
+	if(!is_security_cyborg_role())
+		return FALSE
+	if(!can_adjust_stamina_loss(amount, forced, required_biotype))
+		return 0
+	var/old_amount = staminaloss
+	staminaloss = clamp((staminaloss + (amount * CONFIG_GET(number/damage_multiplier))), 0, max_stamina)
+	var/delta = old_amount - staminaloss
+	if(delta <= 0)
+		received_stamina_damage(staminaloss, -1 * delta)
+	if(delta == 0)
+		return 0
+	if(updating_stamina)
+		updatehealth()
+	return delta
+
+/mob/living/silicon/robot/set_stamina_loss(amount, updating_stamina = TRUE, forced = FALSE, required_biotype = ALL)
+	if(!is_security_cyborg_role())
+		return FALSE
+	if(!forced && HAS_TRAIT(src, TRAIT_GODMODE))
+		return 0
+	if(!forced && !(mob_biotypes & required_biotype))
+		return 0
+	var/old_amount = staminaloss
+	staminaloss = amount
+	var/delta = old_amount - staminaloss
+	if(delta <= 0 && amount >= DAMAGE_PRECISION)
+		received_stamina_damage(staminaloss, -1 * delta, amount)
+	if(delta == 0)
+		return 0
+	if(updating_stamina)
+		updatehealth()
+	return delta
+
+/mob/living/silicon/robot/received_stamina_damage(current_level, amount_actual, amount)
+	if(!is_security_cyborg_role())
+		return
+	addtimer(CALLBACK(src, PROC_REF(set_stamina_loss), 0, TRUE, TRUE), stamina_regen_time, TIMER_UNIQUE | TIMER_OVERRIDE)
+	if((maxHealth - current_level) <= crit_threshold && stat != DEAD)
+		apply_status_effect(/datum/status_effect/incapacitating/stamcrit)
+
 /obj/machinery/door/airlock/proc/user_allowed_to_remote_shock(mob/user)
 	if(!user_allowed(user))
 		return FALSE
@@ -47,61 +88,6 @@
 	. = ..()
 	addtimer(CALLBACK(src, PROC_REF(logevent),"Law update processed."), 0, TIMER_UNIQUE | TIMER_OVERRIDE)
 
-/mob/living/silicon/robot/examine(mob/user)
-	. = list()
-	if(desc)
-		. += "[desc]"
-
-	var/model_name = model ? "\improper [model.name]" : "\improper Default"
-	if(is_security_cyborg_role())
-		model_name = "\improper Security"
-	. += "[p_Theyre()] currently <b>\a [model_name]-type</b> cyborg."
-
-	var/obj/act_module = get_active_held_item()
-	if(act_module)
-		. += "[p_Theyre()] holding [icon2html(act_module, user)] \a [act_module]."
-	. += get_status_effect_examinations()
-	if (get_brute_loss())
-		if (get_brute_loss() < maxHealth*0.5)
-			. += span_warning("[p_They()] look[p_s()] slightly dented.")
-		else
-			. += span_boldwarning("[p_They()] look[p_s()] severely dented!")
-	if (get_fire_loss() || get_tox_loss())
-		var/overall_fireloss = get_fire_loss() + get_tox_loss()
-		if (overall_fireloss < maxHealth * 0.5)
-			. += span_warning("[p_They()] look[p_s()] slightly charred.")
-		else
-			. += span_boldwarning("[p_They()] look[p_s()] severely burnt and heat-warped!")
-	if (health < -maxHealth*0.5)
-		. += span_warning("[p_They()] look[p_s()] barely operational.")
-	if (fire_stacks < 0)
-		. += span_warning("[p_Theyre()] covered in water.")
-	else if (fire_stacks > 0)
-		. += span_warning("[p_Theyre()] coated in something flammable.")
-
-	if(opened)
-		. += span_warning("[p_Their()] cover is open and the power cell is [cell ? "installed" : "missing"].")
-	else
-		. += "[p_Their()] cover is closed[locked ? "" : ", and looks unlocked"]."
-
-	if(cell && cell.charge <= 0)
-		. += span_warning("[p_Their()] battery indicator is blinking red!")
-
-	switch(stat)
-		if(CONSCIOUS)
-			if(shell)
-				. += "[p_They()] appear[p_s()] to be an [deployed ? "active" : "empty"] AI shell."
-			else if(!client)
-				. += "[p_They()] appear[p_s()] to be in stand-by mode."
-		if(SOFT_CRIT, UNCONSCIOUS, HARD_CRIT)
-			. += span_warning("[p_They()] do[p_es()]n't seem to be responding.")
-		if(DEAD)
-			. += span_deadsay("[p_They()] look[p_s()] like its system is corrupted and requires a reset.")
-
-	. += get_silicon_flavortext()
-	. += "</span>"
-
-	. += ..()
 /mob/living/silicon/robot/emag_act(mob/user, obj/item/card/emag/emag_card)
 	if(user == src)
 		return FALSE
@@ -287,7 +273,7 @@
 
 	var/list/model_options = GLOB.cyborg_model_list.Copy()
 	if(is_security_cyborg_role())
-		model_options = list("Security" = /obj/item/robot_model/peacekeeper/security)
+		model_options = list("Security" = /obj/item/robot_model/security)
 		to_chat(src, span_warning("You are not obligated to report a rogue AI, or cyborg as long as they do not break Space law."))
 
 	var/list/model_icons = list()
@@ -302,10 +288,10 @@
 
 	var/selected_model = model_options[input_model]
 	if(is_security_cyborg_role())
-		if(selected_model != /obj/item/robot_model && !ispath(selected_model, /obj/item/robot_model/peacekeeper/security))
+		if(selected_model != /obj/item/robot_model && !ispath(selected_model, /obj/item/robot_model/security))
 			to_chat(src, span_warning("Security cyborgs are locked to the Security module."))
 			return
-	else if(ispath(selected_model, /obj/item/robot_model/peacekeeper/security))
+	else if(ispath(selected_model, /obj/item/robot_model/security))
 		to_chat(src, span_warning("Only security cyborgs can use the Security module."))
 		return
 
@@ -332,7 +318,7 @@
 		/obj/item/restraints/handcuffs/cable/zipties
 	)
 
-/obj/item/robot_model/peacekeeper/security
+/obj/item/robot_model/security
 	name = "Security"
 	basic_modules = list(
 		/obj/item/melee/baton/security/loaded,
@@ -349,13 +335,27 @@
 /datum/job/cyborg/security/after_spawn(mob/living/spawned, client/player_client)
 	return ..()
 
-/obj/item/robot_model/peacekeeper/security/be_transformed_to(obj/item/robot_model/old_model, forced = FALSE)
+/obj/item/robot_model/security/be_transformed_to(obj/item/robot_model/old_model, forced = FALSE)
 	. = ..()
-	to_chat(loc, span_userdanger("While you have chosen the security model, you are an auxiliary officer. You follow Space Law and your assigned objectives. \
-	While you may not be connected to the AI, you are still a machine. Keep this in mind when entering combat in support of your fellow officers. You should pull your punches if you need to."))
 	if(!.)
 		return
 	add_security_canine_modules()
+
+/obj/item/robot_model/security/do_transform_animation()
+	if(iscyborg(loc))
+		var/mob/living/silicon/robot/current_borg = loc
+		if(current_borg.is_security_cyborg_role())
+			// Skip the upstream security message by replicating the base animation manually
+			var/mob/living/silicon/robot/cyborg = loc
+			if(cyborg.hat)
+				cyborg.hat.forceMove(drop_location())
+			cyborg.cut_overlays()
+			cyborg.setDir(SOUTH)
+			do_transform_delay()
+			to_chat(loc, span_userdanger("While you have chosen the security model, you are an auxiliary officer. You follow Space Law and your assigned objectives. \
+			While you may not be connected to the AI, you are still a machine. Keep this in mind when entering combat in support of your fellow officers. You should pull your punches if you need to."))
+			return
+	..()
 
 /datum/job/cyborg/security
 	title = JOB_SECURITY_CYBORG
@@ -371,36 +371,19 @@
 	restricted_antagonists = list("ALL")
 
 /datum/job/cyborg/after_spawn(mob/living/spawned, client/player_client)
-	. = ..()
-	if(!iscyborg(spawned))
-		return
-	var/mob/living/silicon/robot/robot_spawn = spawned
-	if(!robot_spawn.is_security_cyborg_role())
-		return
-	robot_spawn.maxHealth = 125
-	robot_spawn.health = 125
-	robot_spawn.set_connected_ai(null)
-	robot_spawn.lawupdate = FALSE
-	robot_spawn.laws = new /datum/ai_laws/security_cyborg()
-	robot_spawn.laws.associate(robot_spawn)
-	robot_spawn.show_laws()
-	robot_spawn.log_current_laws()
-	robot_spawn.set_connected_ai(select_priority_ai())
-	if(robot_spawn.connected_ai)
-		log_combat(robot_spawn.connected_ai, robot_spawn, "synced cyborg [robot_spawn] to [robot_spawn.connected_ai] (Cyborg spawn syncage)") // BUBBER EDIT - PUBLIC LOGS AND CLEANUP
-		if(robot_spawn.shell) //somehow?
-			robot_spawn.undeploy()
-			robot_spawn.notify_ai(AI_NOTIFICATION_AI_SHELL)
-		else
-			robot_spawn.notify_ai(TRUE)
-		robot_spawn.visible_message(span_notice("[robot_spawn] gently chimes."), span_notice("LawSync protocol engaged."))
-		robot_spawn.lawupdate = TRUE
-		robot_spawn.lawsync()
-		robot_spawn.show_laws()
-		if(HAS_TRAIT(SSstation, STATION_TRAIT_HOS_AI))
-			robot_spawn.visible_message(self_message = span_alert("Securityborg has been enabled for this shift."))
-	if(!robot_spawn.connected_ai) // Only log if there's no Master AI
-		robot_spawn.log_current_laws()
+	if(iscyborg(spawned))
+		var/mob/living/silicon/robot/robot_spawn = spawned
+		if(robot_spawn.is_security_cyborg_role())
+			robot_spawn.maxHealth = 125
+			robot_spawn.health = 125
+			robot_spawn.set_connected_ai(null)
+			robot_spawn.lawupdate = FALSE
+			robot_spawn.laws = new /datum/ai_laws/security_cyborg()
+			robot_spawn.laws.associate(robot_spawn)
+			robot_spawn.show_laws()
+			robot_spawn.log_current_laws()
+			return
+	return ..()
 
 
 /datum/ai_laws/security_cyborg

@@ -65,9 +65,8 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	if(!user.ckey)
 		return
 	if(playing)
-		playing = FALSE
-		if(!isnull(music_player.active_song_sound))
-			music_player.unlisten_all()
+		to_chat(user, span_warning("You must first stop playing to track to upload a new track."))
+		return
 	if(lastfilechange)
 		if(world.time < lastfilechange + 3 MINUTES)
 			to_chat(user, span_warning("You've uploaded a new track too recently, try again later!"))

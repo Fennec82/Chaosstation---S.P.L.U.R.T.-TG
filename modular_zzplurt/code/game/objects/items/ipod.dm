@@ -37,10 +37,10 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	music_player.sound_loops = TRUE
 
 /obj/item/clothing/ears/ipod/Destroy()
+	if(playing && !isnull(music_player.active_song_sound))
+		music_player.unlisten_all()
 	playing = FALSE
 	is_worn = FALSE
-	if(!isnull(music_player.active_song_sound))
-		music_player.unlisten_all()
 	stop_other_headphones(TRUE)
 	QDEL_NULL(music_player)
 	return ..()

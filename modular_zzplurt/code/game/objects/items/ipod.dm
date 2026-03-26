@@ -26,6 +26,8 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	var/datum/weakref/other_ipod_ref = null
 	/// What actually plays music to us
 	var/datum/jukebox/single_mob/music_player
+	/// Current song track selected
+	VAR_FINAL/datum/track/current_song
 
 /obj/item/clothing/ears/ipod/Initialize(mapload)
 	. = ..()
@@ -39,6 +41,8 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		music_player.unlisten_all()
 	playing = FALSE
 	is_worn = FALSE
+	if(current_song)
+		qdel(current_song)
 	stop_other_headphones(TRUE)
 	QDEL_NULL(music_player)
 	return ..()
@@ -113,6 +117,14 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	lastfilechange = world.time
 	GLOB.ipod_last_upload = world.time
 
+	var/datum/track/new_song = new()
+	new_song.song_name = "custom track"
+	new_song.song_path = curfile
+	new_song.song_length = SSsounds.get_sound_length(new_song.song_path)
+	if(current_song)
+		qdel(current_song)
+	current_song = new_song
+
 /obj/item/clothing/ears/ipod/proc/toggle(owner)
 	var/mob/user = owner
 	if(user.stat != CONSCIOUS || !is_worn)
@@ -125,8 +137,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 				return
 			GLOB.ipod_last_play = world.time
 			playing = TRUE
-			music_player.selection.song_path = curfile
-			music_player.selection.song_length = 12000 // 20 minutes to force a loop. File size determines server load, not audio length. Low bitrate .ogg files can run long and have their uses as ambient sound.
+			music_player.selection = current_song
 			music_player.start_music(user)
 			play_other_headphones(user)
 			user.log_message("played song song on headphones: [curfile]", LOG_GAME)
@@ -178,8 +189,11 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		other_ipod.music_player.unlisten_all()
 	GLOB.ipod_last_play = world.time
 	other_ipod.playing = TRUE
-	other_ipod.music_player.selection.song_path = other_ipod.curfile = curfile
-	other_ipod.music_player.selection.song_length = 12000 // 20 minutes to force a loop. File size determines server load, not audio length. Low bitrate .ogg files can run long and have their uses as ambient sound.
+	other_ipod.curfile = curfile
+	if(other_ipod.current_song)
+		qdel(other_ipod.current_song)
+	other_ipod.current_song = current_song
+	other_ipod.music_player.selection = other_ipod.current_song
 	other_ipod.music_player.start_music(wearer)
 	other_ipod.update_icon()
 

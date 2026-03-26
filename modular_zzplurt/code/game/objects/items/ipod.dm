@@ -118,7 +118,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 
 /obj/item/clothing/ears/ipod/proc/toggle(owner)
 	var/mob/user = owner
-	if(user.stat != CONSCIOUS || is_worn)
+	if(user.stat != CONSCIOUS || !is_worn)
 		to_chat(user, span_warning("You can't do that right now."))
 		return
 	if(!playing)

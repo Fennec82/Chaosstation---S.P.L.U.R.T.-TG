@@ -207,6 +207,8 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		other_ipod_ref = WEAKREF(other_ipod)
 		other_ipod.other_ipod_ref = WEAKREF(src)
 		balloon_alert(user, "successfully linked headphones")
+		return TRUE
+	return ..()
 
 /obj/item/clothing/ears/ipod/equipped(mob/living/user, slot)
 	. = ..()

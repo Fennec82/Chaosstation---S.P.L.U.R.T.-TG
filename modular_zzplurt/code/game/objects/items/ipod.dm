@@ -184,8 +184,8 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 			other_ipod.playing = FALSE
 			other_ipod.music_player.unlisten_all()
 			other_ipod.update_icon()
-		if(other_ipod_ref)
-			var/obj/item/clothing/ears/ipod/other_other_ipod = other_ipod_ref.resolve()
+		if(other_ipod.other_ipod_ref)
+			var/obj/item/clothing/ears/ipod/other_other_ipod = other_ipod.other_ipod_ref.resolve()
 			if(!QDELETED(other_other_ipod) && istype(other_other_ipod)) // other other headphones is valid
 				if(other_other_ipod.playing && !isnull(other_other_ipod.music_player.active_song_sound)) // turn off music
 					playing = FALSE

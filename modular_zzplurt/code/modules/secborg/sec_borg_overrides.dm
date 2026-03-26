@@ -7,10 +7,10 @@
 
 //Armor definitions and setting. getarmor is simply passed on to its parent with no modifications if it's not a secborg
 /datum/armor/armor_secborg
-    melee = 25
-    bullet = 25
-    laser = 25
-    energy = 35
+	melee = 25
+	bullet = 25
+	laser = 25
+	energy = 35
 
 /mob/living/silicon/robot/getarmor(def_zone, type)
 	if(is_security_cyborg_role())
@@ -318,12 +318,22 @@
 
 	model.transform_to(selected_model)
 
-/obj/item/robot_model/proc/add_security_canine_modules()
-	if(locate(/obj/item/dogborg/pounce) in basic_modules)
-		return
-	if((!(TRAIT_R_DOGBORG in model_features)) && !(cyborg_base_icon in list("drakepeace", "drakesec")))
-		return
-	basic_modules += new /obj/item/dogborg/pounce(src)
+/obj/item/robot_model/proc/ensure_security_canine_modules()
+	// Native dogborg chassis already receive bite + pounce through dogborg_equip().
+	if(TRAIT_R_DOGBORG in model_features)
+		return FALSE
+
+	var/changed = FALSE
+
+	if(!(locate(/obj/item/dogborg/pounce) in basic_modules) && !(locate(/obj/item/dogborg/pounce) in modules))
+		basic_modules += new /obj/item/dogborg/pounce(src)
+		changed = TRUE
+
+	if(((cyborg_base_icon in list("drakesec"))) && !(locate(/obj/item/dogborg/jaws) in basic_modules) && !(locate(/obj/item/dogborg/jaws) in modules))
+		basic_modules += new /obj/item/dogborg/jaws/big(src)
+		changed = TRUE
+
+	return changed
 
 //A hybrid taser varient specificly for sec borgs. Instead of drawing from the cyborg's cell, it has its own internal battery that can be recharged at a cyborg recharger.
 /obj/item/gun/energy/e_gun/advtaser/cyborg/secborg
@@ -409,11 +419,12 @@
 	. = ..()
 	if(!.)
 		return
-	add_security_canine_modules()
 
 /obj/item/robot_model/security/do_transform_animation()
 	if(iscyborg(loc))
 		var/mob/living/silicon/robot/current_borg = loc
+		if(current_borg.model?.ensure_security_canine_modules())
+			current_borg.model.rebuild_modules()
 		if(current_borg.is_security_cyborg_role())
 			// Skip the upstream security message by replicating the base animation manually
 			var/mob/living/silicon/robot/cyborg = loc
@@ -444,12 +455,12 @@
 	if(iscyborg(spawned))
 		var/mob/living/silicon/robot/robot_spawn = spawned
 		if(robot_spawn.is_security_cyborg_role())
-			robot_spawn.maxHealth = 125
-			robot_spawn.health = 125
 			robot_spawn.set_connected_ai(null)
 			robot_spawn.lawupdate = FALSE
 			robot_spawn.laws = new /datum/ai_laws/security_cyborg()
 			robot_spawn.laws.associate(robot_spawn)
+			if(robot_spawn.model?.ensure_security_canine_modules())
+				robot_spawn.model.rebuild_modules()
 			robot_spawn.show_laws()
 			robot_spawn.log_current_laws()
 			return

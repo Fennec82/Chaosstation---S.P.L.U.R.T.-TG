@@ -5,6 +5,19 @@
 		return TRUE
 	return FALSE
 
+//Armor definitions and setting. getarmor is simply passed on to its parent with no modifications if it's not a secborg
+/datum/armor/armor_secborg
+    melee = 25
+    bullet = 25
+    laser = 25
+    energy = 35
+
+/mob/living/silicon/robot/getarmor(def_zone, type)
+	if(is_security_cyborg_role())
+		var/datum/armor/armor = get_armor_by_type(/datum/armor/armor_secborg)
+		return armor.get_rating(type)
+	return ..()
+
 /mob/living/silicon/robot/adjust_stamina_loss(amount, updating_stamina = TRUE, forced = FALSE, required_biotype = ALL)
 	if(!is_security_cyborg_role())
 		return FALSE
@@ -43,8 +56,6 @@
 	if(!is_security_cyborg_role())
 		return
 	addtimer(CALLBACK(src, PROC_REF(set_stamina_loss), 0, TRUE, TRUE), stamina_regen_time, TIMER_UNIQUE | TIMER_OVERRIDE)
-	if((maxHealth - current_level) <= crit_threshold && stat != DEAD)
-		apply_status_effect(/datum/status_effect/incapacitating/stamcrit)
 
 /obj/machinery/door/airlock/proc/user_allowed_to_remote_shock(mob/user)
 	if(!user_allowed(user))
@@ -156,6 +167,16 @@
 	if(B.scrambledcodes || B.emagged)
 		return FALSE
 	return ..()
+
+/mob/living/silicon/robot/updatehealth()
+	. = ..()
+	if(!is_security_cyborg_role())
+		return
+	var/health_deficiency = max(maxHealth - health, staminaloss)
+	if(health_deficiency >= 40)
+		add_or_update_variable_movespeed_modifier(/datum/movespeed_modifier/damage_slowdown, TRUE, multiplicative_slowdown = health_deficiency / 75)
+	else
+		remove_movespeed_modifier(/datum/movespeed_modifier/damage_slowdown)
 
 /datum/wires/robot/on_pulse(wire, user)
 	var/mob/living/silicon/robot/R = holder
@@ -304,6 +325,41 @@
 		return
 	basic_modules += new /obj/item/dogborg/pounce(src)
 
+//A hybrid taser varient specificly for sec borgs. Instead of drawing from the cyborg's cell, it has its own internal battery that can be recharged at a cyborg recharger.
+/obj/item/gun/energy/e_gun/advtaser/cyborg/secborg
+	name = "security cyborg hybrid taser"
+	desc = "An integrated hybrid taser, containing its own capacitor. The weapon may only be fired so many times before being recharged at a cyborg recharger to prevent potential combustion."
+	ammo_type = list(/obj/item/ammo_casing/energy/disabler, /obj/item/ammo_casing/energy/electrode/sec)
+	use_cyborg_cell = FALSE
+	can_charge = FALSE
+
+/obj/item/gun/energy/e_gun/advtaser/cyborg/secborg/Initialize(mapload)
+	. = ..()
+	if(cell)
+		cell.maxcharge = STANDARD_CELL_CHARGE
+		cell.charge = cell.maxcharge
+		chambered = null
+		recharge_newshot(TRUE)
+	update_appearance()
+
+/obj/item/gun/energy/e_gun/advtaser/cyborg/secborg/recharge_newshot(no_cyborg_drain)
+	. = ..()
+	// Deduct power from cyborg's main cell for balance/power accounting, but actual firing uses this gun's battery
+	if(iscyborg(loc))
+		var/mob/living/silicon/robot/cyborg = loc
+		if(cyborg.cell && chambered)
+			var/obj/item/ammo_casing/energy/shot = chambered
+			cyborg.cell.use(shot.e_cost)
+
+//Ammo definitions for cyborg tasers and disablers
+/obj/item/ammo_casing/energy/electrode/cyborg
+	projectile_type = /obj/projectile/energy/electrode/sec
+	e_cost = STANDARD_CELL_CHARGE
+	delay = 1 SECONDS
+
+/obj/item/ammo_casing/energy/disabler/cyborg
+	delay = 1 SECONDS
+
 /obj/item/robot_model/peacekeeper
 	name = "Peacekeeper"
 	basic_modules = list(
@@ -322,7 +378,7 @@
 	name = "Security"
 	basic_modules = list(
 		/obj/item/melee/baton/security/loaded,
-		/obj/item/gun/energy/e_gun/advtaser/cyborg,
+		/obj/item/gun/energy/e_gun/advtaser/cyborg/secborg,
 		/obj/item/assembly/flash/cyborg,
 		/obj/item/restraints/handcuffs/cable/zipties,
 		/obj/item/holosign_creator/security,
@@ -331,6 +387,20 @@
 		/obj/item/extinguisher/mini,
 	)
 	radio_channels = list(RADIO_CHANNEL_SECURITY)
+
+/obj/item/robot_model/security/respawn_consumable(mob/living/silicon/robot/cyborg, coeff = 1)
+	. = ..()
+	if(!cyborg?.is_security_cyborg_role())
+		return .
+	var/obj/item/gun/energy/e_gun/advtaser/cyborg/secborg/taser = locate(/obj/item/gun/energy/e_gun/advtaser/cyborg/secborg) in basic_modules
+	if(!taser?.cell)
+		return .
+	if(taser.cell.charge < taser.cell.maxcharge)
+		taser.cell.charge = taser.cell.maxcharge
+		taser.chambered = null
+		taser.recharge_newshot(TRUE)
+		taser.update_appearance()
+		return TRUE
 
 /datum/job/cyborg/security/after_spawn(mob/living/spawned, client/player_client)
 	return ..()
@@ -396,3 +466,14 @@
 		"Support: Protect the integrity of the department of security, and the well-being and equipment of all members of security. When outside of the department, ensure you accompany another member of security unless you are the only security member or otherwise ordered to do so so long as it does not violate the protect or enforce objectives.",
 		"Survive: Ensure your own survival so long as this does not conflict with the support, protect, or enforce objectives.",
 	)
+
+/obj/item/melee/baton/baton_effect(mob/living/target, mob/living/user, list/modifiers, stun_override)
+	if(iscyborg(target))
+		var/mob/living/silicon/robot/robot_target = target
+		if(robot_target.is_security_cyborg_role())
+			var/armour_block = target.run_armor_check(null, armour_type_against_stun, null, null, stun_armour_penetration)
+			target.apply_damage(stamina_damage, STAMINA, blocked = armour_block)
+			additional_effects_non_cyborg(target, user)
+			SEND_SIGNAL(target, COMSIG_MOB_BATONED, user, src)
+			return TRUE
+	return ..()

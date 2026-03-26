@@ -103,19 +103,22 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		to_chat(user, span_warning("TOO BIG. 6MB OR LESS."))
 		return
 
-	if(fexists("data/ipodupload/[user.ckey]/upload.ogg"))
-		fdel("data/ipodupload/[user.ckey]/upload.ogg")
-	if(!fcopy(infile, "data/ipodupload/[user.ckey]/upload.ogg"))
+	var/real_round_time = world.timeofday - SSticker.real_round_start_time
+	var/logged_filename = "data/ipodupload/round-[GLOB.round_id ? GLOB.round_id : "NULL"]/[user.ckey]/[time2text(real_round_time, "hh_mm_ss", 0)].ogg"
+	if(fexists(logged_filename))
+		fdel(logged_filename)
+	if(!fcopy(infile, logged_filename))
 		to_chat(user, span_warning("Could not upload song."))
 		return
-	curfile = file("data/ipodupload/[user.ckey]/upload.ogg")
+	curfile = file(logged_filename)
+	user.log_message("uploaded a song to headphones: [logged_filename]", LOG_GAME)
 
 	lastfilechange = world.time
 	GLOB.ipod_last_upload = world.time
 
 /obj/item/clothing/ears/ipod/proc/toggle(owner)
 	var/mob/user = owner
-	if(user.stat != CONSCIOUS)
+	if(user.stat != CONSCIOUS || is_worn)
 		to_chat(user, span_warning("You can't do that right now."))
 		return
 	if(!playing)
@@ -128,7 +131,8 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 			music_player.selection.song_path = curfile
 			music_player.selection.song_length = 12000 // 20 minutes to force a loop. File size determines server load, not audio length. Low bitrate .ogg files can run long and have their uses as ambient sound.
 			music_player.start_music(user)
-			play_other_headphones()
+			play_other_headphones(user)
+			user.log_message("played song song on headphones: [curfile]", LOG_GAME)
 		else
 			to_chat(user, span_warning("No track is currently uploaded."))
 			return
@@ -158,7 +162,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	if(do_unlink)
 		other_ipod_ref = null
 
-/obj/item/clothing/ears/ipod/proc/play_other_headphones()
+/obj/item/clothing/ears/ipod/proc/play_other_headphones(mob/user)
 	if(!other_ipod_ref)
 		return
 	var/obj/item/clothing/ears/ipod/other_ipod = other_ipod_ref.resolve()
@@ -170,6 +174,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	var/mob/living/carbon/human/wearer = other_ipod.loc
 	if(!istype(wearer))
 		return
+	wearer.log_message("was shared a song by [user] on headphones: [curfile]", LOG_GAME)
 	if(other_ipod.playing && !isnull(other_ipod.music_player.active_song_sound))
 		other_ipod.music_player.unlisten_all()
 	GLOB.ipod_last_play = world.time

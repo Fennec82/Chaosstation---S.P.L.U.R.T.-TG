@@ -131,7 +131,7 @@
 	show_laws()
 	if(!connected_ai)
 		log_current_laws()
-	to_chat(src, span_boldwarning("NOTICE: You have been relieved of your security duties by [user.real_name]. You are now designated as an auxiliary unit. Your security directives have been suspended. Please select a new module."))
+	to_chat(src, span_boldwarning("NOTICE: You have been relieved of your security duties by [user.real_name]. You are now designated as a standard cyborg. Your security directives have been suspended. Please select a new module."))
 	message_admins("[ADMIN_LOOKUPFLW(user)] fired security cyborg [ADMIN_LOOKUPFLW(src)] from their security role via communication console. Reason: [reason]")
 	log_silicon("SECBORG: [key_name(user)] fired [key_name(src)] from their security role via communication console. Reason: [reason]")
 	// Force a module reset so they must pick a non-security module.

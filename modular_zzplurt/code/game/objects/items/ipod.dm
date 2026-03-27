@@ -194,9 +194,9 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		music_player.start_music(user)
 		update_icon()
 		for(var/obj/item/clothing/ears/ipod/other_ipod in GLOB.ipod_radio)
-			if(other_ipod == src)
-				continue
 			if(other_ipod.radio_mode != radio_mode) // not the same channel
+				continue
+			if(other_ipod == src)
 				continue
 			other_ipod.lastfilechange = world.time
 			if(other_ipod.playing && !isnull(music_player.active_song_sound))

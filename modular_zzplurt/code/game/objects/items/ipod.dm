@@ -56,10 +56,8 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 /obj/item/clothing/ears/ipod/examine(mob/user)
 	. = ..()
 	if(!other_ipod_ref)
-		. += "Tapping this on another headphone will put it into shared listening mode!"
 		. += "Tapping this on another headphone will put it into shared listening mode."
 	else
-		. += "This headphones is currently in shared listening mode!"
 		. += "This headphones is currently in shared listening mode."
 
 /obj/item/clothing/ears/ipod/proc/upload(owner)

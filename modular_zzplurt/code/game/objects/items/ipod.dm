@@ -198,7 +198,6 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 				continue
 			if(other_ipod == src)
 				continue
-			other_ipod.lastfilechange = world.time
 			if(other_ipod.playing && !isnull(music_player.active_song_sound))
 				other_ipod.music_player.unlisten_all()
 			var/datum/track/new_song_other = new()
@@ -286,7 +285,6 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		return
 	if(other_ipod.playing && !isnull(other_ipod.music_player.active_song_sound))
 		other_ipod.music_player.unlisten_all()
-	GLOB.ipod_last_play = world.time
 	other_ipod.playing = TRUE
 	other_ipod.curfile = curfile
 	var/datum/track/new_song = new()
@@ -392,7 +390,6 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 			current_song = new_song
 			curfile = other_ipod.curfile
 			music_player.selection = current_song
-			lastfilechange = other_ipod.lastfilechange
 		if(!loaded_song)
 			curfile = null
 

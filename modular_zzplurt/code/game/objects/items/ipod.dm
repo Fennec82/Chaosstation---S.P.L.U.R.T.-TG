@@ -23,6 +23,8 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 	var/curfile = null
 	/// Playing state
 	var/playing = FALSE
+	/// Volume
+	var/volume = 50
 	/// Time of the last upload
 	var/lastfilechange = 0
 	/// Time of the last upload attempt
@@ -45,6 +47,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 	update_icon()
 	AddElement(/datum/element/update_icon_updates_onmob)
 	music_player = new(src)
+	music_player.set_new_volume(volume)
 	GLOB.ipod_radio += src
 
 /obj/item/clothing/ears/ipod/Destroy()
@@ -85,6 +88,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 	else
 		. += "Tapping this on another headphone will put it into shared listening mode."
 		. += "Use in hand to set to public radio mode."
+	. += "Alt click to set the volume."
 
 /obj/item/clothing/ears/ipod/proc/upload(owner)
 	var/mob/user = owner
@@ -423,6 +427,17 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 		to_chat(user, span_notice("You set the broadcast name to '[str]'."))
 		return
 	to_chat(user, span_notice("The connection to the broadcast fizzled out!"))
+
+/obj/item/clothing/ears/ipod/click_alt(mob/user)
+	if(isnull(user?.mind) || user.stat != CONSCIOUS || !is_worn)
+		to_chat(user, span_warning("You can't do that right now."))
+		return NONE
+	var/new_volume = tgui_input_number(user, "", "Set volume", volume, 100)
+	if(!isnum(new_volume) || QDELETED(user) || QDELETED(src))
+		return NONE
+	volume = new_volume
+	music_player.set_new_volume(volume)
+	return CLICK_ACTION_SUCCESS
 
 /obj/item/clothing/ears/ipod/proc/get_radio_name()
 	if(radio_mode >= 1 && radio_mode <= 4)

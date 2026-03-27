@@ -401,12 +401,16 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 			curfile = null
 
 		radio_dj_owner = !found_dj // only set as the DJ owner if station has no DJ
+		var/radio_station_report
 		if(listeners > 1)
-			to_chat(user, span_notice("Set to station [radio_name], [listeners] active listeners."))
+			radio_station_report = "Set to station [radio_name], [listeners] active listeners."
 		else if(listeners == 1)
-			to_chat(user, span_notice("Set to station [radio_name], [listeners] active listener."))
+			radio_station_report = "Set to station [radio_name], [listeners] active listener."
 		else
-			to_chat(user, span_notice("Set to station [radio_name], you're now the DJ and can broadcast on this radio frequency."))
+			radio_station_report = "Set to station [radio_name], there are no listeners dialed in."
+		if(radio_dj_owner)
+			radio_station_report += " You're now the DJ and can broadcast on this radio frequency."
+		to_chat(user, span_notice(radio_station_report))
 		playsound(loc, SFX_INDUSTRIAL_SCAN, 40, FALSE, -1)
 
 /obj/item/clothing/ears/ipod/proc/update_radio_name()

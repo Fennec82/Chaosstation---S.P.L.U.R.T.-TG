@@ -270,7 +270,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 				qdel(current_song)
 			current_song = new_song_other
 			curfile = other_ipod.curfile
-			music_player.selection = other_ipod.current_song
+			music_player.selection = current_song
 		balloon_alert(user, "successfully linked headphones")
 		return TRUE
 	return ..()

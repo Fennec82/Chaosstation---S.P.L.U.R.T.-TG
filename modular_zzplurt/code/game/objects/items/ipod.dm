@@ -97,7 +97,8 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		return
 	if(playing)
 		return
-	if(isnull(infile))
+	if(isnull(infile)) // sometimes this fails, thank you BYOND
+		to_chat(user, span_warning("Unknown error, could not upload."))
 		return
 	if(!is_worn)
 		return

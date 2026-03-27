@@ -246,6 +246,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 			music_player.sound_loops = radio_mode == 0 ? TRUE : FALSE
 			music_player.start_music(user)
 			play_other_headphones(user)
+			playsound(loc, 'modular_zzplurt/sound/items/headphones_on.ogg', 20, FALSE)
 			user.log_message("played song on headphones: [curfile]", LOG_GAME)
 		else
 			to_chat(user, span_warning("No track is currently uploaded."))
@@ -255,6 +256,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 		if(!isnull(music_player.active_song_sound))
 			music_player.unlisten_all()
 		stop_other_headphones()
+		playsound(loc, 'modular_zzplurt/sound/items/headphones_off.ogg', 20, FALSE)
 	update_icon()
 	to_chat(user, span_notice("You turn the music [playing? "on. Untz Untz Untz!" : "off."]"))
 
@@ -267,6 +269,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 			other_ipod.playing = FALSE
 			other_ipod.music_player.unlisten_all()
 			other_ipod.update_icon()
+			playsound(other_ipod, 'modular_zzplurt/sound/items/headphones_off.ogg', 20, FALSE)
 		if(do_unlink)
 			other_ipod.other_ipod_ref = null
 			if(other_ipod.is_worn)
@@ -309,6 +312,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 	other_ipod.music_player.sound_loops = TRUE
 	other_ipod.music_player.start_music(wearer)
 	other_ipod.update_icon()
+	playsound(other_ipod, 'modular_zzplurt/sound/items/headphones_on.ogg', 20, FALSE)
 
 /obj/item/clothing/ears/ipod/proc/unlink_refs()
 	if(playing && !isnull(music_player.active_song_sound)) // turn off music
@@ -323,6 +327,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 			other_ipod.playing = FALSE
 			other_ipod.music_player.unlisten_all()
 			other_ipod.update_icon()
+			playsound(other_ipod, 'modular_zzplurt/sound/items/headphones_off.ogg', 20, FALSE)
 		other_ipod.other_ipod_ref = null
 		if(other_ipod.is_worn)
 			var/mob/living/carbon/human/wearer = other_ipod.loc

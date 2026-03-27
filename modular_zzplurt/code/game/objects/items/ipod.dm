@@ -100,7 +100,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 	if(!user.ckey)
 		return
 	if(radio_mode && !radio_dj_owner)
-		to_chat(user, span_warning("You are not the DJ for station [get_radio_name()]."))
+		to_chat(user, span_warning("You are not the DJ for broadcast [get_radio_name()]."))
 		return
 	if(lastfilechange)
 		if(world.time < lastfilechange + 2 MINUTES)
@@ -157,7 +157,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 	if(loc != user)
 		return
 	if(radio_mode && !radio_dj_owner) // check again after upload
-		to_chat(user, span_warning("You are not the DJ for station [get_radio_name()]."))
+		to_chat(user, span_warning("You are not the DJ for broadcast [get_radio_name()]."))
 		return
 	curfile = file(logged_filename)
 
@@ -169,7 +169,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 		user.log_message("uploaded a song to headphones: [logged_filename]", LOG_GAME)
 	else
 		to_chat(user, span_warning("The song is now broadcasting on [get_radio_name()]!"))
-		user.log_message("uploaded a song to headphones station [get_radio_name()]: [logged_filename]", LOG_GAME)
+		user.log_message("uploaded a song to headphones broadcast [get_radio_name()]: [logged_filename]", LOG_GAME)
 
 	var/datum/track/new_song = new()
 	new_song.song_name = "custom track"
@@ -430,6 +430,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 	if(radio_mode >= 1 && radio_mode <= 4 && radio_dj_owner)
 		GLOB.ipod_cast_names[radio_mode] = str
 		to_chat(user, span_notice("You set the broadcast name to '[str]'."))
+		user.log_message("set the broadcast name to: [str]", LOG_GAME)
 		return
 	to_chat(user, span_notice("The connection to the broadcast fizzled out!"))
 

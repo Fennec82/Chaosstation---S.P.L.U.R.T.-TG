@@ -1,6 +1,12 @@
 GLOBAL_LIST_EMPTY(ipod_radio) //list of all ipods set to radio mode
 GLOBAL_VAR_INIT(ipod_last_upload, 0) //last time of the last upload, to prevent multiple uploads within seconds of eachother
 GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prevent spamming clients too often with play/stop
+GLOBAL_LIST_INIT(ipod_station_names, list( //names of the radio stations
+	"Unknown Frequency",
+	"Unknown Frequency",
+	"Unknown Frequency",
+	"Unknown Frequency"
+))
 
 /obj/item/clothing/ears/ipod
 	name = "\improper iZune Spaceman Headphones"
@@ -25,8 +31,6 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	var/radio_mode = 0
 	/// Do we own this channel (aka we're the first to stake it out)
 	var/radio_dj_owner = FALSE
-	/// Radio statio name
-	var/radio_name = ""
 	/// Currently worn
 	var/is_worn = FALSE
 	/// Shared listening mode
@@ -41,9 +45,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	update_icon()
 	AddElement(/datum/element/update_icon_updates_onmob)
 	music_player = new(src)
-	if(radio_mode)
-		GLOB.ipod_radio += src
-		update_radio_name()
+	GLOB.ipod_radio += src
 
 /obj/item/clothing/ears/ipod/Destroy()
 	if(playing && !isnull(music_player.active_song_sound))
@@ -51,9 +53,8 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	playing = FALSE
 	is_worn = FALSE
 	curfile = null
-	if(radio_mode)
-		GLOB.ipod_radio.Remove(src)
-		radio_mode = 0
+	GLOB.ipod_radio.Remove(src)
+	radio_mode = 0
 	if(current_song)
 		QDEL_NULL(current_song)
 	stop_other_headphones(TRUE)
@@ -78,9 +79,9 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 				if(other_ipod == src)
 					continue
 				listeners++
-			. += "This headphone is the DJ of [radio_name]. There are [listeners] headphones tuned in."
+			. += "This headphone is the DJ of [get_radio_name()]. There are [listeners] headphones tuned in. Right click to set the radio station name."
 		else
-			. += "This headphone is set to radio station [radio_name]."
+			. += "This headphone is set to radio station [get_radio_name()]."
 	else
 		. += "Tapping this on another headphone will put it into shared listening mode."
 		. += "Use in hand to set to public radio mode."
@@ -95,7 +96,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	if(!user.ckey)
 		return
 	if(radio_mode && !radio_dj_owner)
-		to_chat(user, span_warning("You are not the DJ for station [radio_name]."))
+		to_chat(user, span_warning("You are not the DJ for station [get_radio_name()]."))
 		return
 	if(lastfilechange)
 		if(world.time < lastfilechange + 2 MINUTES)
@@ -146,7 +147,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		to_chat(user, span_warning("Could not upload song."))
 		return
 	if(radio_mode && !radio_dj_owner) // check again after upload
-		to_chat(user, span_warning("You are not the DJ for station [radio_name]."))
+		to_chat(user, span_warning("You are not the DJ for station [get_radio_name()]."))
 		return
 	curfile = file(logged_filename)
 
@@ -157,8 +158,8 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		to_chat(user, span_warning("The song has been uploaded, ready to play!"))
 		user.log_message("uploaded a song to headphones: [logged_filename]", LOG_GAME)
 	else
-		to_chat(user, span_warning("The song is now broadcasting on [radio_name]!"))
-		user.log_message("uploaded a song to headphones station [radio_name]: [logged_filename]", LOG_GAME)
+		to_chat(user, span_warning("The song is now broadcasting on [get_radio_name()]!"))
+		user.log_message("uploaded a song to headphones station [get_radio_name()]: [logged_filename]", LOG_GAME)
 
 	var/datum/track/new_song = new()
 	new_song.song_name = "custom track"
@@ -324,12 +325,8 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		unlink_refs()
 		var/obj/item/clothing/ears/ipod/other_ipod = attacking_item
 		other_ipod.unlink_refs()
-		if(other_ipod.radio_mode)
-			other_ipod.radio_mode = 0
-			GLOB.ipod_radio.Remove(other_ipod)
-		if(radio_mode)
-			radio_mode = 0
-			GLOB.ipod_radio.Remove(src)
+		other_ipod.radio_mode = 0
+		radio_mode = 0
 		other_ipod_ref = WEAKREF(other_ipod)
 		other_ipod.other_ipod_ref = WEAKREF(src)
 		if(other_ipod.curfile) // update song info
@@ -347,6 +344,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	return ..()
 
 /obj/item/clothing/ears/ipod/attack_self(mob/user, modifiers)
+	. = ..()
 	if(playing)
 		playing = FALSE
 		if(!isnull(music_player.active_song_sound))
@@ -354,19 +352,16 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 			update_icon()
 	if(radio_mode == 0)
 		unlink_refs()
-		GLOB.ipod_radio += src
 
 	radio_mode++
 	if(radio_mode > 4)
 		radio_mode = 0
 		radio_dj_owner = FALSE
-		GLOB.ipod_radio.Remove(src)
 		balloon_alert(user, "turned off radio mode")
 		to_chat(user, span_notice("You turned off the radio."))
 		return
 
 	balloon_alert(user, "switch radio station")
-	update_radio_name()
 	if(radio_mode)
 		var/listeners = 0
 		var/found_dj = FALSE
@@ -399,26 +394,34 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		radio_dj_owner = !found_dj // only set as the DJ owner if station has no DJ
 		var/radio_station_report
 		if(listeners > 1)
-			radio_station_report = "Set to station [radio_name], [listeners] active listeners."
+			radio_station_report = "Set to station [get_radio_name()], [listeners] active listeners."
 		else if(listeners == 1)
-			radio_station_report = "Set to station [radio_name], [listeners] active listener."
+			radio_station_report = "Set to station [get_radio_name()], [listeners] active listener."
 		else
-			radio_station_report = "Set to station [radio_name], there are no listeners dialed in."
+			radio_station_report = "Set to station [get_radio_name()], there are no listeners dialed in."
 		if(radio_dj_owner)
 			radio_station_report += " You're now the DJ and can broadcast on this radio frequency."
 		to_chat(user, span_notice(radio_station_report))
 		playsound(loc, SFX_INDUSTRIAL_SCAN, 40, FALSE, -1)
 
-/obj/item/clothing/ears/ipod/proc/update_radio_name()
-	switch(radio_mode)
-		if(1)
-			radio_name = "SPLURT 104.5 FM"
-		if(2)
-			radio_name = "KOME 98.5 FM"
-		if(3)
-			radio_name = "GNOT 100.3 FM"
-		if(4)
-			radio_name = "MOSS 102.9 FM"
+/obj/item/clothing/ears/ipod/attack_self_secondary(mob/user, modifiers)
+	. = ..()
+	if(!radio_mode || !radio_dj_owner)
+		return
+	var/str = reject_bad_text(tgui_input_text(user, "Station name", "Set new radio station name", get_radio_name(), MAX_NAME_LEN))
+	if(!str || QDELETED(src) || !user.is_holding(src))
+		to_chat(user, span_warning("Invalid text!"))
+		return
+	if(radio_mode >= 1 && radio_mode <= 4)
+		GLOB.ipod_station_names[radio_mode] = str
+		to_chat(user, span_notice("You set the station name to '[str]'."))
+		return
+	to_chat(user, span_notice("The connection to the radio station fizzled out!"))
+
+/obj/item/clothing/ears/ipod/proc/get_radio_name()
+	if(radio_mode >= 1 && radio_mode <= 4)
+		return GLOB.ipod_station_names[radio_mode]
+	return ""
 
 /obj/item/clothing/ears/ipod/equipped(mob/living/user, slot)
 	. = ..()

@@ -57,8 +57,10 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	. = ..()
 	if(!other_ipod_ref)
 		. += "Tapping this on another headphone will put it into shared listening mode!"
+		. += "Tapping this on another headphone will put it into shared listening mode."
 	else
 		. += "This headphones is currently in shared listening mode!"
+		. += "This headphones is currently in shared listening mode."
 
 /obj/item/clothing/ears/ipod/proc/upload(owner)
 	var/mob/user = owner
@@ -135,8 +137,8 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	if(other_ipod_ref)
 		var/obj/item/clothing/ears/ipod/other_ipod = other_ipod_ref.resolve()
 		if(!QDELETED(other_ipod) && istype(other_ipod)) // other headphones ref is valid, stop playing and update their song info
-			var/datum/track/new_song_other = new()
 			other_ipod.stop_other_headphones()
+			var/datum/track/new_song_other = new()
 			new_song_other.song_name = current_song.song_name
 			new_song_other.song_path = current_song.song_path
 			new_song_other.song_length = current_song.song_length
@@ -184,9 +186,9 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	var/obj/item/clothing/ears/ipod/other_ipod = other_ipod_ref.resolve()
 	if(!QDELETED(other_ipod) && istype(other_ipod)) // other headphones ref is valid
 		if(other_ipod.playing && !isnull(other_ipod.music_player.active_song_sound))
+			other_ipod.playing = FALSE
 			other_ipod.music_player.unlisten_all()
-		other_ipod.playing = FALSE
-		other_ipod.update_icon()
+			other_ipod.update_icon()
 		if(do_unlink)
 			other_ipod.other_ipod_ref = null
 			if(other_ipod.is_worn)

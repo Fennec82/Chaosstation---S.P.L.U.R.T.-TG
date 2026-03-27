@@ -252,12 +252,8 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 
 /obj/item/clothing/ears/ipod/attackby(obj/item/attacking_item, mob/user, list/modifiers, list/attack_modifiers)
 	if(istype(attacking_item, /obj/item/clothing/ears/ipod))
-		var/obj/item/clothing/ears/ipod/other_ipod
-		if(other_ipod_ref) // if there exists a linked headphones, unlink it
-			other_ipod = other_ipod_ref.resolve()
-			if(!QDELETED(other_ipod) && istype(other_ipod)) // other headphones is valid
-				other_ipod.unlink_refs()
-		other_ipod = attacking_item
+		unlink_refs()
+		var/obj/item/clothing/ears/ipod/other_ipod = attacking_item
 		other_ipod.unlink_refs()
 		other_ipod_ref = WEAKREF(other_ipod)
 		other_ipod.other_ipod_ref = WEAKREF(src)

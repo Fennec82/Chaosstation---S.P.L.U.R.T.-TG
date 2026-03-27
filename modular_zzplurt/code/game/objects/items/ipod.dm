@@ -13,7 +13,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	custom_price = PAYCHECK_CREW * 10
 
 	/// The current file path
-	var/curfile
+	var/curfile = null
 	/// Playing state
 	var/playing = FALSE
 	/// Time of the last upload
@@ -41,6 +41,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		music_player.unlisten_all()
 	playing = FALSE
 	is_worn = FALSE
+	curfile = null
 	if(current_song)
 		QDEL_NULL(current_song)
 	stop_other_headphones(TRUE)
@@ -132,22 +133,22 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	current_song = new_song
 
 	var/obj/item/clothing/ears/ipod/other_ipod = other_ipod_ref.resolve()
-	if(QDELETED(other_ipod) || !istype(other_ipod)) // other headphones ref is invalid, clear
+	if(!QDELETED(other_ipod) && istype(other_ipod)) // other headphones ref is valid, stop playing and update their song info
+		var/datum/track/new_song_other = new()
+		other_ipod.stop_other_headphones()
+		new_song_other.song_name = current_song.song_name
+		new_song_other.song_path = current_song.song_path
+		new_song_other.song_length = current_song.song_length
+		if(other_ipod.current_song)
+			qdel(other_ipod.current_song)
+		other_ipod.current_song = new_song_other
+		other_ipod.curfile = curfile
+		if(other_ipod.is_worn) // alert them
+			var/mob/living/carbon/human/wearer = other_ipod.loc
+			if(istype(wearer))
+				to_chat(wearer, span_warning("A new song has been uploaded."))
+	else
 		other_ipod_ref = null
-		return
-	var/datum/track/new_song_other = new()
-	other_ipod.stop_other_headphones()
-	new_song_other.song_name = current_song.song_name
-	new_song_other.song_path = current_song.song_path
-	new_song_other.song_length = current_song.song_length
-	if(other_ipod.current_song)
-		qdel(other_ipod.current_song)
-	other_ipod.current_song = new_song_other
-	other_ipod.curfile = curfile
-	if(other_ipod.is_worn)
-		var/mob/living/carbon/human/wearer = other_ipod.loc
-		if(istype(wearer))
-			to_chat(wearer, span_warning("A new song has been uploaded."))
 
 /obj/item/clothing/ears/ipod/proc/toggle(owner)
 	var/mob/user = owner
@@ -259,6 +260,16 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		other_ipod.unlink_refs()
 		other_ipod_ref = WEAKREF(other_ipod)
 		other_ipod.other_ipod_ref = WEAKREF(src)
+		if(curfile) // update song info
+			var/datum/track/new_song_other = new()
+			new_song_other.song_name = current_song.song_name
+			new_song_other.song_path = current_song.song_path
+			new_song_other.song_length = current_song.song_length
+			if(other_ipod.current_song)
+				qdel(other_ipod.current_song)
+			other_ipod.current_song = new_song_other
+			other_ipod.curfile = curfile
+			other_ipod.music_player.selection = other_ipod.current_song
 		balloon_alert(user, "successfully linked headphones")
 		return TRUE
 	return ..()

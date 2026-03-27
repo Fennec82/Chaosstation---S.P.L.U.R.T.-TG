@@ -2,10 +2,10 @@ GLOBAL_LIST_EMPTY(ipod_radio) //list of all ipods set to radio mode
 GLOBAL_VAR_INIT(ipod_last_upload, 0) //last time of the last upload, to prevent multiple uploads within seconds of eachother
 GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prevent spamming clients too often with play/stop
 GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
-	"Unknown Frequency",
-	"Unknown Frequency",
-	"Unknown Frequency",
-	"Unknown Frequency"
+	"Unknown Frequency A",
+	"Unknown Frequency B",
+	"Unknown Frequency C",
+	"Unknown Frequency D"
 ))
 
 /obj/item/clothing/ears/ipod
@@ -87,7 +87,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 			. += "This headphone is set to broadcast [get_radio_name()]."
 	else
 		. += "Tapping this on another headphone will put it into shared listening mode."
-		. += "Use in hand to set to public radio mode."
+		. += "Use in hand to set to broadcast mode."
 	. += "Alt click to set the volume."
 
 /obj/item/clothing/ears/ipod/proc/upload(owner)

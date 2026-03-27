@@ -1,7 +1,7 @@
 GLOBAL_LIST_EMPTY(ipod_radio) //list of all ipods set to radio mode
 GLOBAL_VAR_INIT(ipod_last_upload, 0) //last time of the last upload, to prevent multiple uploads within seconds of eachother
 GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prevent spamming clients too often with play/stop
-GLOBAL_LIST_INIT(ipod_station_names, list( //names of the radio stations
+GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 	"Unknown Frequency",
 	"Unknown Frequency",
 	"Unknown Frequency",
@@ -79,9 +79,9 @@ GLOBAL_LIST_INIT(ipod_station_names, list( //names of the radio stations
 				if(other_ipod == src)
 					continue
 				listeners++
-			. += "This headphone is the DJ of [get_radio_name()]. There are [listeners] headphones tuned in. Right click to set the radio station name."
+			. += "This headphone is the DJ of [get_radio_name()]. There are [listeners] headphones tuned in. Right click to set the broadcast name."
 		else
-			. += "This headphone is set to radio station [get_radio_name()]."
+			. += "This headphone is set to broadcast [get_radio_name()]."
 	else
 		. += "Tapping this on another headphone will put it into shared listening mode."
 		. += "Use in hand to set to public radio mode."
@@ -361,7 +361,7 @@ GLOBAL_LIST_INIT(ipod_station_names, list( //names of the radio stations
 		to_chat(user, span_notice("You turned off the radio."))
 		return
 
-	balloon_alert(user, "switch radio station")
+	balloon_alert(user, "switch broadcast")
 	if(radio_mode)
 		var/listeners = 0
 		var/found_dj = FALSE
@@ -394,11 +394,11 @@ GLOBAL_LIST_INIT(ipod_station_names, list( //names of the radio stations
 		radio_dj_owner = !found_dj // only set as the DJ owner if station has no DJ
 		var/radio_station_report
 		if(listeners > 1)
-			radio_station_report = "Set to station [get_radio_name()], [listeners] active listeners."
+			radio_station_report = "Set to broadcast [get_radio_name()], [listeners] active listeners."
 		else if(listeners == 1)
-			radio_station_report = "Set to station [get_radio_name()], [listeners] active listener."
+			radio_station_report = "Set to broadcast [get_radio_name()], [listeners] active listener."
 		else
-			radio_station_report = "Set to station [get_radio_name()], there are no listeners dialed in."
+			radio_station_report = "Set to broadcast [get_radio_name()], there are no listeners dialed in."
 		if(radio_dj_owner)
 			radio_station_report += " You're now the DJ and can broadcast on this radio frequency."
 		to_chat(user, span_notice(radio_station_report))
@@ -408,19 +408,19 @@ GLOBAL_LIST_INIT(ipod_station_names, list( //names of the radio stations
 	. = ..()
 	if(!radio_mode || !radio_dj_owner)
 		return
-	var/str = reject_bad_text(tgui_input_text(user, "Station name", "Set new radio station name", get_radio_name(), MAX_NAME_LEN))
+	var/str = reject_bad_text(tgui_input_text(user, "Broadcast name", "Set new broadcast name", get_radio_name(), MAX_NAME_LEN))
 	if(!str || QDELETED(src) || !user.is_holding(src))
 		to_chat(user, span_warning("Invalid text!"))
 		return
 	if(radio_mode >= 1 && radio_mode <= 4)
-		GLOB.ipod_station_names[radio_mode] = str
-		to_chat(user, span_notice("You set the station name to '[str]'."))
+		GLOB.ipod_cast_names[radio_mode] = str
+		to_chat(user, span_notice("You set the broadcast name to '[str]'."))
 		return
-	to_chat(user, span_notice("The connection to the radio station fizzled out!"))
+	to_chat(user, span_notice("The connection to the broadcast fizzled out!"))
 
 /obj/item/clothing/ears/ipod/proc/get_radio_name()
 	if(radio_mode >= 1 && radio_mode <= 4)
-		return GLOB.ipod_station_names[radio_mode]
+		return GLOB.ipod_cast_names[radio_mode]
 	return ""
 
 /obj/item/clothing/ears/ipod/equipped(mob/living/user, slot)

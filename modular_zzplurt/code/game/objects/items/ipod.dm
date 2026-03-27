@@ -261,16 +261,16 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		other_ipod.unlink_refs()
 		other_ipod_ref = WEAKREF(other_ipod)
 		other_ipod.other_ipod_ref = WEAKREF(src)
-		if(curfile) // update song info
+		if(other_ipod.curfile) // update song info
 			var/datum/track/new_song_other = new()
-			new_song_other.song_name = current_song.song_name
-			new_song_other.song_path = current_song.song_path
-			new_song_other.song_length = current_song.song_length
-			if(other_ipod.current_song)
-				qdel(other_ipod.current_song)
-			other_ipod.current_song = new_song_other
-			other_ipod.curfile = curfile
-			other_ipod.music_player.selection = other_ipod.current_song
+			new_song_other.song_name = other_ipod.current_song.song_name
+			new_song_other.song_path = other_ipod.current_song.song_path
+			new_song_other.song_length = other_ipod.current_song.song_length
+			if(current_song)
+				qdel(current_song)
+			current_song = new_song_other
+			curfile = other_ipod.curfile
+			music_player.selection = other_ipod.current_song
 		balloon_alert(user, "successfully linked headphones")
 		return TRUE
 	return ..()

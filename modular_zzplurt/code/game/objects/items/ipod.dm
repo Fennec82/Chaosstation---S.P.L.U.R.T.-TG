@@ -245,7 +245,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 			other_ipod.update_icon()
 		other_ipod.other_ipod_ref = null
 		if(other_ipod.is_worn)
-			var/mob/living/carbon/human/wearer = loc
+			var/mob/living/carbon/human/wearer = other_ipod.loc
 			if(istype(wearer))
 				to_chat(wearer, span_notice("The headphone's connection suddenly disconnects."))
 	other_ipod_ref = null

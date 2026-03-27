@@ -134,8 +134,12 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	if(LOWER_TEXT(copytext("[infile]", -4)) != ".ogg")
 		to_chat(user, span_warning("Filename must end in '.ogg': [infile]"))
 		return
-	if(length(infile) > 6485760)
-		to_chat(user, span_warning("TOO BIG. 6MB OR LESS."))
+	var/filelength = length(infile)
+	if(radio_mode && filelength > 3242880) // radio broadcasting has a tighter file size limit
+		to_chat(user, span_warning("Error: Too big, 3MB or less!"))
+		return
+	if(filelength > 6485760)
+		to_chat(user, span_warning("Error: Too big, 6MB or less!"))
 		return
 
 	var/real_round_time = world.timeofday - SSticker.real_round_start_time

@@ -97,16 +97,15 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	if(radio_mode && !radio_dj_owner)
 		to_chat(user, span_warning("You are not the DJ for station [radio_name]."))
 		return
-	if(playing)
-		to_chat(user, span_warning("You must first stop playing to track to upload a new track."))
-		return
 	if(lastfilechange)
 		if(world.time < lastfilechange + 2 MINUTES)
 			to_chat(user, span_warning("You've uploaded a new track too recently, try again later!"))
 			return
-
 	if(world.time < uploadattempt + 10 SECONDS) // automatically cancel any attempt to reattempt an upload in less than 10 seconds
 		to_chat(user, span_warning("Please wait while attempting to reupload."))
+		return
+	if(playing)
+		to_chat(user, span_warning("You must first stop playing to track to upload a new track."))
 		return
 
 	uploadattempt = world.time
@@ -116,11 +115,9 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	if(world.time > uploadattempt + 30 SECONDS) // automatically cancel any attempt to upload if taken more than 30 seconds
 		to_chat(user, span_warning("Your connect was timed out, try uploading again!"))
 		return
-
 	if(world.time < GLOB.ipod_last_upload + 30 SECONDS)
 		to_chat(user, span_warning("Another user has uploaded a new track recently, try again soon!"))
 		return
-
 	if(loc != user)
 		return
 	if(playing)
@@ -130,7 +127,6 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		return
 	if(!is_worn)
 		return
-
 	if(LOWER_TEXT(copytext("[infile]", -4)) != ".ogg")
 		to_chat(user, span_warning("Filename must end in '.ogg': [infile]"))
 		return

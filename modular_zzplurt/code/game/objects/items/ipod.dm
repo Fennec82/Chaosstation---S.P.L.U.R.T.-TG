@@ -239,7 +239,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 			music_player.sound_loops = radio_mode == 0 ? TRUE : FALSE
 			music_player.start_music(user)
 			play_other_headphones(user)
-			user.log_message("played song song on headphones: [curfile]", LOG_GAME)
+			user.log_message("played song on headphones: [curfile]", LOG_GAME)
 		else
 			to_chat(user, span_warning("No track is currently uploaded."))
 			return

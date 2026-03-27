@@ -422,7 +422,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 	if(!str || QDELETED(src) || !user.is_holding(src))
 		to_chat(user, span_warning("Invalid text!"))
 		return
-	if(radio_mode >= 1 && radio_mode <= 4)
+	if(radio_mode >= 1 && radio_mode <= 4 && radio_dj_owner)
 		GLOB.ipod_cast_names[radio_mode] = str
 		to_chat(user, span_notice("You set the broadcast name to '[str]'."))
 		return

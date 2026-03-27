@@ -277,7 +277,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	desc = "Upload a track to your headphones"
 
 /datum/action/item_action/toggle_ipod
-	name = "Toggle Headphones"
+	name = "Play Track"
 	desc = "UNTZ UNTZ UNTZ"
 
 /datum/action/item_action/upload_ipod/Trigger(trigger_flags)

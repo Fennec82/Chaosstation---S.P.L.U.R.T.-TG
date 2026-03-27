@@ -373,6 +373,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	update_radio_name()
 	if(radio_mode)
 		var/listeners = 0
+		var/found_dj = FALSE
 		var/loaded_song = FALSE
 		for(var/obj/item/clothing/ears/ipod/other_ipod in GLOB.ipod_radio) // fetch and update current song from found radio
 			if(other_ipod.radio_mode != radio_mode) // not the same channel
@@ -380,6 +381,8 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 			if(other_ipod == src)
 				continue
 			listeners++
+			if(other_ipod.radio_dj_owner)
+				found_dj = TRUE
 			if(!other_ipod.curfile)
 				continue
 			if(loaded_song)
@@ -397,7 +400,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		if(!loaded_song)
 			curfile = null
 
-		radio_dj_owner = listeners == 0 // only set this radio as the DJ owner if they are the first to claim this station
+		radio_dj_owner = !found_dj // only set as the DJ owner if station has no DJ
 		if(listeners > 1)
 			to_chat(user, span_notice("Set to station [radio_name], [listeners] active listeners."))
 		else if(listeners == 1)

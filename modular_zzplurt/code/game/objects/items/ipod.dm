@@ -119,6 +119,8 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 	if(world.time < GLOB.ipod_last_upload + 30 SECONDS)
 		to_chat(user, span_warning("Another user has uploaded a new track recently, try again soon!"))
 		return
+	if(QDELETED(user) || QDELETED(src))
+		return
 	if(loc != user)
 		return
 	if(playing)
@@ -145,6 +147,10 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 		fdel(logged_filename)
 	if(!fcopy(infile, logged_filename))
 		to_chat(user, span_warning("Could not upload song."))
+		return
+	if(QDELETED(user) || QDELETED(src))
+		return
+	if(loc != user)
 		return
 	if(radio_mode && !radio_dj_owner) // check again after upload
 		to_chat(user, span_warning("You are not the DJ for station [get_radio_name()]."))
@@ -214,7 +220,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 			if(other_ipod.is_worn)
 				var/mob/living/carbon/human/wearer = other_ipod.loc
 				if(istype(wearer))
-					if(!wearer.mind || !wearer.client)
+					if(isnull(wearer?.mind))
 						continue
 					other_ipod.playing = TRUE
 					other_ipod.music_player.start_music(wearer)
@@ -282,7 +288,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 	if(!istype(wearer))
 		return
 	wearer.log_message("was shared a song by [user] on headphones: [curfile]", LOG_GAME)
-	if(!wearer.mind || !wearer.client)
+	if(isnull(wearer?.mind))
 		return
 	if(other_ipod.playing && !isnull(other_ipod.music_player.active_song_sound))
 		other_ipod.music_player.unlisten_all()

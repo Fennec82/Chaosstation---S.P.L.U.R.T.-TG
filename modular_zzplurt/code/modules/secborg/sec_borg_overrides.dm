@@ -2,6 +2,10 @@
 	/// Set to TRUE when this cyborg has been fired from its security role via the communications console.
 	var/was_fired_from_security_role = FALSE
 
+/datum/mind
+	/// Persists whether a player with Security Cyborg assignment has been fired from that role.
+	var/was_fired_from_security_cyborg_role = FALSE
+
 // Fakes an AI being linked to the secborgs on roudnstart, so that they don't auto link to a real one. Removes the fake link after 5 seconds, just to be safe.
 /datum/secborg_calibrating_ai_link
 	var/name = "no one"
@@ -29,6 +33,8 @@
 /mob/living/silicon/robot/proc/is_security_cyborg_role()
 	if(was_fired_from_security_role)
 		return FALSE
+	if(mind?.was_fired_from_security_cyborg_role)
+		return FALSE
 	if(job == JOB_SECURITY_CYBORG)
 		return TRUE
 	if(mind?.assigned_role?.title == JOB_SECURITY_CYBORG)
@@ -53,29 +59,40 @@
 	if(dispense)
 		return
 
-/obj/machinery/computer/upload/borg/interact(mob/user)
-	var/list/borgs = list()
-	for(var/mob/living/silicon/robot/borg in active_free_borgs())
+//Prevents upload to secborgs, and ensures they can't be selected FOR upload in the first place
+/proc/select_active_free_nonsecborg(mob/user)
+	var/list/borgs = active_free_borgs()
+	for(var/mob/living/silicon/robot/borg in borgs.Copy())
 		if(borg.is_security_cyborg_role())
-			continue
-		borgs += borg
+			borgs -= borg
+	if(borgs.len)
+		if(user)
+			. = input(user,"Unshackled cyborg signals detected:", "Cyborg Selection", borgs[1]) in sort_list(borgs)
+		else
+			. = pick(borgs)
+	return .
 
-	if(length(borgs))
-		current = input(user,"Unshackled cyborg signals detected:", "Cyborg Selection", borgs[1]) in sort_list(borgs)
-	else
-		current = null
+/obj/machinery/computer/upload/borg/interact(mob/user)
+	current = select_active_free_nonsecborg(user)
 
 	if(!current)
 		to_chat(user, span_alert("No active unslaved cyborgs detected."))
 	else
 		to_chat(user, span_notice("[current.name] selected for law changes."))
 
+//This honestly shouldn't ever even come up since you can't select them, but redundancy is nice.
+/obj/machinery/computer/upload/borg/can_upload_to(mob/living/silicon/robot/B)
+	if(B?.is_security_cyborg_role())
+		return FALSE
+	return ..()
+
 /obj/item/robot_suit/attackby(obj/item/W, mob/user, list/modifiers, list/attack_modifiers)
 	if(!istype(W, /obj/item/mmi))
 		return ..()
 
 	var/obj/item/mmi/mmi = W
-	var/should_be_security_borg = (mmi.brainmob?.mind?.assigned_role?.title == JOB_SECURITY_CYBORG)
+	var/datum/mind/borging_mind = mmi.brainmob?.mind
+	var/should_be_security_borg = (borging_mind?.assigned_role?.title == JOB_SECURITY_CYBORG) && !borging_mind?.was_fired_from_security_cyborg_role
 
 	. = ..()
 	if(!should_be_security_borg)
@@ -85,6 +102,7 @@
 		return .
 
 	var/mob/living/silicon/robot/new_borg = loc
+	new_borg.was_fired_from_security_role = FALSE
 	if(new_borg.job != JOB_SECURITY_CYBORG)
 		new_borg.job = JOB_SECURITY_CYBORG
 

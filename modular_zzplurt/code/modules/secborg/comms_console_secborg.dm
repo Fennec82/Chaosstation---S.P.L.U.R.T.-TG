@@ -119,6 +119,8 @@
 /// Fires this security cyborg from their role, stripping their security privileges.
 /mob/living/silicon/robot/proc/fire_from_security_role(mob/user, reason)
 	was_fired_from_security_role = TRUE
+	if(mind)
+		mind.was_fired_from_security_cyborg_role = TRUE
 	REMOVE_TRAIT(src, TRAIT_CONTRABAND_BLOCKER, INNATE_TRAIT)
 	// Apply the same law behavior as a regular latejoin cyborg: sync to a priority AI when available,
 	// otherwise fall back to the standard configured silicon lawset for the round.
@@ -143,6 +145,8 @@
 	if(!was_fired_from_security_role)
 		return
 	was_fired_from_security_role = FALSE
+	if(mind)
+		mind.was_fired_from_security_cyborg_role = FALSE
 	ADD_TRAIT(src, TRAIT_CONTRABAND_BLOCKER, INNATE_TRAIT)
 	// Security cyborgs should be unsynced from AI and use security cyborg directives.
 	set_connected_ai(null)

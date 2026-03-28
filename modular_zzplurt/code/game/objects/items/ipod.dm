@@ -35,6 +35,8 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 	var/radio_dj_owner = FALSE
 	/// Currently worn
 	var/is_worn = FALSE
+	/// Currently got callback on mob wearer death
+	var/is_registered_on_death = FALSE
 	/// Shared listening mode
 	var/datum/weakref/other_ipod_ref = null
 	/// What actually plays music to us
@@ -56,6 +58,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 	playing = FALSE
 	is_worn = FALSE
 	curfile = null
+	is_registered_on_death = FALSE
 	GLOB.ipod_radio.Remove(src)
 	radio_mode = 0
 	if(current_song)
@@ -453,6 +456,9 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 /obj/item/clothing/ears/ipod/equipped(mob/living/user, slot)
 	. = ..()
 	is_worn = slot_flags & slot
+	if(is_worn && !is_registered_on_death)
+		RegisterSignal(user, COMSIG_LIVING_DEATH, PROC_REF(on_mob_death))
+		is_registered_on_death = TRUE
 
 /obj/item/clothing/ears/ipod/dropped(mob/living/carbon/human/user)
 	. = ..()
@@ -463,6 +469,19 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 		update_icon()
 		to_chat(user, span_notice("The headphones turn off and go into standby mode."))
 	is_worn = FALSE
+	if(is_registered_on_death)
+		UnregisterSignal(user, COMSIG_LIVING_DEATH)
+		is_registered_on_death = FALSE
+
+/obj/item/clothing/ears/ipod/proc/on_mob_death(mob/living/source)
+	SIGNAL_HANDLER
+	if(playing)
+		playing = FALSE
+		if(!isnull(music_player.active_song_sound))
+			music_player.unlisten_all()
+		update_icon()
+	UnregisterSignal(source, COMSIG_LIVING_DEATH)
+	is_registered_on_death = FALSE
 
 /datum/action/item_action/upload_ipod
 	name = "Upload Track"

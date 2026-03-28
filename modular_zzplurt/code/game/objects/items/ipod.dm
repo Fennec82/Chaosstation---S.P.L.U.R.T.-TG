@@ -149,7 +149,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 
 	GLOB.ipod_last_upload = world.time
 	var/real_round_time = world.timeofday - SSticker.real_round_start_time
-	var/logged_filename = "data/ipodupload/round-[GLOB.round_id ? GLOB.round_id : "NULL"]/[user.ckey]/[time2text(real_round_time, "hh_mm_ss", 0)].ogg"
+	var/logged_filename = "data/ipodupload/round-[GLOB.round_id ? GLOB.round_id : "NULL"]/[user.ckey]/[time2text(real_round_time, "hh_mm_ss", 0)][file_extension]"
 	if(fexists(logged_filename))
 		fdel(logged_filename)
 	if(!fcopy(infile, logged_filename))

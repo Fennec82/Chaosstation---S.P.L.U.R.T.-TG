@@ -2,6 +2,30 @@
 	/// Set to TRUE when this cyborg has been fired from its security role via the communications console.
 	var/was_fired_from_security_role = FALSE
 
+// Fakes an AI being linked to the secborgs on roudnstart, so that they don't auto link to a real one. Removes the fake link after 5 seconds, just to be safe.
+/datum/secborg_calibrating_ai_link
+	var/name = "no one"
+	var/mind = null
+	var/aicamera = null
+	var/list/connected_robots = list()
+	var/doomsday_device = null
+	var/stat = CONSCIOUS
+	var/control_disabled = FALSE
+
+/mob/living/silicon/robot/proc/start_secborg_ai_calibration(calibration_time = 5 SECONDS)
+	if(!is_security_cyborg_role())
+		return
+	if(vars["connected_ai"])
+		return
+	vars["connected_ai"] = new /datum/secborg_calibrating_ai_link()
+	addtimer(CALLBACK(src, PROC_REF(finish_secborg_ai_calibration)), calibration_time)
+
+/mob/living/silicon/robot/proc/finish_secborg_ai_calibration()
+	var/current_link = vars["connected_ai"]
+	if(istype(current_link, /datum/secborg_calibrating_ai_link))
+		vars["connected_ai"] = null
+
+//A proc to check if this cyborg is a secborg. Used all over to determine borg behavior
 /mob/living/silicon/robot/proc/is_security_cyborg_role()
 	if(was_fired_from_security_role)
 		return FALSE
@@ -10,6 +34,122 @@
 	if(mind?.assigned_role?.title == JOB_SECURITY_CYBORG)
 		return TRUE
 	return FALSE
+
+//Some various overrides to allow for secborgs to have ammo counter huds for their tazer
+/datum/hud/robot/New(mob/owner)
+	. = ..()
+	if(!ammo_counter)
+		ammo_counter = new /atom/movable/screen/ammo_counter(null, src)
+		infodisplay += ammo_counter
+
+/datum/component/secborg_ammo_hud
+	/// The ammo counter screen object itself.
+	var/atom/movable/screen/ammo_counter/hud
+	/// A weakref to the mob who currently owns this HUD.
+	var/datum/weakref/current_hud_owner
+	/// The HUD's original screen location before the secborg offset is applied.
+	var/original_screen_loc
+
+/datum/component/secborg_ammo_hud/Initialize()
+	. = ..()
+	if(!istype(parent, /obj/item/gun/energy/e_gun/advtaser/cyborg/secborg))
+		return COMPONENT_INCOMPATIBLE
+	RegisterSignal(parent, COMSIG_ITEM_EQUIPPED, PROC_REF(secborg_wake_up))
+
+/datum/component/secborg_ammo_hud/Destroy()
+	secborg_turn_off()
+	return ..()
+
+/datum/component/secborg_ammo_hud/proc/secborg_wake_up(datum/source, mob/user, slot)
+	SIGNAL_HANDLER
+	if(!iscyborg(user))
+		return
+
+	var/mob/living/silicon/robot/robot_user = user
+	if(robot_user.module_active != parent)
+		secborg_turn_off()
+		return
+
+	if(robot_user.hud_used)
+		hud = robot_user.hud_used.ammo_counter
+		if(!hud.on)
+			current_hud_owner = WEAKREF(user)
+			RegisterSignal(user, COMSIG_QDELETING, PROC_REF(secborg_turn_off))
+			secborg_turn_on()
+			return
+		secborg_update_hud()
+
+/datum/component/secborg_ammo_hud/proc/secborg_turn_on()
+	SIGNAL_HANDLER
+	RegisterSignal(hud, COMSIG_QDELETING, PROC_REF(secborg_turn_off))
+	RegisterSignals(parent, list(COMSIG_PREQDELETED, COMSIG_ITEM_DROPPED), PROC_REF(secborg_turn_off))
+	RegisterSignals(parent, list(COMSIG_UPDATE_AMMO_HUD, COMSIG_GUN_CHAMBER_PROCESSED), PROC_REF(secborg_update_hud))
+	original_screen_loc = hud.screen_loc
+	hud.screen_loc = "RIGHT-1:28,CENTER-5:25"
+	hud.turn_on()
+	secborg_update_hud()
+
+/datum/component/secborg_ammo_hud/proc/secborg_turn_off()
+	SIGNAL_HANDLER
+	UnregisterSignal(parent, list(COMSIG_PREQDELETED, COMSIG_ITEM_DROPPED, COMSIG_UPDATE_AMMO_HUD, COMSIG_GUN_CHAMBER_PROCESSED))
+	var/mob/living/current_owner = current_hud_owner?.resolve()
+	if(isnull(current_owner))
+		current_hud_owner = null
+	else
+		UnregisterSignal(current_owner, COMSIG_QDELETING)
+
+	if(hud)
+		hud.turn_off()
+		if(original_screen_loc)
+			hud.screen_loc = original_screen_loc
+		UnregisterSignal(hud, COMSIG_QDELETING)
+		hud = null
+
+	current_hud_owner = null
+	original_screen_loc = null
+
+/datum/component/secborg_ammo_hud/proc/secborg_update_hud()
+	SIGNAL_HANDLER
+	if(!istype(parent, /obj/item/gun/energy))
+		return
+
+	var/obj/item/gun/energy/pew = parent
+	hud.icon_state = "eammo_counter"
+	hud.cut_overlays()
+	hud.maptext_x = -12
+	var/obj/item/ammo_casing/energy/shot = pew.ammo_type[pew.select]
+	var/batt_percent = FLOOR(clamp(pew.cell.charge / pew.cell.maxcharge, 0, 1) * 100, 1)
+	var/shot_cost_percent = FLOOR(clamp(shot.e_cost / pew.cell.maxcharge, 0, 1) * 100, 1)
+	if(batt_percent > 99 || shot_cost_percent > 99)
+		hud.maptext_x = -12
+	else
+		hud.maptext_x = -8
+	if(!pew.can_shoot())
+		hud.icon_state = "eammo_counter_empty"
+		hud.maptext = span_maptext("<div align='center' valign='middle' style='position:relative'><font color='[COLOR_RED]'><b>[batt_percent]%</b></font><br><font color='[COLOR_CYAN]'>[shot_cost_percent]%</font></div>")
+		return
+	if(batt_percent <= 25)
+		hud.maptext = span_maptext("<div align='center' valign='middle' style='position:relative'><font color='[COLOR_YELLOW]'><b>[batt_percent]%</b></font><br><font color='[COLOR_CYAN]'>[shot_cost_percent]%</font></div>")
+		return
+	hud.maptext = span_maptext("<div align='center' valign='middle' style='position:relative'><font color='[COLOR_VIBRANT_LIME]'><b>[batt_percent]%</b></font><br><font color='[COLOR_CYAN]'>[shot_cost_percent]%</font></div>")
+
+/mob/living/silicon/robot/proc/update_secborg_taser_ammo_hud()
+	for(var/obj/item/gun/energy/e_gun/advtaser/cyborg/secborg/taser as anything in held_items)
+		var/datum/component/secborg_ammo_hud/hud_component = taser.GetComponent(/datum/component/secborg_ammo_hud)
+		if(!hud_component)
+			continue
+		if(module_active == taser)
+			hud_component.secborg_wake_up(null, src, null)
+		else
+			hud_component.secborg_turn_off()
+
+/mob/living/silicon/robot/toggle_module(module_num)
+	. = ..()
+	update_secborg_taser_ammo_hud()
+
+/mob/living/silicon/robot/perform_hand_swap()
+	. = ..()
+	update_secborg_taser_ammo_hud()
 
 //Armor definitions and setting. getarmor is simply passed on to its parent with no modifications if it's not a secborg
 /datum/armor/armor_secborg
@@ -63,6 +203,7 @@
 		return
 	addtimer(CALLBACK(src, PROC_REF(set_stamina_loss), 0, TRUE, TRUE), stamina_regen_time, TIMER_UNIQUE | TIMER_OVERRIDE)
 
+//A few overrides to ensure secborgs can't shock doors
 /obj/machinery/door/airlock/proc/user_allowed_to_remote_shock(mob/user)
 	if(!user_allowed(user))
 		return FALSE
@@ -97,6 +238,7 @@
 	else
 		set_electrified(MACHINE_ELECTRIFIED_PERMANENT, user)
 
+//A few overrides to ensure that certain wires are protected and that they can't be emaged or have laws changed
 /mob/living/silicon/robot/post_lawchange(announce = TRUE)
 	if(is_security_cyborg_role())
 		laws = new /datum/ai_laws/security_cyborg()
@@ -269,6 +411,7 @@
 				R.ResetModel()
 				log_silicon("[key_name(usr)] reset [key_name(R)]'s module via wire")
 
+//Model pickin override so that we can seperate out secborg and normal borgs module picking
 /mob/living/silicon/robot/pick_model()
 	if(model.type != /obj/item/robot_model)
 		return
@@ -324,6 +467,7 @@
 
 	model.transform_to(selected_model)
 
+//Pounce and bite stuff
 /obj/item/robot_model/proc/ensure_security_canine_modules()
 	// Native dogborg chassis already receive bite + pounce through dogborg_equip().
 	if(TRAIT_R_DOGBORG in model_features)
@@ -346,11 +490,17 @@
 	name = "security cyborg hybrid taser"
 	desc = "An integrated hybrid taser, containing its own capacitor. The weapon may only be fired so many times before being recharged at a cyborg recharger to prevent potential combustion."
 	ammo_type = list(/obj/item/ammo_casing/energy/disabler, /obj/item/ammo_casing/energy/electrode/sec)
+	pin = /obj/item/firing_pin/alert_level/blue
 	use_cyborg_cell = FALSE
 	can_charge = FALSE
 
 /obj/item/gun/energy/e_gun/advtaser/cyborg/secborg/Initialize(mapload)
 	. = ..()
+	var/datum/component/ammo_hud/default_ammo_hud = GetComponent(/datum/component/ammo_hud)
+	if(default_ammo_hud)
+		qdel(default_ammo_hud)
+	if(!GetComponent(/datum/component/secborg_ammo_hud))
+		AddComponent(/datum/component/secborg_ammo_hud)
 	if(cell)
 		cell.maxcharge = STANDARD_CELL_CHARGE
 		cell.charge = cell.maxcharge
@@ -360,8 +510,8 @@
 
 /obj/item/gun/energy/e_gun/advtaser/cyborg/secborg/recharge_newshot(no_cyborg_drain)
 	. = ..()
-	// Deduct power from cyborg's main cell for balance/power accounting, but actual firing uses this gun's battery
-	if(iscyborg(loc))
+	// Deduct power from the borg's main cell only when a fired shot is being replaced.
+	if(!no_cyborg_drain && iscyborg(loc))
 		var/mob/living/silicon/robot/cyborg = loc
 		if(cyborg.cell && chambered)
 			var/obj/item/ammo_casing/energy/shot = chambered
@@ -423,11 +573,14 @@
 		taser.cell.charge = taser.cell.maxcharge
 		taser.chambered = null
 		taser.recharge_newshot(TRUE)
+		SEND_SIGNAL(taser, COMSIG_UPDATE_AMMO_HUD)
+		cyborg.update_secborg_taser_ammo_hud()
 		taser.update_appearance()
 		return TRUE
 
-/datum/job/cyborg/security/after_spawn(mob/living/spawned, client/player_client)
-	return ..()
+
+
+	return .
 
 /obj/item/robot_model/security/be_transformed_to(obj/item/robot_model/old_model, forced = FALSE)
 	. = ..()
@@ -452,6 +605,7 @@
 			return
 	..()
 
+//The actual secborg job itself
 /datum/job/cyborg/security
 	title = JOB_SECURITY_CYBORG
 	job_spawn_title = JOB_SECURITY_OFFICER
@@ -484,7 +638,13 @@
 	if(iscyborg(spawned))
 		var/mob/living/silicon/robot/robot_spawn = spawned
 		if(robot_spawn.is_security_cyborg_role())
-			robot_spawn.set_connected_ai(null)
+			if(player_client)
+				robot_spawn.set_gender(player_client)
+			ADD_TRAIT(robot_spawn, TRAIT_CONTRABAND_BLOCKER, INNATE_TRAIT)
+			if(SSticker.current_state == GAME_STATE_SETTING_UP)
+				robot_spawn.start_secborg_ai_calibration()
+			else
+				robot_spawn.set_connected_ai(null)
 			robot_spawn.lawupdate = FALSE
 			robot_spawn.laws = new /datum/ai_laws/security_cyborg()
 			robot_spawn.laws.associate(robot_spawn)
@@ -494,7 +654,6 @@
 			robot_spawn.log_current_laws()
 			return
 	return ..()
-
 
 /datum/ai_laws/security_cyborg
 	name = "Security Cyborg Directives"

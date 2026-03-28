@@ -8,7 +8,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 
 /obj/item/clothing/ears/ipod
 	name = "\improper iZune Spaceman Headphones"
-	desc = "An aftermarket Nanotrasen personal portable music player. This thing only supports OGG vorbis playback, rad!"
+	desc = "An aftermarket Nanotrasen personal portable music player. This thing supports MP3 and OGG file playback, rad!"
 	icon = 'modular_skyrat/master_files/icons/obj/clothing/accessories.dmi'
 	worn_icon = 'modular_skyrat/master_files/icons/mob/clothing/ears.dmi'
 	icon_state = "headphones"
@@ -135,8 +135,9 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 		return
 	if(!is_worn)
 		return
-	if(LOWER_TEXT(copytext("[infile]", -4)) != ".ogg")
-		to_chat(user, span_warning("Filename must end in '.ogg': [infile]"))
+	var/file_extension = LOWER_TEXT(copytext("[infile]", -4))
+	if(!(file_extension == ".ogg" || file_extension == ".mp3"))
+		to_chat(user, span_warning("File type must be OGG or MP3: [infile]"))
 		return
 	var/filelength = length(infile)
 	if(radio_mode && filelength > 3242880) // radio broadcasting has a tighter file size limit

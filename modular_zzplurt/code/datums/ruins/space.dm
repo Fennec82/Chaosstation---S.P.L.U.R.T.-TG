@@ -17,7 +17,7 @@
 	prefix = "_maps/RandomRuins/SpaceRuins/splurt/" // TG Map Edit
 
 /datum/map_template/ruin/space/splurt/icemoon_asteroid
-	id = icemoonasteroid
+	id = icemoon_asteroid
 	suffix = "icemoon_asteroid.dmm"
 	name = "Icemoon Asteroid"
 	description = "A sizeable asteroid from presumably an ice planet of some kind."

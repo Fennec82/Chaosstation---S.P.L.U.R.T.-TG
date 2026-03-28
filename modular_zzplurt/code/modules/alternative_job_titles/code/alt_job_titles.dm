@@ -481,10 +481,9 @@
 		"Service Trainer",
 	)
 
-/datum/job/cyborg/security
-	alt_titles = list(
+/proc/get_security_cyborg_alt_titles()
+	return list(
 		"Security Cyborg",
 		"Safeguard Model",
 		"Synthetic Auxiliary Officer",
-		"Peacekeeper Model",
 	)

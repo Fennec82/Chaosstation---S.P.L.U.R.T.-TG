@@ -730,13 +730,17 @@
 	job_spawn_title = JOB_SECURITY_OFFICER
 	description = "Assist Security and the station, follow your laws."
 	supervisors = SUPERVISOR_HOS
-	alt_titles = list(JOB_SECURITY_CYBORG)
 	total_positions = 2
 	spawn_positions = 2
 	config_tag = "SECURITY_CYBORG"
 	display_order = JOB_DISPLAY_ORDER_SECURITY_CYBORG
 	antagonist_restricted = TRUE
 	restricted_antagonists = list("ALL")
+
+//Updates the alt job titles at runtime so we can still keep it in the nice place with the other ones
+/datum/job/cyborg/security/New()
+	alt_titles = get_security_cyborg_alt_titles()
+	. = ..()
 
 /* Commented out for now, but config changes should be made to accomadate this. If you see this comment and it's fullmerged, I forgot, oops!
 /datum/job/cyborg/security/New()

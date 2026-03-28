@@ -35,6 +35,67 @@
 		return TRUE
 	return FALSE
 
+// Borg-specific zipties that don't consume the source module item when used by dispenser logic.
+/obj/item/restraints/handcuffs/cable/zipties/secborg/apply_cuffs(mob/living/carbon/target, mob/user, dispense = FALSE)
+	if(target.handcuffed)
+		return
+
+	if(!user.temporarilyRemoveItemFromInventory(src) && !dispense)
+		return
+
+	var/obj/item/restraints/handcuffs/cuffs = src
+	if(dispense)
+		cuffs = new /obj/item/restraints/handcuffs/cable/zipties
+
+	target.equip_to_slot(cuffs, ITEM_SLOT_HANDCUFFED)
+	SEND_SIGNAL(target, COMSIG_MOB_HANDCUFFED)
+
+	if(dispense)
+		return
+
+/obj/machinery/computer/upload/borg/interact(mob/user)
+	var/list/borgs = list()
+	for(var/mob/living/silicon/robot/borg in active_free_borgs())
+		if(borg.is_security_cyborg_role())
+			continue
+		borgs += borg
+
+	if(length(borgs))
+		current = input(user,"Unshackled cyborg signals detected:", "Cyborg Selection", borgs[1]) in sort_list(borgs)
+	else
+		current = null
+
+	if(!current)
+		to_chat(user, span_alert("No active unslaved cyborgs detected."))
+	else
+		to_chat(user, span_notice("[current.name] selected for law changes."))
+
+/obj/item/robot_suit/attackby(obj/item/W, mob/user, list/modifiers, list/attack_modifiers)
+	if(!istype(W, /obj/item/mmi))
+		return ..()
+
+	var/obj/item/mmi/mmi = W
+	var/should_be_security_borg = (mmi.brainmob?.mind?.assigned_role?.title == JOB_SECURITY_CYBORG)
+
+	. = ..()
+	if(!should_be_security_borg)
+		return .
+
+	if(!iscyborg(loc))
+		return .
+
+	var/mob/living/silicon/robot/new_borg = loc
+	if(new_borg.job != JOB_SECURITY_CYBORG)
+		new_borg.job = JOB_SECURITY_CYBORG
+
+	new_borg.set_connected_ai(null)
+	new_borg.lawupdate = FALSE
+	new_borg.laws = new /datum/ai_laws/security_cyborg()
+	new_borg.laws.associate(new_borg)
+	new_borg.show_laws()
+	new_borg.log_current_laws()
+	return .
+
 //Some various overrides to allow for secborgs to have ammo counter huds for their tazer
 /datum/hud/robot/New(mob/owner)
 	. = ..()
@@ -582,7 +643,7 @@
 		/obj/item/borg/cyborghug/peacekeeper,
 		/obj/item/extinguisher,
 		/obj/item/borg/projectile_dampen,
-		/obj/item/restraints/handcuffs/cable/zipties
+		/obj/item/restraints/handcuffs/cable/zipties/secborg
 	)
 	cyborg_base_icon = "peace"
 	model_select_icon = "standard"
@@ -595,7 +656,7 @@
 		/obj/item/melee/baton/security/loaded,
 		/obj/item/gun/energy/e_gun/advtaser/cyborg/secborg,
 		/obj/item/assembly/flash/cyborg,
-		/obj/item/restraints/handcuffs/cable/zipties,
+		/obj/item/restraints/handcuffs/cable/zipties/secborg,
 		/obj/item/holosign_creator/security,
 		/obj/item/extinguisher/mini,
 	)
@@ -705,3 +766,13 @@
 		"Support: Protect the integrity of the department of security, and the well-being and equipment of all members of security. When outside of the department, ensure you accompany another member of security unless you are the only security member or otherwise ordered to do so so long as it does not violate the protect or enforce objectives.",
 		"Survive: Ensure your own survival so long as this does not conflict with the support, protect, or enforce objectives.",
 	)
+
+//Ensures they're not picked for weird antag stuff
+/datum/dynamic_ruleset/get_always_blacklisted_roles()
+	. = ..()
+	. |= JOB_SECURITY_CYBORG
+
+// Ensures storyteller antagonist crewset events also exclude secborg from candidate pools.
+/datum/round_event_control/antagonist/New()
+	. = ..()
+	restricted_roles |= JOB_SECURITY_CYBORG

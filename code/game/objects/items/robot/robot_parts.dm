@@ -307,11 +307,7 @@
 					O.log_current_laws()
 
 			brainmob.mind?.remove_antags_for_borging()
-			//O.job = JOB_CYBORG
-			//SPLURT ADDITION START
-			var/is_security_borg_mind = (brainmob.mind?.assigned_role?.title == JOB_SECURITY_CYBORG)
-			O.job = is_security_borg_mind ? JOB_SECURITY_CYBORG : JOB_CYBORG
-			//SPLURT ADDITION END
+			O.job = JOB_CYBORG
 
 			O.cell = chest.cell
 			chest.cell.forceMove(O)
@@ -323,15 +319,6 @@
 			// This canonizes that MMI'd cyborgs have memories of their previous life
 			brainmob.add_mob_memory(/datum/memory/was_cyborged, protagonist = brainmob.mind, deuteragonist = user)
 			brainmob.mind.transfer_to(O)
-			//SPLURT ADDITION START
-			if(is_security_borg_mind)
-				O.set_connected_ai(null)
-				O.lawupdate = FALSE
-				O.laws = new /datum/ai_laws/security_cyborg()
-				O.laws.associate(O)
-				O.show_laws()
-				O.log_current_laws()
-			//SPLURT ADDITION END
 			playsound(O.loc, 'sound/mobs/non-humanoids/cyborg/liveagain.ogg', 75, TRUE)
 
 			if(O.is_antag())

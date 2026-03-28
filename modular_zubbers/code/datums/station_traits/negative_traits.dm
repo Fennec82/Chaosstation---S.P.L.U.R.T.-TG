@@ -1,4 +1,3 @@
-/*SPLURT EDIT START - Disables this as we now have actual secborgs
 /datum/station_trait/hos_ai
 	name = "Head of Security AI"
 	trait_type = STATION_TRAIT_NEGATIVE
@@ -22,4 +21,3 @@
 	. = ..()
 	for(var/mob/living/silicon/ai/ai as anything in GLOB.ai_list)
 		ai.show_laws()
-SPLURT EDIT END */

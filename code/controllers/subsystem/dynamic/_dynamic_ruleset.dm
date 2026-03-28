@@ -258,7 +258,6 @@
 	return list(
 		JOB_AI,
 		JOB_CYBORG,
-		JOB_SECURITY_CYBORG, //SPLURT ADDITION
 	)
 
 /// Takes in a list of players and returns a list of players who are valid candidates for this ruleset

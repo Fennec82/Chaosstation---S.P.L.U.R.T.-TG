@@ -15,3 +15,6 @@
 
 /datum/map_template/ruin/space/interdyne
 	prefix = "_maps/RandomRuins/SpaceRuins/splurt/" // TG Map Edit
+
+/datum/map_template/ruin/space/splurt/icemoon_asteroid
+	suffix = "icemoon_asteroid.dmm"

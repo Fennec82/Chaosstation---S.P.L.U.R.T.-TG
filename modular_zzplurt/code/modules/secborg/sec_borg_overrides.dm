@@ -151,6 +151,38 @@
 	. = ..()
 	update_secborg_taser_ammo_hud()
 
+// Detective kit upgrade: adds forensic scanner and evidence bag to the security borg
+/obj/item/borg/upgrade/detective_kit
+	name = "detective kit module"
+	desc = "A forensics module for security cyborgs. Integrates a detective scanner and evidence bag directly into the unit's toolkit."
+	icon_state = "module_security"
+	require_model = TRUE
+	model_type = list(/obj/item/robot_model/security)
+	model_flags = BORG_MODEL_SECURITY
+	items_to_add = list(
+		/obj/item/detective_scanner,
+		/obj/item/evidencebag,
+	)
+
+/datum/design/borg_upgrade_detective_kit
+	name = "Detective Kit Module"
+	id = "borg_upgrade_detective_kit"
+	build_type = MECHFAB
+	build_path = /obj/item/borg/upgrade/detective_kit
+	materials = list(
+		/datum/material/iron = SHEET_MATERIAL_AMOUNT * 5,
+		/datum/material/glass = SHEET_MATERIAL_AMOUNT * 2,
+	)
+	construction_time = 10 SECONDS
+	category = list(
+		RND_CATEGORY_MECHFAB_CYBORG_MODULES + RND_SUBCATEGORY_MECHFAB_CYBORG_MODULES_SECURITY
+	)
+
+/datum/techweb_node/sec_equip/New()
+	. = ..()
+	design_ids += "borg_upgrade_detective_kit"
+
+
 //Armor definitions and setting. getarmor is simply passed on to its parent with no modifications if it's not a secborg
 /datum/armor/armor_secborg
 	melee = 25
@@ -164,6 +196,7 @@
 		return armor.get_rating(type)
 	return ..()
 
+//These few make it so that secborgs slow down based on stamina damage, but, arn't FULLY stunnable with it. Also makes stun batons actually effect them.
 /mob/living/silicon/robot/adjust_stamina_loss(amount, updating_stamina = TRUE, forced = FALSE, required_biotype = ALL)
 	if(!is_security_cyborg_role())
 		return FALSE
@@ -203,6 +236,16 @@
 		return
 	addtimer(CALLBACK(src, PROC_REF(set_stamina_loss), 0, TRUE, TRUE), stamina_regen_time, TIMER_UNIQUE | TIMER_OVERRIDE)
 
+/obj/item/melee/baton/baton_effect(mob/living/target, mob/living/user, list/modifiers, stun_override)
+	if(iscyborg(target))
+		var/mob/living/silicon/robot/robot_target = target
+		if(robot_target.is_security_cyborg_role())
+			var/armour_block = target.run_armor_check(null, armour_type_against_stun, null, null, stun_armour_penetration)
+			target.apply_damage(stamina_damage, STAMINA, blocked = armour_block)
+			additional_effects_non_cyborg(target, user)
+			SEND_SIGNAL(target, COMSIG_MOB_BATONED, user, src)
+			return TRUE
+	return ..()
 //A few overrides to ensure secborgs can't shock doors
 /obj/machinery/door/airlock/proc/user_allowed_to_remote_shock(mob/user)
 	if(!user_allowed(user))
@@ -411,7 +454,7 @@
 				R.ResetModel()
 				log_silicon("[key_name(usr)] reset [key_name(R)]'s module via wire")
 
-//Model pickin override so that we can seperate out secborg and normal borgs module picking
+//Model selection override so that we can seperate out secborg and normal borgs module picking
 /mob/living/silicon/robot/pick_model()
 	if(model.type != /obj/item/robot_model)
 		return
@@ -552,8 +595,6 @@
 		/obj/item/assembly/flash/cyborg,
 		/obj/item/restraints/handcuffs/cable/zipties,
 		/obj/item/holosign_creator/security,
-		/obj/item/detective_scanner,
-		/obj/item/evidencebag,
 		/obj/item/extinguisher/mini,
 	)
 	radio_channels = list(RADIO_CHANNEL_SECURITY)
@@ -574,12 +615,9 @@
 		taser.chambered = null
 		taser.recharge_newshot(TRUE)
 		SEND_SIGNAL(taser, COMSIG_UPDATE_AMMO_HUD)
-		cyborg.update_secborg_taser_ammo_hud()
 		taser.update_appearance()
-		return TRUE
-
-
-
+	// Always refresh the HUD each charge tick, whether the taser recharged or was already full
+	cyborg.update_secborg_taser_ammo_hud()
 	return .
 
 /obj/item/robot_model/security/be_transformed_to(obj/item/robot_model/old_model, forced = FALSE)
@@ -665,14 +703,3 @@
 		"Support: Protect the integrity of the department of security, and the well-being and equipment of all members of security. When outside of the department, ensure you accompany another member of security unless you are the only security member or otherwise ordered to do so so long as it does not violate the protect or enforce objectives.",
 		"Survive: Ensure your own survival so long as this does not conflict with the support, protect, or enforce objectives.",
 	)
-
-/obj/item/melee/baton/baton_effect(mob/living/target, mob/living/user, list/modifiers, stun_override)
-	if(iscyborg(target))
-		var/mob/living/silicon/robot/robot_target = target
-		if(robot_target.is_security_cyborg_role())
-			var/armour_block = target.run_armor_check(null, armour_type_against_stun, null, null, stun_armour_penetration)
-			target.apply_damage(stamina_damage, STAMINA, blocked = armour_block)
-			additional_effects_non_cyborg(target, user)
-			SEND_SIGNAL(target, COMSIG_MOB_BATONED, user, src)
-			return TRUE
-	return ..()

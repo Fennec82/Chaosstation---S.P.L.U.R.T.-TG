@@ -10545,7 +10545,6 @@
 #include "modular_zzplurt\code\modules\research\techweb\nodes\engi_nodes.dm"
 #include "modular_zzplurt\code\modules\research\techweb\nodes\mining_nodes.dm"
 #include "modular_zzplurt\code\modules\research\techweb\nodes\sec_nodes.dm"
-#include "modular_zzplurt\code\modules\research\techweb\nodes\security_nodes.dm"
 #include "modular_zzplurt\code\modules\research\xenobiology\crossbreeding\regenerative.dm"
 #include "modular_zzplurt\code\modules\resize\resizing.dm"
 #include "modular_zzplurt\code\modules\resize\sizechems.dm"

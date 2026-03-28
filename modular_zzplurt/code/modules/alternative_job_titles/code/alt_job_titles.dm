@@ -480,3 +480,11 @@
 		"Security Trainer",
 		"Service Trainer",
 	)
+
+/datum/job/cyborg/security
+	alt_titles = list(
+		"Security Cyborg",
+		"Safeguard Model",
+		"Synthetic Auxiliary Officer",
+		"Peacekeeper Model",
+	)

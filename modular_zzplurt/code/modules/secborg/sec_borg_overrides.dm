@@ -135,6 +135,8 @@
 
 /mob/living/silicon/robot/proc/update_secborg_taser_ammo_hud()
 	for(var/obj/item/gun/energy/e_gun/advtaser/cyborg/secborg/taser as anything in held_items)
+		if(!taser || QDELETED(taser))
+			continue
 		var/datum/component/secborg_ammo_hud/hud_component = taser.GetComponent(/datum/component/secborg_ammo_hud)
 		if(!hud_component)
 			continue

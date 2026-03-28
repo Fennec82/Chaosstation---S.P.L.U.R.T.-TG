@@ -36,23 +36,20 @@
 	var/choice = "Carbon dioxide" // default to something so the quirk doesn't break if the pref fails to load for some reason
 	if(client_source?.prefs)
 		choice = client_source.prefs.read_preference(/datum/preference/choiced/exoresp)
-
 	configure_from_choice(choice)
 	return ..()
 
 /datum/quirk/equipping/lungs/exoresp/proc/configure_from_choice(choice)
 	if(isnull(choice))
 		choice = "Carbon dioxide" // and then null check anyways out of paranoia
-
 	switch(choice)
 		if("BZ")
 			forced_items = list(
 				/obj/item/clothing/mask/breath = list(ITEM_SLOT_MASK),
 				/obj/item/tank/internals/bz/belt/full = list(ITEM_SLOT_HANDS, ITEM_SLOT_LPOCKET, ITEM_SLOT_RPOCKET),
 			)
-			lungs_typepath = /obj/item/organ/lungs/exotic/bz
+			lungs_typepath = /obj/item/organ/lungs/exotic/bz // see bubber's nitrogen breather quirk for the framework being used here
 			breath_type = "BZ"
-
 		if("Nitrous oxide")
 			forced_items = list(
 				/obj/item/clothing/mask/breath = list(ITEM_SLOT_MASK),
@@ -60,7 +57,6 @@
 			)
 			lungs_typepath = /obj/item/organ/lungs/exotic/n2o
 			breath_type = "N2O"
-
 		if("Carbon dioxide")
 			forced_items = list(
 				/obj/item/clothing/mask/breath = list(ITEM_SLOT_MASK),
@@ -68,19 +64,17 @@
 			)
 			lungs_typepath = /obj/item/organ/lungs/exotic/co2
 			breath_type = "CO2"
-
 		if("Nitrogen")
 			forced_items = list(
 				/obj/item/clothing/mask/breath = list(ITEM_SLOT_MASK),
 				/obj/item/tank/internals/nitrogen/belt/full = list(ITEM_SLOT_HANDS, ITEM_SLOT_LPOCKET, ITEM_SLOT_RPOCKET),
 			)
-			lungs_typepath = /obj/item/organ/lungs/exotic/n2
+			lungs_typepath = /obj/item/organ/lungs/exotic/n2 // not using the vox lungs because they're also low-pressure adapted, making them a sidegrade
 			breath_type = "Nitrogen"
-
 		if("Plasma")
 			forced_items = list(
 				/obj/item/clothing/mask/breath = list(ITEM_SLOT_MASK),
 				/obj/item/tank/internals/plasmaman/belt/full = list(ITEM_SLOT_HANDS, ITEM_SLOT_LPOCKET, ITEM_SLOT_RPOCKET),
 			)
-			lungs_typepath = /obj/item/organ/lungs/exotic/plasma
+			lungs_typepath = /obj/item/organ/lungs/exotic/plasma // ditto 72 but for plasmamen
 			breath_type = "Plasma"

@@ -794,7 +794,14 @@
 	. = ..()
 	. |= JOB_SECURITY_CYBORG
 
-// Ensures storyteller antagonist crewset events also exclude secborg from candidate pools.
+//Ensures storyteller antagonist crewset events also exclude secborg from candidate pools.
 /datum/round_event_control/antagonist/New()
 	. = ..()
 	restricted_roles |= JOB_SECURITY_CYBORG
+
+//Returns TRUE if M is an active (non-fired) security cyborg.
+/proc/secborg_sooc_eligible(mob/M)
+	if(!iscyborg(M))
+		return FALSE
+	var/mob/living/silicon/robot/robot = M
+	return robot.is_security_cyborg_role()

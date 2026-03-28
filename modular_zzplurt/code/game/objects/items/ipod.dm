@@ -145,6 +145,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 		to_chat(user, span_warning("Error: Too big, 6MB or less!"))
 		return
 
+	GLOB.ipod_last_upload = world.time
 	var/real_round_time = world.timeofday - SSticker.real_round_start_time
 	var/logged_filename = "data/ipodupload/round-[GLOB.round_id ? GLOB.round_id : "NULL"]/[user.ckey]/[time2text(real_round_time, "hh_mm_ss", 0)].ogg"
 	if(fexists(logged_filename))
@@ -162,7 +163,6 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 	curfile = file(logged_filename)
 
 	lastfilechange = world.time
-	GLOB.ipod_last_upload = world.time
 	playsound(loc, 'sound/misc/escape_menu/esc_close.ogg', 100, FALSE, -1)
 	if(!radio_mode)
 		to_chat(user, span_warning("The song has been uploaded, ready to play!"))

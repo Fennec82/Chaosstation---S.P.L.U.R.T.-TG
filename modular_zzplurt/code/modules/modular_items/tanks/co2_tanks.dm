@@ -7,7 +7,7 @@
 	desc = "A small tank of CO2, for crew who don't breathe the standard air mix."
 	icon_state = "oxygen_fr"
 	force = 10
-	distribute_pressure = 16
+	distribute_pressure = 8
 
 /obj/item/tank/internals/co2/populate_gas()
 	air_contents.assert_gas(/datum/gas/carbon_dioxide)

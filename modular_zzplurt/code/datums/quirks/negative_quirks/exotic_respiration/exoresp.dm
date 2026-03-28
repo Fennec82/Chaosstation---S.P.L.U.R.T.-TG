@@ -1,0 +1,86 @@
+// exotic respiration!
+// wanna breathe something other than oxygen? wanna die horribly choking to death on normal air? this is the quirk for you!
+// see lungs.dm in the same folder for the meat of the actual code that makes this work
+
+/datum/preference/choiced/exoresp
+	category = PREFERENCE_CATEGORY_MANUALLY_RENDERED
+	savefile_key = "exoresp_gas"
+	savefile_identifier = PREFERENCE_CHARACTER
+	can_randomize = FALSE
+
+/datum/preference/choiced/exoresp/init_possible_values()
+	return list(
+		"BZ",
+		"Nitrous oxide",
+		"Carbon dioxide",
+		"Nitrogen",
+		"Plasma",
+	)
+
+/datum/preference/choiced/exoresp/create_default_value()
+	return "Carbon dioxide" // longest one so the box will actually have enough space to show the rest of them lmao
+
+/datum/quirk_constant_data/exoresp
+	associated_typepath = /datum/quirk/equipping/lungs/exoresp
+	customization_options = list(/datum/preference/choiced/exoresp)
+
+/datum/quirk/equipping/lungs/exoresp
+	name = "Exotic Respiration"
+	desc = "For one reason or another, you breathe something other than oxygen. Unfortunately, this also means oxygen is toxic to you."
+	medical_record_text = "Patient's respiration is reliant on an exotic gas."
+	gain_text = "<span class='danger'>Your lungs spasm. Oxygen feels toxic!</span>"
+	lose_text = "<span class='notice'>Oxygen no longer feels toxic to you.</span>"
+	value = -4
+
+/datum/quirk/equipping/lungs/exoresp/add(client/client_source)
+	var/choice = "Carbon dioxide" // default to something so the quirk doesn't break if the pref fails to load for some reason
+	if(client_source?.prefs)
+		choice = client_source.prefs.read_preference(/datum/preference/choiced/exoresp)
+
+	configure_from_choice(choice)
+	return ..()
+
+/datum/quirk/equipping/lungs/exoresp/proc/configure_from_choice(choice)
+	if(isnull(choice))
+		choice = "Carbon dioxide" // and then null check anyways out of paranoia
+
+	switch(choice)
+		if("BZ")
+			forced_items = list(
+				/obj/item/clothing/mask/breath = list(ITEM_SLOT_MASK),
+				/obj/item/tank/internals/bz/belt/full = list(ITEM_SLOT_HANDS, ITEM_SLOT_LPOCKET, ITEM_SLOT_RPOCKET),
+			)
+			lungs_typepath = /obj/item/organ/lungs/exotic/bz
+			breath_type = "BZ"
+
+		if("Nitrous oxide")
+			forced_items = list(
+				/obj/item/clothing/mask/breath = list(ITEM_SLOT_MASK),
+				/obj/item/tank/internals/n2o/belt/full = list(ITEM_SLOT_HANDS, ITEM_SLOT_LPOCKET, ITEM_SLOT_RPOCKET),
+			)
+			lungs_typepath = /obj/item/organ/lungs/exotic/n2o
+			breath_type = "N2O"
+
+		if("Carbon dioxide")
+			forced_items = list(
+				/obj/item/clothing/mask/breath = list(ITEM_SLOT_MASK),
+				/obj/item/tank/internals/co2/belt/full = list(ITEM_SLOT_HANDS, ITEM_SLOT_LPOCKET, ITEM_SLOT_RPOCKET),
+			)
+			lungs_typepath = /obj/item/organ/lungs/exotic/co2
+			breath_type = "CO2"
+
+		if("Nitrogen")
+			forced_items = list(
+				/obj/item/clothing/mask/breath = list(ITEM_SLOT_MASK),
+				/obj/item/tank/internals/nitrogen/belt/full = list(ITEM_SLOT_HANDS, ITEM_SLOT_LPOCKET, ITEM_SLOT_RPOCKET),
+			)
+			lungs_typepath = /obj/item/organ/lungs/exotic/n2
+			breath_type = "Nitrogen"
+
+		if("Plasma")
+			forced_items = list(
+				/obj/item/clothing/mask/breath = list(ITEM_SLOT_MASK),
+				/obj/item/tank/internals/plasmaman/belt/full = list(ITEM_SLOT_HANDS, ITEM_SLOT_LPOCKET, ITEM_SLOT_RPOCKET),
+			)
+			lungs_typepath = /obj/item/organ/lungs/exotic/plasma
+			breath_type = "Plasma"

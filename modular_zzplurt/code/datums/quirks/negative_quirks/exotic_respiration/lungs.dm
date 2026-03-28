@@ -38,18 +38,19 @@
 	if(breather.health >= breather.crit_threshold && breather.oxyloss)
 		breather.adjust_oxy_loss(-5)
 
-// ditto line 20 but for N2O
+// ditto line 25 but for N2O
+// i'd love to do this without repeating myself but until someone refactors tg's dogshit breathing code this is the best i've got
 /obj/item/organ/lungs/proc/breathe_n2o(mob/living/carbon/breather, datum/gas_mixture/breath, n2o_pp, old_n2o_pp)
 	if(n2o_pp < safe_n2o_min && !HAS_TRAIT(breather, TRAIT_NO_BREATHLESS_DAMAGE))
 		if(!HAS_TRAIT(breather, TRAIT_ANOSMIA))
-			breather.throw_alert(ALERT_NOT_ENOUGH_OXYGEN, /atom/movable/screen/alert/not_enough_oxy)
+			breather.throw_alert(ALERT_NOT_ENOUGH_N2O, /atom/movable/screen/alert/not_enough_n2o)
 		var/gas_breathed = handle_suffocation(breather, n2o_pp, safe_n2o_min, breath.gases[/datum/gas/nitrous_oxide][MOLES])
 		if(n2o_pp)
 			breathe_gas_volume(breath, /datum/gas/nitrous_oxide, /datum/gas/carbon_dioxide, volume = gas_breathed)
 		return
 	if(old_n2o_pp < safe_n2o_min)
 		breather.failed_last_breath = FALSE
-		breather.clear_alert(ALERT_NOT_ENOUGH_OXYGEN)
+		breather.clear_alert(ALERT_NOT_ENOUGH_N2O)
 	breathe_gas_volume(breath, /datum/gas/nitrous_oxide, /datum/gas/carbon_dioxide)
 	if(breather.health >= breather.crit_threshold && breather.oxyloss)
 		breather.adjust_oxy_loss(-5)
@@ -58,44 +59,57 @@
 /obj/item/organ/lungs/proc/breathe_co2(mob/living/carbon/breather, datum/gas_mixture/breath, co2_pp, old_co2_pp)
 	if(co2_pp < safe_co2_min && !HAS_TRAIT(breather, TRAIT_NO_BREATHLESS_DAMAGE))
 		if(!HAS_TRAIT(breather, TRAIT_ANOSMIA))
-			breather.throw_alert(ALERT_NOT_ENOUGH_OXYGEN, /atom/movable/screen/alert/not_enough_oxy)
+			breather.throw_alert(ALERT_NOT_ENOUGH_CO2, /atom/movable/screen/alert/not_enough_co2)
 		var/gas_breathed = handle_suffocation(breather, co2_pp, safe_co2_min, breath.gases[/datum/gas/carbon_dioxide][MOLES])
 		if(co2_pp)
 			breathe_gas_volume(breath, /datum/gas/carbon_dioxide, /datum/gas/oxygen, volume = gas_breathed)
 		return
 	if(old_co2_pp < safe_co2_min)
 		breather.failed_last_breath = FALSE
-		breather.clear_alert(ALERT_NOT_ENOUGH_OXYGEN)
+		breather.clear_alert(ALERT_NOT_ENOUGH_CO2)
 	breathe_gas_volume(breath, /datum/gas/carbon_dioxide, /datum/gas/oxygen)
 	if(breather.health >= breather.crit_threshold && breather.oxyloss)
 		breather.adjust_oxy_loss(-5)
+// no need to define n2 and plasma breathing because they already exist
 
 /obj/item/organ/lungs/exotic // parent type for exotic lungs
-	name= "exotic lungs"
-	desc = "Something about these lungs feels... poorly coded."
+	var/breathgas = "absolutely nothing. You should report this on GitHub!"
+	desc = "These ones look weird."
+	special_desc_requirement = EXAMINE_CHECK_JOB
+	special_desc_jobs = list(JOB_MEDICAL_DOCTOR, JOB_CHIEF_MEDICAL_OFFICER, JOB_CHEMIST, JOB_PARAMEDIC, JOB_SECURITY_MEDIC, JOB_CORONER)
 	safe_oxygen_min = 0
 	safe_oxygen_max = 2
 	oxy_damage_type = TOX // you take toxin damage rather than oxyloss, same as n2 breathers
 	oxy_breath_dam_min = 6
 	oxy_breath_dam_max = 20
+/obj/item/organ/lungs/exotic/Initialize(mapload)
+	. = ..()
+	special_desc = "Upon closer inspection, you note a characteristic [pick("tint", "shape", "smell", "taste", "texture", "structure")] to the [pick("alveoli", "pleura", "bronchi", "capillaries")] of these lungs. They appear to be adapted to breathe <b>[breathgas]</b>"
 
-/obj/item/organ/lungs/exotic/bz
-	name = "BZ lungs"
-	desc = "A set of lungs for breathing BZ."
-	safe_bz_min = 16 // he needs hallucinogens to live
+
+/obj/item/organ/lungs/exotic/bz // no! oxygen drug will kill the patient
+	safe_bz_min = 8 // he needs hallucinogens to live
 	BZ_trip_balls_min = 1e30
-	BZ_brain_damage_min = 1e30
+	BZ_brain_damage_min = 1e30 // if you're breathing one nonillion kpa of bz you have bigger problems than the brain damage
+	breathgas = "BZ."
 
 /obj/item/organ/lungs/exotic/n2o
-	name = "nitrous oxide lungs"
-	desc = "A set of lungs for breathing nitrous oxide."
-	safe_n2o_min = 16
+	safe_n2o_min = 8
 	n2o_detect_min = 1e30 // it would suck if your breathing gas put up a constant warning in the alert box
 	n2o_para_min = 1e30 // or paralyzed you
 	n2o_sleep_min = 1e30 // or knocked you out
+	breathgas = "nitrous oxide."
 
 /obj/item/organ/lungs/exotic/co2
-	name = "carbon dioxide lungs"
-	desc = "A set of lungs for breathing carbon dioxide."
-	safe_co2_min = 16
+	safe_co2_min = 8
 	safe_co2_max = 0
+	breathgas = "carbon dioxide."
+
+/obj/item/organ/lungs/exotic/n2
+	safe_nitro_min = 8
+	breathgas = "nitrogen."
+
+/obj/item/organ/lungs/exotic/plasma
+	safe_plasma_min = 8
+	safe_plasma_max = 0
+	breathgas = "plasma."

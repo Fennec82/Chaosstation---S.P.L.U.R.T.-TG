@@ -4,8 +4,6 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 	"Unknown Frequency A",
 	"Unknown Frequency B",
-	"Unknown Frequency C",
-	"Unknown Frequency D"
 ))
 
 /obj/item/clothing/ears/ipod
@@ -29,7 +27,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 	var/lastfilechange = 0
 	/// Time of the last upload attempt
 	var/uploadattempt  = 0
-	/// Radio mode locks into the wide band frequency (0 = off, 1-4 = valid channels)
+	/// Radio mode locks into the wide band frequency (0 = off, 1-2 = valid channels)
 	var/radio_mode = 0
 	/// Do we own this channel (aka we're the first to stake it out)
 	var/radio_dj_owner = FALSE
@@ -372,7 +370,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 		unlink_refs()
 
 	radio_mode++
-	if(radio_mode > 4)
+	if(radio_mode > 2)
 		radio_mode = 0
 		radio_dj_owner = FALSE
 		balloon_alert(user, "turned off radio mode")
@@ -430,7 +428,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 	if(!str || QDELETED(src) || !user.is_holding(src))
 		to_chat(user, span_warning("Invalid text!"))
 		return
-	if(radio_mode >= 1 && radio_mode <= 4 && radio_dj_owner)
+	if(radio_mode >= 1 && radio_mode <= 2 && radio_dj_owner)
 		GLOB.ipod_cast_names[radio_mode] = str
 		to_chat(user, span_notice("You set the broadcast name to '[str]'."))
 		user.log_message("set the broadcast name to: [str]", LOG_GAME)
@@ -449,7 +447,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 	return CLICK_ACTION_SUCCESS
 
 /obj/item/clothing/ears/ipod/proc/get_radio_name()
-	if(radio_mode >= 1 && radio_mode <= 4)
+	if(radio_mode >= 1 && radio_mode <= 2)
 		return GLOB.ipod_cast_names[radio_mode]
 	return ""
 

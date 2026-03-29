@@ -67,14 +67,14 @@
 		if("Nitrogen")
 			forced_items = list(
 				/obj/item/clothing/mask/breath = list(ITEM_SLOT_MASK),
-				/obj/item/tank/internals/nitrogen/belt/full = list(ITEM_SLOT_HANDS, ITEM_SLOT_LPOCKET, ITEM_SLOT_RPOCKET),
+				/obj/item/tank/internals/nitrogen/belt/full/highpressure = list(ITEM_SLOT_HANDS, ITEM_SLOT_LPOCKET, ITEM_SLOT_RPOCKET),
 			)
 			lungs_typepath = /obj/item/organ/lungs/exotic/n2 // not using the vox lungs because they're also low-pressure adapted, making them a sidegrade
 			breath_type = "Nitrogen"
 		if("Plasma")
 			forced_items = list(
 				/obj/item/clothing/mask/breath = list(ITEM_SLOT_MASK),
-				/obj/item/tank/internals/plasmaman/belt/full = list(ITEM_SLOT_HANDS, ITEM_SLOT_LPOCKET, ITEM_SLOT_RPOCKET),
+				/obj/item/tank/internals/plasmaman/belt/full/highpressure = list(ITEM_SLOT_HANDS, ITEM_SLOT_LPOCKET, ITEM_SLOT_RPOCKET),
 			)
 			lungs_typepath = /obj/item/organ/lungs/exotic/plasma // ditto 72 but for plasmamen
 			breath_type = "Plasma"

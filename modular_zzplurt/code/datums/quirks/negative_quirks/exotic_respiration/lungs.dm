@@ -86,30 +86,29 @@
 	. = ..()
 	special_desc = "Upon closer inspection, you note a characteristic [pick("tint", "shape", "smell", "taste", "texture", "structure")] to the [pick("alveoli", "pleura", "bronchi", "capillaries")] of these lungs. They appear to be adapted to breathe <b>[breathgas].</b>"
 
-
 /obj/item/organ/lungs/exotic/bz // no! oxygen drug will kill the patient
-	safe_bz_min = 8 // he needs hallucinogens to live
+	safe_bz_min = 16 // he needs hallucinogens to live
 	BZ_trip_balls_min = 1e30
 	BZ_brain_damage_min = 1e30 // if you're breathing one nonillion kpa of bz you have bigger problems than the brain damage
 	breathgas = "BZ"
 
 /obj/item/organ/lungs/exotic/n2o
-	safe_n2o_min = 8
+	safe_n2o_min = 16
 	n2o_detect_min = 1e30 // it would suck if your breathing gas put up a constant warning in the alert box
 	n2o_para_min = 1e30 // or paralyzed you
 	n2o_sleep_min = 1e30 // or knocked you out
 	breathgas = "nitrous oxide"
 
 /obj/item/organ/lungs/exotic/co2
-	safe_co2_min = 8
+	safe_co2_min = 16
 	safe_co2_max = 0
 	breathgas = "carbon dioxide"
 
 /obj/item/organ/lungs/exotic/n2
-	safe_nitro_min = 8
+	safe_nitro_min = 16
 	breathgas = "nitrogen"
 
 /obj/item/organ/lungs/exotic/plasma
-	safe_plasma_min = 8
+	safe_plasma_min = 16
 	safe_plasma_max = 0
 	breathgas = "plasma"

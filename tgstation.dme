@@ -10501,6 +10501,7 @@
 #include "modular_zzplurt\code\modules\modular_items\misc\toys.dm"
 #include "modular_zzplurt\code\modules\modular_items\tanks\bz_tanks.dm"
 #include "modular_zzplurt\code\modules\modular_items\tanks\co2_tanks.dm"
+#include "modular_zzplurt\code\modules\modular_items\tanks\misc_tanks.dm"
 #include "modular_zzplurt\code\modules\modular_items\tanks\n2o_tanks.dm"
 #include "modular_zzplurt\code\modules\modular_weapons\code\ammo.dm"
 #include "modular_zzplurt\code\modules\modular_weapons\code\gunsets.dm"

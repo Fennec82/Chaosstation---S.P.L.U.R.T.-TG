@@ -376,6 +376,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 		radio_dj_owner = FALSE
 		balloon_alert(user, "turned off radio mode")
 		to_chat(user, span_notice("You turned off the radio."))
+		playsound(loc, 'modular_zzplurt/sound/items/headphones_click.ogg', 20, FALSE)
 		return
 
 	balloon_alert(user, "switch broadcast")
@@ -419,7 +420,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 		if(radio_dj_owner)
 			radio_station_report += " You're now the DJ and can broadcast on this radio frequency."
 		to_chat(user, span_notice(radio_station_report))
-		playsound(loc, SFX_INDUSTRIAL_SCAN, 40, FALSE, -1)
+		playsound(loc, 'modular_zzplurt/sound/items/headphones_click_tune_in.ogg', 20, FALSE)
 
 /obj/item/clothing/ears/ipod/attack_self_secondary(mob/user, modifiers)
 	. = ..()

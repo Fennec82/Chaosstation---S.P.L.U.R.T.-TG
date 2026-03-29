@@ -27,6 +27,7 @@
 /datum/quirk/equipping/lungs/exoresp
 	name = "Exotic Respiration"
 	desc = "For one reason or another, you breathe something other than oxygen. Unfortunately, this also means oxygen is toxic to you."
+	icon = FA_ICON_HURRICANE
 	medical_record_text = "Patient's respiration is reliant on an exotic gas."
 	gain_text = "<span class='danger'>Your lungs spasm. Oxygen feels toxic!</span>"
 	lose_text = "<span class='notice'>Oxygen no longer feels toxic to you.</span>"
@@ -40,6 +41,9 @@
 		choice = client_source.prefs.read_preference(/datum/preference/choiced/exoresp)
 	configure_from_choice(choice)
 	return ..()
+
+/datum/preference/choiced/exoresp/apply_to_human(mob/living/carbon/human/target, value)
+    return
 
 /datum/quirk/equipping/lungs/exoresp/proc/configure_from_choice(choice)
 	if(isnull(choice))

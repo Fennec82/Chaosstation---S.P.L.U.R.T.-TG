@@ -37,7 +37,6 @@
 	name = "emergency BZ tank"
 	desc = "Used for emergencies. Contains very little BZ, so try to conserve it until you actually need it."
 	icon_state = "bz"
-	worn_icon_state = "nitrogen_extended"
 	volume = 3
 
 /obj/item/tank/internals/bz/belt/emergency/populate_gas()

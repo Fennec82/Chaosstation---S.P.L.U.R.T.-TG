@@ -37,7 +37,6 @@
 	name = "emergency CO2 tank"
 	desc = "Used for emergencies. Contains very little CO2, so try to conserve it until you actually need it."
 	icon_state = "co2"
-	worn_icon_state = "nitrogen_extended"
 	volume = 3
 
 /obj/item/tank/internals/co2/belt/emergency/populate_gas()

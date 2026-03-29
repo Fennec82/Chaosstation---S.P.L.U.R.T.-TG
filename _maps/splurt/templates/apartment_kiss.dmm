@@ -284,11 +284,6 @@
 	icon_state = "8,12"
 	},
 /area/misc/hilbertshotel)
-"cG" = (
-/obj/effect/turf_decal/siding/wood/corner,
-/obj/machinery/light_switch/directional/east,
-/turf/open/floor/wood/tile,
-/area/misc/hilbertshotel)
 "cK" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -484,7 +479,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
 	},
-/turf/open/floor/wood/tile,
+/turf/open/floor/plating,
 /area/misc/hilbertshotel)
 "ek" = (
 /obj/effect/abstract/marker{
@@ -648,7 +643,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
 	},
-/turf/open/floor/wood/tile,
+/turf/open/floor/plating,
 /area/misc/hilbertshotel)
 "fT" = (
 /obj/effect/abstract/marker{
@@ -1025,7 +1020,7 @@
 	dir = 8;
 	anchored = 1
 	},
-/turf/open/floor/wood/tile,
+/turf/open/floor/plating,
 /area/misc/hilbertshotel)
 "if" = (
 /obj/effect/abstract/marker{
@@ -1998,7 +1993,7 @@
 /area/misc/hilbertshotel)
 "qp" = (
 /obj/machinery/light_switch/directional/east,
-/turf/open/floor/wood/tile,
+/turf/open/floor/plating,
 /area/misc/hilbertshotel)
 "qu" = (
 /obj/effect/abstract/marker{
@@ -2111,7 +2106,7 @@
 	anchored = 1;
 	name = "speaker"
 	},
-/turf/open/floor/wood/tile,
+/turf/open/floor/plating,
 /area/misc/hilbertshotel)
 "qU" = (
 /obj/effect/abstract/marker{
@@ -2214,10 +2209,7 @@
 	},
 /area/misc/hilbertshotel)
 "rT" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
-	},
-/turf/open/floor/wood/tile,
+/turf/open/floor/plating,
 /area/misc/hilbertshotel)
 "sa" = (
 /obj/effect/abstract/marker{
@@ -2566,7 +2558,7 @@
 	alpha = 20;
 	color = "#FFFFFF"
 	},
-/turf/open/floor/wood/tile,
+/turf/open/floor/plating,
 /area/misc/hilbertshotel)
 "tT" = (
 /obj/effect/abstract/marker{
@@ -3090,7 +3082,7 @@
 "yD" = (
 /obj/structure/table/wood/fancy/blue,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
-/turf/open/floor/wood/tile,
+/turf/open/floor/plating,
 /area/misc/hilbertshotel)
 "yJ" = (
 /obj/effect/abstract/marker{
@@ -3466,7 +3458,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
 	},
-/turf/open/floor/wood/tile,
+/turf/open/floor/plating,
 /area/misc/hilbertshotel)
 "BW" = (
 /obj/effect/abstract/marker{
@@ -3900,9 +3892,6 @@
 	icon_state = "28,7"
 	},
 /area/misc/hilbertshotel)
-"GO" = (
-/turf/open/floor/wood/tile,
-/area/misc/hilbertshotel)
 "GP" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -4211,11 +4200,11 @@
 	pixel_y = 11;
 	default_raw_text = "Don't use this to get free shit, we're logging you - the sky wizards union."
 	},
-/turf/open/floor/wood/tile,
+/turf/open/floor/plating,
 /area/misc/hilbertshotel)
 "Ja" = (
 /obj/structure/dresser,
-/turf/open/floor/wood/tile,
+/turf/open/floor/plating,
 /area/misc/hilbertshotel)
 "Jc" = (
 /obj/effect/abstract/marker{
@@ -4393,7 +4382,7 @@
 /area/misc/hilbertshotel)
 "Ks" = (
 /obj/structure/fireplace,
-/turf/open/floor/wood/tile,
+/turf/open/floor/plating,
 /area/misc/hilbertshotel)
 "Kx" = (
 /obj/effect/abstract/marker{
@@ -4706,7 +4695,7 @@
 	anchored = 1
 	},
 /obj/item/coin/silver,
-/turf/open/floor/wood/tile,
+/turf/open/floor/plating,
 /area/misc/hilbertshotel)
 "Mz" = (
 /obj/effect/abstract/marker{
@@ -5178,11 +5167,11 @@
 /area/misc/hilbertshotel)
 "QO" = (
 /obj/machinery/light/small/directional/north,
-/turf/open/floor/wood/tile,
+/turf/open/floor/plating,
 /area/misc/hilbertshotel)
 "QQ" = (
 /obj/structure/table/wood/fancy/blue,
-/turf/open/floor/wood/tile,
+/turf/open/floor/plating,
 /area/misc/hilbertshotel)
 "QV" = (
 /obj/effect/abstract/marker{
@@ -5804,7 +5793,7 @@
 	pixel_y = 9
 	},
 /obj/structure/marker_beacon/indigo,
-/turf/open/floor/wood/tile,
+/turf/open/floor/plating,
 /area/misc/hilbertshotel)
 "Xg" = (
 /obj/effect/abstract/marker{
@@ -5903,7 +5892,7 @@
 	anchored = 1;
 	name = "speaker"
 	},
-/turf/open/floor/wood/tile,
+/turf/open/floor/plating,
 /area/misc/hilbertshotel)
 "Yy" = (
 /obj/effect/abstract/marker{
@@ -6384,9 +6373,9 @@ kN
 qE
 tR
 QO
-GO
-GO
-GO
+rT
+rT
+rT
 jD
 GY
 GY
@@ -6410,16 +6399,16 @@ dP
 ps
 kA
 NC
-GO
-GO
-GO
-GO
+rT
+rT
+rT
+rT
 Ja
 gF
 gF
-GO
-GO
-GO
+rT
+rT
+rT
 gF
 gF
 gF
@@ -6437,16 +6426,16 @@ np
 YN
 km
 NC
-GO
-GO
-GO
-GO
+rT
+rT
+rT
+rT
 Mu
 gF
 gF
 Ks
-GO
-GO
+rT
+rT
 gF
 gF
 gF
@@ -6467,13 +6456,13 @@ tR
 fN
 eg
 qp
-GO
+rT
 gF
 gF
 gF
-GO
-GO
-GO
+rT
+rT
+rT
 gF
 gF
 gF
@@ -6498,10 +6487,10 @@ Pk
 gF
 gF
 gF
-GO
-GO
-GO
-GO
+rT
+rT
+rT
+rT
 Xe
 gF
 gF
@@ -6521,14 +6510,14 @@ tR
 Xs
 rd
 lQ
-GO
+rT
 gF
-GO
-GO
-GO
-GO
-GO
-GO
+rT
+rT
+rT
+rT
+rT
+rT
 qN
 gF
 gF
@@ -6549,13 +6538,13 @@ LM
 CP
 lQ
 QO
-GO
-GO
-GO
-GO
-GO
-GO
-GO
+rT
+rT
+rT
+rT
+rT
+rT
+rT
 Ym
 xu
 xu
@@ -6575,14 +6564,14 @@ tR
 rf
 wu
 NF
-GO
-GO
-GO
-GO
-GO
-GO
-GO
-GO
+rT
+rT
+rT
+rT
+rT
+rT
+rT
+rT
 Bz
 gF
 xu
@@ -6602,13 +6591,13 @@ tR
 ZH
 Ss
 lQ
-GO
-GO
-GO
-GO
-GO
-GO
-GO
+rT
+rT
+rT
+rT
+rT
+rT
+rT
 gF
 VC
 gF
@@ -6630,8 +6619,8 @@ lQ
 lQ
 lQ
 IS
-GO
-cG
+rT
+qp
 rT
 rT
 rT

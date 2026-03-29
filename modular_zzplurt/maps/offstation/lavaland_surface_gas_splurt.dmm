@@ -1535,6 +1535,7 @@
 	},
 /area/ruin/thelizardsgas_lavaland)
 "yl" = (
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/shuttle/exploration/corner{
 	dir = 8
 	},

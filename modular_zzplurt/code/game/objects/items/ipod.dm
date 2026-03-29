@@ -31,6 +31,8 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 	var/radio_mode = 0
 	/// Do we own this channel (aka we're the first to stake it out)
 	var/radio_dj_owner = FALSE
+	/// Time of the last tuned in listener
+	var/lasttunein = 0
 	/// Currently worn
 	var/is_worn = FALSE
 	/// Currently got callback on mob wearer death
@@ -392,6 +394,13 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 			listeners++
 			if(other_ipod.radio_dj_owner)
 				found_dj = TRUE
+				if(world.time < other_ipod.lasttunein + 5 SECONDS)
+					playsound(other_ipod, 'modular_zzplurt/sound/items/headphones_click_tune_in.ogg', 20, FALSE)
+					if(other_ipod.is_worn) // alert them of new listener
+						var/mob/living/carbon/human/wearer = other_ipod.loc
+						if(istype(wearer))
+							to_chat(wearer, span_warning("A new listener has tuned in!"))
+				other_ipod.lasttunein = world.time
 			if(!other_ipod.curfile)
 				continue
 			if(loaded_song)

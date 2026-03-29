@@ -105,7 +105,7 @@
 
 /datum/map_template/ruin/space/skyrat/vaulttango
 	id = "vaulttango"
-	suffix = "vaulttango.dmm"
+	suffix = "vaulttango_splurt.dmm" // SPLURT EDIT - PREVIOUSLY: vaulttango.dmm"
 	name = "Space-Ruin ARBORLINK Vault Tango"
 	description = "Nanotrasen isn't the only corporation experimenting in advanced bluespace technology."
 

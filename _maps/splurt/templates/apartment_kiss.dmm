@@ -286,6 +286,7 @@
 /area/misc/hilbertshotel)
 "cG" = (
 /obj/effect/turf_decal/siding/wood/corner,
+/obj/machinery/light_switch/directional/east,
 /turf/open/floor/wood/tile,
 /area/misc/hilbertshotel)
 "cK" = (
@@ -990,17 +991,13 @@
 	},
 /area/misc/hilbertshotel)
 "hZ" = (
-/obj/effect/abstract/marker{
-	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
-	icon_state = "rain";
-	alpha = 100;
-	name = "rain"
+/obj/machinery/vending/dinnerware{
+	all_products_free = 1;
+	scan_id = 0;
+	pixel_x = 0;
+	pixel_y = -5
 	},
-/turf/open/indestructible/tram{
-	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
-	base_icon_state = "0,34";
-	icon_state = "9,8"
-	},
+/turf/closed/wall,
 /area/misc/hilbertshotel)
 "ia" = (
 /obj/effect/abstract/marker{
@@ -1081,20 +1078,6 @@
 	icon = 'icons/obj/doors/airlocks/centcom/centcom.dmi'
 	},
 /area/misc/hilbertshotel)
-"iD" = (
-/obj/effect/abstract/marker{
-	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
-	icon_state = "rain";
-	alpha = 100;
-	name = "rain"
-	},
-/turf/open/indestructible/tram{
-	base_icon_state = "0,34";
-	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
-	icon_state = "9,10";
-	name = "long way down"
-	},
-/area/misc/hilbertshotel)
 "iG" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -1149,17 +1132,16 @@
 	},
 /area/misc/hilbertshotel)
 "jD" = (
-/obj/effect/abstract/marker{
-	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
-	icon_state = "rain";
-	alpha = 100;
-	name = "rain"
+/obj/structure/decorative{
+	icon_state = "siding_plain_corner";
+	pixel_y = 0;
+	icon = 'icons/turf/decals.dmi';
+	base_icon_state = "elevatorshaft";
+	color = "#36373a";
+	dir = 8;
+	anchored = 1
 	},
-/turf/open/indestructible/tram{
-	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
-	base_icon_state = "0,34";
-	icon_state = "25,19"
-	},
+/turf/closed/wall,
 /area/misc/hilbertshotel)
 "jK" = (
 /obj/effect/abstract/marker{
@@ -1410,14 +1392,6 @@
 /area/misc/hilbertshotel)
 "li" = (
 /obj/structure/curtain/bounty,
-/obj/structure/decorative{
-	icon_state = "siding_plain";
-	pixel_y = 0;
-	icon = 'icons/turf/decals.dmi';
-	dir = 4;
-	color = "#878787";
-	pixel_x = -32
-	},
 /turf/closed/wall/mineral/titanium/shuttle_wall/window/evac{
 	icon_state = "15,14";
 	dir = 8
@@ -1736,17 +1710,24 @@
 	},
 /area/misc/hilbertshotel)
 "oJ" = (
-/obj/effect/abstract/marker{
-	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
-	icon_state = "rain";
-	alpha = 100;
-	name = "rain"
+/obj/structure/decorative{
+	icon_state = "siding_plain";
+	pixel_y = 0;
+	icon = 'icons/turf/decals.dmi';
+	dir = 4;
+	color = "#878787";
+	pixel_x = -32
 	},
-/turf/open/indestructible/tram{
-	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
-	base_icon_state = "0,34";
-	icon_state = "22,18"
+/obj/structure/decorative{
+	icon_state = "siding_plain";
+	pixel_y = 0;
+	icon = 'icons/turf/decals.dmi';
+	base_icon_state = "elevatorshaft";
+	color = "#36373a";
+	dir = 8;
+	anchored = 1
 	},
+/turf/closed/wall,
 /area/misc/hilbertshotel)
 "oL" = (
 /obj/effect/abstract/marker{
@@ -1762,17 +1743,9 @@
 	},
 /area/misc/hilbertshotel)
 "oM" = (
-/obj/effect/abstract/marker{
-	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
-	icon_state = "rain";
-	alpha = 100;
-	name = "rain"
-	},
-/turf/open/indestructible/tram{
-	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
-	base_icon_state = "0,34";
-	icon_state = "23,18"
-	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/closed/wall,
 /area/misc/hilbertshotel)
 "oX" = (
 /obj/effect/abstract/marker{
@@ -1947,17 +1920,10 @@
 	icon_state = "siding_plain";
 	pixel_y = 0;
 	icon = 'icons/turf/decals.dmi';
-	dir = 4;
-	color = "#878787";
-	pixel_x = -32
-	},
-/obj/structure/decorative{
-	icon_state = "siding_plain_corner";
-	pixel_y = 32;
-	icon = 'icons/turf/decals.dmi';
-	dir = 2;
-	color = "#878787";
-	pixel_x = -32
+	base_icon_state = "elevatorshaft";
+	color = "#36373a";
+	dir = 3;
+	anchored = 1
 	},
 /turf/closed/wall,
 /area/misc/hilbertshotel)
@@ -1993,6 +1959,14 @@
 	icon_state = "rain";
 	alpha = 100;
 	name = "rain"
+	},
+/obj/structure/decorative{
+	icon_state = "siding_plain";
+	pixel_y = 0;
+	icon = 'icons/turf/decals.dmi';
+	base_icon_state = "elevatorshaft";
+	color = "#878787";
+	dir = 4
 	},
 /turf/open/indestructible/tram,
 /area/misc/hilbertshotel)
@@ -2342,28 +2316,16 @@
 	},
 /area/misc/hilbertshotel)
 "su" = (
-/obj/effect/abstract/marker{
-	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
-	icon_state = "rain";
-	alpha = 100;
-	name = "rain"
+/obj/machinery/vending/boozeomat{
+	all_products_free = 1;
+	onstation = 0;
+	scan_id = 0;
+	name = "built-in NiCola Apartmental Vending Machine";
+	desc = "It's almost as if those housing companies intentionally leave zero space for proper kitchens to force you to buy from those built-in vendors...";
+	pixel_x = 0;
+	pixel_y = -4
 	},
-/obj/structure/decorative{
-	icon_state = "siding_plain";
-	pixel_y = 0;
-	icon = 'icons/turf/decals.dmi';
-	base_icon_state = "elevatorshaft";
-	color = "#878787";
-	dir = 5
-	},
-/obj/structure/decorative{
-	icon_state = "siding_plain_corner";
-	icon = 'icons/turf/decals.dmi';
-	dir = 4;
-	color = "#878787";
-	pixel_x = -32
-	},
-/turf/open/indestructible/tram,
+/turf/closed/wall,
 /area/misc/hilbertshotel)
 "sx" = (
 /obj/effect/abstract/marker{
@@ -2447,10 +2409,16 @@
 	alpha = 100;
 	name = "rain"
 	},
+/obj/structure/decorative{
+	icon_state = "siding_plain";
+	pixel_y = 0;
+	icon = 'icons/turf/decals.dmi';
+	dir = 4;
+	color = "#878787";
+	pixel_x = -32
+	},
 /turf/open/indestructible/tram{
-	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
-	base_icon_state = "0,34";
-	icon_state = "9,5"
+	color = "#d6d6d6"
 	},
 /area/misc/hilbertshotel)
 "ta" = (
@@ -2566,27 +2534,23 @@
 	},
 /area/misc/hilbertshotel)
 "tK" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
-	dir = 4
-	},
 /obj/machinery/vending/dorms{
 	pixel_x = 0;
-	pixel_y = -32
+	pixel_y = 5
 	},
-/turf/open/floor/iron/shuttle/exploration/blanktile,
+/turf/closed/wall,
 /area/misc/hilbertshotel)
 "tR" = (
-/obj/effect/abstract/marker{
-	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
-	icon_state = "rain";
-	alpha = 100;
-	name = "rain"
+/obj/structure/decorative{
+	icon_state = "siding_plain";
+	pixel_y = 0;
+	icon = 'icons/turf/decals.dmi';
+	base_icon_state = "elevatorshaft";
+	color = "#36373a";
+	dir = 1;
+	anchored = 1
 	},
-/turf/open/indestructible/tram{
-	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
-	base_icon_state = "0,34";
-	icon_state = "21,18"
-	},
+/turf/closed/wall,
 /area/misc/hilbertshotel)
 "tS" = (
 /obj/structure/decorative{
@@ -2631,32 +2595,10 @@
 	},
 /area/misc/hilbertshotel)
 "uc" = (
-/obj/effect/abstract/marker{
-	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
-	icon_state = "rain";
-	alpha = 100;
-	name = "rain"
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
+	dir = 4
 	},
-/obj/structure/decorative{
-	icon_state = "siding_plain";
-	pixel_y = 0;
-	icon = 'icons/turf/decals.dmi';
-	base_icon_state = "elevatorshaft";
-	color = "#878787";
-	dir = 5
-	},
-/obj/structure/decorative{
-	icon_state = "siding_plain_corner";
-	icon = 'icons/turf/decals.dmi';
-	dir = 4;
-	color = "#878787";
-	pixel_x = -32
-	},
-/turf/open/indestructible/tram{
-	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
-	base_icon_state = "0,34";
-	icon_state = "9,13"
-	},
+/turf/open/floor/iron/shuttle/exploration/blanktile,
 /area/misc/hilbertshotel)
 "uf" = (
 /obj/effect/abstract/marker{
@@ -2741,15 +2683,6 @@
 	base_icon_state = "0,34";
 	icon_state = "27,23"
 	},
-/area/misc/hilbertshotel)
-"uL" = (
-/obj/machinery/vending/dinnerware{
-	all_products_free = 1;
-	scan_id = 0;
-	pixel_y = 32;
-	pixel_x = 0
-	},
-/turf/open/floor/iron/cafeteria,
 /area/misc/hilbertshotel)
 "uM" = (
 /obj/effect/abstract/marker{
@@ -3346,6 +3279,14 @@
 	alpha = 100;
 	name = "rain"
 	},
+/obj/structure/decorative{
+	icon_state = "siding_plain";
+	pixel_y = 0;
+	icon = 'icons/turf/decals.dmi';
+	base_icon_state = "elevatorshaft";
+	color = "#878787";
+	dir = 4
+	},
 /obj/effect/light_emitter/interlink{
 	light_color = "#ffe7cf";
 	light_power = 1.5
@@ -3373,6 +3314,15 @@
 	dir = 4;
 	color = "#878787";
 	pixel_x = -32
+	},
+/obj/structure/decorative{
+	icon_state = "siding_plain";
+	pixel_y = 0;
+	icon = 'icons/turf/decals.dmi';
+	base_icon_state = "elevatorshaft";
+	color = "#36373a";
+	dir = 9;
+	anchored = 1
 	},
 /turf/closed/wall,
 /area/misc/hilbertshotel)
@@ -3984,9 +3934,10 @@
 	icon_state = "siding_plain";
 	pixel_y = 0;
 	icon = 'icons/turf/decals.dmi';
-	dir = 6;
-	color = "#878787";
-	pixel_x = -32
+	base_icon_state = "elevatorshaft";
+	color = "#36373a";
+	dir = 8;
+	anchored = 1
 	},
 /turf/closed/wall,
 /area/misc/hilbertshotel)
@@ -4116,20 +4067,6 @@
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	icon_state = "4,9";
-	name = "long way down"
-	},
-/area/misc/hilbertshotel)
-"Ib" = (
-/obj/effect/abstract/marker{
-	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
-	icon_state = "rain";
-	alpha = 100;
-	name = "rain"
-	},
-/turf/open/indestructible/tram{
-	base_icon_state = "0,34";
-	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
-	icon_state = "9,11";
 	name = "long way down"
 	},
 /area/misc/hilbertshotel)
@@ -4269,7 +4206,11 @@
 /area/misc/hilbertshotel)
 "IS" = (
 /obj/structure/sign/clock/directional/north,
-/obj/machinery/light_switch/directional/east,
+/obj/item/paper{
+	pixel_x = -7;
+	pixel_y = 11;
+	default_raw_text = "Don't use this to get free shit, we're logging you - the sky wizards union."
+	},
 /turf/open/floor/wood/tile,
 /area/misc/hilbertshotel)
 "Ja" = (
@@ -4287,19 +4228,6 @@
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
 	icon_state = "23,24"
-	},
-/area/misc/hilbertshotel)
-"Jh" = (
-/obj/effect/abstract/marker{
-	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
-	icon_state = "rain";
-	alpha = 100;
-	name = "rain"
-	},
-/turf/open/indestructible/tram{
-	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
-	base_icon_state = "0,34";
-	icon_state = "9,12"
 	},
 /area/misc/hilbertshotel)
 "Jy" = (
@@ -4656,17 +4584,24 @@
 	},
 /area/misc/hilbertshotel)
 "Ls" = (
-/obj/effect/abstract/marker{
-	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
-	icon_state = "rain";
-	alpha = 100;
-	name = "rain"
+/obj/structure/decorative{
+	icon_state = "siding_plain";
+	pixel_y = 0;
+	icon = 'icons/turf/decals.dmi';
+	dir = 4;
+	color = "#878787";
+	pixel_x = -32
 	},
-/turf/open/indestructible/tram{
-	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
-	base_icon_state = "0,34";
-	icon_state = "9,7"
+/obj/structure/decorative{
+	icon_state = "siding_plain";
+	pixel_y = 0;
+	icon = 'icons/turf/decals.dmi';
+	base_icon_state = "elevatorshaft";
+	color = "#36373a";
+	dir = 10;
+	anchored = 1
 	},
+/turf/closed/wall,
 /area/misc/hilbertshotel)
 "Lu" = (
 /obj/effect/abstract/marker{
@@ -5340,13 +5275,6 @@
 	icon_state = "30,26"
 	},
 /area/misc/hilbertshotel)
-"RV" = (
-/obj/machinery/door/airlock/survival_pod{
-	name = "Cosmo's Apartment";
-	locked = 1
-	},
-/turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/hilbertshotel)
 "RX" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -5496,19 +5424,6 @@
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
 /area/misc/hilbertshotel)
-"Tl" = (
-/obj/effect/abstract/marker{
-	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
-	icon_state = "rain";
-	alpha = 100;
-	name = "rain"
-	},
-/turf/open/indestructible/tram{
-	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
-	base_icon_state = "0,34";
-	icon_state = "9,9"
-	},
-/area/misc/hilbertshotel)
 "Tm" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -5547,14 +5462,6 @@
 	base_icon_state = "0,34";
 	icon_state = "10,27"
 	},
-/area/misc/hilbertshotel)
-"TD" = (
-/obj/item/paper{
-	pixel_x = -7;
-	pixel_y = 11;
-	default_raw_text = "Don't use this to get free shit, we're logging you - the sky wizards union."
-	},
-/turf/open/floor/wood/tile,
 /area/misc/hilbertshotel)
 "TN" = (
 /obj/effect/abstract/marker{
@@ -5638,19 +5545,6 @@
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
 	icon_state = "22,23"
-	},
-/area/misc/hilbertshotel)
-"UY" = (
-/obj/effect/abstract/marker{
-	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
-	icon_state = "rain";
-	alpha = 100;
-	name = "rain"
-	},
-/turf/open/indestructible/tram{
-	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
-	base_icon_state = "0,34";
-	icon_state = "24,18"
 	},
 /area/misc/hilbertshotel)
 "Vi" = (
@@ -5831,16 +5725,18 @@
 	},
 /area/misc/hilbertshotel)
 "Wy" = (
-/obj/machinery/vending/boozeomat{
-	all_products_free = 1;
-	onstation = 0;
-	scan_id = 0;
-	name = "built-in NiCola Apartmental Vending Machine";
-	desc = "It's almost as if those housing companies intentionally leave zero space for proper kitchens to force you to buy from those built-in vendors...";
-	pixel_x = 0;
-	pixel_y = 32
+/obj/structure/decorative{
+	icon_state = "siding_plain";
+	pixel_y = 0;
+	icon = 'icons/turf/decals.dmi';
+	base_icon_state = "elevatorshaft";
+	color = "#36373a";
+	dir = 1;
+	anchored = 1
 	},
-/turf/open/floor/iron/cafeteria,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/closed/wall,
 /area/misc/hilbertshotel)
 "WI" = (
 /obj/effect/abstract/marker{
@@ -6036,17 +5932,11 @@
 	},
 /area/misc/hilbertshotel)
 "YD" = (
-/obj/effect/abstract/marker{
-	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
-	icon_state = "rain";
-	alpha = 100;
-	name = "rain"
+/obj/machinery/door/airlock/survival_pod{
+	name = "Cosmo's Apartment";
+	locked = 1
 	},
-/turf/open/indestructible/tram{
-	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
-	base_icon_state = "0,34";
-	icon_state = "9,6"
-	},
+/turf/open/floor/iron/shuttle/exploration/blanktile,
 /area/misc/hilbertshotel)
 "YL" = (
 /obj/effect/abstract/marker{
@@ -6439,19 +6329,19 @@ Ru
 AL
 JF
 Ak
-Ak
+oJ
 ZC
 ZC
-Ak
-Ak
-uc
-Jh
-Ib
-iD
-Tl
-hZ
+oJ
 Ls
-YD
+sZ
+sZ
+sZ
+sZ
+sZ
+sZ
+sZ
+sZ
 sZ
 ys
 "}
@@ -6465,21 +6355,21 @@ ff
 dd
 gf
 Xg
-gF
+tR
 QQ
 tS
 ib
 yD
-gF
-gF
-su
+pU
+qi
+qi
 Ad
 qi
 qi
 qi
-pU
-Ak
-Ak
+qi
+qi
+qi
 ys
 "}
 (10,1,1) = {"
@@ -6492,21 +6382,21 @@ QJ
 hu
 kN
 qE
-gF
+tR
 QO
 GO
 GO
 GO
-gF
-gF
-gF
+jD
+GY
+GY
 li
 li
 li
 GY
-gF
-gF
-gF
+GY
+GY
+GY
 ys
 "}
 (11,1,1) = {"
@@ -6573,7 +6463,7 @@ yZ
 sH
 CB
 NY
-gF
+tR
 fN
 eg
 qp
@@ -6600,7 +6490,7 @@ BX
 Eh
 Kj
 FY
-gF
+tR
 xu
 lQ
 lQ
@@ -6627,7 +6517,7 @@ ek
 zr
 Aq
 AH
-gF
+tR
 Xs
 rd
 lQ
@@ -6681,7 +6571,7 @@ Ho
 vo
 Ne
 Ld
-gF
+tR
 rf
 wu
 NF
@@ -6708,7 +6598,7 @@ Wu
 nb
 ww
 ia
-gF
+tR
 ZH
 Ss
 lQ
@@ -6735,12 +6625,12 @@ sA
 Nk
 mz
 kH
-gF
+Wy
 lQ
 lQ
 lQ
 IS
-TD
+GO
 cG
 rT
 rT
@@ -6762,14 +6652,14 @@ fT
 GC
 ck
 EY
-tR
 lQ
 gF
 gF
 gF
 QI
 gF
-Wy
+gF
+zY
 zY
 ld
 Qd
@@ -6789,14 +6679,14 @@ UX
 qu
 vT
 hd
-oJ
 lQ
 iu
 Lb
 fK
 xW
 gF
-uL
+hZ
+zY
 zY
 zY
 na
@@ -6816,13 +6706,13 @@ qM
 TT
 ZB
 NZ
-oM
 lQ
 gF
 SQ
 xW
+uc
 tK
-gF
+su
 It
 hQ
 sD
@@ -6843,12 +6733,12 @@ if
 gz
 Ca
 aK
-UY
 lQ
 gF
 gF
-RV
+YD
 xu
+gF
 gF
 gF
 xu
@@ -6870,13 +6760,13 @@ pc
 ah
 Kq
 hb
-jD
 lQ
 lQ
 lQ
 lQ
 lQ
 lQ
+oM
 lQ
 lQ
 lQ

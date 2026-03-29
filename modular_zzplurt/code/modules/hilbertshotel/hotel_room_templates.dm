@@ -223,7 +223,7 @@
 	name = "City Apartment (Empty)"
 	mappath = "_maps/splurt/templates/apartment_kiss.dmm"
 	category = GHC_APARTMENT
-	landing_coords = list(20, 12)
+	landing_coords = list(20, 13)
 
 #undef GHC_MISC
 #undef GHC_APARTMENT

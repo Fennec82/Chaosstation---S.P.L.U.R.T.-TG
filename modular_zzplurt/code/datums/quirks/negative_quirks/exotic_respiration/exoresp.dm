@@ -31,6 +31,8 @@
 	gain_text = "<span class='danger'>Your lungs spasm. Oxygen feels toxic!</span>"
 	lose_text = "<span class='notice'>Oxygen no longer feels toxic to you.</span>"
 	value = -4
+	quirk_flags = QUIRK_HUMAN_ONLY
+	species_blacklist = list(SPECIES_SYNTH, SPECIES_PROTEAN)
 
 /datum/quirk/equipping/lungs/exoresp/add(client/client_source)
 	var/choice = "Carbon dioxide" // default to something so the quirk doesn't break if the pref fails to load for some reason

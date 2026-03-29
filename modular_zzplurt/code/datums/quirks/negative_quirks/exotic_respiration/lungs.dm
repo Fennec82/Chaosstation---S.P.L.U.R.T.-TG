@@ -5,6 +5,7 @@
 #define RESPIRATION_NITROUS (1 << 4)
 #define RESPIRATION_CARBON (1 << 5)
 
+// it's on some coconut shit and complains if i don't define these vars on the parent type
 /obj/item/organ/lungs
 	var/safe_bz_min = 0
 	var/safe_n2o_min = 0
@@ -38,7 +39,7 @@
 	if(breather.health >= breather.crit_threshold && breather.oxyloss)
 		breather.adjust_oxy_loss(-5)
 
-// ditto line 25 but for N2O
+// ditto line 26 but for N2O
 // i'd love to do this without repeating myself but until someone refactors tg's dogshit breathing code this is the best i've got
 /obj/item/organ/lungs/proc/breathe_n2o(mob/living/carbon/breather, datum/gas_mixture/breath, n2o_pp, old_n2o_pp)
 	if(n2o_pp < safe_n2o_min && !HAS_TRAIT(breather, TRAIT_NO_BREATHLESS_DAMAGE))
@@ -76,7 +77,7 @@
 	var/breathgas = "absolutely nothing. This vexes me!<br>You should report this on GitHub"
 	desc = "These ones look weird."
 	special_desc_requirement = EXAMINE_CHECK_JOB
-	special_desc_jobs = list(JOB_MEDICAL_DOCTOR, JOB_CHIEF_MEDICAL_OFFICER, JOB_CHEMIST, JOB_PARAMEDIC, JOB_SECURITY_MEDIC, JOB_CORONER)
+	special_desc_jobs = list(JOB_MEDICAL_DOCTOR, JOB_CHIEF_MEDICAL_OFFICER, JOB_CHEMIST, JOB_PARAMEDIC, JOB_SECURITY_MEDIC, JOB_CORONER) // orderlies didn't go to med school
 	safe_oxygen_min = 0
 	safe_oxygen_max = 2
 	oxy_damage_type = TOX // you take toxin damage rather than oxyloss, same as n2 breathers
@@ -86,9 +87,9 @@
 	. = ..()
 	special_desc = "Upon closer inspection, you note a characteristic [pick("tint", "shape", "smell", "taste", "texture", "structure")] to the [pick("alveoli", "pleura", "bronchi", "capillaries")] of these lungs. They appear to be adapted to breathe <b>[breathgas].</b>"
 
-/obj/item/organ/lungs/exotic/bz // no! oxygen drug will kill the patient
-	safe_bz_min = 16 // he needs hallucinogens to live
-	BZ_trip_balls_min = 1e30
+/obj/item/organ/lungs/exotic/bz
+	safe_bz_min = 16
+	BZ_trip_balls_min = 1e30 // i don't like "set it to a big fucking number" any more than you do but here we are
 	BZ_brain_damage_min = 1e30 // if you're breathing one nonillion kpa of bz you have bigger problems than the brain damage
 	breathgas = "BZ"
 
@@ -104,11 +105,11 @@
 	safe_co2_max = 0
 	breathgas = "carbon dioxide"
 
-/obj/item/organ/lungs/exotic/n2
+/obj/item/organ/lungs/exotic/n2 // different from vox lungs, they only need 4kpa of n2 to breathe, these need the full 16 kpa
 	safe_nitro_min = 16
 	breathgas = "nitrogen"
 
-/obj/item/organ/lungs/exotic/plasma
+/obj/item/organ/lungs/exotic/plasma // ditto 108 but for plasmamen lungs
 	safe_plasma_min = 16
 	safe_plasma_max = 0
 	breathgas = "plasma"

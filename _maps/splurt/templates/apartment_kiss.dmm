@@ -4592,6 +4592,9 @@
 	pixel_x = 0;
 	pixel_y = -6
 	},
+/obj/item/storage/box/lights/tubes,
+/obj/item/storage/box/lights/bulbs,
+/obj/item/stack/cable_coil/thirty,
 /turf/open/floor/iron/shuttle/exploration/blanktile,
 /area/misc/hilbertshotel)
 "Ld" = (

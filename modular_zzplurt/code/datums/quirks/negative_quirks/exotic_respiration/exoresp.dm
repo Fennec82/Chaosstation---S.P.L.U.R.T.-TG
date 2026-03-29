@@ -43,7 +43,7 @@
 	return ..()
 
 /datum/preference/choiced/exoresp/apply_to_human(mob/living/carbon/human/target, value)
-    return
+	return
 
 /datum/quirk/equipping/lungs/exoresp/proc/configure_from_choice(choice)
 	if(isnull(choice))

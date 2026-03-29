@@ -3073,12 +3073,6 @@
 	icon_state = "26,20"
 	},
 /area/misc/hilbertshotel)
-"xt" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/closed/wall,
-/area/misc/hilbertshotel)
 "xu" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/closed/wall,
@@ -5351,7 +5345,7 @@
 	name = "Cosmo's Apartment";
 	locked = 1
 	},
-/turf/closed/wall,
+/turf/open/floor/iron/shuttle/exploration/blanktile,
 /area/misc/hilbertshotel)
 "RX" = (
 /obj/effect/abstract/marker{
@@ -6881,7 +6875,7 @@ lQ
 lQ
 lQ
 lQ
-xt
+lQ
 lQ
 lQ
 lQ

@@ -77,19 +77,20 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 	if(other_ipod_ref)
 		. += "This headphone is in shared listening mode."
 	else if(radio_mode)
+		var/listeners = 0
+		for(var/obj/item/clothing/ears/ipod/other_ipod in GLOB.ipod_radio) // fetch and update current song from found radio
+			if(other_ipod.radio_mode != radio_mode) // not the same channel
+				continue
+			if(other_ipod == src)
+				continue
+			listeners++
+		var/headphones_string = listeners == 1 ? "There is 1 headphone tuned in" : "There are [listeners] headphones tuned in"
 		if(radio_dj_owner)
-			var/listeners = 0
-			for(var/obj/item/clothing/ears/ipod/other_ipod in GLOB.ipod_radio) // fetch and update current song from found radio
-				if(other_ipod.radio_mode != radio_mode) // not the same channel
-					continue
-				if(other_ipod == src)
-					continue
-				listeners++
-			. += "This headphone is the DJ of [get_radio_name()]. There are [listeners] headphones tuned in. Right click to set the broadcast name."
+			. += "This headphone is the DJ of broadcast [get_radio_name()]. [headphones_string]. Right click to set the broadcast name."
 		else
-			. += "This headphone is set to broadcast [get_radio_name()]."
+			. += "This headphone is tuned into broadcast [get_radio_name()]. [headphones_string]."
 	else
-		. += "Tapping this on another headphone will put it into shared listening mode."
+		. += "Tapping this on another headphone will set both to shared listening mode."
 		. += "Use in hand to set to broadcast mode."
 	. += "Alt click to set the volume."
 

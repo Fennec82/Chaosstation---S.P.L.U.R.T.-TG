@@ -79,7 +79,7 @@
 			forced_items = list(
 				/obj/item/tank/internals/plasmaman/belt/full/highpressure = list(ITEM_SLOT_HANDS, ITEM_SLOT_LPOCKET, ITEM_SLOT_RPOCKET),
 			)
-			lungs_typepath = /obj/item/organ/lungs/exotic/plasma // ditto 83 but for plasmamen
+			lungs_typepath = /obj/item/organ/lungs/exotic/plasma // ditto 76 but for plasmamen
 			breath_type = "Plasma"
 
 /datum/quirk/equipping/lungs/exoresp/add_unique(client/client_source)

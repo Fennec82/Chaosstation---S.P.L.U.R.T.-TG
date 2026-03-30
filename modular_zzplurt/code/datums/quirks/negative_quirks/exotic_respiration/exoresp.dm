@@ -35,6 +35,7 @@
 	quirk_flags = QUIRK_HUMAN_ONLY
 	species_blacklist = list(SPECIES_SYNTH, SPECIES_PROTEAN)
 	stored_items = list(/obj/item/clothing/accessory/breathing = list(ITEM_SLOT_BACK))
+	items = list(/obj/item/clothing/mask/breath = list(ITEM_SLOT_MASK))
 
 /datum/quirk/equipping/lungs/exoresp/add(client/client_source)
 	var/choice = "Carbon dioxide" // default to something so the quirk doesn't break if the pref fails to load for some reason
@@ -52,36 +53,48 @@
 	switch(choice)
 		if("BZ")
 			forced_items = list(
-				/obj/item/clothing/mask/breath = list(ITEM_SLOT_MASK),
 				/obj/item/tank/internals/bz/belt/full = list(ITEM_SLOT_HANDS, ITEM_SLOT_LPOCKET, ITEM_SLOT_RPOCKET),
 			)
 			lungs_typepath = /obj/item/organ/lungs/exotic/bz // see bubber's nitrogen breather quirk for the framework being used here
 			breath_type = "BZ"
 		if("Nitrous oxide")
 			forced_items = list(
-				/obj/item/clothing/mask/breath = list(ITEM_SLOT_MASK),
 				/obj/item/tank/internals/n2o/belt/full = list(ITEM_SLOT_HANDS, ITEM_SLOT_LPOCKET, ITEM_SLOT_RPOCKET),
 			)
 			lungs_typepath = /obj/item/organ/lungs/exotic/n2o
 			breath_type = "N2O"
 		if("Carbon dioxide")
 			forced_items = list(
-				/obj/item/clothing/mask/breath = list(ITEM_SLOT_MASK),
 				/obj/item/tank/internals/co2/belt/full = list(ITEM_SLOT_HANDS, ITEM_SLOT_LPOCKET, ITEM_SLOT_RPOCKET),
 			)
 			lungs_typepath = /obj/item/organ/lungs/exotic/co2
 			breath_type = "CO2"
 		if("Nitrogen")
 			forced_items = list(
-				/obj/item/clothing/mask/breath = list(ITEM_SLOT_MASK),
 				/obj/item/tank/internals/nitrogen/belt/full/highpressure = list(ITEM_SLOT_HANDS, ITEM_SLOT_LPOCKET, ITEM_SLOT_RPOCKET),
 			)
 			lungs_typepath = /obj/item/organ/lungs/exotic/n2 // not using the vox lungs because they're also low-pressure adapted, making them a sidegrade
 			breath_type = "Nitrogen"
 		if("Plasma")
 			forced_items = list(
-				/obj/item/clothing/mask/breath = list(ITEM_SLOT_MASK),
 				/obj/item/tank/internals/plasmaman/belt/full/highpressure = list(ITEM_SLOT_HANDS, ITEM_SLOT_LPOCKET, ITEM_SLOT_RPOCKET),
 			)
-			lungs_typepath = /obj/item/organ/lungs/exotic/plasma // ditto 72 but for plasmamen
+			lungs_typepath = /obj/item/organ/lungs/exotic/plasma // ditto 83 but for plasmamen
 			breath_type = "Plasma"
+
+/datum/quirk/equipping/lungs/exoresp/add_unique(client/client_source)
+	. = ..()
+	restore_mask()
+
+/datum/quirk/equipping/lungs/exoresp/proc/restore_mask() // /datum/quirk/equipping's logic rudely discards our loadout mask onto the floor if we had one, so we search for a mask among the items we force dropped and try to reequip it
+	var/mob/living/carbon/human/holder = quirk_holder
+	if(!istype(holder))
+		return
+	for(var/obj/item/clothing/mask/restoredmask in force_dropped_items) // parent helpfully provides a list of items it force dropped so we use that
+		if(istype(restoredmask, /obj/item/clothing/mask/breath)) // probably shouldn't reequip the same breath mask
+			continue
+		if(force_equip_item(holder, restoredmask, ITEM_SLOT_MASK, FALSE)) // this doesn't check if the mask you brought has internals, but if you take exoresp and then bring a loadout mask item without internals, you did ask for this to happen
+			force_dropped_items -= restoredmask
+			UnregisterSignal(restoredmask, COMSIG_QDELETING) // clean up after ourselves
+			return restoredmask
+	return

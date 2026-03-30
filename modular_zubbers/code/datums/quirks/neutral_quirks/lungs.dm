@@ -89,4 +89,3 @@
 	if (!success || !istype(carbon_holder) || !istype(equipped, /obj/item/tank/internals))
 		return
 	carbon_holder.internal = equipped
-

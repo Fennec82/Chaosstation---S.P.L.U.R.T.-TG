@@ -17,7 +17,7 @@
 	id = "lizgasruin"
 	description = "A gas station. It appears to have been recently open and is in mint condition."
 	prefix = "modular_zzplurt/maps/offstation/" //SPLURT CHANGE
-	suffix = "icemoon_surface_gas_splurt" //SPLURT EDIT - PREVIOUSLY: icemoon_surface_gas_bubber.dmm ORIGINAL: icemoon_surface_gas.dmm
+	suffix = "icemoon_surface_gas_splurt.dmm" //SPLURT EDIT - PREVIOUSLY: icemoon_surface_gas_bubber.dmm ORIGINAL: icemoon_surface_gas.dmm
 
 /datum/map_template/ruin/icemoon/lust
 	name = "Ice-Ruin Ruin of Lust"

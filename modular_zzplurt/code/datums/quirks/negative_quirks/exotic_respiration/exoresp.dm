@@ -34,6 +34,7 @@
 	value = -4
 	quirk_flags = QUIRK_HUMAN_ONLY
 	species_blacklist = list(SPECIES_SYNTH, SPECIES_PROTEAN)
+	stored_items = list(/obj/item/clothing/accessory/breathing = list(ITEM_SLOT_BACK))
 
 /datum/quirk/equipping/lungs/exoresp/add(client/client_source)
 	var/choice = "Carbon dioxide" // default to something so the quirk doesn't break if the pref fails to load for some reason

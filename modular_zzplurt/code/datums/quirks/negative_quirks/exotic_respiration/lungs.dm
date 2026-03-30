@@ -7,9 +7,9 @@
 
 // it's on some coconut shit and complains if i don't define these vars on the parent type
 /obj/item/organ/lungs
-	var/safe_bz_min = 0
-	var/safe_n2o_min = 0
-	var/safe_co2_min = 0
+	var/safe_bz_min
+	var/safe_n2o_min
+	var/safe_co2_min
 
 /obj/item/organ/lungs/Initialize(mapload)
 	. = ..()

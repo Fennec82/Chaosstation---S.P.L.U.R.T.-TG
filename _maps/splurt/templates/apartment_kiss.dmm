@@ -23,7 +23,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -63,7 +62,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -78,7 +76,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -110,7 +107,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -125,7 +121,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -140,7 +135,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -158,7 +152,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -250,7 +243,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -329,7 +321,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -344,7 +335,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -392,7 +382,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -412,7 +401,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -506,7 +494,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -646,7 +633,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -728,7 +714,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -752,7 +737,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -805,7 +789,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -858,7 +841,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -877,7 +859,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -979,7 +960,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -1104,7 +1084,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -1189,7 +1168,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -1214,7 +1192,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -1286,7 +1263,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -1310,7 +1286,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -1373,7 +1348,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -1428,7 +1402,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -1455,7 +1428,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -1490,7 +1462,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -1517,7 +1488,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -1531,7 +1501,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -1546,7 +1515,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -1560,7 +1528,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -1574,7 +1541,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -1605,7 +1571,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -1789,7 +1754,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -1809,7 +1773,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -1941,7 +1904,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -2065,7 +2027,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -2105,7 +2066,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -2179,7 +2139,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -2220,7 +2179,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -2264,7 +2222,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -2370,7 +2327,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -2385,7 +2341,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -2413,7 +2368,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -2538,7 +2492,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -2553,7 +2506,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -2586,7 +2538,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -2621,7 +2572,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -2654,7 +2604,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -2734,7 +2683,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -2789,7 +2737,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -2803,7 +2750,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -2817,7 +2763,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -2847,7 +2792,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -2918,7 +2862,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -2932,7 +2875,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -2967,7 +2909,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -2999,7 +2940,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -3014,7 +2954,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -3079,7 +3018,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -3129,7 +3067,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -3245,7 +3182,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -3260,7 +3196,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -3280,7 +3215,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -3295,7 +3229,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -3309,7 +3242,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -3425,7 +3357,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -3534,7 +3465,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -3606,7 +3536,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -3628,7 +3557,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -3661,11 +3589,6 @@
 	icon_state = "11,24"
 	},
 /area/misc/hilbertshotel)
-"FY" = (
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/closed/wall,
-/area/misc/hilbertshotel)
 "Gc" = (
 /obj/effect/abstract/marker{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/rain.dmi';
@@ -3673,7 +3596,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -3791,7 +3713,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -3841,7 +3762,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -3902,7 +3822,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -3976,7 +3895,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -4072,7 +3990,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -4099,7 +4016,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -4127,7 +4043,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -4245,7 +4160,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -4263,7 +4177,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -4304,7 +4217,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -4423,7 +4335,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -4655,7 +4566,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -4707,7 +4617,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -4767,7 +4676,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -4807,7 +4715,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -4822,7 +4729,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -4873,7 +4779,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -4930,7 +4835,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -5010,7 +4914,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -5071,7 +4974,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -5086,7 +4988,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -5110,7 +5011,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -5197,7 +5097,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -5297,7 +5196,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -5338,7 +5236,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -5401,7 +5298,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -5476,7 +5372,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -5531,7 +5426,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -5558,7 +5452,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -5578,7 +5471,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -5605,7 +5497,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -5655,7 +5546,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -5669,7 +5559,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -5780,7 +5669,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/turf/open/space/basic,
 /turf/open/indestructible/tram{
 	base_icon_state = "0,34";
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -6531,7 +6419,7 @@ na
 gF
 VC
 VC
-FY
+VC
 lQ
 lQ
 ys

@@ -1486,6 +1486,14 @@
 	color = "#878787";
 	pixel_x = -32
 	},
+/obj/structure/decorative{
+	icon_state = "siding_plain_corner";
+	pixel_y = 32;
+	icon = 'icons/turf/decals.dmi';
+	dir = 2;
+	color = "#878787";
+	pixel_x = -32
+	},
 /turf/closed/wall,
 /area/misc/hilbertshotel)
 "mF" = (
@@ -1553,12 +1561,6 @@
 	icon_state = "rain";
 	alpha = 100;
 	name = "rain"
-	},
-/obj/structure/decorative{
-	icon_state = "siding_plain_corner";
-	icon = 'icons/turf/decals.dmi';
-	dir = 3;
-	color = "#878787"
 	},
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
@@ -2725,12 +2727,6 @@
 	alpha = 100;
 	name = "rain"
 	},
-/obj/structure/decorative{
-	icon_state = "siding_plain_corner";
-	icon = 'icons/turf/decals.dmi';
-	dir = 3;
-	color = "#878787"
-	},
 /turf/open/indestructible/tram{
 	icon = 'modular_zzplurt/icons/obj/skyscraper/background.dmi';
 	base_icon_state = "0,34";
@@ -3350,6 +3346,14 @@
 	color = "#36373a";
 	dir = 9;
 	anchored = 1
+	},
+/obj/structure/decorative{
+	icon_state = "siding_plain_corner";
+	pixel_y = 32;
+	icon = 'icons/turf/decals.dmi';
+	dir = 2;
+	color = "#878787";
+	pixel_x = -32
 	},
 /turf/closed/wall,
 /area/misc/hilbertshotel)

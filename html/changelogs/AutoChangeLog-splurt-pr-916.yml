@@ -1,0 +1,5 @@
+author: "UvvU"
+delete-after: True
+changes:
+  - rscadd: "Bottomshield as Blueshield alt job title"
+  - rscadd: "Blueshield and Bottomshield as honorifics"

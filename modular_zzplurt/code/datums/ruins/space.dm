@@ -21,3 +21,6 @@
 	suffix = "icemoon_asteroid.dmm"
 	name = "Icemoon Asteroid"
 	description = "A sizeable asteroid from presumably an ice planet of some kind."
+  
+/datum/map_template/ruin/space/skyrat/shuttle8532
+	prefix = "_maps/RandomRuins/SpaceRuins/splurt/" // Skyrat Map edit.

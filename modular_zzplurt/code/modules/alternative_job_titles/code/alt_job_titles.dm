@@ -57,6 +57,7 @@
 		"Personnel Officer",
 		"Records Administrator",
 		"Staff Administrator",
+		"Head of Fursonnel",
 	)
 	LAZYADD(alt_titles, extra_titles)
 	. = ..()

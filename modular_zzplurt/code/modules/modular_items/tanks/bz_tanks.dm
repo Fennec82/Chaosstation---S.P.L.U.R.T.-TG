@@ -11,7 +11,7 @@
 	inhand_icon_state = "bz" // if you're spawning this somewhere, maybe change that!
 	icon_state = "bz_large"
 	force = 10
-	distribute_pressure = 16
+	distribute_pressure = 6 // adheres to the needed pressure for bz breathers
 
 /obj/item/tank/internals/bz/populate_gas()
 	air_contents.assert_gas(/datum/gas/bz)

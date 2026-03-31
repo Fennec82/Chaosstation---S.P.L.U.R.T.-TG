@@ -88,7 +88,7 @@
 	special_desc = "Upon closer inspection, you note a characteristic [pick("tint", "shape", "smell", "taste", "texture", "structure")] to the [pick("alveoli", "pleura", "bronchi", "capillaries")] of these lungs. They appear to be adapted to breathe <b>[breathgas].</b>"
 
 /obj/item/organ/lungs/exotic/bz
-	safe_bz_min = 16
+	safe_bz_min = 6 // bz is hard to get and this is a -4 quirk, let's toss a lifeline bz breathers' way
 	BZ_trip_balls_min = 1e30 // i don't like "set it to a big fucking number" any more than you do but here we are
 	BZ_brain_damage_min = 1e30 // if you're breathing one nonillion kpa of bz you have bigger problems than the brain damage
 	breathgas = "BZ"

@@ -1,5 +1,0 @@
-author: "ChromeFoxxity"
-delete-after: True
-changes:
-  - rscadd: "Adds preloaded, and autolinking ore_silos for away missions/ruins/shuttles."
-  - bugfix: "Fixes up the Vortex-Class to be more luxurious, and cheaper."

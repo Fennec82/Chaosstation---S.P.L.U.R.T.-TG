@@ -1,10 +1,9 @@
+#define IPOD_MAX_BROADCAST_CHANNELS 2
+
 GLOBAL_LIST_EMPTY(ipod_radio) //list of all ipods set to radio mode
+GLOBAL_LIST_EMPTY(ipod_cast_names) //names of the broadcasts
 GLOBAL_VAR_INIT(ipod_last_upload, 0) //last time of the last upload, to prevent multiple uploads within seconds of eachother
 GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prevent spamming clients too often with play/stop
-GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
-	"Unknown Frequency A",
-	"Unknown Frequency B",
-))
 
 /obj/item/clothing/ears/ipod
 	name = "\improper iZune Spaceman Headphones"
@@ -27,7 +26,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 	var/lastfilechange = 0
 	/// Time of the last upload attempt
 	var/uploadattempt  = 0
-	/// Radio mode locks into the wide band frequency (0 = off, 1-2 = valid channels)
+	/// Radio mode locks into the wide band frequency (0 = off, 1 to IPOD_MAX_BROADCAST_CHANNELS = valid channels)
 	var/radio_mode = 0
 	/// Do we own this channel (aka we're the first to stake it out)
 	var/radio_dj_owner = FALSE
@@ -51,6 +50,9 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 	music_player = new(src)
 	music_player.set_new_volume(volume)
 	GLOB.ipod_radio += src
+	if(length(GLOB.ipod_cast_names) < 1) // define channel names
+		for(var/i = 1; i <= IPOD_MAX_BROADCAST_CHANNELS; i++)
+			GLOB.ipod_cast_names += "Unknown Frequency [i]"
 
 /obj/item/clothing/ears/ipod/Destroy()
 	if(playing && !isnull(music_player.active_song_sound))
@@ -374,7 +376,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 		unlink_refs()
 
 	radio_mode++
-	if(radio_mode > 2)
+	if(radio_mode > IPOD_MAX_BROADCAST_CHANNELS)
 		radio_mode = 0
 		radio_dj_owner = FALSE
 		balloon_alert(user, "turned off radio mode")
@@ -440,7 +442,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 	if(!str || QDELETED(src) || !user.is_holding(src))
 		to_chat(user, span_warning("Invalid text!"))
 		return
-	if(radio_mode >= 1 && radio_mode <= 2 && radio_dj_owner)
+	if(radio_mode >= 1 && radio_mode <= IPOD_MAX_BROADCAST_CHANNELS && radio_dj_owner)
 		GLOB.ipod_cast_names[radio_mode] = str
 		to_chat(user, span_notice("You set the broadcast name to '[str]'."))
 		user.log_message("set the broadcast name to: [str]", LOG_GAME)
@@ -459,7 +461,7 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 	return CLICK_ACTION_SUCCESS
 
 /obj/item/clothing/ears/ipod/proc/get_radio_name()
-	if(radio_mode >= 1 && radio_mode <= 2)
+	if(radio_mode >= 1 && radio_mode <= IPOD_MAX_BROADCAST_CHANNELS)
 		return GLOB.ipod_cast_names[radio_mode]
 	return ""
 
@@ -510,3 +512,5 @@ GLOBAL_LIST_INIT(ipod_cast_names, list( //names of the broadcasts
 	var/obj/item/clothing/ears/ipod/H = target
 	if(istype(H) && !QDELETED(owner) && istype(owner))
 		H.toggle(owner)
+
+#undef IPOD_MAX_BROADCAST_CHANNELS

@@ -439,8 +439,11 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	if(!radio_mode || !radio_dj_owner)
 		return
 	var/str = reject_bad_text(tgui_input_text(user, "Broadcast name", "Set new broadcast name", get_radio_name(), MAX_NAME_LEN))
-	if(!str || QDELETED(src) || !user.is_holding(src))
+	if(!str || QDELETED(src))
 		to_chat(user, span_warning("Invalid text!"))
+		return
+	if(QDELETED(user) || loc != user || !user.can_perform_action(src, FORBID_TELEKINESIS_REACH))
+		to_chat(user, span_warning("Can't reach [src]!"))
 		return
 	if(radio_mode >= 1 && radio_mode <= IPOD_MAX_BROADCAST_CHANNELS && radio_dj_owner)
 		GLOB.ipod_cast_names[radio_mode] = str
@@ -450,11 +453,11 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	to_chat(user, span_notice("The connection to the broadcast fizzled out!"))
 
 /obj/item/clothing/ears/ipod/click_alt(mob/user)
-	if(isnull(user?.mind) || user.stat != CONSCIOUS || !is_worn)
+	if(isnull(user?.mind) || user.stat != CONSCIOUS)
 		to_chat(user, span_warning("You can't do that right now."))
 		return NONE
 	var/new_volume = tgui_input_number(user, "", "Set volume", volume, 100)
-	if(!isnum(new_volume) || QDELETED(user) || QDELETED(src))
+	if(!isnum(new_volume) || QDELETED(user) || QDELETED(src) || loc != user || !user.can_perform_action(src, FORBID_TELEKINESIS_REACH))
 		return NONE
 	volume = new_volume
 	music_player.set_new_volume(volume)

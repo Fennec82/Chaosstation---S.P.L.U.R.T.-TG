@@ -170,6 +170,12 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	curfile = file(logged_filename)
 
 	lastfilechange = world.time
+	var/sound_length = SSsounds.get_sound_length(curfile)
+	if(isnull(sound_length) || sound_length <= 0)
+		to_chat(user, span_warning("The song length was invalid, aborting!"))
+		user.log_message("uploaded an invalid song: [logged_filename]", LOG_GAME)
+		return
+
 	playsound(loc, 'sound/misc/escape_menu/esc_close.ogg', 100, FALSE, -1)
 	if(!radio_mode)
 		to_chat(user, span_warning("The song has been uploaded, ready to play!"))
@@ -181,7 +187,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	var/datum/track/new_song = new()
 	new_song.song_name = "custom track"
 	new_song.song_path = curfile
-	new_song.song_length = SSsounds.get_sound_length(new_song.song_path)
+	new_song.song_length = sound_length
 	if(current_song)
 		qdel(current_song)
 	current_song = new_song

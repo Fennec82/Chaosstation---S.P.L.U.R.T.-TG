@@ -18,6 +18,8 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 
 	/// The current file path
 	var/curfile = null
+	/// User is currently picking a file to upload
+	var/upload_active = FALSE
 	/// Playing state
 	var/playing = FALSE
 	/// Volume
@@ -120,10 +122,18 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	if(playing)
 		to_chat(user, span_warning("You must first stop playing to track to upload a new track."))
 		return
+	if(upload_active)
+		return
 
 	uploadattempt = world.time
+	upload_active = TRUE
 	playsound(loc, 'sound/misc/menu/ui_select1.ogg', 100, FALSE, -1)
+	INVOKE_ASYNC(src, PROC_REF(upload_ui), user)
+
+/obj/item/clothing/ears/ipod/proc/upload_ui(mob/user)
+	set waitfor=FALSE
 	var/infile = input(user, "CHOOSE A NEW SONG", src) as null|file
+	upload_active = FALSE
 
 	if(world.time > uploadattempt + 30 SECONDS) // automatically cancel any attempt to upload if taken more than 30 seconds
 		to_chat(user, span_warning("Your connect was timed out, try uploading again!"))

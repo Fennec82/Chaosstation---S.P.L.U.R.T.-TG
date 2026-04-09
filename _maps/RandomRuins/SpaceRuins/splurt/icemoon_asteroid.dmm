@@ -1,7 +1,7 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aH" = (
-/obj/structure/flora/tree/pine/style_random,
-/turf/open/misc/asteroid/snow/icemoon,
+/obj/structure/decorative/shelf/soda_multipacks,
+/turf/open/floor/wood,
 /area/ruin/space/has_grav)
 "aK" = (
 /obj/structure/flora/grass/both/style_random,
@@ -70,6 +70,22 @@
 /obj/effect/overlay/light_snow,
 /obj/structure/flora/grass/both/style_random,
 /turf/open/misc/asteroid/snow/icemoon,
+/area/ruin/space/has_grav)
+"kr" = (
+/obj/structure/closet/crate/wooden,
+/obj/item/stack/sheet/mineral/plasma/thirty,
+/obj/item/stack/sheet/mineral/gold{
+	amount = 20
+	},
+/obj/item/stack/sheet/mineral/silver{
+	amount = 25
+	},
+/obj/item/stack/sheet/iron/fifty,
+/obj/item/stack/sheet/mineral/uranium/five,
+/obj/item/stack/sheet/bluespace_crystal{
+	amount = 5
+	},
+/turf/open/floor/wood,
 /area/ruin/space/has_grav)
 "kH" = (
 /obj/item/gps/spaceruin{
@@ -143,6 +159,23 @@
 /mob/living/basic/mining/ice_demon,
 /turf/open/misc/asteroid/snow/icemoon,
 /area/ruin/space/has_grav)
+"uZ" = (
+/obj/structure/rack/shelf,
+/obj/item/reagent_containers/hypospray/medipen/survival/luxury{
+	pixel_x = 0;
+	pixel_y = -8
+	},
+/obj/item/survivalcapsule/medical{
+	pixel_x = 0;
+	pixel_y = 0
+	},
+/turf/open/floor/wood,
+/area/ruin/space/has_grav)
+"vo" = (
+/obj/effect/mapping_helpers/broken_floor,
+/obj/item/flashlight/lantern/on,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav)
 "vF" = (
 /obj/structure/flora/rock/pile/icy/style_random,
 /obj/effect/overlay/light_snow,
@@ -150,6 +183,10 @@
 /area/ruin/space/has_grav)
 "vZ" = (
 /obj/effect/decal/cleanable/blood/gibs/robot_debris/old,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav)
+"wh" = (
+/obj/structure/decorative/shelf/crates,
 /turf/open/floor/wood,
 /area/ruin/space/has_grav)
 "wD" = (
@@ -173,6 +210,10 @@
 /obj/effect/overlay/light_snow,
 /obj/structure/flora/scrap,
 /turf/open/misc/asteroid/snow/icemoon,
+/area/ruin/space/has_grav)
+"xF" = (
+/obj/effect/mapping_helpers/broken_floor,
+/turf/open/floor/wood,
 /area/ruin/space/has_grav)
 "yh" = (
 /obj/machinery/door/airlock/hatch,
@@ -222,10 +263,18 @@
 /obj/machinery/teleport/hub,
 /turf/open/floor/wood,
 /area/ruin/space/has_grav)
+"Bq" = (
+/obj/structure/decorative/shelf/soda_milk,
+/turf/open/floor/wood,
+/area/ruin/space/has_grav)
 "Cv" = (
 /obj/structure/flora/tree/pine/style_random,
 /obj/effect/overlay/light_snow,
 /turf/open/misc/asteroid/snow/icemoon,
+/area/ruin/space/has_grav)
+"DZ" = (
+/obj/structure/decorative/shelf/alcohol,
+/turf/open/floor/wood,
 /area/ruin/space/has_grav)
 "Ep" = (
 /obj/structure/rack/wooden,
@@ -303,6 +352,18 @@
 /area/ruin/space/has_grav)
 "On" = (
 /turf/closed/indestructible/rock/snow/ice/ore,
+/area/ruin/space/has_grav)
+"OB" = (
+/obj/structure/decorative/shelf,
+/obj/item/pickaxe/rusted{
+	pixel_x = -6;
+	pixel_y = 6
+	},
+/obj/item/storage/bag/ore{
+	pixel_x = 1;
+	pixel_y = -8
+	},
+/turf/open/floor/wood,
 /area/ruin/space/has_grav)
 "Pr" = (
 /obj/effect/overlay/light_snow,
@@ -384,6 +445,10 @@
 /obj/effect/overlay/light_snow,
 /obj/effect/turf_decal/weather/snow,
 /turf/open/misc/dirt/icemoon,
+/area/ruin/space/has_grav)
+"ZC" = (
+/obj/structure/decorative/shelf/milk,
+/turf/open/floor/wood,
 /area/ruin/space/has_grav)
 
 (1,1,1) = {"
@@ -1931,7 +1996,7 @@ Cv
 WZ
 WZ
 WZ
-WZ
+rd
 WZ
 WZ
 WZ
@@ -1971,12 +2036,12 @@ Uh
 hx
 WZ
 WZ
-WZ
-Cv
-gQ
-WZ
-WZ
-WZ
+fB
+fB
+dw
+dw
+fB
+fB
 bj
 On
 On
@@ -2009,13 +2074,13 @@ WZ
 WZ
 WZ
 WZ
-WZ
-Us
-rd
-hx
-WZ
-WZ
-aH
+fB
+DZ
+xF
+kr
+ZC
+fB
+bj
 On
 On
 On
@@ -2046,13 +2111,13 @@ WZ
 WZ
 Cv
 WZ
-hx
 WZ
-WZ
-WZ
-WZ
-WZ
-WZ
+fB
+wh
+xF
+xF
+OB
+fB
 bj
 WZ
 On
@@ -2085,12 +2150,12 @@ WZ
 WZ
 WZ
 WZ
-WZ
-WZ
-Cv
-WZ
-Cv
-vF
+yh
+xF
+vo
+xF
+uZ
+fB
 bj
 QR
 On
@@ -2123,12 +2188,12 @@ WZ
 WZ
 Cv
 WZ
-WZ
-WZ
-WZ
-WZ
-WZ
-WZ
+fB
+aH
+xF
+xF
+Bq
+fB
 bj
 On
 On
@@ -2161,12 +2226,12 @@ vF
 WZ
 WZ
 WZ
-WZ
-WZ
-Uh
-WZ
-WZ
-hx
+fB
+DZ
+xF
+xF
+Bq
+fB
 bj
 On
 On
@@ -2199,13 +2264,13 @@ On
 On
 WZ
 WZ
-WZ
-WZ
-WZ
-hx
-WZ
-WZ
-aH
+fB
+fB
+dw
+dw
+fB
+fB
+bj
 On
 On
 On
@@ -2279,7 +2344,7 @@ On
 On
 WZ
 WZ
-Cv
+WZ
 WZ
 On
 On

@@ -176,12 +176,12 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		to_chat(user, span_warning("Upload failed to finish, aborting!"))
 		user.log_message("attempted to upload a song: [logged_filename]", LOG_GAME)
 		return
-	var/sound_length = SSsounds.get_sound_length(curfile)
+	var/sound_length = SSsounds.get_sound_length(uploaded_song)
 	if(isnull(sound_length) || sound_length <= 50) // either an invalid file or 5 seconds or less, abort
 		to_chat(user, span_warning("The song length was invalid, aborting!"))
 		user.log_message("uploaded an invalid song: [logged_filename]", LOG_GAME)
 		return
-	curfile = file(logged_filename)
+	curfile = uploaded_song
 
 	playsound(loc, 'sound/misc/escape_menu/esc_close.ogg', 100, FALSE, -1)
 	if(!radio_mode)

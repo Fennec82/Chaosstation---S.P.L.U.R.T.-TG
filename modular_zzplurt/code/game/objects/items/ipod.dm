@@ -96,7 +96,9 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		. += "Use in hand to set to broadcast mode."
 	. += "Alt click to set the volume."
 
-/obj/item/clothing/ears/ipod/proc/upload(owner)
+/obj/item/clothing/ears/ipod/proc/upload(mob/owner)
+	if(!istype(owner)) // this should never happen... but doesn't hurt to check
+		return
 	var/mob/user = owner
 	if(user.stat != CONSCIOUS)
 		to_chat(user, span_warning("You can't do that right now."))

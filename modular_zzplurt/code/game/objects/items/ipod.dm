@@ -171,7 +171,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 
 	lastfilechange = world.time
 	var/sound_length = SSsounds.get_sound_length(curfile)
-	if(isnull(sound_length) || sound_length <= 0)
+	if(isnull(sound_length) || sound_length <= 50) // either an invalid file or 5 seconds or less, abort
 		to_chat(user, span_warning("The song length was invalid, aborting!"))
 		user.log_message("uploaded an invalid song: [logged_filename]", LOG_GAME)
 		return

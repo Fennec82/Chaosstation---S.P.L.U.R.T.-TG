@@ -149,6 +149,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	if(world.time < GLOB.ipod_last_upload + 30 SECONDS)
 		to_chat(user, span_warning("Another user has uploaded a new track recently, try again soon!"))
 		return
+
 	if(isnull(infile)) // sometimes this fails, thank you BYOND
 		to_chat(user, span_warning("Error, could not upload."))
 		return
@@ -187,7 +188,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		user.log_message("attempted to upload a song: [logged_filename]", LOG_GAME)
 		return
 	var/sound_length = SSsounds.get_sound_length(uploaded_song)
-	if(isnull(sound_length) || sound_length <= 50) // either an invalid file or 5 seconds or less, abort
+	if(isnull(sound_length) || sound_length <= 20) // either an invalid file or 2 seconds or less, abort
 		to_chat(user, span_warning("The song length was invalid, aborting!"))
 		user.log_message("uploaded an invalid song: [logged_filename]", LOG_GAME)
 		return

@@ -326,16 +326,12 @@
 /turf/open/floor/tram/plate,
 /area/ruin/thelizardsgas_lavaland)
 "gd" = (
-/obj/structure/decorative{
-	anchored = 1;
-	icon = 'icons/obj/weapons/sword.dmi';
-	desc = "A massive V8 engine from the early 2000s. It seems to be missing the rest of the vehicle. There's a tiny label on the side.";
-	icon_state = "v8_engine";
-	pixel_y = 6;
-	name = "V8 engine"
-	},
 /obj/structure/fluff/big_chain{
 	pixel_y = 30
+	},
+/obj/item/v8_engine{
+	pixel_x = 0;
+	pixel_y = 6
 	},
 /turf/open/floor/iron/shuttle/exploration/doubleinvertcorner_side{
 	dir = 8
@@ -1530,6 +1526,7 @@
 	dir = 8;
 	color = "#595959"
 	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
 /turf/open/floor/iron{
 	baseturfs = /turf/open/misc/asteroid/basalt/lava_land_surface
 	},
@@ -1908,6 +1905,7 @@
 	name = "Bathroom"
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer4,
 /turf/open/floor/iron/textured_large,
 /area/ruin/thelizardsgas_lavaland)
 "CU" = (
@@ -3271,6 +3269,7 @@
 	},
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/all/lizard_gas,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer2,
 /turf/open/floor/iron/textured_large,
 /area/ruin/thelizardsgas_lavaland)
 "WL" = (

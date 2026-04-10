@@ -131,26 +131,26 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	INVOKE_ASYNC(src, PROC_REF(upload_ui), user)
 
 /obj/item/clothing/ears/ipod/proc/upload_ui(mob/user)
-	set waitfor=FALSE
+	set waitfor = FALSE
 	var/infile = input(user, "CHOOSE A NEW SONG", src) as null|file
+	if(QDELETED(user) || QDELETED(src))
+		return
 	upload_active = FALSE
 
+	if(loc != user)
+		return
+	if(!is_worn)
+		return
+	if(playing)
+		return
 	if(world.time > uploadattempt + 30 SECONDS) // automatically cancel any attempt to upload if taken more than 30 seconds
 		to_chat(user, span_warning("Your connect was timed out, try uploading again!"))
 		return
 	if(world.time < GLOB.ipod_last_upload + 30 SECONDS)
 		to_chat(user, span_warning("Another user has uploaded a new track recently, try again soon!"))
 		return
-	if(QDELETED(user) || QDELETED(src))
-		return
-	if(loc != user)
-		return
-	if(playing)
-		return
 	if(isnull(infile)) // sometimes this fails, thank you BYOND
 		to_chat(user, span_warning("Error, could not upload."))
-		return
-	if(!is_worn)
 		return
 	var/file_extension = LOWER_TEXT(copytext("[infile]", -4))
 	if(!(file_extension == ".ogg" || file_extension == ".mp3"))

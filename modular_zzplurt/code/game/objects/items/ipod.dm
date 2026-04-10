@@ -184,7 +184,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 
 	lastfilechange = world.time
 	var/uploaded_song = file(logged_filename)
-	if(!fexists(uploaded_song) || length(uploaded_song) != filelength)
+	if(!uploaded_song || !fexists(uploaded_song) || length(uploaded_song) != filelength)
 		to_chat(user, span_warning("Upload failed to finish, aborting!"))
 		user.log_message("attempted to upload a song: [logged_filename]", LOG_GAME)
 		return

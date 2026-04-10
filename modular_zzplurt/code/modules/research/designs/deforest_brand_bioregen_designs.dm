@@ -151,7 +151,7 @@
 	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_DFBBR_MEDICAL)
 
 /datum/design/dfbbr_splint_applicator
-	name = "Surgical Tape"
+	name = "Subdermal Splint Applicator"
 	id = "dfbbr_splint_applicator"
 	build_type = BIOGENERATOR
 	materials = list(/datum/material/biomass = 300)

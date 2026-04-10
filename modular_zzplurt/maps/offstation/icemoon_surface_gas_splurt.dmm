@@ -1900,6 +1900,7 @@
 	dir = 2;
 	anchored = 1
 	},
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/textured_large,
 /area/ruin/thelizardsgas_lavaland)
 "CL" = (
@@ -2817,7 +2818,6 @@
 /turf/open/floor/iron/shuttle/exploration/corner,
 /area/ruin/thelizardsgas_lavaland)
 "NB" = (
-/obj/machinery/light/directional/north,
 /obj/structure/cable,
 /obj/effect/turf_decal/siding/thinplating_new{
 	dir = 9;
@@ -3642,6 +3642,7 @@
 	pixel_y = 2
 	},
 /obj/machinery/light/small/red/directional/south,
+/obj/item/seeds/cabbage,
 /turf/open/floor/plating,
 /area/ruin/thelizardsgas_lavaland)
 "Zi" = (

@@ -2588,7 +2588,6 @@
 	},
 /area/ruin/thelizardsgas_lavaland)
 "LD" = (
-/obj/machinery/light/directional/north,
 /obj/structure/cable,
 /obj/effect/turf_decal/siding/thinplating_new{
 	dir = 9;
@@ -3396,6 +3395,7 @@
 	pixel_y = 2
 	},
 /obj/machinery/light/small/red/directional/south,
+/obj/item/seeds/cabbage,
 /turf/open/floor/plating,
 /area/ruin/thelizardsgas_lavaland)
 "XD" = (
@@ -3475,6 +3475,7 @@
 	dir = 2;
 	anchored = 1
 	},
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/textured_large,
 /area/ruin/thelizardsgas_lavaland)
 "YH" = (

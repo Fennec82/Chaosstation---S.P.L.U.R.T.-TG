@@ -133,9 +133,11 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 /obj/item/clothing/ears/ipod/proc/upload_ui(mob/user)
 	set waitfor = FALSE
 	var/infile = input(user, "CHOOSE A NEW SONG", src) as null|file
-	if(QDELETED(user) || QDELETED(src))
+	if(QDELETED(src))
 		return
 	upload_active = FALSE
+	if(QDELETED(user))
+		return
 
 	if(loc != user)
 		return
@@ -149,7 +151,6 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	if(world.time < GLOB.ipod_last_upload + 30 SECONDS)
 		to_chat(user, span_warning("Another user has uploaded a new track recently, try again soon!"))
 		return
-
 	if(isnull(infile)) // sometimes this fails, thank you BYOND
 		to_chat(user, span_warning("Error, could not upload."))
 		return
@@ -187,7 +188,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		to_chat(user, span_warning("Upload failed to finish, aborting!"))
 		user.log_message("attempted to upload a song: [logged_filename]", LOG_GAME)
 		return
-	var/sound_length = SSsounds.get_sound_length(uploaded_song)
+	var/sound_length = SSsounds.get_sound_length(uploaded_song) // this uses the rust-g library to check if file is valid
 	if(isnull(sound_length) || sound_length <= 20) // either an invalid file or 2 seconds or less, abort
 		to_chat(user, span_warning("The song length was invalid, aborting!"))
 		user.log_message("uploaded an invalid song: [logged_filename]", LOG_GAME)

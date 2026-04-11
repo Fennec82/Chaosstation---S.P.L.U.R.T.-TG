@@ -184,14 +184,20 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 
 	lastfilechange = world.time
 	var/uploaded_song = file(logged_filename)
-	if(!uploaded_song || !fexists(uploaded_song) || length(uploaded_song) != filelength)
+	if(!uploaded_song || !fexists(uploaded_song))
 		to_chat(user, span_warning("Upload failed to finish, aborting!"))
 		user.log_message("attempted to upload a song: [logged_filename]", LOG_GAME)
 		return
+	if(length(uploaded_song) != filelength)
+		to_chat(user, span_warning("Upload failed to finish, aborting!"))
+		user.log_message("attempted to upload a song: [logged_filename]", LOG_GAME)
+		fdel(logged_filename)
+		return
 	var/sound_length = SSsounds.get_sound_length(uploaded_song) // this uses the rust-g library to check if file is valid
 	if(isnull(sound_length) || sound_length <= 20) // either an invalid file or 2 seconds or less, abort
-		to_chat(user, span_warning("The song length was invalid, aborting!"))
+		to_chat(user, span_warning("The song codec was invalid, aborting!"))
 		user.log_message("uploaded an invalid song: [logged_filename]", LOG_GAME)
+		fdel(logged_filename)
 		return
 	curfile = uploaded_song
 

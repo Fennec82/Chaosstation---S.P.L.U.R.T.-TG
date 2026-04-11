@@ -176,11 +176,6 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		return
 	if(QDELETED(user) || QDELETED(src))
 		return
-	if(loc != user)
-		return
-	if(radio_mode && !radio_dj_owner) // check again after upload
-		to_chat(user, span_warning("You are not the DJ for broadcast [get_radio_name()]."))
-		return
 
 	lastfilechange = world.time
 	var/uploaded_song = file(logged_filename)
@@ -197,6 +192,13 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	if(isnull(sound_length) || sound_length <= 20) // either an invalid file or 2 seconds or less, abort
 		to_chat(user, span_warning("The song codec was invalid, aborting!"))
 		user.log_message("uploaded an invalid song: [logged_filename]", LOG_GAME)
+		fdel(logged_filename)
+		return
+	if(loc != user)
+		fdel(logged_filename)
+		return
+	if(radio_mode && !radio_dj_owner) // check again after upload
+		to_chat(user, span_warning("You are not the DJ for broadcast [get_radio_name()]."))
 		fdel(logged_filename)
 		return
 	curfile = uploaded_song

@@ -262,6 +262,14 @@
 	build_path = /obj/item/reagent_containers/applicator/pill/psicodine
 	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_DFBBR_MEDICINE)
 
+/datum/design/dfbbr_ondansetron_pill
+	name = "Ondansetron Pill"
+	id = "dfbbr_ondansetron"
+	build_type = BIOGENERATOR
+	materials = list(/datum/material/biomass = 75)
+	build_path = /obj/item/reagent_containers/applicator/pill/ondansetron
+	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_DFBBR_MEDICINE)
+
 /datum/design/dfbbr_sansufentanyl_pill
 	name = "Sansufentanyl Pill"
 	id = "dfbbr_sansufentanyl"

@@ -174,7 +174,9 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	if(!fcopy(infile, logged_filename))
 		to_chat(user, span_warning("Could not upload song."))
 		return
-	if(QDELETED(user) || QDELETED(src))
+	if(QDELETED(user) || QDELETED(src)) // clean up uploaded file if object/user was deleted while upload was in progress
+		if(fexists(logged_filename))
+			fdel(logged_filename)
 		return
 
 	lastfilechange = world.time

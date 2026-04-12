@@ -493,7 +493,9 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	if(!radio_mode || !radio_dj_owner)
 		return
 	var/str = reject_bad_text(tgui_input_text(user, "Broadcast name", "Set new broadcast name", get_radio_name(), MAX_NAME_LEN))
-	if(!str || QDELETED(src))
+	if(QDELETED(src))
+		return
+	if(!str)
 		to_chat(user, span_warning("Invalid text!"))
 		return
 	if(QDELETED(user) || loc != user || !user.can_perform_action(src, FORBID_TELEKINESIS_REACH))
@@ -532,7 +534,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		to_chat(user, span_warning("You can't do that right now."))
 		return NONE
 	var/new_volume = tgui_input_number(user, "", "Set volume", volume, 100)
-	if(!isnum(new_volume) || QDELETED(user) || QDELETED(src) || loc != user || !user.can_perform_action(src, FORBID_TELEKINESIS_REACH))
+	if(QDELETED(src) || QDELETED(user) || !isnum(new_volume) || loc != user || !user.can_perform_action(src, FORBID_TELEKINESIS_REACH))
 		return NONE
 	volume = new_volume
 	music_player.set_new_volume(volume)

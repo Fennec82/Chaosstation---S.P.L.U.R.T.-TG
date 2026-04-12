@@ -508,7 +508,9 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 
 /obj/item/clothing/ears/ipod/item_ctrl_click(mob/user)
 	. = ..()
-	if(!radio_mode || !radio_dj_owner)
+	if(!radio_mode)
+		return NONE
+	if(!radio_dj_owner)
 		to_chat(user, span_warning("You are not the DJ for broadcast [get_radio_name()]."))
 		return NONE
 	radio_dj_owner_allow_listen_upload = !radio_dj_owner_allow_listen_upload

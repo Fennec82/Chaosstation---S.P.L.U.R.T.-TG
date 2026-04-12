@@ -95,7 +95,8 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 			listeners++
 		var/headphones_string = listeners == 1 ? "There is 1 headphone tuned in" : "There are [listeners] headphones tuned in"
 		if(radio_dj_owner)
-			. += "This headphone is the DJ of broadcast [get_radio_name()]. [headphones_string]. Right click to set the broadcast name."
+			. += "This headphone is the DJ of broadcast [get_radio_name()]. [headphones_string]."
+			. += "Right click to set the broadcast name."
 		else
 			. += "This headphone is tuned into broadcast [get_radio_name()]. [headphones_string]."
 	else

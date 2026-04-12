@@ -319,7 +319,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 			if(other_ipod.is_worn)
 				var/mob/living/carbon/human/wearer = other_ipod.loc
 				if(istype(wearer))
-					to_chat(wearer, span_notice("The headphone's connection suddenly disconnects."))
+					to_chat(wearer, span_warning("The headphone's connection suddenly disconnects."))
 			other_ipod.update_play_button_state_icon()
 	else
 		other_ipod_ref = null
@@ -490,7 +490,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		to_chat(user, span_notice("You set the broadcast name to '[str]'."))
 		user.log_message("set the broadcast name to: [str]", LOG_GAME)
 		return
-	to_chat(user, span_notice("The connection to the broadcast fizzled out!"))
+	to_chat(user, span_warning("The connection to the broadcast fizzled out!"))
 
 /obj/item/clothing/ears/ipod/click_alt(mob/user)
 	if(isnull(user?.mind) || user.stat != CONSCIOUS)

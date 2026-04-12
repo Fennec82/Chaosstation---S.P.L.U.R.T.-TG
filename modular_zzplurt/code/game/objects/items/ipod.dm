@@ -261,6 +261,8 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 				continue
 			if(other_ipod == src)
 				continue
+			if(radio_dj_owner_allow_listen_upload)
+				other_ipod.lastfilechange = lastfilechange
 			if(other_ipod.playing && !isnull(music_player.active_song_sound))
 				other_ipod.music_player.unlisten_all()
 			var/datum/track/new_song_other = new()

@@ -110,7 +110,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	if(user.stat != CONSCIOUS)
 		to_chat(user, span_warning("You can't do that right now."))
 		return
-	if(loc != user)
+	if(loc != user) // headphones no longer on mob, abort
 		return
 	if(!user.ckey)
 		return
@@ -133,18 +133,18 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	uploadattempt = world.time
 	upload_active = TRUE
 	playsound(loc, 'sound/misc/menu/ui_select1.ogg', 100, FALSE, -1)
-	INVOKE_ASYNC(src, PROC_REF(upload_ui), user)
+	INVOKE_ASYNC(src, PROC_REF(upload_file), user) // call as thread to avoid halting while waiting for user file input
 
-/obj/item/clothing/ears/ipod/proc/upload_ui(mob/user)
+/obj/item/clothing/ears/ipod/proc/upload_file(mob/user)
 	set waitfor = FALSE
 	var/infile = input(user, "CHOOSE A NEW SONG", src) as null|file
-	if(QDELETED(src))
+	if(QDELETED(src)) // yes, this thread will continue to exist even if headphones are destroyed, so catch it here
 		return
 	upload_active = FALSE
-	if(QDELETED(user))
+	if(QDELETED(user)) // somehow the user was destroyed, abort
 		return
 
-	if(loc != user)
+	if(loc != user) // headphones no longer on mob, abort
 		return
 	if(!is_worn)
 		return
@@ -201,14 +201,13 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		user.log_message("uploaded an invalid song: [logged_filename]", LOG_GAME)
 		fdel(logged_filename)
 		return
-	if(loc != user)
+	if(loc != user) // headphones no longer on mob, abort
 		fdel(logged_filename)
 		return
 	if(radio_mode && !radio_dj_owner) // check again after upload
 		to_chat(user, span_warning("You are not the DJ for broadcast [get_radio_name()]."))
 		fdel(logged_filename)
 		return
-	curfile = uploaded_song
 
 	playsound(loc, 'sound/misc/escape_menu/esc_close.ogg', 100, FALSE, -1)
 	if(!radio_mode)
@@ -218,6 +217,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		to_chat(user, span_warning("The song is now broadcasting on [get_radio_name()]!"))
 		user.log_message("uploaded a song to headphones broadcast [get_radio_name()]: [logged_filename]", LOG_GAME)
 
+	curfile = uploaded_song
 	var/datum/track/new_song = new()
 	new_song.song_name = "custom track"
 	new_song.song_path = curfile

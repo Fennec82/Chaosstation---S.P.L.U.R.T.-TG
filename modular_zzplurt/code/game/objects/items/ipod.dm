@@ -33,6 +33,8 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	var/radio_mode = 0
 	/// Do we own this channel (aka we're the first to stake it out)
 	var/radio_dj_owner = FALSE
+	/// Do we allow any listeners to upload?
+	var/radio_dj_owner_allow_listen_upload = FALSE
 	/// Time of the last tuned in listener
 	var/lasttunein = 0
 	/// Currently worn
@@ -95,10 +97,13 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 			listeners++
 		var/headphones_string = listeners == 1 ? "There is 1 headphone tuned in" : "There are [listeners] headphones tuned in"
 		if(radio_dj_owner)
-			. += "This headphone is the DJ of broadcast [get_radio_name()]. [headphones_string]."
+			. += "This headphone is the DJ of broadcast [get_radio_name()]. [headphones_string]. Listener uploads are [radio_dj_owner_allow_listen_upload ? "enabled" : "disabled"]."
 			. += "Right click to set the broadcast name."
+			. += "Ctrl click to toggle listener uploads."
 		else
 			. += "This headphone is tuned into broadcast [get_radio_name()]. [headphones_string]."
+			if(radio_dj_owner_allow_listen_upload)
+				. += "You have upload privilege on this broadcast channel."
 	else
 		. += "Tapping this on another headphone will set both to shared listening mode."
 		. += "Use in hand to set to broadcast mode."
@@ -115,7 +120,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		return
 	if(!user.ckey)
 		return
-	if(radio_mode && !radio_dj_owner)
+	if(radio_mode && !radio_dj_owner && !radio_dj_owner_allow_listen_upload)
 		to_chat(user, span_warning("You are not the DJ for broadcast [get_radio_name()]."))
 		return
 	if(lastfilechange)
@@ -205,7 +210,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	if(loc != user) // headphones no longer on mob, abort
 		fdel(logged_filename)
 		return
-	if(radio_mode && !radio_dj_owner) // check again after upload
+	if(radio_mode && !radio_dj_owner && !radio_dj_owner_allow_listen_upload) // check again after upload
 		to_chat(user, span_warning("You are not the DJ for broadcast [get_radio_name()]."))
 		fdel(logged_filename)
 		return
@@ -414,6 +419,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		unlink_refs()
 
 	radio_mode++
+	radio_dj_owner_allow_listen_upload = FALSE
 	if(radio_mode > IPOD_MAX_BROADCAST_CHANNELS)
 		radio_mode = 0
 		radio_dj_owner = FALSE
@@ -436,6 +442,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 			listeners++
 			if(other_ipod.radio_dj_owner)
 				found_dj = TRUE
+				radio_dj_owner_allow_listen_upload = other_ipod.radio_dj_owner_allow_listen_upload
 				if(world.time > other_ipod.lasttunein + 5 SECONDS)
 					playsound(other_ipod, 'modular_zzplurt/sound/items/headphones_click_tune_in.ogg', 20, FALSE)
 					if(other_ipod.is_worn) // alert them of new listener
@@ -470,6 +477,13 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 			radio_station_report = "Set to broadcast [get_radio_name()], there are no listeners dialed in."
 		if(radio_dj_owner)
 			radio_station_report += " You're now the DJ and can broadcast on this radio frequency."
+			if(listeners > 0) // update radio_dj_owner_allow_listen_upload of listeners
+				for(var/obj/item/clothing/ears/ipod/other_ipod in GLOB.ipod_radio)
+					if(other_ipod.radio_mode != radio_mode) // not the same channel
+						continue
+					if(other_ipod == src)
+						continue
+					other_ipod.radio_dj_owner_allow_listen_upload = radio_dj_owner_allow_listen_upload
 		to_chat(user, span_notice(radio_station_report))
 		playsound(loc, 'modular_zzplurt/sound/items/headphones_click_tune_in.ogg', 20, FALSE)
 		update_play_button_state_icon()
@@ -491,6 +505,22 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		user.log_message("set the broadcast name to: [str]", LOG_GAME)
 		return
 	to_chat(user, span_warning("The connection to the broadcast fizzled out!"))
+
+/obj/item/clothing/ears/ipod/item_ctrl_click(mob/user)
+	. = ..()
+	if(!radio_mode || !radio_dj_owner)
+		to_chat(user, span_warning("You are not the DJ for broadcast [get_radio_name()]."))
+		return NONE
+	radio_dj_owner_allow_listen_upload = !radio_dj_owner_allow_listen_upload
+	for(var/obj/item/clothing/ears/ipod/other_ipod in GLOB.ipod_radio) // fetch and update radio_dj_owner_allow_listen_upload of listeners
+		if(other_ipod.radio_mode != radio_mode) // not the same channel
+			continue
+		if(other_ipod == src)
+			continue
+		other_ipod.radio_dj_owner_allow_listen_upload = radio_dj_owner_allow_listen_upload
+	to_chat(user, span_notice("You've [radio_dj_owner_allow_listen_upload ? "allowed" : "disabled"] listeners to uploads songs!"))
+	playsound(loc, 'modular_zzplurt/sound/items/headphones_click.ogg', 20, FALSE)
+	return CLICK_ACTION_SUCCESS
 
 /obj/item/clothing/ears/ipod/click_alt(mob/user)
 	if(isnull(user?.mind) || user.stat != CONSCIOUS)

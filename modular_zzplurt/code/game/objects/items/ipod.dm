@@ -12,6 +12,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	worn_icon = 'modular_zzplurt/icons/mob/clothing/ears.dmi'
 	icon_state = "ipod"
 	inhand_icon_state = "headphones"
+	worn_icon_state = "ipod"
 	slot_flags = ITEM_SLOT_EARS | ITEM_SLOT_HEAD | ITEM_SLOT_NECK		//Fluff item, put it whereever you want!
 	actions_types = list(/datum/action/item_action/upload_ipod, /datum/action/item_action/toggle_ipod)
 	custom_price = PAYCHECK_CREW * 10
@@ -79,7 +80,6 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		icon_state = "ipod_sync"
 	else
 		icon_state = "[initial(icon_state)]"
-	inhand_icon_state = "[initial(inhand_icon_state)]"
 
 /obj/item/clothing/ears/ipod/examine(mob/user)
 	. = ..()

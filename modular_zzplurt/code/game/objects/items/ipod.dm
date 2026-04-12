@@ -8,9 +8,9 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 /obj/item/clothing/ears/ipod
 	name = "\improper iZune Spaceman Headphones"
 	desc = "An aftermarket Nanotrasen personal portable music player. This thing supports MP3 and OGG file playback, rad!"
-	icon = 'modular_skyrat/master_files/icons/obj/clothing/accessories.dmi'
-	worn_icon = 'modular_skyrat/master_files/icons/mob/clothing/ears.dmi'
-	icon_state = "headphones"
+	icon = 'modular_zzplurt/icons/obj/clothing/accessories.dmi'
+	worn_icon = 'modular_zzplurt/icons/mob/clothing/ears.dmi'
+	icon_state = "ipod"
 	inhand_icon_state = "headphones"
 	slot_flags = ITEM_SLOT_EARS | ITEM_SLOT_HEAD | ITEM_SLOT_NECK		//Fluff item, put it whereever you want!
 	actions_types = list(/datum/action/item_action/upload_ipod, /datum/action/item_action/toggle_ipod)
@@ -73,8 +73,13 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 
 /obj/item/clothing/ears/ipod/update_icon_state()
 	. = ..()
-	icon_state = "[initial(icon_state)]_[playing? "on" : "off"]"
-	inhand_icon_state = "[initial(inhand_icon_state)]_[playing? "on" : "off"]"
+	if(radio_mode)
+		icon_state = "ipod_radio"
+	else if(other_ipod_ref)
+		icon_state = "ipod_sync"
+	else
+		icon_state = "[initial(icon_state)]"
+	inhand_icon_state = "[initial(inhand_icon_state)]"
 
 /obj/item/clothing/ears/ipod/examine(mob/user)
 	. = ..()
@@ -245,7 +250,6 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		music_player.selection = current_song
 		music_player.sound_loops = FALSE
 		music_player.start_music(user)
-		update_icon()
 		for(var/obj/item/clothing/ears/ipod/other_ipod in GLOB.ipod_radio)
 			if(other_ipod.radio_mode != radio_mode) // not the same channel
 				continue
@@ -270,7 +274,6 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 						continue
 					other_ipod.playing = TRUE
 					other_ipod.music_player.start_music(wearer)
-					other_ipod.update_icon()
 
 /obj/item/clothing/ears/ipod/proc/toggle(owner)
 	var/mob/user = owner
@@ -299,7 +302,6 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 			music_player.unlisten_all()
 		stop_other_headphones()
 		playsound(loc, 'modular_zzplurt/sound/items/headphones_off.ogg', 20, FALSE)
-	update_icon()
 	to_chat(user, span_notice("You turn the music [playing? "on. Untz Untz Untz!" : "off."]"))
 
 /obj/item/clothing/ears/ipod/proc/stop_other_headphones(do_unlink = FALSE)
@@ -310,7 +312,6 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		if(other_ipod.playing && !isnull(other_ipod.music_player.active_song_sound))
 			other_ipod.playing = FALSE
 			other_ipod.music_player.unlisten_all()
-			other_ipod.update_icon()
 			playsound(other_ipod, 'modular_zzplurt/sound/items/headphones_off.ogg', 20, FALSE)
 		if(do_unlink)
 			other_ipod.other_ipod_ref = null
@@ -318,6 +319,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 				var/mob/living/carbon/human/wearer = other_ipod.loc
 				if(istype(wearer))
 					to_chat(wearer, span_notice("The headphone's connection suddenly disconnects."))
+			other_ipod.update_play_button_state_icon()
 	else
 		other_ipod_ref = null
 		return
@@ -353,14 +355,12 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	other_ipod.music_player.selection = other_ipod.current_song
 	other_ipod.music_player.sound_loops = TRUE
 	other_ipod.music_player.start_music(wearer)
-	other_ipod.update_icon()
 	playsound(other_ipod, 'modular_zzplurt/sound/items/headphones_on.ogg', 20, FALSE)
 
 /obj/item/clothing/ears/ipod/proc/unlink_refs()
 	if(playing && !isnull(music_player.active_song_sound)) // turn off music
 		playing = FALSE
 		music_player.unlisten_all()
-		update_icon()
 	if(!other_ipod_ref) // if there doesn't exists any linked headphones
 		return
 	var/obj/item/clothing/ears/ipod/other_ipod = other_ipod_ref.resolve()
@@ -368,14 +368,15 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		if(other_ipod.playing && !isnull(other_ipod.music_player.active_song_sound)) // turn off music for other headphones
 			other_ipod.playing = FALSE
 			other_ipod.music_player.unlisten_all()
-			other_ipod.update_icon()
 			playsound(other_ipod, 'modular_zzplurt/sound/items/headphones_off.ogg', 20, FALSE)
 		other_ipod.other_ipod_ref = null
 		if(other_ipod.is_worn)
 			var/mob/living/carbon/human/wearer = other_ipod.loc
 			if(istype(wearer))
 				to_chat(wearer, span_notice("The headphone's connection suddenly disconnects."))
+		other_ipod.update_play_button_state_icon()
 	other_ipod_ref = null
+	update_play_button_state_icon()
 
 /obj/item/clothing/ears/ipod/attackby(obj/item/attacking_item, mob/user, list/modifiers, list/attack_modifiers)
 	if(istype(attacking_item, /obj/item/clothing/ears/ipod))
@@ -396,6 +397,8 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 			current_song = new_song_other
 			curfile = other_ipod.curfile
 			music_player.selection = current_song
+		update_play_button_state_icon()
+		other_ipod.update_play_button_state_icon()
 		balloon_alert(user, "successfully linked headphones")
 		return TRUE
 	return ..()
@@ -406,7 +409,6 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		playing = FALSE
 		if(!isnull(music_player.active_song_sound))
 			music_player.unlisten_all()
-			update_icon()
 	if(radio_mode == 0)
 		unlink_refs()
 
@@ -414,6 +416,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	if(radio_mode > IPOD_MAX_BROADCAST_CHANNELS)
 		radio_mode = 0
 		radio_dj_owner = FALSE
+		update_play_button_state_icon()
 		balloon_alert(user, "turned off radio mode")
 		to_chat(user, span_notice("You turned off the radio."))
 		playsound(loc, 'modular_zzplurt/sound/items/headphones_click.ogg', 20, FALSE)
@@ -468,6 +471,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 			radio_station_report += " You're now the DJ and can broadcast on this radio frequency."
 		to_chat(user, span_notice(radio_station_report))
 		playsound(loc, 'modular_zzplurt/sound/items/headphones_click_tune_in.ogg', 20, FALSE)
+		update_play_button_state_icon()
 
 /obj/item/clothing/ears/ipod/attack_self_secondary(mob/user, modifiers)
 	. = ..()
@@ -516,7 +520,6 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		playing = FALSE
 		if(!isnull(music_player.active_song_sound))
 			music_player.unlisten_all()
-		update_icon()
 		to_chat(user, span_notice("The headphones turn off and go into standby mode."))
 	is_worn = FALSE
 	if(is_registered_on_death)
@@ -529,17 +532,29 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		playing = FALSE
 		if(!isnull(music_player.active_song_sound))
 			music_player.unlisten_all()
-		update_icon()
 	UnregisterSignal(source, COMSIG_LIVING_DEATH)
 	is_registered_on_death = FALSE
+
+/obj/item/clothing/ears/ipod/proc/update_play_button_state_icon()
+	var/datum/action/item_action/toggle_ipod/button = locate(/datum/action/item_action/toggle_ipod) in actions
+
+	update_icon_state()
+	update_icon()
+	if(button)
+		button.button_icon_state = icon_state
+		button.build_all_button_icons()
 
 /datum/action/item_action/upload_ipod
 	name = "Upload Track"
 	desc = "Upload a track to your headphones"
+	button_icon = 'modular_zzplurt/icons/obj/clothing/accessories.dmi'
+	button_icon_state = "ipod_upload"
 
 /datum/action/item_action/toggle_ipod
 	name = "Play Track"
 	desc = "UNTZ UNTZ UNTZ"
+	button_icon = 'modular_zzplurt/icons/obj/clothing/accessories.dmi'
+	button_icon_state = "ipod"
 
 /datum/action/item_action/upload_ipod/Trigger(trigger_flags)
 	var/obj/item/clothing/ears/ipod/H = target

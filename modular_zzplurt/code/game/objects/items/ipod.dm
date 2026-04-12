@@ -510,6 +510,9 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	. = ..()
 	if(!radio_mode)
 		return NONE
+	if(isnull(user?.mind) || user.stat != CONSCIOUS)
+		to_chat(user, span_warning("You can't do that right now."))
+		return NONE
 	if(!radio_dj_owner)
 		to_chat(user, span_warning("You are not the DJ for broadcast [get_radio_name()]."))
 		return NONE

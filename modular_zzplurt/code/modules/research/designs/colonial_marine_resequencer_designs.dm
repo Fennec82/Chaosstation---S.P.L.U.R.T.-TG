@@ -239,6 +239,14 @@
 	build_path = /obj/item/storage/pouch/cin_medipens
 	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_CMR_EQUIPMENT)
 
+/datum/design/cmf_cup
+	name = "Empty Paper Cup"
+	id = "cmf_slavic_cup"
+	build_type = BIOGENERATOR
+	materials = list(/datum/material/biomass = 10)
+	build_path = /obj/item/reagent_containers/cup/glass/coffee/colonial/empty
+	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_CMR_EQUIPMENT)
+
 //// Materials ////
 
 /datum/design/cmf_plastic

@@ -268,7 +268,7 @@
 	id = "smartfridge_fabricator_jellydonut"
 	build_type = BIOGENERATOR
 	materials = list(/datum/material/biomass = 100)
-	build_path = /obj/item/food/donut/jelly
+	build_path = /obj/item/food/donut/jelly/plain
 	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_SFOF_CONSUMABLES)
 
 /datum/design/smartfridge_fabricator_cannedtomatoes

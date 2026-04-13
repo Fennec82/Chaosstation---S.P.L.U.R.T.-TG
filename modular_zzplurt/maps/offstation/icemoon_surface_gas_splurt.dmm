@@ -88,13 +88,22 @@
 /turf/open/floor/iron/smooth_large,
 /area/ruin/thelizardsgas_lavaland)
 "cl" = (
-/obj/item/kirbyplants/organic/plant18{
-	pixel_x = 0;
+/obj/structure/table/reinforced,
+/obj/item/storage/fancy/coffee_condi_display{
+	pixel_x = 4;
+	pixel_y = 10
+	},
+/obj/item/serviette/colonial{
+	pixel_x = 7;
+	pixel_y = 0
+	},
+/obj/item/reagent_containers/cup/bottle/syrup_bottle/caramel{
+	pixel_x = -5;
 	pixel_y = 3
 	},
-/obj/structure/flora/bush/large/style_2{
-	pixel_x = -17;
-	pixel_y = 1
+/obj/item/reagent_containers/cup/bottle/syrup_bottle/korta_nectar{
+	pixel_x = -9;
+	pixel_y = 9
 	},
 /turf/open/floor/iron/textured_large,
 /area/ruin/thelizardsgas_lavaland)
@@ -132,7 +141,8 @@
 /area/icemoon/underground/unexplored)
 "cR" = (
 /obj/structure/deployable_barricade/guardrail{
-	dir = 8
+	dir = 8;
+	density = 0
 	},
 /obj/item/reagent_containers/cup/jerrycan/oil{
 	pixel_x = 0;
@@ -278,7 +288,8 @@
 /area/ruin/thelizardsgas_lavaland)
 "fe" = (
 /obj/structure/deployable_barricade/guardrail{
-	dir = 8
+	dir = 8;
+	density = 0
 	},
 /turf/open/floor/iron/shuttle/exploration/side{
 	dir = 8
@@ -429,27 +440,14 @@
 /area/ruin/thelizardsgas_lavaland)
 "gg" = (
 /obj/structure/table/reinforced,
-/obj/item/serviette/colonial{
-	pixel_x = 12;
-	pixel_y = 0
-	},
-/obj/item/storage/fancy/coffee_condi_display{
-	pixel_x = 13;
-	pixel_y = 10
-	},
-/obj/item/reagent_containers/cup/bottle/syrup_bottle/korta_nectar{
-	pixel_x = -3;
-	pixel_y = 8
-	},
-/obj/item/reagent_containers/cup/bottle/syrup_bottle/caramel{
-	pixel_x = 3;
-	pixel_y = 3
-	},
 /obj/structure/window/reinforced/spawner/directional/west,
 /obj/structure/sign/chalkboard_menu{
 	pixel_y = 32
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
+/obj/machinery/coffeemaker/impressa{
+	pixel_x = 4
+	},
 /turf/open/floor/iron/textured_large,
 /area/ruin/thelizardsgas_lavaland)
 "gm" = (
@@ -857,9 +855,6 @@
 /area/ruin/thelizardsgas_lavaland)
 "mG" = (
 /obj/structure/table/reinforced,
-/obj/machinery/deepfryer{
-	pixel_x = -2
-	},
 /obj/structure/window/reinforced/spawner/directional/east,
 /obj/structure/decorative{
 	icon_state = "siding_plain";
@@ -870,6 +865,29 @@
 	dir = 2;
 	anchored = 1
 	},
+/obj/item/reagent_containers/condiment/mayonnaise{
+	pixel_x = 6;
+	pixel_y = 6
+	},
+/obj/item/reagent_containers/condiment/donksauce{
+	pixel_x = 1;
+	pixel_y = 15
+	},
+/obj/item/reagent_containers/condiment/bbqsauce{
+	pixel_y = 17;
+	pixel_x = 9
+	},
+/obj/item/reagent_containers/condiment/hotsauce{
+	pixel_y = 15;
+	pixel_x = -8
+	},
+/obj/item/reagent_containers/condiment/coldsauce{
+	pixel_x = -9;
+	pixel_y = 5
+	},
+/obj/item/food/bun,
+/obj/item/food/bun,
+/obj/item/food/bun,
 /turf/open/floor/iron/textured_large,
 /area/ruin/thelizardsgas_lavaland)
 "mQ" = (
@@ -1274,30 +1292,8 @@
 /area/ruin/thelizardsgas_lavaland)
 "tt" = (
 /obj/structure/table/reinforced,
-/obj/item/reagent_containers/condiment/bbqsauce{
-	pixel_y = 17;
-	pixel_x = 9
-	},
-/obj/item/reagent_containers/condiment/donksauce{
-	pixel_x = 1;
-	pixel_y = 15
-	},
-/obj/item/reagent_containers/condiment/hotsauce{
-	pixel_y = 15;
-	pixel_x = -8
-	},
-/obj/item/reagent_containers/condiment/mayonnaise{
-	pixel_x = 6;
-	pixel_y = 6
-	},
-/obj/item/reagent_containers/condiment/coldsauce{
-	pixel_x = -9;
-	pixel_y = 5
-	},
-/obj/item/food/bun,
 /obj/structure/window/reinforced/spawner/directional/south,
-/obj/item/food/bun,
-/obj/item/food/bun,
+/obj/machinery/deepfryer,
 /turf/open/floor/iron/smooth_large,
 /area/ruin/thelizardsgas_lavaland)
 "tw" = (
@@ -1373,9 +1369,6 @@
 /area/ruin/thelizardsgas_lavaland)
 "ur" = (
 /obj/structure/table/reinforced,
-/obj/machinery/coffeemaker/impressa{
-	pixel_x = 2
-	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /turf/open/floor/iron/textured_large,
 /area/ruin/thelizardsgas_lavaland)
@@ -1763,7 +1756,6 @@
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/ruin/thelizardsgas_lavaland)
 "zP" = (
-/obj/structure/rack,
 /obj/item/reagent_containers/condiment/vegetable_oil{
 	pixel_y = 9;
 	pixel_x = 7
@@ -1777,6 +1769,7 @@
 	pixel_y = 3
 	},
 /obj/structure/window/reinforced/spawner/directional/south,
+/obj/structure/table/reinforced,
 /turf/open/floor/iron/smooth_large,
 /area/ruin/thelizardsgas_lavaland)
 "zV" = (
@@ -2008,7 +2001,7 @@
 /area/ruin/thelizardsgas_lavaland)
 "Er" = (
 /obj/machinery/light/small/dim/directional/north,
-/turf/open/floor/iron/dark/textured_large,
+/turf/open/floor/noslip,
 /area/ruin/thelizardsgas_lavaland)
 "Ey" = (
 /obj/structure/railing{
@@ -2181,38 +2174,6 @@
 /obj/effect/spawner/random/structure/crate_abandoned,
 /turf/open/misc/asteroid/snow/icemoon,
 /area/icemoon/underground/unexplored)
-"GM" = (
-/obj/structure/table,
-/obj/item/gbp_punchcard{
-	name = "scratch card";
-	desc = "You scratch it, you win it - sometimes. Most of the time you don't. Oh, well, money well spent!";
-	pixel_x = -3;
-	pixel_y = -3
-	},
-/obj/item/gbp_punchcard{
-	name = "scratch card";
-	desc = "You scratch it, you win it - sometimes. Most of the time you don't. Oh, well, money well spent!";
-	pixel_x = -5;
-	pixel_y = 9
-	},
-/obj/item/stack/arcadeticket{
-	pixel_x = 3;
-	pixel_y = 7
-	},
-/obj/item/gbp_punchcard{
-	name = "scratch card";
-	desc = "You scratch it, you win it - sometimes. Most of the time you don't. Oh, well, money well spent!";
-	pixel_x = 5;
-	pixel_y = 0
-	},
-/obj/item/gbp_punchcard{
-	name = "scratch card";
-	desc = "You scratch it, you win it - sometimes. Most of the time you don't. Oh, well, money well spent!";
-	pixel_x = -2;
-	pixel_y = 5
-	},
-/turf/open/floor/iron/large,
-/area/ruin/thelizardsgas_lavaland)
 "He" = (
 /obj/machinery/rnd/production/circuit_imprinter/offstation{
 	name = "Gas Station Imprinter"
@@ -2332,6 +2293,9 @@
 	pixel_y = 32
 	},
 /obj/structure/cable,
+/obj/item/tank/internals/nitrogen/belt/full,
+/obj/item/tank/internals/nitrogen/belt/full,
+/obj/item/tank/internals/nitrogen/belt/full,
 /turf/open/floor/plating,
 /area/ruin/thelizardsgas_lavaland)
 "IB" = (
@@ -2597,7 +2561,8 @@
 /area/ruin/thelizardsgas_lavaland)
 "Lz" = (
 /obj/structure/fluff/big_chain{
-	pixel_y = 30
+	pixel_y = 30;
+	density = 0
 	},
 /obj/item/v8_engine{
 	pixel_x = 0;
@@ -2701,7 +2666,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
 	},
-/turf/open/floor/iron/dark/textured_large,
+/turf/open/floor/noslip,
 /area/ruin/thelizardsgas_lavaland)
 "MW" = (
 /turf/closed/wall/r_wall,
@@ -2955,7 +2920,7 @@
 "PA" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/duct,
-/turf/open/floor/iron/dark/textured_large,
+/turf/open/floor/noslip,
 /area/ruin/thelizardsgas_lavaland)
 "PE" = (
 /obj/structure/frame/machine,
@@ -2967,7 +2932,7 @@
 	dir = 4
 	},
 /obj/machinery/duct,
-/turf/open/floor/iron/dark/textured_large,
+/turf/open/floor/noslip,
 /area/ruin/thelizardsgas_lavaland)
 "PT" = (
 /obj/effect/spawner/random/structure/billboard/lizardsgas,
@@ -3292,10 +3257,6 @@
 /turf/open/floor/carpet/purple,
 /area/ruin/thelizardsgas_lavaland)
 "Uh" = (
-/obj/item/stack/arcadeticket{
-	pixel_x = -10;
-	pixel_y = 32
-	},
 /obj/effect/spawner/random/trash/food_packaging,
 /obj/effect/turf_decal/siding/thinplating_new{
 	color = "#595959"
@@ -4044,7 +4005,7 @@ qz
 Su
 Vc
 Mo
-GM
+AD
 Uh
 pd
 OA

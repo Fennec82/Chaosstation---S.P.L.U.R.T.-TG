@@ -244,7 +244,7 @@
 	build_path = /obj/item/reagent_containers/applicator/pill/potassiodide
 	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_DFBBR_MEDICINE)
 
-// Quirk Related
+// Quirk Related Meds //
 
 /datum/design/dfbbr_insulin_pill
 	name = "Insulin Pill"
@@ -262,6 +262,7 @@
 	build_path = /obj/item/reagent_containers/applicator/pill/psicodine
 	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_DFBBR_MEDICINE)
 
+// Spacer, working in lavaland... or it is Ice Box. At least it also allows people with the Spacer quirk to visit safely.
 /datum/design/dfbbr_ondansetron_pill
 	name = "Ondansetron Pill"
 	id = "dfbbr_ondansetron"
@@ -278,6 +279,24 @@
 	build_path = /obj/item/reagent_containers/applicator/pill/sansufentanyl
 	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_DFBBR_MEDICINE)
 
+// I don't know why you'd do it, but just in case someone plays with the brain degeneration.
+/datum/design/dfbbr_mannitol_pill
+	name = "Mannitol Pill"
+	id = "dfbbr_mannitol"
+	build_type = BIOGENERATOR
+	materials = list(/datum/material/biomass = 150)
+	build_path = /obj/item/reagent_containers/applicator/pill/mannitol
+	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_DFBBR_MEDICINE)
+
+/datum/design/dfbbr_neurine_pill
+	name = "Neurine Pill"
+	id = "dfbbr_neurine"
+	build_type = BIOGENERATOR
+	materials = list(/datum/material/biomass = 200)
+	build_path = /obj/item/reagent_containers/applicator/pill/neurine
+	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_DFBBR_MEDICINE)
+
+// Asthma, on lavaland, truly a genius move.
 /datum/design/dfbbr_albuterol_canister
 	name = "Albuterol Canister"
 	id = "dfbbr_albuterol_canister"

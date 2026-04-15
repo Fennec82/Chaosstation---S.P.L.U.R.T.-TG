@@ -2227,6 +2227,8 @@
 	name = "Lizard Gas Apron";
 	desc = "A purple apron imprinted with the signature little green lizard of Lizard Gas! This cute outfit is surely reflected by its underpaid drop-out wearer."
 	},
+/obj/item/storage/box/nif_ghost_box/ghost_role,
+/obj/item/storage/box/nif_ghost_box/ghost_role,
 /turf/open/floor/iron/dark/smooth_large,
 /area/ruin/thelizardsgas_lavaland)
 "Hw" = (
@@ -2340,6 +2342,7 @@
 /obj/item/card/id/departmental_budget/lizgas,
 /obj/item/cargo_teleporter,
 /obj/item/clothing/suit/hooded/wintercoat,
+/obj/item/storage/box/nif_ghost_box/ghost_role,
 /turf/open/floor/iron/dark/smooth_edge{
 	dir = 8
 	},

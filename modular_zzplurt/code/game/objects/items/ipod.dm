@@ -1,4 +1,4 @@
-#define IPOD_MAX_BROADCAST_CHANNELS 2
+#define IPOD_MAX_BROADCAST_CHANNELS 2 // set this to 0 to disable radio functionality
 
 GLOBAL_LIST_EMPTY(ipod_radio) //list of all ipods set to radio mode
 GLOBAL_LIST_EMPTY(ipod_cast_names) //names of the broadcasts
@@ -55,9 +55,11 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	music_player = new(src)
 	music_player.set_new_volume(volume)
 	GLOB.ipod_radio += src
+#if IPOD_MAX_BROADCAST_CHANNELS > 0 // radio mode
 	if(length(GLOB.ipod_cast_names) < 1) // define channel names
 		for(var/i = 1; i <= IPOD_MAX_BROADCAST_CHANNELS; i++)
 			GLOB.ipod_cast_names += "Unknown Frequency [i]"
+#endif
 
 /obj/item/clothing/ears/ipod/Destroy()
 	if(playing && !isnull(music_player.active_song_sound))
@@ -106,7 +108,9 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 				. += "You have upload privilege on this broadcast channel."
 	else
 		. += "Tapping this on another headphone will set both to shared listening mode."
+#if IPOD_MAX_BROADCAST_CHANNELS > 0 // radio mode
 		. += "Use in hand to set to broadcast mode."
+#endif
 	. += "Alt click to set the volume."
 
 /obj/item/clothing/ears/ipod/proc/upload(mob/owner)
@@ -411,6 +415,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 		return TRUE
 	return ..()
 
+#if IPOD_MAX_BROADCAST_CHANNELS > 0 // radio mode
 /obj/item/clothing/ears/ipod/attack_self(mob/user, modifiers)
 	. = ..()
 	if(playing)
@@ -530,6 +535,7 @@ GLOBAL_VAR_INIT(ipod_last_play, 0) //last time of the last played track, to prev
 	to_chat(user, span_notice("You've [radio_dj_owner_allow_listen_upload ? "allowed" : "disabled"] listeners to uploads songs!"))
 	playsound(loc, 'modular_zzplurt/sound/items/headphones_click.ogg', 20, FALSE)
 	return CLICK_ACTION_SUCCESS
+#endif // radio mode
 
 /obj/item/clothing/ears/ipod/click_alt(mob/user)
 	if(isnull(user?.mind) || user.stat != CONSCIOUS)

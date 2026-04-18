@@ -65,7 +65,7 @@
 	// SKYRAT EDIT ADDITION END
 
 	// Let's the borg player themselves pick what size they want to be in percentage.
-	resize_amount = tgui_input_number(borg, "Choose the percentage size of Resizing (70-250)","Resizer size setting")
+	resize_amount = tgui_input_number(borg, "Choose the percentage size of Resizing (70-1000)","Resizer size setting")
 	// We do not trust the input given, no matter if it's ran through tgui first, so we are sanitizing it to prevent any possible malicious inputs
 	sanitize_integer(resize_amount, 70, 1000, 160)
 

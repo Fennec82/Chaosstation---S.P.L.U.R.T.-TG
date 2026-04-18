@@ -150,15 +150,15 @@
 	category = GHC_MISC
 
 /datum/map_template/ghost_cafe_rooms/dnd_house
-	name = "Zak's D&D House"
+	name = "D&D House"
 	mappath = "_maps/splurt/templates/apartment_donator_zak_dnd_house.dmm"
-	ckeywhitelist = list("drarielpro")
+	//ckeywhitelist = list("drarielpro")
 	category = GHC_SPECIAL
 
 /datum/map_template/ghost_cafe_rooms/ss14_thing
-	name = "Deter's Lair"
+	name = "Shadekin Lair"
 	mappath = "_maps/splurt/templates/apartment_donator_ss14.dmm"
-	ckeywhitelist = list("girko", "moldb")
+	//ckeywhitelist = list("girko", "moldb")
 	category = GHC_SPECIAL
 	landing_coords = list(13, 12)
 

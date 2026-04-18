@@ -48,4 +48,4 @@
 /datum/loadout_item/toys/mutt
 	name = "A advanced sauna pod"
 	item_path = /obj/item/survivalcapsule/advanced_sauna
-	ckeywhitelist = list("charlesterrah")
+	//ckeywhitelist = list("charlesterrah")

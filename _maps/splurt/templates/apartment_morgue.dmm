@@ -2657,6 +2657,7 @@
 	pixel_y = 0
 	},
 /obj/effect/decal/cleanable/cobweb/cobweb2,
+/obj/item/coin/silver,
 /turf/open/floor/iron/checker,
 /area/misc/hilbertshotel)
 "NG" = (

@@ -19,6 +19,14 @@
 	make_reagent = /datum/reagent/consumable/soymilk
 	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_SFOF_INGREDIENT)
 
+/datum/design/smartfridge_fabricator_kortamilk
+	name = "Synthetic Korta Milk"
+	id = "smartfridge_fabricator_kortamilk"
+	build_type = BIOGENERATOR
+	materials = list(/datum/material/biomass = 2.4)
+	make_reagent = /datum/reagent/consumable/korta_milk
+	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_SFOF_INGREDIENT)
+
 /datum/design/smartfridge_fabricator_ethanol
 	name = "Synthetic Ethanol"
 	id = "smartfridge_fabricator_ethanol"
@@ -49,6 +57,14 @@
 	build_type = BIOGENERATOR
 	materials = list(/datum/material/biomass = 1.2)
 	make_reagent = /datum/reagent/consumable/flour
+	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_SFOF_INGREDIENT)
+
+/datum/design/smartfridge_fabricator_kflour
+	name = "Synthetic Korta Flour"
+	id = "smartfridge_fabricator_kflour"
+	build_type = BIOGENERATOR
+	materials = list(/datum/material/biomass = 2.4)
+	make_reagent = /datum/reagent/consumable/korta_flour
 	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_SFOF_INGREDIENT)
 
 /datum/design/smartfridge_fabricator_cornstarch
@@ -253,6 +269,14 @@
 	build_type = BIOGENERATOR
 	materials = list(/datum/material/biomass = 30)
 	build_path = /obj/item/food/bun
+	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_SFOF_CONSUMABLES)
+
+/datum/design/smartfridge_fabricator_rroll
+	name = "Rootroll"
+	id = "smartfridge_fabricator_rroll"
+	build_type = BIOGENERATOR
+	materials = list(/datum/material/biomass = 60)
+	build_path = /obj/item/food/rootroll
 	category = list(RND_CATEGORY_INITIAL, RND_CATEGORY_SFOF_CONSUMABLES)
 
 /datum/design/smartfridge_fabricator_donut

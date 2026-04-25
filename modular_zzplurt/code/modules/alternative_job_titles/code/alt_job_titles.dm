@@ -588,3 +588,10 @@
 		"Security Trainer",
 		"Service Trainer",
 	)
+
+/proc/get_security_cyborg_alt_titles()
+	return list(
+		"Security Cyborg",
+		"Safeguard Model",
+		"Synthetic Auxiliary Officer",
+	)

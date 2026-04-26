@@ -125,7 +125,7 @@ SUBSYSTEM_DEF(player_ranks)
 	prefs.unlock_content = !!prefs.parent.IsByondMember()
 	prefs.donator_status = is_donator(prefs.parent)
 	if(prefs.unlock_content || prefs.donator_status)
-		prefs.max_save_slots = 100
+		prefs.max_save_slots = 150
 
 
 /// Handles loading mentors either via SQL or using the legacy system,

@@ -13,13 +13,13 @@
 /datum/outfit/nanotrasenoperative
 	name = "Nanotrasen Private Security Operative"
 
-	uniform = /obj/item/clothing/under/rank/security/nanotrasen
+	uniform = /obj/item/clothing/under/rank/security/officer/grey
 	suit = /obj/item/clothing/suit/armor/vest
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/tackler/combat
 	mask = /obj/item/clothing/mask/gas/sechailer/swat
 	head = /obj/item/clothing/head/helmet/swat/nanotrasen
-	back = /obj/item/storage/backpack/satchel/sec/redsec
+	back = /obj/item/storage/backpack/satchel/sec
 	id = /obj/item/card/id/advanced
 	id_trim = /datum/id_trim/centcom/corpse/private_security/lr
 	implants = list(/obj/item/implant/mindshield)
@@ -36,13 +36,13 @@
 /datum/outfit/nanotrasensergeant
 	name = "Nanotrasen Private Security Sergeant"
 
-	uniform = /obj/item/clothing/under/rank/security/nanotrasen/hr
+	uniform = /obj/item/clothing/under/rank/security/head_of_security/grey
 	suit = /obj/item/clothing/suit/armor/vest
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/tackler/combat
 	mask = /obj/item/clothing/mask/gas/sechailer/swat
 	head = /obj/item/clothing/head/helmet/swat/nanotrasen/hr
-	back = /obj/item/storage/backpack/satchel/sec/redsec
+	back = /obj/item/storage/backpack/satchel/sec
 	id = /obj/item/card/id/advanced/silver
 	id_trim = /datum/id_trim/centcom/corpse/private_security/mr
 	implants = list(/obj/item/implant/mindshield)
@@ -59,14 +59,14 @@
 /datum/outfit/nanotrasencommander
 	name = "Nanotrasen Private Security Commander"
 
-	uniform = /obj/item/clothing/under/rank/security/nanotrasen/hr
+	uniform = /obj/item/clothing/under/rank/security/head_of_security/grey
 	suit = /obj/item/clothing/suit/armor/vest
-	belt = /obj/item/storage/belt/security/webbing/peacekeeper/armadyne
+	belt = /obj/item/storage/belt/security/webbing
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/tackler/combat
 	mask = /obj/item/clothing/mask/gas/sechailer/swat
 	head = /obj/item/clothing/head/helmet/swat/nanotrasen/commander
-	back = /obj/item/storage/backpack/satchel/sec/redsec
+	back = /obj/item/storage/backpack/satchel/sec
 	id = /obj/item/card/id/advanced/platinum
 	id_trim = /datum/id_trim/centcom/corpse/private_security/hr
 	implants = list(/obj/item/implant/mindshield)
@@ -99,19 +99,6 @@
 	access = list(ACCESS_CENT_CAPTAIN, ACCESS_CENT_GENERAL)
 
 // Clothing | Because I don't wanna take forever on this port.
-/obj/item/clothing/under/rank/security/nanotrasen
-	name = "private security uniform"
-	desc = "A classic red tactical security uniform for Nanotrasen's private security force, complete with a Nanotrasen logo belt buckle."
-	icon = 'modular_zzplurt/icons/obj/clothing/under/security.dmi'
-	worn_icon = 'modular_zzplurt/icons/mob/clothing/under/security.dmi'
-	icon_state = "nanotrasenlr"
-
-/obj/item/clothing/under/rank/security/nanotrasen/hr
-	name = "private security officer uniform"
-	desc = "A classic red tactical security uniform for Nanotrasen's private security force, complete with a golden Nanotrasen logo belt buckle, as well as gold ranking on the shoulders and wrists."
-	icon = 'modular_zzplurt/icons/obj/clothing/under/security.dmi'
-	worn_icon = 'modular_zzplurt/icons/mob/clothing/under/security.dmi'
-	icon_state = "nanotrasenhr"
 
 /obj/item/clothing/head/helmet/swat/nanotrasen/hr
 	name = "\improper SWAT officer helmet"

@@ -79,7 +79,7 @@
 					/obj/item/clothing/suit/armor/vest/viro/softshell = 6,
 					/obj/item/clothing/head/sec/viro = 6,
 					/obj/item/clothing/head/sec/viro/beanie = 6,
-					*/
+
 				),
 			),
 		list(

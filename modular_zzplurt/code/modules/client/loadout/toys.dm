@@ -48,12 +48,12 @@
 /datum/loadout_item/toys/mutt
 	name = "A advanced sauna pod"
 	item_path = /obj/item/survivalcapsule/advanced_sauna
-	ckeywhitelist = list("charlesterrah")
+	//ckeywhitelist = list("charlesterrah")
 
 /datum/loadout_item/toys/fentalynn
 	name = "Yapping Fox Plushie"
 	item_path = /obj/item/toy/plush/fentalynn
-	ckeywhitelist = list("fenduphox")
+	//ckeywhitelist = list("fenduphox")
 
 /datum/loadout_item/toys/doctoraddy
 	name = "Doctor Addy Plushie"

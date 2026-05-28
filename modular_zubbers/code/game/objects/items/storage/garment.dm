@@ -7,7 +7,6 @@
 	. = ..()
 	new /obj/item/clothing/glasses/hud/civilian/sunglasses(src)
 
-/* // SPLURT REDSEC OVERRIDE
 /obj/item/storage/bag/garment/hos/PopulateContents()
 	. = ..()
 	new /obj/item/clothing/under/rank/security/viro/head_of_security/viro(src)
@@ -30,7 +29,6 @@
 	new /obj/item/clothing/suit/armor/vest/viro/warden/wintercoat(src)
 	new /obj/item/clothing/suit/armor/vest/viro/warden/alt(src)
 	new /obj/item/clothing/suit/armor/vest/viro/warden(src)
-*/
 
 
 

@@ -133,7 +133,7 @@
 /datum/loadout_item/suit/wetsuit_norm
 	name = "Fitted Wetsuit"
 	item_path = /obj/item/clothing/under/wetsuit_norm
-	ckeywhitelist = list("ChillyLobster")
+	//ckeywhitelist = list("ChillyLobster")
 
 /datum/loadout_item/head/drake_skull
 	name = "Skull of an ashdrake"
@@ -190,7 +190,7 @@
 /datum/loadout_item/pocket_items/brightcosmos
 	name = "Bright Cosmos cigar"
 	item_path = /obj/item/holocigarette/cigar
-	ckeywhitelist = list("lyricalpaws")
+	//ckeywhitelist = list("lyricalpaws")
 
 /datum/loadout_item/uniform/lannese
 	name = "Lannese Dress"
@@ -367,7 +367,7 @@
 /datum/loadout_item/pocket_items/hypno_watch
 	name = "Pocket Watch"
 	item_path = /obj/item/clothing/accessory/hypno_watch
-	ckeywhitelist = list("slippyjoe")
+	//ckeywhitelist = list("slippyjoe")
 
 /datum/loadout_item/uniform/nt_idol
 	name = "NT Idol's Skirt"

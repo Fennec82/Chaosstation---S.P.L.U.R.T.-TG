@@ -5,7 +5,7 @@
 	antag_flag = ROLE_TRAITOR
 	antag_datum = /datum/antagonist/traitor
 	weight = 16
-	min_players = 8
+	min_players = 2 //Chaosstation edit - lower spawn requiremets
 	maximum_antags_global = 5
 
 	tags = list(TAG_CREW_ANTAG)

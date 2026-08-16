@@ -6,7 +6,7 @@
 #ifdef BODY_SIZE_MAX_OVERRIDE
 	#define BODY_SIZE_MAX BODY_SIZE_MAX_OVERRIDE
 #else
-	#define BODY_SIZE_MAX 2.0
+	#define BODY_SIZE_MAX 10.0
 #endif
 
 #ifdef BODY_SIZE_MIN_OVERRIDE

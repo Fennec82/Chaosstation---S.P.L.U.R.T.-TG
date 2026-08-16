@@ -1,0 +1,4 @@
+author: "Arrhythmia_V"
+delete-after: True
+changes:
+  - bugfix: "All Ckey restrictions disabled in accordance with server policy"

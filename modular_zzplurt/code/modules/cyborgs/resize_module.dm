@@ -65,15 +65,15 @@
 	// SKYRAT EDIT ADDITION END
 
 	// Let's the borg player themselves pick what size they want to be in percentage.
-	resize_amount = tgui_input_number(borg, "Choose the percentage size of Resizing (70-250)","Resizer size setting")
+	resize_amount = tgui_input_number(borg, "Choose the percentage size of Resizing (70-1000)","Resizer size setting")
 	// We do not trust the input given, no matter if it's ran through tgui first, so we are sanitizing it to prevent any possible malicious inputs
-	sanitize_integer(resize_amount, 70, 250, 160)
+	sanitize_integer(resize_amount, 70, 1000, 160)
 
-	// 250 is the current limit of what we allow for. A Drakeborg at such a size would be almost 5 tiles long.
-	if(resize_amount >= 250 || !isnum(resize_amount) || resize_amount == null || resize_amount <= 0)
-		resize_amount = 250
+	// 250 is the current limit of what we allow for. A Drakeborg at such a size would be almost 5 tiles long. //Chaosstation edit: 1000 because I'm evil
+	if(resize_amount >= 1000 || !isnum(resize_amount) || resize_amount == null || resize_amount <= 0)
+		resize_amount = 1000
 
-	// Agreed upon limit to prevent power gaming or people utilizing smaller borg sizes to make themselves harder to hit.
+	// Agreed upon limit to prevent power gaming or people utilizing smaller borg sizes to make themselves harder to hit. //Chaosstation comment: Agreed
 	if(resize_amount <= 70)
 		resize_amount = 70
 	to_chat(borg, span_notice("Resize set to [resize_amount]%"))
@@ -82,8 +82,9 @@
 	var/prev_lockcharge = borg.lockcharge
 	borg.SetLockdown(TRUE)
 	borg.set_anchored(TRUE)
-	var/datum/effect_system/basic/spark_spread/sparks = new(borg.loc, 1, TRUE)
-	sparks.start()
+	var/datum/effect_system/fluid_spread/smoke/smoke = new
+	smoke.set_up(1, holder = borg, location = borg.loc)
+	smoke.start()
 	sleep(0.2 SECONDS)
 	for(var/i in 1 to 4)
 		playsound(borg, pick(

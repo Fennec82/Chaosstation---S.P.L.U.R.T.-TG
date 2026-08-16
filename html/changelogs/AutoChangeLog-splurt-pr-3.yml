@@ -1,0 +1,5 @@
+author: "Arrhythmia_V"
+delete-after: True
+changes:
+  - rscadd: "Heretic can spawn again"
+  - balance: "Traitors can now spawn at a minimum of two players"

@@ -5,7 +5,6 @@
 	icon_state = "screwdriver"
 	post_init_icon_state = null
 	random_color = FALSE
-	custom_materials = list(/datum/material/bone = SHEET_MATERIAL_AMOUNT)
 
 	greyscale_colors = null
 	greyscale_config = null
@@ -22,7 +21,6 @@
 	icon = 'modular_skyrat/modules/ashwalkers/icons/ashwalker_tools.dmi'
 	icon_state = "cutters"
 	random_color = FALSE
-	custom_materials = list(/datum/material/bone = SHEET_MATERIAL_AMOUNT)
 
 	greyscale_colors = null
 	greyscale_config = null
@@ -38,7 +36,6 @@
 	name = "primitive wrench"
 	icon = 'modular_skyrat/modules/ashwalkers/icons/ashwalker_tools.dmi'
 	icon_state = "wrench"
-	custom_materials = list(/datum/material/bone = SHEET_MATERIAL_AMOUNT)
 
 	greyscale_colors = null
 	greyscale_config = null
@@ -54,7 +51,6 @@
 	name = "primitive crowbar"
 	icon = 'modular_skyrat/modules/ashwalkers/icons/ashwalker_tools.dmi'
 	icon_state = "crowbar"
-	custom_materials = list(/datum/material/bone = SHEET_MATERIAL_AMOUNT)
 
 	greyscale_colors = null
 	greyscale_config = null

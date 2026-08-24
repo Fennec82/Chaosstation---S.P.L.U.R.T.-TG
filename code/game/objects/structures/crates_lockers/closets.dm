@@ -20,7 +20,6 @@ GLOBAL_LIST_EMPTY(roundstart_station_closets)
 	/// How insulated the thing is, for the purposes of calculating body temperature. Must be between 0 and 1!
 	contents_thermal_insulation = 0
 	pass_flags_self = PASSSTRUCTURE | LETPASSCLICKS
-	custom_materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT * 2)
 	/// The overlay for the closet's door
 	var/obj/effect/overlay/closet_door/door_obj
 	/// Whether or not this door is being animated
@@ -176,20 +175,8 @@ GLOBAL_LIST_EMPTY(roundstart_station_closets)
 	update_appearance()
 
 /obj/structure/closet/LateInitialize()
-	if(is_maploaded)
-		// very rare chance that a maintenance closet gets linked to another closet at roundstart
-		// 0.1% chance -> metastation has ~36 maintenance closets -> P(links>=1) = 3.54% per round -> about once every 30 rounds
-		if(prob(0.1) && istype(get_area(src), /area/station/maintenance))
-			var/list/targets = GLOB.roundstart_station_closets.Copy() - src
-			var/list/picked = list(src)
-			for(var/i in 1 to pick(1, 2))
-				picked += pick_n_take(targets)
-			GLOB.closet_teleport_controller.create_new_link(picked, subtle = TRUE)
-			if(!opened)
-				open(force = TRUE, special_effects = FALSE)
-
-		if(!opened)
-			take_contents()
+	if(!opened && is_maploaded)
+		take_contents()
 
 	if(sealed)
 		var/datum/gas_mixture/external_air = loc.return_air()
@@ -405,20 +392,10 @@ GLOBAL_LIST_EMPTY(roundstart_station_closets)
 	var/screentip_change = FALSE
 
 	if(isnull(held_item))
+		if(secure && !broken)
+			context[SCREENTIP_CONTEXT_RMB] = opened ? "Lock" : "Unlock"
 		if(!welded)
 			context[SCREENTIP_CONTEXT_LMB] = opened ? "Close" : "Open"
-			context[SCREENTIP_CONTEXT_RMB] = opened ? "Close" : "Open"
-		if(secure && !broken)
-			if (opened)
-				context[SCREENTIP_CONTEXT_RMB] = "Close"
-			else
-				context[SCREENTIP_CONTEXT_RMB] = !locked ? "Lock" : "Unlock"
-				if (locked)
-					context[SCREENTIP_CONTEXT_LMB] = "Unlock"
-		screentip_change = TRUE
-	if(secure && !opened && istype(held_item, /obj/item/card/id))
-		context[SCREENTIP_CONTEXT_LMB] = !locked ? "Lock" : "Unlock"
-		context[SCREENTIP_CONTEXT_RMB] = !locked ? "Lock" : "Unlock"
 		screentip_change = TRUE
 
 	if(istype(held_item, cutting_tool))
@@ -706,11 +683,6 @@ GLOBAL_LIST_EMPTY(roundstart_station_closets)
 		return 1 // No afterattack
 	else
 		return ..()
-
-/obj/structure/closet/item_interaction_secondary(mob/living/user, obj/item/tool, list/modifiers)
-	if (attack_hand(user, modifiers))
-		return ITEM_INTERACT_SUCCESS
-	return NONE
 
 /// check if we can install airlock electronics in this closet
 /obj/structure/closet/proc/can_install_airlock_electronics(mob/user)
@@ -1003,15 +975,14 @@ GLOBAL_LIST_EMPTY(roundstart_station_closets)
 	. = ..()
 	if(.)
 		return
-
 	if(user.body_position == LYING_DOWN && get_dist(src, user) > 0)
 		return
 
 	if(toggle(user))
-		return TRUE
+		return
 
 	if(!opened)
-		return togglelock(user)
+		togglelock(user)
 
 /obj/structure/closet/attack_paw(mob/user, list/modifiers)
 	return attack_hand(user, modifiers)
@@ -1143,7 +1114,7 @@ GLOBAL_LIST_EMPTY(roundstart_station_closets)
 
 /obj/structure/closet/proc/togglelock(mob/living/user, silent)
 	if(!secure || broken)
-		return FALSE
+		return
 
 	if(locked) //only apply checks while unlocking else allow anyone to lock it
 		var/error_msg = ""
@@ -1155,7 +1126,8 @@ GLOBAL_LIST_EMPTY(roundstart_station_closets)
 				id_card = null
 				req_access = list()
 				req_one_access = null
-				return togglelock(user, silent)
+				togglelock(user, silent)
+				return
 			if(!can_unlock(user, user.get_idcard(), registered_id))
 				error_msg = "not your locker!"
 		else if(!can_unlock(user, user.get_idcard()))
@@ -1163,10 +1135,7 @@ GLOBAL_LIST_EMPTY(roundstart_station_closets)
 		if(error_msg)
 			if(!silent)
 				balloon_alert(user, error_msg)
-			//SPLURT EDIT CHANGE BEGIN - Fixes not able to tear manifests from locked crate
-			return FALSE //SPLURT EDIT - ORIGINAL: return TRUE
-			
-			//SPLURT EDIT CHANGE END
+			return
 
 	if(iscarbon(user))
 		add_fingerprint(user)
@@ -1177,7 +1146,6 @@ GLOBAL_LIST_EMPTY(roundstart_station_closets)
 		span_notice("You [locked ? "locked" : "unlocked"] [src]."),
 	)
 	update_appearance()
-	return TRUE
 
 /// toggles the lock state of a closet
 /obj/structure/closet/proc/lock()

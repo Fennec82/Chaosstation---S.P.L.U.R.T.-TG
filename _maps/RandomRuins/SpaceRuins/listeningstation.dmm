@@ -24,6 +24,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/listeningstation)
 "aP" = (
+/obj/structure/cable,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/tile/blue/anticorner/contrasted,
 /turf/open/floor/iron,
@@ -52,6 +53,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/listeningstation)
 "by" = (
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/item/multitool{
 	pixel_x = 8;
 	pixel_y = 3
@@ -78,10 +80,19 @@
 /turf/open/floor/iron/small,
 /area/ruin/space/has_grav/listeningstation)
 "ch" = (
+/obj/structure/sign/nanotrasen{
+	pixel_y = 32;
+	dir = 1
+	},
 /obj/structure/lattice/catwalk,
 /obj/structure/marker_beacon/cerulean,
 /turf/template_noop,
 /area/ruin/space)
+"cj" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/iron/small,
+/area/ruin/space/has_grav/listeningstation)
 "cq" = (
 /obj/effect/turf_decal/bot,
 /obj/item/weldingtool/largetank,
@@ -113,6 +124,7 @@
 /obj/structure/table,
 /obj/item/storage/medkit/regular,
 /obj/item/clothing/neck/stethoscope,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/light/small/directional/north,
 /obj/effect/turf_decal/tile/blue/half/contrasted{
 	dir = 4
@@ -120,23 +132,20 @@
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/listeningstation)
 "dv" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
+	dir = 1
+	},
 /turf/open/floor/plating,
-/area/ruin/space/has_grav/listeningstation)
-"dM" = (
-/obj/structure/cable,
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/spawner/random/trash/cigbutt,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
-/turf/open/floor/iron/small,
 /area/ruin/space/has_grav/listeningstation)
 "dW" = (
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron/small,
+/area/ruin/space/has_grav/listeningstation)
+"eR" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/turf/open/floor/plating,
 /area/ruin/space/has_grav/listeningstation)
 "eW" = (
 /obj/structure/table,
@@ -233,9 +242,15 @@
 /turf/open/floor/circuit/red,
 /area/ruin/space/has_grav/listeningstation)
 "lO" = (
+/obj/structure/sign/nanotrasen{
+	pixel_y = 32;
+	dir = 1
+	},
+/obj/structure/sign/nanotrasen{
+	pixel_x = 32;
+	dir = 4
+	},
 /obj/structure/marker_beacon/cerulean,
-/obj/structure/sign/nanotrasen/directional/north,
-/obj/structure/sign/nanotrasen/directional/east,
 /turf/open/floor/plating/airless,
 /area/ruin/space)
 "nG" = (
@@ -310,6 +325,12 @@
 /obj/effect/turf_decal/tile/red/opposingcorners,
 /turf/open/floor/iron/dark,
 /area/ruin/space/has_grav/listeningstation)
+"tf" = (
+/obj/structure/cable,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/turf/open/floor/iron/small,
+/area/ruin/space/has_grav/listeningstation)
 "tl" = (
 /obj/structure/marker_beacon/cerulean,
 /turf/open/floor/plating/airless,
@@ -332,16 +353,18 @@
 /area/ruin/space/has_grav/listeningstation)
 "vt" = (
 /obj/structure/lattice/catwalk,
+/obj/structure/sign/nanotrasen{
+	pixel_x = -32;
+	dir = 8
+	},
 /obj/structure/marker_beacon/cerulean,
-/obj/structure/sign/nanotrasen/directional/west,
 /turf/template_noop,
 /area/ruin/space)
 "vC" = (
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt,
-/obj/effect/spawner/random/trash/cigbutt,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/spawner/random/trash/cigbutt,
 /turf/open/floor/iron/small,
 /area/ruin/space/has_grav/listeningstation)
 "vI" = (
@@ -353,6 +376,7 @@
 	req_access = list("syndicate")
 	},
 /obj/item/paper/fluff/ruins/listeningstation/reports/september,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/turf_decal/tile/blue/half/contrasted,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/listeningstation)
@@ -401,7 +425,6 @@
 "ym" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/listeningstation)
 "yx" = (
@@ -434,6 +457,7 @@
 /area/ruin/space/has_grav/listeningstation)
 "zo" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/turf_decal/tile/blue/half/contrasted,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/listeningstation)
@@ -451,8 +475,10 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/listeningstation)
 "zV" = (
+/obj/structure/sign/nanotrasen{
+	pixel_y = -32
+	},
 /obj/structure/cable,
-/obj/structure/sign/nanotrasen/directional/south,
 /turf/open/floor/plating/airless,
 /area/ruin/space)
 "zZ" = (
@@ -587,9 +613,14 @@
 /turf/open/floor/iron/showroomfloor,
 /area/ruin/space/has_grav/listeningstation)
 "FU" = (
+/obj/structure/sign/nanotrasen{
+	pixel_y = -32
+	},
+/obj/structure/sign/nanotrasen{
+	pixel_x = 32;
+	dir = 4
+	},
 /obj/structure/marker_beacon/cerulean,
-/obj/structure/sign/nanotrasen/directional/south,
-/obj/structure/sign/nanotrasen/directional/east,
 /turf/open/floor/plating/airless,
 /area/ruin/space)
 "FV" = (
@@ -678,6 +709,7 @@
 /obj/structure/chair/sofa/right/brown{
 	dir = 4
 	},
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/listeningstation)
 "LU" = (
@@ -724,6 +756,7 @@
 "Ni" = (
 /obj/machinery/computer/security/telescreen/entertainment/directional/south,
 /obj/structure/closet/secure_closet/freezer/empty/open,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /turf/open/floor/iron/small,
 /area/ruin/space/has_grav/listeningstation)
 "NO" = (
@@ -758,6 +791,7 @@
 "Or" = (
 /obj/structure/closet/crate/bin,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/firealarm/directional/north,
 /turf/open/floor/iron/small,
 /area/ruin/space/has_grav/listeningstation)
@@ -790,7 +824,6 @@
 	dir = 4
 	},
 /obj/machinery/light/warm/directional/south,
-/obj/structure/sign/nanotrasen/directional/south,
 /turf/open/floor/iron/grimy,
 /area/ruin/space/has_grav/listeningstation)
 "Sx" = (
@@ -835,8 +868,6 @@
 /obj/structure/chair/sofa/left/brown{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/listeningstation)
 "Uh" = (
@@ -890,9 +921,6 @@
 	},
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/listeningstation)
-"We" = (
-/turf/open/floor/plating,
-/area/ruin/space/has_grav/listeningstation)
 "WD" = (
 /obj/structure/table,
 /obj/machinery/cell_charger,
@@ -907,8 +935,10 @@
 /area/ruin/space/has_grav/listeningstation)
 "WG" = (
 /obj/structure/lattice/catwalk,
+/obj/structure/sign/nanotrasen{
+	pixel_y = -32
+	},
 /obj/structure/marker_beacon/cerulean,
-/obj/structure/sign/nanotrasen/directional/south,
 /turf/template_noop,
 /area/ruin/space)
 "WW" = (
@@ -920,6 +950,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/iv_drip,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /turf/open/floor/iron,
 /area/ruin/space/has_grav/listeningstation)
 "Yf" = (
@@ -1294,9 +1325,9 @@ MS
 It
 ad
 by
-wm
-ym
-wk
+cj
+db
+Sz
 JB
 vI
 vI
@@ -1316,9 +1347,9 @@ JB
 JB
 JB
 eW
-FV
-FV
-wm
+eR
+eR
+cj
 dv
 TO
 LR
@@ -1341,12 +1372,12 @@ Dv
 WD
 rG
 Or
-We
+SB
 FV
 ca
 BX
 dW
-We
+Sz
 JB
 vI
 vI
@@ -1366,9 +1397,9 @@ LU
 Mt
 nX
 Sx
-dM
+vC
 ym
-dW
+tf
 ym
 ym
 Ni

@@ -73,7 +73,6 @@
 		/datum/action/cooldown/spell/aoe/revenant/malfunction,
 		/datum/action/cooldown/spell/aoe/revenant/overload,
 		/datum/action/cooldown/spell/list_target/telepathy/revenant,
-		/datum/action/cooldown/spell/pointed/revenant/bloodwriting, //BUBBER ADDITION
 	)
 
 	/// The resource, and health, of revenants.
@@ -132,7 +131,7 @@
 	return TRUE
 
 /// Signal Handler Injection to handle Life() stuff for revenants
-/mob/living/basic/revenant/proc/on_life(seconds_per_tick = SSMOBS_DT)
+/mob/living/basic/revenant/proc/on_life(seconds_per_tick = SSMOBS_DT, times_fired)
 	SIGNAL_HANDLER
 
 	if(dormant)
@@ -203,10 +202,6 @@
 	relay_to_list_and_observers(rendered, GLOB.revenant_relay_mobs, src)
 
 /mob/living/basic/revenant/ClickOn(atom/A, params) //revenants can't interact with the world directly, so we gotta do some wacky override stuff
-	//BUBBER ADDITION START
-	if(check_click_intercept(params,A) || HAS_TRAIT(src, TRAIT_NO_TRANSFORM))
-		return
-	//BUBBER ADDITION END
 	var/list/modifiers = params2list(params)
 	if(LAZYACCESS(modifiers, SHIFT_CLICK))
 		ShiftClickOn(A)
@@ -283,7 +278,7 @@
 /mob/living/basic/revenant/med_hud_set_status()
 	return //we use no hud
 
-/mob/living/basic/revenant/dust(just_ash, drop_items, give_moodlet, force)
+/mob/living/basic/revenant/dust(just_ash, drop_items, force)
 	death()
 
 /mob/living/basic/revenant/gib()

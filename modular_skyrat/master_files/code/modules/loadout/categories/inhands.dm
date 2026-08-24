@@ -57,7 +57,7 @@
 	item_path = /obj/item/sign/flag/terragov
 
 /datum/loadout_item/inhand/flag_moghes
-	name = "Folded Tiziran Empire Flag"
+	name = "Folded Republic Of Northern Moghes Flag"
 	item_path = /obj/item/sign/flag/tizira
 
 /datum/loadout_item/inhand/flag_mothic
@@ -69,7 +69,7 @@
 	item_path = /obj/item/sign/flag/mars
 
 /datum/loadout_item/inhand/flag_nri
-	name = "Folded Pan-Slavic Commonwealth Flag"
+	name = "Folded Novaya Rossiyskaya Imperiya Flag"
 	item_path = /obj/item/sign/flag/nri
 
 /datum/loadout_item/inhand/flag_azulea

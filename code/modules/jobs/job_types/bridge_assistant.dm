@@ -2,6 +2,7 @@
 	title = JOB_BRIDGE_ASSISTANT
 	description = "Watch over the Bridge, command its consoles, and spend your days brewing coffee for higher-ups."
 	auto_deadmin_role_flags = DEADMIN_POSITION_HEAD //not really a head but close enough
+	department_head = list(JOB_CAPTAIN)
 	faction = FACTION_STATION
 	total_positions = 1
 	spawn_positions = 1
@@ -32,8 +33,7 @@
 	)
 	rpg_title = "Royal Guard"
 	allow_bureaucratic_error = FALSE
-	// BUBBER EDIT - Previous: job_flags = STATION_JOB_FLAGS | JOB_ANTAG_BLACKLISTED | JOB_CANNOT_OPEN_SLOTS
-	job_flags = STATION_JOB_FLAGS | JOB_ANTAG_BLACKLISTED | HEAD_OF_STAFF_JOB_FLAGS
+	job_flags = STATION_JOB_FLAGS | JOB_ANTAG_BLACKLISTED | JOB_CANNOT_OPEN_SLOTS
 	human_authority = JOB_AUTHORITY_NON_HUMANS_ALLOWED
 
 /obj/effect/landmark/start/bridge_assistant

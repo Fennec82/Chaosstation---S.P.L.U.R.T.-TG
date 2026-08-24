@@ -39,6 +39,11 @@
 	item_path = /obj/item/clothing/suit/toggle/jacket/sec/old
 	restricted_roles = list(ALL_JOBS_SEC)
 
+/datum/loadout_item/suit/secjacket
+	name = "High-Vis Security Jacket"
+	item_path = /obj/item/clothing/suit/armor/vest/secjacket/blue
+	restricted_roles = list(ALL_JOBS_SEC)
+
 /datum/loadout_item/suit/secjacket/bomber
 	name = "Security Bomber Jacket"
 	item_path = /obj/item/clothing/suit/toggle/jacket/zubber/bomber/sec
@@ -76,7 +81,7 @@
 
 /datum/loadout_item/suit/jacket/corrections_officer
 	name = "Correction's Officer's Blazer"
-	item_path = /obj/item/clothing/suit/toggle/jacket/corrections_officer
+	item_path = /obj/item/clothing/suit/armor/vest/secjacket/corrections_officer //SPLURT EDIT, ORIGINAL: /obj/item/clothing/suit/toggle/jacket/corrections_officer
 	restricted_roles = list(JOB_CORRECTIONS_OFFICER, JOB_WARDEN)
 
 /datum/loadout_item/suit/jacket/security_medic
@@ -85,8 +90,8 @@
 	restricted_roles = list(JOB_SECURITY_MEDIC)
 
 /datum/loadout_item/suit/jacket/security_medic
-	name = "Security Medic's Labcoat"
-	item_path = /obj/item/clothing/suit/toggle/labcoat/skyrat/security_medic
+	name = "Security Medic's Blue Labcoat"
+	item_path = /obj/item/clothing/suit/toggle/labcoat/skyrat/security_medic/blue
 	restricted_roles = list(JOB_SECURITY_MEDIC)
 
 // Silver Jacket Mk2 but for all of Command
@@ -125,12 +130,12 @@
 /datum/loadout_item/suit/runner_engi
 	name = "Engineer Runner Jacket"
 	item_path = /obj/item/clothing/suit/jacket/runner/engi
-	donator_only = TRUE //Dono item for Kan3
+	//donator_only = TRUE //Dono item for Kan3 //Splurt Edit
 
 /datum/loadout_item/suit/runner_syndi
 	name = "Syndicate Runner Jacket"
 	item_path = /obj/item/clothing/suit/jacket/runner/syndicate
-	donator_only = TRUE //Dono item for Kan3
+	//donator_only = TRUE //Dono item for Kan3 //Splurt Edit
 
 /datum/loadout_item/suit/collared_vest
 	name = "GLP-C 'Úlfur' Vest"
@@ -231,7 +236,3 @@
 /datum/loadout_item/suit/paraimposterbomber
 	name = "Suspicious Bomber Jacket"
 	item_path = /obj/item/clothing/suit/toggle/jacket/zubber/bomber/syndicate/fake
-
-/datum/loadout_item/suit/trenchcoat
-	name = "Trenchcoat"
-	item_path = /obj/item/clothing/suit/toggle/jacket/trenchcoat

@@ -24,8 +24,7 @@
 	suppressed_sound = 'modular_skyrat/modules/modular_weapons/sounds/suppressed_heavy.ogg'
 	can_suppress = TRUE
 
-	suppressor_x_offset = 7
-	suppressor_y_offset = -3
+	suppressor_x_offset = 9
 
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_SUITSTORE

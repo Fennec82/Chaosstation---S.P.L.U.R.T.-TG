@@ -1,26 +1,17 @@
 // BUBBER UI FILE
 
 import { useState } from 'react';
-import {
-  Box,
-  Icon,
-  Input,
-  LabeledList,
-  Modal,
-  Section,
-  Stack,
-} from 'tgui-core/components';
+import { Icon, Input, LabeledList, Modal, Section } from 'tgui-core/components';
+
 import { useBackend } from '../backend';
 import { Window } from '../layouts';
 import { MODsuitContent } from './MODsuit';
-import { Protean } from './ProteanUI';
 
 type Data = {
-  ui_theme: string;
-  linked_suit: boolean;
-  wearer: boolean;
-  erp_pref_check: boolean;
-  protean: boolean;
+  ui_theme?: string;
+  linked_suit?: boolean;
+  wearer?: boolean;
+  erp_pref_check?: boolean;
 };
 export const MODsuitremote = (props) => {
   const { data } = useBackend<Data>();
@@ -28,8 +19,8 @@ export const MODsuitremote = (props) => {
   return (
     <Window
       theme={ui_theme}
-      width={550}
-      height={350}
+      width={600}
+      height={600}
       title="MOD Remote Interface"
     >
       <Window.Content scrollable>
@@ -39,7 +30,7 @@ export const MODsuitremote = (props) => {
   );
 };
 
-const RemoteSection = () => {
+const RemoteSection = (props) => {
   const { act, data } = useBackend<Data>();
   const { erp_pref_check } = data;
   const [emote, setEmote] = useState('');
@@ -59,9 +50,9 @@ const RemoteSection = () => {
     </Section>
   );
 };
-const RemoteMODsuitContent = () => {
+const RemoteMODsuitContent = (props) => {
   const { data } = useBackend<Data>();
-  const { linked_suit, wearer, protean } = data;
+  const { linked_suit, wearer } = data;
   if (!linked_suit) {
     return (
       <Modal>
@@ -73,7 +64,7 @@ const RemoteMODsuitContent = () => {
       </Modal>
     );
   }
-  if (!wearer && !protean) {
+  if (!wearer) {
     return (
       <Modal>
         <center>
@@ -85,18 +76,9 @@ const RemoteMODsuitContent = () => {
     );
   }
   return (
-    <Box>
-      {protean ? (
-        <Stack vertical>
-          <Protean />
-          <RemoteSection />
-        </Stack>
-      ) : (
-        <Stack vertical>
-          <RemoteSection />
-          <MODsuitContent />
-        </Stack>
-      )}
-    </Box>
+    <>
+      <RemoteSection />
+      <MODsuitContent />
+    </>
   );
 };

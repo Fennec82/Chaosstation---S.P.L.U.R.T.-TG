@@ -1,8 +1,8 @@
 import {
   CheckboxInput,
-  type Feature,
+  Feature,
   FeatureColorInput,
-  type FeatureToggle,
+  FeatureToggle,
 } from '../../base';
 
 export const custom_blood_color: FeatureToggle = {

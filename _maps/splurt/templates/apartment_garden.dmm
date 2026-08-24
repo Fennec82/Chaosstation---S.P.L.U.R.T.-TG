@@ -3,133 +3,133 @@
 /obj/structure/spacevine,
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/closed/indestructible/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "aA" = (
 /obj/machinery/light/floor,
 /obj/structure/flora/biolumi/flower,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bg" = (
 /obj/structure/spacevine,
 /obj/structure/flora/bush/flowers_pp/style_random,
 /turf/closed/indestructible/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "dn" = (
 /obj/structure/chair/pew{
 	dir = 1
 	},
 /turf/open/floor/wood/tile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "fz" = (
 /obj/machinery/telecomms/relay/preset/auto,
 /turf/open/floor/catwalk_floor,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ga" = (
 /obj/structure/flora/bush/flowers_pp/style_random,
 /turf/open/floor/grass/fairy,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gj" = (
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/flora/biolumi/flower,
 /turf/open/floor/grass/fairy,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gm" = (
 /obj/structure/lattice,
 /turf/open/space/bluespace,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gK" = (
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hd" = (
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/flora/bush/flowers_yw/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hY" = (
 /obj/structure/chair/pew/left{
 	dir = 1
 	},
 /turf/open/floor/wood/tile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "iy" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/biolumi/lamp,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ka" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "kh" = (
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/biolumi/flower,
 /turf/open/floor/grass/fairy,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ko" = (
 /obj/structure/flora/rock,
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "kq" = (
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "kP" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/biolumi/lamp,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "lH" = (
 /obj/structure/chair/pew{
 	dir = 4
 	},
 /turf/open/floor/wood/tile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mQ" = (
 /obj/structure/chair/pew/left,
 /turf/open/floor/wood/tile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mR" = (
 /obj/machinery/light/floor,
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oy" = (
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/flora/bush/flowers_pp/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ph" = (
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/biolumi/lamp,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "qq" = (
 /obj/structure/flora/bush/flowers_pp/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "qX" = (
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/biolumi/flower,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "sg" = (
 /obj/machinery/light/floor,
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "th" = (
 /obj/structure/flora/tree/jungle{
 	pixel_x = -31;
@@ -137,258 +137,258 @@
 	},
 /obj/structure/flora/bush/flowers_pp/style_random,
 /turf/open/floor/grass/fairy,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tu" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tY" = (
 /turf/open/floor/wood/tile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "up" = (
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "uD" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/biolumi/mine,
 /turf/open/floor/grass/fairy,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "uV" = (
 /obj/structure/spacevine,
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/bush/flowers_yw/style_random,
 /turf/closed/indestructible/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vd" = (
 /obj/structure/chair/pew{
 	dir = 8
 	},
 /turf/open/floor/wood/tile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vA" = (
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vT" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "wc" = (
 /obj/structure/flora/rock,
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "zi" = (
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/biolumi/flower,
 /turf/open/floor/grass/fairy,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "zn" = (
 /obj/structure/spacevine,
 /obj/structure/flora/bush/flowers_yw/style_random,
 /turf/closed/indestructible/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "zX" = (
 /obj/structure/chair/pew/right{
 	dir = 1
 	},
 /turf/open/floor/wood/tile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "AB" = (
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/biolumi/flower,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "BR" = (
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass/fairy,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Cc" = (
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/machinery/room_controller/directional/west,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Cd" = (
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/flora/bush/flowers_yw/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Cl" = (
 /obj/structure/spacevine,
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/bush/flowers_pp/style_random,
 /turf/closed/indestructible/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "CE" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Dd" = (
 /obj/structure/spacevine,
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_pp/style_random,
 /turf/closed/indestructible/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "DH" = (
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/biolumi,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "DQ" = (
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/biolumi/lamp,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ep" = (
 /obj/structure/spacevine,
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_pp/style_random,
 /turf/closed/indestructible/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "FZ" = (
 /obj/structure/flora/biolumi/flower,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Gj" = (
 /obj/structure/chair/pew,
 /turf/open/floor/wood/tile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "GQ" = (
 /obj/item/flashlight/flare/candle/infinite,
 /turf/open/floor/wood/tile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Hx" = (
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/biolumi,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ID" = (
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass/fairy,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "JW" = (
 /obj/structure/chair/pew,
 /obj/item/choice_beacon/box/plushie,
 /turf/open/floor/wood/tile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Kc" = (
 /obj/structure/flora/rock,
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/bush/flowers_pp/style_random,
 /turf/open/floor/grass/fairy,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Kj" = (
 /turf/open/floor/carpet/royalblue,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "KC" = (
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/biolumi/mine,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Lm" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/biolumi/flower,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Mo" = (
 /obj/structure/spacevine,
 /turf/closed/indestructible/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Mv" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "MX" = (
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ox" = (
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "OY" = (
 /obj/structure/chair/pew/left{
 	dir = 4
 	},
 /turf/open/floor/wood/tile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Qc" = (
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Qf" = (
 /obj/structure/chair/pew/right,
 /turf/open/floor/wood/tile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "QL" = (
 /obj/structure/chair/pew/right{
 	dir = 4
 	},
 /turf/open/floor/wood/tile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ri" = (
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "TH" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ve" = (
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Vy" = (
 /obj/structure/flora/rock,
 /obj/machinery/light/floor,
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "VV" = (
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/machinery/vending/dorms,
 /obj/structure/spacevine,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "We" = (
 /obj/structure/chair/pew/left{
 	dir = 8
 	},
 /turf/open/floor/wood/tile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "WO" = (
 /obj/structure/chair/pew/right{
 	dir = 8
 	},
 /turf/open/floor/wood/tile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "WY" = (
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
@@ -396,27 +396,27 @@
 /obj/structure/flora/biolumi,
 /obj/structure/flora/biolumi/mine,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Xj" = (
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/item/storage/fancy/heart_box,
 /turf/open/floor/grass/fairy,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "XX" = (
 /turf/closed/indestructible/hoteldoor{
 	icon_state = "door_closed";
 	icon = 'icons/obj/doors/puzzledoor/default.dmi'
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "YG" = (
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/biolumi/lamp,
 /turf/open/floor/grass/fairy,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Zn" = (
 /obj/machinery/light/floor,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 
 (1,1,1) = {"
 gm

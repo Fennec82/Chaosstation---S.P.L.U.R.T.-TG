@@ -4,7 +4,7 @@
 	min_val = 1
 
 /datum/config_entry/number/vore_max_prey
-	default = 6 //Splurt Change
+	default = 3
 	min_val = 1
 
 /datum/config_entry/number/vore_delay

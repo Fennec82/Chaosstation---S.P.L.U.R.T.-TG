@@ -23,7 +23,9 @@
 	if(map_pad_id)
 		mapped_quantum_pads[map_pad_id] = src
 
-	AddComponent(/datum/component/usb_port, typecacheof(list(/obj/item/circuit_component/quantumpad), only_root_path = TRUE))
+	AddComponent(/datum/component/usb_port, list(
+		/obj/item/circuit_component/quantumpad,
+	))
 
 /obj/machinery/quantumpad/Destroy()
 	mapped_quantum_pads -= map_pad_id
@@ -122,7 +124,9 @@
 	doteleport(user, target_pad)
 
 /obj/machinery/quantumpad/proc/sparks()
-	do_sparks(5, TRUE, src, spark_type = /datum/effect_system/basic/spark_spread/quantum)
+	var/datum/effect_system/spark_spread/quantum/s = new /datum/effect_system/spark_spread/quantum
+	s.set_up(5, 1, get_turf(src))
+	s.start()
 
 /obj/machinery/quantumpad/attack_ghost(mob/dead/observer/ghost)
 	. = ..()

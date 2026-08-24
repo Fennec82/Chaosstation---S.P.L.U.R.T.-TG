@@ -9,33 +9,33 @@
 /obj/effect/turf_decal/tile/blue/opposingcorners,
 /obj/effect/turf_decal/siding/thinplating_new/light/corner,
 /turf/open/floor/iron/white,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ax" = (
 /obj/structure/chair/comfy/black{
 	dir = 1
 	},
 /obj/effect/turf_decal/siding/wood/corner,
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "aA" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "aD" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
 /obj/structure/flora/rock/pile/style_2,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "aE" = (
 /obj/structure/flora/bush/large/style_random{
 	pixel_y = 0
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "aR" = (
 /obj/structure/closet/crate/wooden,
 /obj/item/seeds/cocoapod/vanillapod,
@@ -48,19 +48,19 @@
 /obj/item/seeds/wheat/oat,
 /obj/item/seeds/whitebeet,
 /turf/open/floor/stone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bb" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bo" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cc" = (
 /obj/structure/flora/bush/reed/style_random,
 /obj/effect/turf_decal/weather/dirt{
@@ -68,12 +68,12 @@
 	},
 /obj/structure/flora/bush/reed/style_random,
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cd" = (
 /obj/structure/flora/bush/fullgrass/style_random,
 /obj/structure/flora/rock/pile/jungle/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cp" = (
 /obj/structure/chair/wood{
 	dir = 1
@@ -85,7 +85,7 @@
 	pixel_y = -32
 	},
 /turf/open/floor/carpet/black,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cq" = (
 /obj/structure/table/wood,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
@@ -96,13 +96,13 @@
 	pixel_y = 5
 	},
 /turf/open/floor/iron/sepia,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ct" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
 /turf/open/floor/carpet/black,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cD" = (
 /obj/item/seeds/ambrosia,
 /obj/item/seeds/apple,
@@ -121,13 +121,13 @@
 /obj/item/seeds/wheat/rice,
 /obj/structure/closet/crate/wooden,
 /turf/open/floor/stone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cV" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
 /turf/open/floor/carpet/black,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "dd" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -146,20 +146,20 @@
 	},
 /obj/structure/table/wood/fancy/blue,
 /turf/open/floor/carpet/black,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "dh" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
 	},
 /turf/open/floor/carpet/red,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "dD" = (
 /obj/item/kirbyplants/random,
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
 /turf/open/floor/stone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "dN" = (
 /obj/structure/flora/bush/fullgrass/style_random,
 /obj/structure/flora/bush/fullgrass/style_random,
@@ -167,57 +167,57 @@
 	dir = 8
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ec" = (
 /obj/machinery/light/directional/south,
 /obj/machinery/light_switch/default_on/directional/south,
 /turf/open/floor/iron/kitchen/small,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ee" = (
 /obj/structure/flora/bush/sparsegrass/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "eq" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
 	},
 /obj/structure/flora/bush/fullgrass/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ew" = (
 /obj/structure/flora/tree/jungle/small/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "eJ" = (
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "eR" = (
 /obj/structure/chair/sofa/bench/left{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/sepia,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "eU" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
 	},
 /obj/structure/flora/bush/sparsegrass/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "fr" = (
 /obj/structure/flora/bush/fullgrass/style_random,
 /turf/open/misc/dirt/dark/station,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "fy" = (
 /obj/structure/flora/bush/fullgrass/style_random,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "fV" = (
 /obj/item/kirbyplants/random,
 /obj/machinery/light_switch/default_on/directional/east,
@@ -225,64 +225,64 @@
 	dir = 6
 	},
 /turf/open/floor/stone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gi" = (
 /obj/structure/water_source/puddle,
 /obj/item/reagent_containers/cup/bucket/wooden,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gp" = (
 /obj/effect/turf_decal/weather/dirt,
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gs" = (
 /obj/structure/flora/rock/pile/style_2,
 /turf/open/misc/dirt/dark/station,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gE" = (
 /obj/machinery/hydroponics/soil,
 /turf/open/misc/dirt/dark/station,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gF" = (
 /obj/machinery/light/small/directional/south,
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gM" = (
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/carpet/black,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gQ" = (
 /turf/closed/indestructible/hoteldoor,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hh" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 4
 	},
 /obj/effect/turf_decal/siding/wood/corner,
 /turf/open/floor/carpet/red,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hm" = (
 /obj/structure/flora/bush/fullgrass/style_random,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hr" = (
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/effect/turf_decal/weather/dirt,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hu" = (
 /obj/structure/chair/plastic,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hv" = (
 /obj/effect/turf_decal/weather/dirt,
 /obj/structure/flora/bush/fullgrass/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hI" = (
 /obj/structure/closet/cabinet,
 /obj/item/storage/box/drinkingglasses,
@@ -295,7 +295,7 @@
 	dir = 10
 	},
 /turf/open/floor/stone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "id" = (
 /obj/structure/chair/sofa/bench/right{
 	dir = 4
@@ -304,15 +304,15 @@
 	dir = 6
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "iy" = (
 /obj/structure/flora/bush/fullgrass/style_random,
 /obj/effect/turf_decal/weather/dirt,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "iN" = (
 /turf/open/floor/carpet/blue,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "iV" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/condiment/mayonnaise{
@@ -332,25 +332,25 @@
 	pixel_y = 7
 	},
 /turf/open/floor/iron/kitchen/small,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jl" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
 /obj/machinery/light/directional/north,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jr" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jE" = (
 /obj/structure/flora/bush/sunny/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jK" = (
 /obj/structure/chair/comfy/black{
 	dir = 8
@@ -359,7 +359,7 @@
 	dir = 5
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jT" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
@@ -368,13 +368,13 @@
 	dir = 8
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "kR" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 1
 	},
 /turf/open/floor/carpet/red,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "le" = (
 /obj/structure/bed/double,
 /obj/item/bedsheet/blue/double,
@@ -385,27 +385,27 @@
 	dir = 6
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "lf" = (
 /turf/open/floor/carpet/red,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "lv" = (
 /obj/machinery/door/airlock/wood{
 	desc = "Entrance";
 	name = "Entrance"
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "lz" = (
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/sepia,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mj" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mJ" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
@@ -414,7 +414,7 @@
 	dir = 8
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mL" = (
 /obj/structure/chair/wood,
 /obj/effect/turf_decal/siding/wood{
@@ -424,15 +424,15 @@
 	pixel_y = 32
 	},
 /turf/open/floor/carpet/black,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mN" = (
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/structure/flora/tree/jungle/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "na" = (
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ng" = (
 /obj/structure/flora/bush/sparsegrass/style_random,
 /obj/item/clothing/head/costume/garland/rainbowbunch{
@@ -440,30 +440,30 @@
 	desc = "A flower crown made out of the flowers of the rainbow bunch plant. A more thorough inspection reveals several protruding strands of golden blond hair trapped inbetween the stalks."
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nt" = (
 /obj/effect/turf_decal/tile/neutral/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/sepia,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nF" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
 /turf/open/floor/carpet/red,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nI" = (
 /obj/item/kirbyplants/random,
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nV" = (
 /obj/structure/flora/bush/fullgrass/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "om" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
@@ -472,39 +472,39 @@
 	dir = 4
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oo" = (
 /turf/open/floor/iron/kitchen/small,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oB" = (
 /obj/effect/turf_decal/weather/dirt,
 /obj/structure/flora/bush/sparsegrass/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oM" = (
 /obj/structure/flora/rock/pile/jungle/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oV" = (
 /obj/item/storage/basket{
 	pixel_x = 8
 	},
 /turf/open/floor/carpet/blue,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "po" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
 /turf/open/floor/carpet/black,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "pr" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/cultivator,
 /turf/open/misc/dirt/dark/station,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "pH" = (
 /turf/open/misc/dirt/dark/station,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "pL" = (
 /obj/item/reagent_containers/cup/glass/waterbottle{
 	pixel_y = 19
@@ -514,7 +514,7 @@
 	pixel_x = 10
 	},
 /turf/open/floor/carpet/blue,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "pT" = (
 /obj/structure/table/wood/fancy/blue,
 /obj/item/flashlight/lamp/green{
@@ -533,7 +533,7 @@
 	dir = 4
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "qd" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
@@ -543,14 +543,14 @@
 	},
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "qM" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
 /obj/structure/flora/bush/sparsegrass/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "qP" = (
 /obj/structure/sign/painting/library{
 	pixel_y = -32
@@ -561,13 +561,13 @@
 	dir = 4
 	},
 /turf/open/floor/iron/white,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "qR" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 8
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "rg" = (
 /obj/structure/chair/wood{
 	dir = 1
@@ -576,21 +576,21 @@
 	dir = 10
 	},
 /turf/open/floor/carpet/black,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "rj" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/structure/bed/dogbed,
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "rm" = (
 /obj/structure/flora/rock/pile/style_2,
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "rw" = (
 /obj/machinery/smartfridge,
 /turf/open/floor/stone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "rL" = (
 /obj/effect/turf_decal/tile/neutral/opposingcorners{
 	dir = 1
@@ -615,7 +615,7 @@
 /obj/item/food/raw_sausage,
 /obj/item/food/raw_sausage,
 /turf/open/floor/iron/sepia,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "rM" = (
 /obj/item/reagent_containers/cup/glass/drinkingglass{
 	pixel_y = 15;
@@ -635,56 +635,56 @@
 	},
 /obj/structure/table/wood/fancy/blue,
 /turf/open/floor/carpet/black,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "sm" = (
 /obj/effect/turf_decal/weather/dirt,
 /obj/structure/flora/rock/pile,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "sH" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "sK" = (
 /obj/machinery/door/airlock/wood{
 	desc = "Entrance";
 	name = "Bedroom"
 	},
 /turf/open/floor/stone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "sQ" = (
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "te" = (
 /obj/structure/flora/bush/reed/style_random,
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tL" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
 	},
 /turf/open/floor/carpet/black,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tP" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tT" = (
 /turf/open/floor/stone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ub" = (
 /obj/effect/turf_decal/siding/wood/corner,
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ug" = (
 /obj/structure/flora/rock/pile/jungle/style_random,
 /obj/structure/decorative{
@@ -696,11 +696,11 @@
 	pixel_y = 30
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ut" = (
 /obj/machinery/oven/range,
 /turf/open/floor/iron/kitchen/small,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "uY" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
@@ -716,18 +716,18 @@
 	pixel_y = 11
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vb" = (
 /obj/structure/fireplace,
 /turf/open/floor/stone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ve" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vp" = (
 /obj/structure/sign/painting/library{
 	pixel_y = -32
@@ -750,39 +750,39 @@
 	desc = "Old-timey, rotary phone. Not even connected to anything."
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vt" = (
 /obj/structure/bookcase/random/adult,
 /turf/closed/wall/mineral/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vD" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/fullgrass/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vF" = (
 /obj/machinery/door/airlock/public/glass{
 	name = "Patio"
 	},
 /turf/open/floor/stone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vH" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vL" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_pp/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vM" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
 /turf/open/floor/carpet/red,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "wo" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
@@ -791,29 +791,29 @@
 	dir = 8
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "wp" = (
 /obj/structure/chair/wood/wings{
 	dir = 8
 	},
 /turf/open/floor/carpet/black,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "wu" = (
 /obj/machinery/griddle,
 /turf/open/floor/iron/kitchen/small,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "wv" = (
 /obj/machinery/jukebox/no_access,
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
 /turf/open/floor/stone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "wS" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/effect/turf_decal/weather/dirt,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "wU" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 1
@@ -822,7 +822,7 @@
 	dir = 8
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xo" = (
 /obj/structure/closet/cabinet,
 /obj/item/storage/fancy/candle_box,
@@ -835,45 +835,45 @@
 	dir = 9
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xr" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
 /obj/structure/flora/bush/flowers_yw/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xw" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
 /obj/structure/flora/bush/sunny/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xP" = (
 /obj/structure/flora/bush/fullgrass/style_random,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xQ" = (
 /obj/structure/flora/bush/fullgrass/style_random,
 /obj/structure/flora/tree/jungle/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yd" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
 /turf/closed/wall/mineral/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yj" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
 /turf/open/floor/carpet,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yk" = (
 /obj/structure/sign/painting/library{
 	pixel_x = 0;
@@ -883,26 +883,26 @@
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yl" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yy" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
 /obj/structure/flora/bush/flowers_pp/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "zd" = (
 /obj/effect/turf_decal/siding/wood/corner,
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 4
 	},
 /turf/open/floor/carpet/red,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "zr" = (
 /obj/structure/rack/wooden,
 /obj/item/clothing/shoes/workboots{
@@ -915,22 +915,22 @@
 	},
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "zK" = (
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/stone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "zS" = (
 /obj/effect/turf_decal/weather/dirt,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "zY" = (
 /obj/item/kirbyplants/random,
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
 /turf/open/floor/carpet/red,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ai" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
@@ -938,59 +938,59 @@
 /obj/structure/flora/bush/fullgrass/style_random,
 /obj/item/flashlight/lantern/on,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "An" = (
 /obj/structure/chair/sofa/bench/right{
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/sepia,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Bj" = (
 /obj/structure/flora/bush/fullgrass/style_random,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "BK" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
 /obj/structure/flora/bush/fullgrass/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Cb" = (
 /obj/machinery/biogenerator,
 /turf/open/floor/stone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "CJ" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
 /obj/structure/flora/bush/fullgrass/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Da" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
 /turf/open/floor/carpet/red,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Dq" = (
 /obj/structure/flora/bush/fullgrass/style_random,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Dz" = (
 /obj/effect/turf_decal/weather/dirt,
 /obj/structure/flora/bush/large/style_random{
 	pixel_y = 0
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "DN" = (
 /obj/structure/table/reinforced,
 /obj/item/plate{
@@ -1008,20 +1008,20 @@
 	pixel_x = 13
 	},
 /turf/open/floor/iron/kitchen/small,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "DP" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/machinery/light_switch/default_on/directional/south,
 /obj/item/kirbyplants/random,
 /turf/open/floor/carpet,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "DQ" = (
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "DS" = (
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ed" = (
 /obj/structure/toilet{
 	pixel_y = 8
@@ -1030,24 +1030,24 @@
 /obj/machinery/wall_healer/directional/north,
 /obj/effect/turf_decal/tile/blue/opposingcorners,
 /turf/open/floor/iron/white,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ee" = (
 /obj/structure/flora/rock,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "EK" = (
 /obj/structure/flora/rock/pile/style_2,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "EN" = (
 /obj/structure/table/wood,
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /obj/effect/spawner/random/food_or_drink/cups,
 /turf/open/floor/iron/sepia,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Fo" = (
 /obj/structure/chair/comfy/black{
 	dir = 4
@@ -1056,18 +1056,18 @@
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "FK" = (
 /obj/structure/flora/bush/flowers_pp/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ge" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Gg" = (
 /obj/structure/closet/crate/wooden,
 /obj/item/fishing_rod,
@@ -1076,7 +1076,7 @@
 /obj/item/fishing_hook,
 /obj/item/clothing/head/soft/fishing_hat,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "GC" = (
 /obj/structure/chair/sofa/bench/left{
 	dir = 4
@@ -1086,12 +1086,12 @@
 	},
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "GD" = (
 /obj/structure/sign/clock/directional/north,
 /obj/structure/grandfatherclock,
 /turf/open/floor/stone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "GM" = (
 /obj/structure/dresser,
 /obj/item/table_clock{
@@ -1105,7 +1105,7 @@
 	dir = 5
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Hf" = (
 /obj/machinery/hydroponics/soil,
 /obj/effect/turf_decal/siding/wood,
@@ -1114,7 +1114,7 @@
 	desc = "Secateurs with a wooden handle. You can see a few stains on the blades."
 	},
 /turf/open/misc/dirt/dark/station,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Hk" = (
 /obj/structure/rack,
 /obj/item/stack/sheet/mineral/wood/fifty,
@@ -1136,7 +1136,7 @@
 	desc = "Looking down the barrel (like the smart person that you are.) you can see it has been filled with concrete."
 	},
 /turf/open/floor/stone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Hv" = (
 /obj/effect/turf_decal/tile/neutral/opposingcorners{
 	dir = 1
@@ -1155,13 +1155,13 @@
 /obj/item/reagent_containers/cup/soda_cans/cola,
 /obj/machinery/light/directional/south,
 /turf/open/floor/iron/sepia,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "HD" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
 /turf/open/floor/stone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "HF" = (
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/effect/turf_decal/weather/dirt{
@@ -1169,11 +1169,11 @@
 	},
 /obj/machinery/light/directional/north,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "HS" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "HU" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
@@ -1183,14 +1183,14 @@
 	},
 /obj/structure/flora/rock/pile,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ii" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
 /obj/structure/flora/bush/reed/style_random,
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Il" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
@@ -1199,58 +1199,58 @@
 	dir = 8
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Iv" = (
 /obj/machinery/hydroponics/soil,
 /obj/effect/turf_decal/siding/wood,
 /turf/open/misc/dirt/dark/station,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "IC" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "IG" = (
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "IH" = (
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/bush/fullgrass/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "IJ" = (
 /obj/structure/flora/bush/fullgrass/style_random,
 /obj/structure/railing/stone,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Jb" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ju" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Jw" = (
 /obj/structure/railing/stone/left,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Jz" = (
 /obj/structure/flora/rock/pile/style_2,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Kl" = (
 /obj/machinery/shower/directional/south,
 /obj/structure/drain,
@@ -1259,11 +1259,11 @@
 	dir = 8
 	},
 /turf/open/floor/iron/white/small,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Km" = (
 /obj/effect/turf_decal/tile/blue/opposingcorners,
 /turf/open/floor/iron/white,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Kr" = (
 /obj/item/seeds/lemon,
 /obj/item/seeds/lime,
@@ -1283,7 +1283,7 @@
 /obj/item/seeds/soya,
 /obj/structure/closet/crate/wooden,
 /turf/open/floor/stone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ku" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/suit/brownbattlecoat,
@@ -1292,7 +1292,7 @@
 	},
 /obj/machinery/light/directional/west,
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "KF" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
@@ -1302,7 +1302,7 @@
 	},
 /obj/structure/flora/bush/sparsegrass/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "KL" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
@@ -1312,55 +1312,55 @@
 	},
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "KN" = (
 /obj/item/radio/entertainment/speakers/physical{
 	pixel_x = -5;
 	pixel_y = -7
 	},
 /turf/open/floor/carpet/blue,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "KO" = (
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/carpet/red,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "KU" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
 /obj/structure/flora/bush/flowers_pp/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "KW" = (
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ln" = (
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Lu" = (
 /obj/machinery/grill,
 /obj/effect/turf_decal/tile/neutral/opposingcorners{
 	dir = 1
 	},
 /turf/open/floor/iron/sepia,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "LB" = (
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "LL" = (
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "LM" = (
 /obj/structure/flora/rock/pile/style_2,
 /obj/effect/turf_decal/weather/dirt,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "LU" = (
 /obj/structure/fluff/beach_umbrella/cap,
 /obj/item/toy/plush/lizard_plushie{
@@ -1373,7 +1373,7 @@
 	pixel_y = -8
 	},
 /turf/open/floor/carpet/blue,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "MF" = (
 /obj/structure/table,
 /obj/machinery/chem_dispenser/drinks{
@@ -1392,20 +1392,20 @@
 	pixel_y = 49
 	},
 /turf/open/floor/iron/kitchen/small,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ML" = (
 /obj/structure/flora/rock/pile/jungle/style_random,
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Nd" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Nq" = (
 /obj/machinery/door/airlock/medical{
 	name = "Bathroom"
@@ -1413,25 +1413,25 @@
 /obj/structure/fans/tiny,
 /obj/effect/turf_decal/tile/blue/opposingcorners,
 /turf/open/floor/iron/white,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "NF" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 4
 	},
 /turf/open/floor/carpet,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "NI" = (
 /obj/machinery/light/small/directional/north,
 /turf/open/misc/dirt/dark/station,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "NR" = (
 /obj/machinery/vending/dorms,
 /turf/closed/indestructible/hotelwall,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Od" = (
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/carpet,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ou" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -1445,14 +1445,14 @@
 	pixel_y = -10
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ov" = (
 /obj/structure/flora/bush/flowers_pp/style_random,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Oy" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
@@ -1460,19 +1460,19 @@
 /obj/structure/flora/tree/jungle/small/style_random,
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "OA" = (
 /obj/structure/flora/bush/fullgrass/style_random,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "OD" = (
 /obj/effect/turf_decal/siding/wood/corner,
 /obj/structure/flora/bush/flowers_pp/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "OE" = (
 /obj/structure/closet/crate/wooden,
 /obj/item/storage/bag/plants/primitive,
@@ -1487,33 +1487,33 @@
 /obj/item/reagent_containers/cup/jerrycan/ammonia,
 /obj/item/storage/bag/plants/portaseeder,
 /turf/open/floor/stone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "OF" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
 /turf/open/misc/dirt/dark/station,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "OX" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
 /turf/open/floor/stone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Pa" = (
 /turf/closed/indestructible/hotelwall,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Pc" = (
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Px" = (
 /obj/effect/turf_decal/weather/dirt,
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "PT" = (
 /obj/item/shovel/spade,
 /obj/effect/turf_decal/weather/dirt{
@@ -1523,26 +1523,26 @@
 	dir = 8
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "PX" = (
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/structure/flora/tree/jungle/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Qc" = (
 /obj/structure/chair/wood,
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
 /turf/open/floor/carpet/black,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "QE" = (
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Rb" = (
 /obj/item/kirbyplants/random,
 /obj/machinery/light/directional/west,
@@ -1550,42 +1550,42 @@
 	dir = 8
 	},
 /turf/open/floor/stone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Rj" = (
 /obj/effect/turf_decal/tile/neutral/opposingcorners{
 	dir = 1
 	},
 /obj/machinery/light/directional/south,
 /turf/open/floor/iron/sepia,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Rm" = (
 /obj/machinery/light/directional/east,
 /turf/open/floor/carpet/red,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Rw" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
 /obj/machinery/room_controller/directional/south,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Rx" = (
 /turf/closed/wall/mineral/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "RF" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
 /obj/structure/flora/bush/flowers_br/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "RI" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "RR" = (
 /obj/structure/chair/sofa/bench/left{
 	dir = 8
@@ -1593,28 +1593,28 @@
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /obj/machinery/light/directional/south,
 /turf/open/floor/iron/sepia,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Sg" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 8
 	},
 /turf/open/floor/carpet/red,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Sj" = (
 /turf/open/floor/carpet,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Sm" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "SH" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "SW" = (
 /obj/structure/table/wood/fancy/black,
 /obj/item/radio/entertainment/speakers/physical{
@@ -1627,7 +1627,7 @@
 	dir = 9
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "SY" = (
 /obj/machinery/light/directional/north,
 /obj/structure/fish_mount/bar/directional/north,
@@ -1635,43 +1635,43 @@
 	dir = 1
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Tb" = (
 /obj/structure/flora/bush/flowers_br/style_random,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Tk" = (
 /obj/structure/flora/rock/pile/jungle/style_random,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "To" = (
 /obj/structure/railing/stone,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Tx" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
 	},
 /turf/open/floor/carpet,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ty" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
 /obj/structure/flora/rock/pile,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "TS" = (
 /obj/machinery/hydroponics/soil,
 /obj/item/plant_analyzer,
 /turf/open/misc/dirt/dark/station,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "TU" = (
 /obj/machinery/computer/security/telescreen/entertainment/directional/west,
 /obj/item/kirbyplants/random,
@@ -1680,18 +1680,18 @@
 	dir = 10
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Uq" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "UU" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/item/kirbyplants/random,
 /turf/open/floor/carpet,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Vo" = (
 /obj/structure/table,
 /obj/machinery/chem_dispenser/drinks/beer{
@@ -1703,7 +1703,7 @@
 	pixel_y = 4
 	},
 /turf/open/floor/iron/kitchen/small,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Vs" = (
 /obj/machinery/smartfridge,
 /obj/structure/sign/clock/directional/north,
@@ -1711,29 +1711,29 @@
 	pixel_y = 16
 	},
 /turf/open/floor/iron/kitchen/small,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "VB" = (
 /obj/machinery/space_heater/wall_mounted/directional/east,
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
 /turf/open/floor/carpet/red,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Wd" = (
 /obj/structure/flora/rock/pile,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Wy" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
 	},
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "WJ" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/structure/flora/bush/sparsegrass/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Xr" = (
 /obj/machinery/light/small/directional/south,
 /obj/structure/decorative{
@@ -1745,49 +1745,49 @@
 	name = "wallmount"
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "XV" = (
 /obj/machinery/light/small/directional/west,
 /turf/open/misc/dirt/dark/station,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ya" = (
 /obj/structure/flora/tree/jungle/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ye" = (
 /obj/structure/flora/bush/reed/style_random,
 /obj/effect/turf_decal/weather/dirt,
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ym" = (
 /obj/effect/spawner/structure/window,
 /obj/structure/curtain/bounty,
 /turf/open/floor/plating,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "YD" = (
 /obj/structure/chair/sofa/bench/right{
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/neutral/fourcorners,
 /turf/open/floor/iron/sepia,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "YF" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "YH" = (
 /obj/structure/flora/bush/flowers_yw/style_random,
 /obj/structure/railing/stone/right,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "YJ" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "YK" = (
 /obj/structure/table/reinforced,
 /obj/item/plate{
@@ -1805,21 +1805,21 @@
 	pixel_x = 13
 	},
 /turf/open/floor/iron/kitchen/small,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Zg" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
 /obj/structure/flora/bush/flowers_yw/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ZG" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
 /obj/structure/flora/bush/sparsegrass/style_random,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ZS" = (
 /obj/structure/closet/secure_closet/freezer/empty/open,
 /obj/item/reagent_containers/condiment/flour,
@@ -1835,7 +1835,7 @@
 /obj/machinery/light/directional/north,
 /obj/item/food/chocolatebar,
 /turf/open/floor/iron/kitchen/small,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 
 (1,1,1) = {"
 Pa

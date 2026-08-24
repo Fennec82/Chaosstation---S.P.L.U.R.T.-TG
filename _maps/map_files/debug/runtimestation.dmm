@@ -254,7 +254,7 @@
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
 "bF" = (
-/obj/machinery/computer/rdconsole/unlocked,
+/obj/machinery/computer/rdconsole,
 /turf/open/floor/iron,
 /area/station/science)
 "bI" = (
@@ -265,7 +265,7 @@
 /area/station/command/bridge)
 "bJ" = (
 /obj/structure/table,
-/obj/item/card/id/advanced/centcom/ert/commander{
+/obj/item/card/id/advanced/centcom/ert{
 	pixel_x = 6;
 	pixel_y = -6
 	},
@@ -905,8 +905,9 @@
 /turf/open/floor/iron,
 /area/station/cargo/storage)
 "fn" = (
-/obj/structure/sign/warning/vacuum/external/directional/west,
-/turf/open/floor/iron,
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/sign/warning/vacuum/external,
+/turf/open/floor/plating,
 /area/station/hallway/secondary/entry)
 "fo" = (
 /obj/machinery/conveyor_switch/oneway{
@@ -2522,7 +2523,6 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/obj/machinery/vitals_reader/directional/south,
 /turf/open/floor/iron/white/corner,
 /area/station/medical/medbay)
 "SC" = (
@@ -5715,7 +5715,7 @@ ax
 eh
 dY
 dY
-en
+fn
 fs
 en
 dY
@@ -5807,7 +5807,7 @@ ax
 eh
 eh
 eV
-fn
+eh
 eh
 eh
 eV

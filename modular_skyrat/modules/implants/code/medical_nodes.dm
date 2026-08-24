@@ -12,6 +12,10 @@
 		"ci-lighter",
 		"ci-razor",
 	)
+	// thrusters in combat_implants
+	design_ids -= list(
+		"ci-thrusters",
+	)
 	return ..()
 
 /datum/techweb_node/cyber/cyber_organs_upgraded/New()
@@ -25,6 +29,7 @@
 	design_ids += list(
 		"ci-mantis",
 		"ci-flash",
+		"ci-thrusters",
 		"ci-antisleep",
 	)
 	return ..()

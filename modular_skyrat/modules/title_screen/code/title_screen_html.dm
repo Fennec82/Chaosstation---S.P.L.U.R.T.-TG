@@ -129,15 +129,19 @@ GLOBAL_LIST_EMPTY(startup_messages)
 		dat += "</div>"
 		dat += {"
 		<script language="JavaScript">
-			const PLAYER_READY_TO_PLAY = "[PLAYER_READY_TO_PLAY]"
-			const PLAYER_NOT_READY = "[PLAYER_NOT_READY]"
+			var ready_int = 0;
 			var ready_mark = document.getElementById("ready");
+			var ready_marks = \[ "<span class='unchecked'>☒</span> READY", "<span class='checked'>☑</span> READY" \];
 			function toggle_ready(setReady) {
-				if(setReady === PLAYER_READY_TO_PLAY) {
-					ready_mark.innerHTML = "<span class='checked'>☑</span> READY"
+				if(setReady) {
+					ready_int = setReady;
+					ready_mark.innerHTML = ready_marks\[ready_int\];
 				}
 				else {
-					ready_mark.innerHTML = "<span class='unchecked'>☒</span> READY"
+					ready_int++;
+					if (ready_int === ready_marks.length)
+						ready_int = 0;
+					ready_mark.innerHTML = ready_marks\[ready_int\];
 				}
 			}
 			var antag_int = 0;

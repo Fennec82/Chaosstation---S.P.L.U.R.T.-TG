@@ -31,9 +31,6 @@
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/hallway/primary/starboard)
-"e" = (
-/turf/open/floor/iron,
-/area/station/hallway/primary/starboard)
 "f" = (
 /obj/structure/mirror/directional/west,
 /obj/effect/turf_decal/tile/purple{
@@ -47,14 +44,14 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable,
+/obj/machinery/door/airlock/public{
+	name = "Massage Parlour"
+	},
 /obj/effect/turf_decal/tile/purple{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/purple,
 /obj/effect/landmark/navigate_destination/autoname,
-/obj/machinery/door/airlock/public{
-	name = "Massage Parlour"
-	},
 /turf/open/floor/iron,
 /area/station/service/barber)
 "j" = (
@@ -140,11 +137,12 @@
 /turf/open/floor/iron,
 /area/station/service/barber)
 "B" = (
-/obj/structure/sign/barber/directional/north{
-	pixel_y = 16
+/obj/structure/disposalpipe/junction{
+	dir = 4
 	},
-/turf/open/floor/iron,
-/area/station/hallway/primary/starboard)
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/station/maintenance/starboard/fore)
 "C" = (
 /obj/structure/bed/pod,
 /obj/structure/window/spawner/directional/south,
@@ -187,11 +185,6 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/iron,
 /area/station/service/barber)
-"M" = (
-/obj/machinery/airalarm/directional/north,
-/obj/machinery/light/directional/north,
-/turf/open/floor/iron,
-/area/station/hallway/primary/starboard)
 "N" = (
 /obj/structure/chair/comfy/barber_chair{
 	dir = 8
@@ -212,6 +205,10 @@
 /obj/structure/disposalpipe/segment,
 /turf/closed/wall,
 /area/station/service/barber)
+"U" = (
+/obj/structure/sign/barber/directional/north,
+/turf/open/floor/iron,
+/area/station/hallway/primary/starboard)
 "V" = (
 /obj/machinery/vending/barbervend,
 /obj/effect/turf_decal/tile/purple{
@@ -258,10 +255,10 @@ o
 f
 c
 x
-e
+a
 "}
 (3,1,1) = {"
-a
+B
 S
 l
 K
@@ -278,7 +275,7 @@ I
 m
 b
 x
-e
+U
 "}
 (5,1,1) = {"
 a
@@ -288,7 +285,7 @@ C
 L
 V
 w
-B
+a
 "}
 (6,1,1) = {"
 a
@@ -298,5 +295,5 @@ w
 w
 w
 w
-M
+a
 "}

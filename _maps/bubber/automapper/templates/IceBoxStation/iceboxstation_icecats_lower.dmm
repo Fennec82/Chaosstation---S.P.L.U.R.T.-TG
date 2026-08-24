@@ -211,14 +211,6 @@
 	},
 /turf/open/misc/dirt/icemoon,
 /area/ruin/unpowered/primitive_catgirl_den)
-"eY" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/obj/structure/water_source/puddle,
-/obj/effect/turf_decal/weather/snow/corner,
-/turf/open/misc/dirt/icemoon,
-/area/ruin/unpowered/primitive_catgirl_den)
 "fd" = (
 /obj/structure/wall_torch/spawns_lit/directional/south,
 /obj/effect/turf_decal/weather/snow/corner{
@@ -951,14 +943,6 @@
 /obj/item/seeds/peas,
 /turf/open/misc/dirt/icemoon,
 /area/ruin/unpowered/primitive_catgirl_den)
-"vr" = (
-/obj/structure/table/wood,
-/obj/structure/throwing_wheel{
-	pixel_y = 10
-	},
-/obj/structure/wall_torch/spawns_lit/directional/west,
-/turf/open/floor/wood/icemoon,
-/area/ruin/unpowered/primitive_catgirl_den)
 "vx" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
@@ -1004,7 +988,6 @@
 /obj/item/seeds/tea/catnip,
 /obj/item/seeds/bamboo,
 /obj/item/seeds/ambrosia,
-/obj/item/seeds/eggplant,
 /turf/open/misc/dirt/icemoon,
 /area/ruin/unpowered/primitive_catgirl_den)
 "wF" = (
@@ -1071,9 +1054,6 @@
 /area/ruin/unpowered/primitive_catgirl_den)
 "yp" = (
 /obj/machinery/primitive_stove,
-/obj/item/storage/bag/tray{
-	pixel_y = 4
-	},
 /turf/open/floor/stone/icemoon,
 /area/ruin/unpowered/primitive_catgirl_den)
 "yD" = (
@@ -1163,17 +1143,6 @@
 "AG" = (
 /obj/structure/bonfire/grill_pre_attached,
 /turf/open/floor/stone/icemoon,
-/area/ruin/unpowered/primitive_catgirl_den)
-"AV" = (
-/obj/structure/closet/crate/wooden/storage_barrel,
-/obj/item/stack/ore/glass/thirty{
-	pixel_y = 5;
-	amount = 50
-	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 10
-	},
-/turf/open/misc/dirt/icemoon,
 /area/ruin/unpowered/primitive_catgirl_den)
 "Bc" = (
 /obj/structure/rack/wooden,
@@ -1277,35 +1246,11 @@
 	},
 /turf/open/misc/dirt/icemoon,
 /area/ruin/unpowered/primitive_catgirl_den)
-"Eu" = (
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 4
-	},
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/turf/open/misc/dirt/icemoon,
-/area/ruin/unpowered/primitive_catgirl_den)
 "EA" = (
 /obj/structure/rack/wooden,
 /obj/item/gun/ballistic/bow/longbow,
 /obj/item/storage/bag/quiver,
 /turf/open/misc/dirt/icemoon,
-/area/ruin/unpowered/primitive_catgirl_den)
-"EU" = (
-/obj/structure/closet/crate/wooden{
-	name = "glassblowing crate"
-	},
-/obj/item/glassblowing/blowing_rod,
-/obj/item/glassblowing/jacks{
-	pixel_x = 6
-	},
-/obj/item/glassblowing/paddle{
-	pixel_y = 6
-	},
-/obj/item/glassblowing/shears,
-/obj/item/glassblowing/metal_cup,
-/turf/open/misc/asteroid/snow/icemoon,
 /area/ruin/unpowered/primitive_catgirl_den)
 "FB" = (
 /obj/structure/mannequin/wood,
@@ -1438,6 +1383,11 @@
 	dir = 1
 	},
 /turf/open/misc/dirt/icemoon,
+/area/ruin/unpowered/primitive_catgirl_den)
+"II" = (
+/obj/structure/wall_torch/spawns_lit/directional/west,
+/obj/structure/flora/ash/chilly,
+/turf/open/misc/asteroid/snow/icemoon,
 /area/ruin/unpowered/primitive_catgirl_den)
 "IZ" = (
 /obj/structure/wall_torch/spawns_lit/directional/north,
@@ -1663,22 +1613,6 @@
 	},
 /obj/structure/chair/wood{
 	dir = 8
-	},
-/turf/open/misc/dirt/icemoon,
-/area/ruin/unpowered/primitive_catgirl_den)
-"Pq" = (
-/obj/effect/turf_decal/siding/wood,
-/obj/structure/rack/wooden,
-/obj/item/stack/sheet/mineral/stone/five{
-	pixel_y = -5;
-	pixel_x = -4
-	},
-/obj/item/stack/sheet/mineral/stone/five{
-	pixel_y = -5;
-	pixel_x = 7
-	},
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 1
 	},
 /turf/open/misc/dirt/icemoon,
 /area/ruin/unpowered/primitive_catgirl_den)
@@ -1998,15 +1932,6 @@
 	},
 /obj/effect/turf_decal/weather/snow/corner{
 	dir = 5
-	},
-/turf/open/misc/dirt/icemoon,
-/area/ruin/unpowered/primitive_catgirl_den)
-"Xn" = (
-/obj/effect/turf_decal/weather/snow/corner{
-	dir = 5
-	},
-/obj/effect/turf_decal/siding/wood/corner{
-	dir = 8
 	},
 /turf/open/misc/dirt/icemoon,
 /area/ruin/unpowered/primitive_catgirl_den)
@@ -3376,7 +3301,7 @@ GN
 GN
 GN
 GN
-yF
+GN
 GN
 yF
 yF
@@ -3417,9 +3342,9 @@ Rq
 yF
 GN
 GN
-Pq
-vr
-eY
+GN
+GN
+GN
 GN
 pa
 hA
@@ -3459,10 +3384,10 @@ jN
 GN
 GN
 GN
-Xn
-Eu
-aK
-AV
+GN
+yF
+GN
+GN
 pa
 kF
 ZJ
@@ -3501,8 +3426,8 @@ vZ
 pa
 GN
 yF
-EU
-yD
+oJ
+II
 JN
 zS
 pa

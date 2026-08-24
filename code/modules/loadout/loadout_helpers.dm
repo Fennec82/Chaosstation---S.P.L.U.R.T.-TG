@@ -16,7 +16,7 @@
 	datum/preferences/preference_source,
 	visuals_only = FALSE,
 	datum/job/equipping,
-) // BUBBER EDIT CHANGE - Added equipping param
+) // SKYRAT EDIT CHANGE - Added equipping param
 	if(isnull(preference_source))
 		return equipOutfit(outfit, visuals_only)
 
@@ -28,73 +28,61 @@
 	else
 		CRASH("Invalid outfit passed to equip_outfit_and_loadout ([outfit])")
 
-	// BUBBER EDIT ADDITION BEGIN - Place in case preference
+	var/list/preference_list = preference_source.read_preference(/datum/preference/loadout)
+	preference_list = preference_list[preference_source.read_preference(/datum/preference/loadout_index)] // BUBBER EDIT ADDITION: Multiple loadout presets
+	var/list/loadout_datums = loadout_list_to_datums(preference_list)
+	// SKYRAT EDIT ADDITION BEGIN
 	var/obj/item/storage/briefcase/empty/travel_suitcase
 	var/loadout_placement_preference = preference_source.read_preference(/datum/preference/choiced/loadout_override_preference)
-	// BUBBER EDIT ADDITION END
-	var/list/item_details = preference_source.read_preference(/datum/preference/loadout)
-	item_details = item_details[preference_source.read_preference(/datum/preference/loadout_index)] // BUBBER EDIT ADDITION - Custom Loadouts
-	var/list/loadout_datums = loadout_list_to_datums(item_details)
 	// Slap our things into the outfit given
 	for(var/datum/loadout_item/item as anything in loadout_datums)
-		if(!item.is_equippable(src, item_details?[item.item_path] || list()))
-			loadout_datums -= item
-			continue
-
-		// BUBBER EDIT ADDITION BEGIN
 		if(item.restricted_roles && equipping && !(equipping.title in item.restricted_roles))
 			if(preference_source.parent)
 				to_chat(preference_source.parent, span_warning("You were unable to get a loadout item([initial(item.item_path.name)]) due to job restrictions!"))
-			loadout_datums -= item
 			continue
 
 		if(item.blacklisted_roles && equipping && (equipping.title in item.blacklisted_roles))
 			if(preference_source.parent)
 				to_chat(preference_source.parent, span_warning("You were unable to get a loadout item([initial(item.item_path.name)]) due to job blacklists!"))
-			loadout_datums -= item
 			continue
 
 		if(item.restricted_species && !(dna.species.id in item.restricted_species))
 			if(preference_source.parent)
 				to_chat(preference_source.parent, span_warning("You were unable to get a loadout item ([initial(item.item_path.name)]) due to species restrictions!"))
-			loadout_datums -= item
 			continue
 
 		if(item.donator_only && !SSplayer_ranks.is_donator(preference_source?.parent))
 			if(preference_source.parent)
 				to_chat(preference_source.parent, span_warning("You were unable to get a loadout item ([initial(item.item_path.name)]) due to donator restrictions!"))
-			loadout_datums -= item
 			continue
 
 		if(item.ckeywhitelist && !(preference_source?.parent?.ckey in item.ckeywhitelist)) // Sanity checking
 			if(preference_source.parent)
 				to_chat(preference_source.parent, span_warning("You were unable to get a loadout item ([initial(item.item_path.name)]) due to CKEY restrictions!"))
-			loadout_datums -= item
 			continue
 
 		if(loadout_placement_preference == LOADOUT_OVERRIDE_CASE && !visuals_only)
 			if(!travel_suitcase)
 				travel_suitcase  = new(loc)
 			new item.item_path(travel_suitcase)
-		else
-		// BUBBER EDIT ADDITION END
+		else // SKYRAT EDIT END
 			item.insert_path_into_outfit(equipped_outfit, src, visuals_only, loadout_placement_preference)
 	// Equip the outfit loadout items included
 	if(!equipped_outfit.equip(src, visuals_only))
 		return FALSE
 
-	// BUBBER EDIT ADDITION BEGIN
+	// SKYRAT EDIT ADDITION
 	if(travel_suitcase)
 		put_in_hands(travel_suitcase)
-	// BUBBER EDIT ADDITION END
+	// SKYRAT EDIT END
 
 	// Handle any snowflake on_equips.
 	var/list/new_contents = get_all_gear(INCLUDE_PROSTHETICS|INCLUDE_ABSTRACT|INCLUDE_ACCESSORIES)
 	var/update = NONE
 	for(var/datum/loadout_item/item as anything in loadout_datums)
 		update |= item.on_equip_item(
-			equipped_item = locate(item.item_path) in (loadout_placement_preference == LOADOUT_OVERRIDE_CASE && !visuals_only) ? travel_suitcase : new_contents, // BUBBER EDIT CHANGE - ORIGINAL: equipped_item = locate(item.item_path) in new_contents,
-			item_details = item_details?[item.item_path] || list(),
+			equipped_item = (loadout_placement_preference == LOADOUT_OVERRIDE_CASE && !visuals_only) ? locate(item.item_path) in travel_suitcase : locate(item.item_path) in new_contents, // BUBBER EDIT CHANGE - ORIGINAL: equipped_item = locate(item.item_path) in new_contents,
+			item_details = preference_list?[item.item_path] || list(),
 			equipper = src,
 			outfit = equipped_outfit,
 			visuals_only = visuals_only,
@@ -128,7 +116,7 @@
 
 	return datums
 
-// BUBBER EDIT ADDITION BEGIN
+// SKYRAT EDIT ADDITION
 /*
  * Removes all invalid paths from loadout lists.
  *
@@ -153,4 +141,4 @@
 
 /obj/item/storage/briefcase/empty/PopulateContents()
 	return
-// BUBBER EDIT ADDITION END
+// SKYRAT EDIT END

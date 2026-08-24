@@ -1,5 +1,5 @@
 /datum/preference/choiced/erp_status_hypno
-	category = PREFERENCE_CATEGORY_OOC_PREFS
+	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
 	savefile_identifier = PREFERENCE_CHARACTER
 	savefile_key = "erp_status_pref_hypnosis"
 

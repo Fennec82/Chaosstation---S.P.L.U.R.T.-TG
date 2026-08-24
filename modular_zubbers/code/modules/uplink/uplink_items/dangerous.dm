@@ -1,4 +1,3 @@
-/* Borers are disabled until someone possibly fixes (or removes) them in the future.
 /datum/uplink_item/dangerous/cortical_borer
 	name = "Cortical Borer Egg"
 	desc = "The egg of a cortical borer. The cortical borer is a parasite that can produce chemicals upon command, as well as \
@@ -8,4 +7,3 @@
 	progression_minimum = 20 MINUTES
 	item = /obj/effect/mob_spawn/ghost_role/borer_egg/traitor
 	cost = 20
-*/

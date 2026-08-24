@@ -1,5 +1,5 @@
 /datum/preference/toggle/be_round_removed
-	category = PREFERENCE_CATEGORY_OOC_PREFS
+	category = PREFERENCE_CATEGORY_NON_CONTEXTUAL
 	savefile_identifier = PREFERENCE_CHARACTER
 	savefile_key = "be_round_removed"
 

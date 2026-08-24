@@ -11,7 +11,6 @@
 	lock_back_sound = 'sound/items/weapons/gun/pistol/slide_lock.ogg'
 	bolt_drop_sound = 'sound/items/weapons/gun/pistol/slide_drop.ogg'
 	fire_sound_volume = 50
-	fire_delay = 8
 
 /obj/item/gun/ballistic/automatic/pistol/pepperball/give_manufacturer_examine()
 	AddElement(/datum/element/manufacturer_examine, COMPANY_BOLT)

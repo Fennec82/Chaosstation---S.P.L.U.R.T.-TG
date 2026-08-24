@@ -10,11 +10,11 @@
 
 /datum/id_trim/syndicom/bubberstation/persistence/prisoner
 	trim_icon = 'modular_skyrat/master_files/icons/obj/card.dmi'
-	assignment = "Persistence Intern"
+	assignment = "Persistence Hostage"
 	trim_state = "trim_ds2prisoner"
 	subdepartment_color = COLOR_MAROON
 	sechud_icon_state = SECHUD_DS2_PRISONER
-	access = list(ACCESS_SYNDICATE)
+	access = list(ACCESS_MAINT_TUNNELS) // I can't set it to null without creating a runtime.
 
 /datum/id_trim/syndicom/bubberstation/persistence/syndicatestaff
 	trim_icon = 'modular_skyrat/master_files/icons/obj/card.dmi'

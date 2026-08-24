@@ -16,7 +16,7 @@
 
 /datum/action/cooldown/sonar_ping/IsAvailable(feedback)
 	var/mob/living/carbon/owner = src.owner
-	return ..() && !HAS_TRAIT(owner, TRAIT_DEAF)
+	return ..() && owner.can_hear()
 
 
 /datum/action/cooldown/sonar_ping/Activate(atom/target)

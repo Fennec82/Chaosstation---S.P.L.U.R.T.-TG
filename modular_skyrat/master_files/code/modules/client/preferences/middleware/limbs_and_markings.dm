@@ -25,7 +25,7 @@
 	)
 
 	var/list/organs_to_process = list(
-		"brain" = "Brain",
+		"brain" = "Brain", //BUBBER EDIT
 		"heart" = "Heart",
 		"lungs" = "Lungs",
 		"liver" = "Liver",
@@ -33,8 +33,7 @@
 		"eyes" = "Eyes",
 		"tongue" = "Tongue",
 		"ears" = "Ears",
-		"Brain implant" = "Brain implant",
-		"Chest Implant" = "Chest implant",
+		"Brain implant" = "Brain implant", //BUBBER EDIT
 		"Eyes Implant" = "Eyes implant",
 		"Mouth implant" = "Mouth implant",
 		"Left Arm implant" = "Left Arm implant",

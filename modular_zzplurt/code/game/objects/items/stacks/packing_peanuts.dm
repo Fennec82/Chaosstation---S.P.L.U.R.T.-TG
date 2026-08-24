@@ -11,9 +11,7 @@
 	item_flags = NOBLUDGEON
 	merge_type = /obj/item/stack/packing_peanuts
 	novariants = FALSE
-
-/obj/item/stack/packing_peanuts/grind_results()
-	return list(/datum/reagent/consumable/peanut_butter/packing = 5, /datum/reagent/consumable/nutriment/fat/oil/corn = 2)
+	grind_results = list(/datum/reagent/consumable/peanut_butter/packing = 5, /datum/reagent/consumable/nutriment/fat/oil/corn = 2)
 
 /obj/item/stack/packing_peanuts/Initialize(mapload, new_amount, merge, list/mat_override, mat_amt)
 	. = ..()

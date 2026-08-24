@@ -1,4 +1,0 @@
-author: "tmyqlfpir"
-delete-after: True
-changes:
-  - bugfix: "Add filename length check for iZune uploading"

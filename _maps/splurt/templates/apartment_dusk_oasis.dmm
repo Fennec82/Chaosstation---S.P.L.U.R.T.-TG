@@ -10,20 +10,20 @@
 	color = "#3e3a57"
 	},
 /turf/open/floor/bamboo,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "aM" = (
 /obj/structure/flora/grass/jungle/b/style_5{
 	pixel_x = 7;
 	pixel_y = 6
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "aT" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 4
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "aZ" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -37,14 +37,14 @@
 	pixel_y = -2
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bd" = (
 /obj/structure/flora/bush/fullgrass{
 	pixel_y = -2;
 	pixel_x = 8
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bj" = (
 /obj/structure/flora/rock/pile/jungle/style_4{
 	pixel_x = 2;
@@ -56,20 +56,20 @@
 	density = 1
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bn" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bA" = (
 /obj/structure/flora/bush/fullgrass{
 	pixel_y = 11;
 	pixel_x = -5
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bE" = (
 /obj/structure/flora/bush/reed/style_4{
 	pixel_y = -8;
@@ -79,7 +79,7 @@
 	icon_state = "beach";
 	dir = 5
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bN" = (
 /obj/structure/flora/rock/pile/jungle/style_3{
 	pixel_y = 0;
@@ -93,41 +93,41 @@
 	pixel_x = 8
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bS" = (
 /obj/structure/flora/grass/jungle/b{
 	pixel_y = -21;
 	pixel_x = -4
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bW" = (
 /obj/structure/flora/bush/jungle/c/style_2{
 	pixel_x = -2;
 	pixel_y = 14
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ci" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 6
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cp" = (
 /obj/structure/flora/grass/jungle/b{
 	pixel_y = -21;
 	pixel_x = -8
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cw" = (
 /obj/structure/flora/bush/sparsegrass{
 	pixel_x = 0;
 	pixel_y = -3
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cD" = (
 /obj/effect/turf_decal/weather/sand,
 /obj/structure/decorative{
@@ -141,7 +141,7 @@
 	pixel_x = -17
 	},
 /turf/open/floor/bamboo,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cF" = (
 /obj/structure/flora/tree/jungle/small/style_6{
 	pixel_y = -34;
@@ -153,7 +153,7 @@
 	pixel_x = 9
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "dc" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -165,7 +165,7 @@
 	pixel_y = 5
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "dr" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 9
@@ -191,7 +191,7 @@
 	pixel_x = -4
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "dt" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 4
@@ -201,11 +201,11 @@
 	pixel_x = 1
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "dD" = (
 /obj/item/toy/beach_ball,
 /turf/open/water/beach,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "dE" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 8
@@ -234,7 +234,7 @@
 	dir = 4
 	},
 /turf/open/floor/wood/large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "el" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -246,7 +246,7 @@
 	pixel_y = 5
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ex" = (
 /obj/structure/flora/grass/jungle/b{
 	pixel_y = 8;
@@ -257,13 +257,13 @@
 	pixel_x = -7
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "eO" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 4
 	},
 /turf/open/floor/wood/large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "eZ" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 4
@@ -273,7 +273,7 @@
 	pixel_x = -17
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "fe" = (
 /obj/structure/fluff/beach_umbrella/engine,
 /obj/effect/light_emitter/interlink{
@@ -285,13 +285,13 @@
 	},
 /obj/effect/turf_decal/weather/sand,
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "fh" = (
 /turf/open/water/beach{
 	icon_state = "beach-corner";
 	dir = 1
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "fl" = (
 /obj/structure/decorative{
 	icon_state = "cactus1";
@@ -307,7 +307,7 @@
 	dir = 5
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "fm" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -328,7 +328,7 @@
 	},
 /obj/structure/marker_beacon/burgundy,
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "fo" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 6
@@ -337,27 +337,27 @@
 	dir = 1
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gd" = (
 /obj/structure/flora/grass/jungle/b/style_5{
 	pixel_x = 3;
 	pixel_y = 1
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gu" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 1
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gz" = (
 /obj/structure/flora/grass/jungle/b{
 	pixel_y = 6;
 	pixel_x = 1
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gG" = (
 /obj/structure/flora/bush/ferny,
 /obj/effect/turf_decal/weather/sand{
@@ -368,7 +368,7 @@
 	color = "#3e3a57"
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gN" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 8
@@ -387,7 +387,7 @@
 	dir = 4
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gQ" = (
 /obj/structure/flora/ash/cacti{
 	pixel_x = 8;
@@ -401,7 +401,7 @@
 	dir = 6
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gR" = (
 /obj/structure/bedsheetbin/empty/basket{
 	pixel_x = -9;
@@ -422,7 +422,7 @@
 	pixel_y = -17
 	},
 /turf/open/floor/carpet/red,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gW" = (
 /obj/structure/flora/bush,
 /obj/effect/light_emitter/interlink{
@@ -435,17 +435,17 @@
 /turf/open/water/beach{
 	icon_state = "beach-corner"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hb" = (
 /obj/structure/flora/bush/sparsegrass/style_2{
 	pixel_x = 2;
 	pixel_y = 15
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hf" = (
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hi" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 10
@@ -507,7 +507,7 @@
 	pixel_y = 0
 	},
 /turf/open/floor/wood/parquet,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hL" = (
 /obj/structure/flora/grass/jungle/b{
 	pixel_y = 5;
@@ -518,7 +518,7 @@
 	pixel_y = 3
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hN" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 1
@@ -528,14 +528,14 @@
 	pixel_y = -16
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hU" = (
 /obj/structure/flora/grass/jungle/a,
 /obj/effect/turf_decal/weather/sand{
 	dir = 8
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hX" = (
 /obj/structure/decorative{
 	anchored = 1;
@@ -561,7 +561,7 @@
 	pixel_y = 0
 	},
 /turf/open/floor/carpet/red,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hZ" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 1
@@ -571,13 +571,13 @@
 	pixel_x = 11
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ib" = (
 /obj/structure/chair/plastic{
 	dir = 4
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "iA" = (
 /obj/structure/flora/grass/jungle/b/style_2{
 	pixel_x = -2;
@@ -585,7 +585,7 @@
 	},
 /obj/effect/turf_decal/weather/sand,
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "iC" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 4
@@ -595,21 +595,21 @@
 	pixel_y = -16
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "iQ" = (
 /obj/structure/flora/bush/sparsegrass/style_3{
 	pixel_x = -5;
 	pixel_y = -5
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jw" = (
 /obj/structure/flora/grass/jungle/b/style_2{
 	pixel_y = 6;
 	pixel_x = -11
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jH" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -622,7 +622,7 @@
 	pixel_y = -6
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jL" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -640,16 +640,16 @@
 	pixel_x = 0
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "kp" = (
 /turf/closed/indestructible/rock,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "kq" = (
 /turf/open/water/beach{
 	icon_state = "beach";
 	dir = 6
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "kw" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 1
@@ -662,12 +662,12 @@
 /turf/open/indestructible/rockyground{
 	color = "#FFD8AA"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "kx" = (
 /turf/closed/mineral/strange_rock/volcanic{
 	color = "#FFD8AA"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "kF" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 4
@@ -704,14 +704,14 @@
 	},
 /obj/structure/chair/wood,
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "kO" = (
 /obj/structure/flora/bush/large/style_3{
 	pixel_x = -24;
 	pixel_y = -26
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "lc" = (
 /obj/effect/light_emitter/interlink{
 	light_color = "#3e3a57";
@@ -723,7 +723,7 @@
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "lg" = (
 /obj/structure/flora/rock/pile/jungle/style_3{
 	pixel_y = -5;
@@ -748,7 +748,7 @@
 	pixel_x = 0
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ls" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 1
@@ -758,7 +758,7 @@
 	pixel_x = 4
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "lF" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 5
@@ -768,14 +768,14 @@
 	pixel_y = 0
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "lG" = (
 /obj/structure/flora/grass/jungle/b{
 	pixel_y = 21;
 	pixel_x = -10
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "lO" = (
 /obj/structure/flora/bush/fullgrass{
 	pixel_y = 9;
@@ -786,7 +786,7 @@
 	pixel_x = -22
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "lR" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 1
@@ -796,7 +796,7 @@
 	pixel_y = 4
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "lS" = (
 /obj/item/toy/plush/lizard_plushie/green{
 	pixel_x = -2;
@@ -808,7 +808,7 @@
 	pixel_y = -5
 	},
 /turf/open/floor/carpet/red,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "lW" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 10
@@ -824,20 +824,20 @@
 	pixel_x = -4
 	},
 /turf/open/floor/wood/parquet,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mr" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 4
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mA" = (
 /obj/structure/flora/bush/sparsegrass/style_3{
 	pixel_x = 1;
 	pixel_y = 0
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mP" = (
 /obj/structure/flora/bush/reed/style_2{
 	pixel_x = -7;
@@ -847,14 +847,14 @@
 	icon_state = "beach";
 	dir = 1
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nr" = (
 /obj/structure/flora/bush/sparsegrass/style_2{
 	pixel_x = -5;
 	pixel_y = 12
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nC" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -867,13 +867,13 @@
 	dir = 5
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nF" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 5
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nN" = (
 /obj/structure/table/wood,
 /obj/item/food/vendor_snacks/mothmallow{
@@ -893,17 +893,17 @@
 	},
 /obj/effect/turf_decal/weather/sand,
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nO" = (
 /turf/open/water/beach,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nS" = (
 /obj/structure/flora/bush/fullgrass/style_2{
 	pixel_x = 7;
 	pixel_y = 3
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nT" = (
 /obj/structure/flora/grass/jungle/b{
 	pixel_y = -10;
@@ -918,7 +918,7 @@
 	pixel_x = -1
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oa" = (
 /obj/structure/flora/grass/jungle/b/style_5,
 /obj/structure/fans/tiny/invisible{
@@ -928,14 +928,14 @@
 	dir = 6
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "of" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 1
 	},
 /obj/effect/turf_decal/weather/sand,
 /turf/open/floor/carpet/red,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oi" = (
 /obj/structure/flora/rock/style_4{
 	color = "#FFD8AA";
@@ -946,14 +946,14 @@
 	density = 1
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oY" = (
 /obj/structure/flora/bush/jungle/c/style_3{
 	pixel_y = 11;
 	pixel_x = 5
 	},
 /turf/open/water/beach,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "pk" = (
 /obj/structure/flora/grass/jungle/b/style_3,
 /obj/structure/flora/bush/large/style_2{
@@ -961,7 +961,7 @@
 	pixel_y = 16
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "pp" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 6
@@ -999,7 +999,7 @@
 	pixel_y = 1
 	},
 /turf/open/floor/wood/parquet,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "pu" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -1016,25 +1016,25 @@
 	pixel_x = 0
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "pE" = (
 /obj/structure/flora/grass/jungle/a{
 	pixel_x = -8;
 	pixel_y = 2
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "qa" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
 	},
 /obj/effect/turf_decal/weather/sand,
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ql" = (
 /obj/structure/flora/grass/jungle/b/style_4,
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "qv" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 1
@@ -1044,7 +1044,7 @@
 	pixel_y = -4
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "rk" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/fans/tiny/invisible{
@@ -1054,7 +1054,7 @@
 	dir = 1
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ry" = (
 /obj/structure/railing/wrestling{
 	pixel_y = 1;
@@ -1065,7 +1065,7 @@
 	icon_state = "beach-corner";
 	dir = 8
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "rG" = (
 /obj/structure/decorative{
 	icon_state = "cactus1";
@@ -1078,14 +1078,14 @@
 	pixel_x = 14
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "sv" = (
 /obj/structure/flora/bush/sparsegrass{
 	pixel_x = 0;
 	pixel_y = 11
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "sA" = (
 /obj/structure/decorative{
 	icon_state = "borgmat";
@@ -1101,14 +1101,14 @@
 	},
 /obj/effect/turf_decal/weather/sand,
 /turf/open/floor/carpet/red,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "sK" = (
 /obj/machinery/grill{
 	color = "#FFD8AA";
 	name = "gas grill"
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "sQ" = (
 /obj/structure/flora/bush/ferny/style_3{
 	pixel_y = 15
@@ -1117,7 +1117,7 @@
 	dir = 1
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tf" = (
 /obj/structure/table/wood,
 /obj/structure/marker_beacon/bronze,
@@ -1134,7 +1134,7 @@
 	pixel_y = 0
 	},
 /turf/open/floor/bamboo,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tM" = (
 /obj/structure/flora/grass/jungle/b{
 	pixel_y = 19;
@@ -1145,7 +1145,7 @@
 	pixel_y = 7
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tO" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 9
@@ -1161,14 +1161,14 @@
 	pixel_x = -7
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tP" = (
 /obj/structure/flora/bush/jungle/a/style_3{
 	pixel_x = 3;
 	pixel_y = 2
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tW" = (
 /obj/structure/railing/wrestling{
 	pixel_y = 32;
@@ -1192,14 +1192,14 @@
 	},
 /obj/effect/turf_decal/weather/sand,
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "uW" = (
 /obj/structure/flora/bush/fullgrass{
 	pixel_y = 14;
 	pixel_x = 1
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vc" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 1
@@ -1212,7 +1212,7 @@
 /turf/open/indestructible/rockyground{
 	color = "#FFD8AA"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vm" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 9
@@ -1220,7 +1220,7 @@
 /turf/open/indestructible/rockyground{
 	color = "#FFD8AA"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vp" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 10
@@ -1229,14 +1229,14 @@
 	dir = 9
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vV" = (
 /obj/structure/flora/bush/reed/style_3{
 	pixel_y = 22;
 	pixel_x = -14
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "we" = (
 /obj/effect/light_emitter/interlink{
 	light_color = "#3e3a57";
@@ -1246,20 +1246,20 @@
 	icon_state = "beach";
 	dir = 10
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "wx" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 9
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "wB" = (
 /obj/structure/flora/grass/jungle/b/style_3{
 	pixel_x = 11;
 	pixel_y = 2
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "wD" = (
 /obj/effect/light_emitter/interlink{
 	light_color = "#3e3a57";
@@ -1272,7 +1272,7 @@
 	dir = 5
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "wG" = (
 /obj/structure/flora/bush/fullgrass{
 	pixel_y = 10;
@@ -1283,7 +1283,7 @@
 	pixel_x = 4
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xd" = (
 /obj/effect/turf_decal/weather/sand,
 /obj/structure/flora/tree/jungle/small/style_5{
@@ -1291,14 +1291,14 @@
 	pixel_x = -22
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xW" = (
 /obj/structure/flora/grass/jungle/b{
 	pixel_y = 20;
 	pixel_x = -21
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ya" = (
 /obj/structure/flora/bush/large{
 	pixel_x = -30;
@@ -1308,7 +1308,7 @@
 	dir = 10
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yu" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 8
@@ -1321,7 +1321,7 @@
 /obj/structure/marker_beacon/burgundy,
 /obj/structure/table/wood,
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yy" = (
 /obj/structure/flora/grass/jungle/a/style_5,
 /obj/structure/fans/tiny/invisible{
@@ -1331,7 +1331,7 @@
 	dir = 6
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yE" = (
 /obj/structure/flora/bush/reed/style_3{
 	pixel_y = -7;
@@ -1341,7 +1341,7 @@
 	icon_state = "beach";
 	dir = 9
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yF" = (
 /obj/effect/turf_decal/weather/sand,
 /obj/effect/turf_decal/weather/sand{
@@ -1349,7 +1349,7 @@
 	},
 /obj/structure/flora/rock/pile/jungle/style_5,
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yN" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -1362,7 +1362,7 @@
 	dir = 1
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "zy" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 1
@@ -1378,7 +1378,7 @@
 	},
 /obj/effect/turf_decal/weather/sand,
 /turf/open/floor/carpet/red,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "zX" = (
 /obj/structure/flora/rock/style_2{
 	color = "#FFD8AA";
@@ -1392,7 +1392,7 @@
 	density = 1
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ai" = (
 /obj/structure/table/wood,
 /obj/structure/marker_beacon/bronze,
@@ -1417,7 +1417,7 @@
 	pixel_y = 1
 	},
 /turf/open/floor/bamboo,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Aw" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 6
@@ -1426,14 +1426,14 @@
 	dir = 5
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "AA" = (
 /obj/structure/flora/bush/sparsegrass/style_3{
 	pixel_x = 4;
 	pixel_y = 16
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "AC" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 9
@@ -1448,7 +1448,7 @@
 	pixel_x = -5
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "AJ" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 8
@@ -1459,7 +1459,7 @@
 /turf/open/indestructible/rockyground{
 	color = "#FFD8AA"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "AM" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -1472,7 +1472,7 @@
 	pixel_x = 1
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "AU" = (
 /obj/structure/flora/rock/pile/jungle/style_4{
 	pixel_x = 6;
@@ -1482,7 +1482,7 @@
 	dir = 10
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "AY" = (
 /obj/structure/railing/wrestling{
 	pixel_y = 31;
@@ -1505,7 +1505,7 @@
 	pixel_x = -1
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Bd" = (
 /obj/structure/chair/sofa/corp/left,
 /obj/effect/turf_decal/weather/sand,
@@ -1543,13 +1543,13 @@
 	pixel_x = -12
 	},
 /turf/open/floor/wood/parquet,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Bl" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 10
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Bm" = (
 /obj/effect/light_emitter/interlink{
 	light_color = "#3e3a57";
@@ -1561,7 +1561,7 @@
 	},
 /obj/effect/turf_decal/weather/sand,
 /turf/open/floor/wood/parquet,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "BD" = (
 /obj/structure/chair/sofa/corp/right{
 	pixel_x = 0;
@@ -1622,7 +1622,7 @@
 	pixel_x = 21
 	},
 /turf/open/floor/wood/parquet,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "BE" = (
 /obj/structure/flora/rock/style_2{
 	pixel_y = -1;
@@ -1633,20 +1633,20 @@
 	density = 1
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "BR" = (
 /turf/open/water/beach{
 	icon_state = "beach";
 	dir = 1
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Cg" = (
 /obj/structure/flora/bush/sparsegrass/style_3{
 	pixel_x = 0;
 	pixel_y = 3
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Cr" = (
 /obj/structure/flora/rock/style_4{
 	color = "#FFD8AA";
@@ -1660,7 +1660,7 @@
 	density = 1
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Cs" = (
 /obj/structure/flora/bush/fullgrass{
 	pixel_y = -6
@@ -1678,13 +1678,13 @@
 /turf/open/indestructible/rockyground{
 	color = "#FFD8AA"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "CI" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 8
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "CR" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 9
@@ -1693,11 +1693,11 @@
 	pixel_y = -6
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "CS" = (
 /obj/structure/flora/grass/jungle/b/style_3,
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Dn" = (
 /obj/structure/flora/grass/jungle/b{
 	pixel_y = -5;
@@ -1711,20 +1711,20 @@
 	icon_state = "beach-corner";
 	dir = 8
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "DJ" = (
 /obj/effect/turf_decal/weather/sand,
 /obj/effect/turf_decal/weather/sand{
 	dir = 1
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Eh" = (
 /turf/open/water/beach{
 	icon_state = "beach";
 	dir = 10
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ei" = (
 /obj/structure/flora/grass/jungle/a/style_5{
 	pixel_y = 25;
@@ -1735,7 +1735,7 @@
 	pixel_y = -6
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "EH" = (
 /obj/structure/flora/bush/reed/style_3{
 	pixel_x = 1;
@@ -1744,7 +1744,7 @@
 /turf/open/water/beach{
 	icon_state = "beach"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "EU" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 8
@@ -1754,7 +1754,7 @@
 	pixel_y = -8
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Fr" = (
 /obj/item/toy/plush/skyrat/deer{
 	pixel_x = 4;
@@ -1766,7 +1766,7 @@
 	pixel_y = -12
 	},
 /turf/open/floor/carpet/red,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "FB" = (
 /obj/structure/flora/bush/reed/style_2{
 	pixel_y = 1;
@@ -1776,7 +1776,7 @@
 	icon_state = "beach-corner";
 	dir = 4
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "FC" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -1785,7 +1785,7 @@
 	dir = 10
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "FK" = (
 /obj/structure/flora/bush/fullgrass{
 	pixel_y = -15;
@@ -1795,7 +1795,7 @@
 	dir = 4
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "FS" = (
 /obj/structure/flora/rock/style_2{
 	pixel_y = -6;
@@ -1810,7 +1810,7 @@
 	pixel_x = -2
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Gj" = (
 /obj/structure/flora/rock/style_4{
 	pixel_x = 12;
@@ -1821,21 +1821,21 @@
 	pixel_x = -6
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Gz" = (
 /obj/structure/flora/grass/jungle/b/style_3{
 	pixel_x = 5;
 	pixel_y = 12
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "GD" = (
 /obj/structure/flora/bush/jungle/a/style_3{
 	pixel_x = 3;
 	pixel_y = 13
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "GE" = (
 /obj/structure/table/wood,
 /obj/item/fishing_rod{
@@ -1851,14 +1851,14 @@
 	pixel_y = 0
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "He" = (
 /obj/structure/closet/crate/wooden/storage_barrel{
 	anchored = 1
 	},
 /obj/effect/turf_decal/weather/sand,
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Hi" = (
 /obj/structure/flora/rock{
 	color = "#FFD8AA";
@@ -1875,7 +1875,7 @@
 	pixel_x = -22
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "HI" = (
 /obj/structure/flora/bush/reed{
 	pixel_y = 15;
@@ -1884,7 +1884,7 @@
 /turf/open/water/beach{
 	icon_state = "beach-corner"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "HX" = (
 /obj/structure/decorative{
 	icon_state = "cactus1";
@@ -1898,13 +1898,13 @@
 	},
 /obj/effect/turf_decal/weather/sand,
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "HZ" = (
 /obj/structure/flora/bush/fullgrass{
 	pixel_y = -6
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Id" = (
 /obj/structure/flora/rock/pile/jungle/style_3{
 	pixel_y = -4;
@@ -1915,7 +1915,7 @@
 	pixel_x = 11
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Iv" = (
 /obj/structure/flora/grass/jungle/b/style_5,
 /obj/structure/fans/tiny/invisible{
@@ -1925,7 +1925,7 @@
 	dir = 1
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ID" = (
 /obj/structure/flora/rock/style_4{
 	color = "#FFD8AA";
@@ -1939,7 +1939,7 @@
 	density = 1
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "IN" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -1948,27 +1948,27 @@
 	dir = 6
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ja" = (
 /obj/structure/flora/grass/jungle/a/style_3{
 	pixel_y = -2;
 	pixel_x = -4
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Jd" = (
 /obj/effect/turf_decal/weather/dirt,
 /turf/open/indestructible/rockyground{
 	color = "#FFD8AA"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Jp" = (
 /obj/structure/flora/bush/large{
 	pixel_x = -23;
 	pixel_y = -6
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Js" = (
 /obj/item/stack/rods{
 	pixel_x = -10;
@@ -1976,7 +1976,7 @@
 	},
 /obj/effect/turf_decal/weather/sand,
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "JC" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 8
@@ -1988,7 +1988,7 @@
 	},
 /obj/structure/table/wood,
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "JG" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 1
@@ -2023,7 +2023,7 @@
 	},
 /obj/structure/platform/bamboo,
 /turf/open/floor/bamboo,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "JL" = (
 /obj/structure/flora/rock/style_4{
 	color = "#ffe6be";
@@ -2033,14 +2033,14 @@
 /turf/closed/mineral/strange_rock/volcanic{
 	color = "#FFD8AA"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Kb" = (
 /obj/structure/flora/grass/jungle/b/style_3{
 	pixel_x = -2;
 	pixel_y = 18
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Kh" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -2059,14 +2059,14 @@
 	pixel_x = 2
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "KA" = (
 /obj/structure/flora/bush/ferny{
 	pixel_x = -11;
 	pixel_y = -9
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "KE" = (
 /obj/structure/flora/bush/ferny/style_3{
 	pixel_y = 13
@@ -2075,7 +2075,7 @@
 	dir = 5
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "KF" = (
 /obj/structure/flora/grass/jungle/a,
 /obj/structure/fans/tiny/invisible{
@@ -2083,7 +2083,7 @@
 	},
 /obj/effect/turf_decal/weather/sand,
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "KZ" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -2097,11 +2097,11 @@
 	pixel_y = -4
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Lk" = (
 /obj/effect/turf_decal/weather/sand,
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "LG" = (
 /obj/effect/light_emitter/interlink{
 	light_color = "#3e3a57";
@@ -2109,7 +2109,7 @@
 	},
 /obj/effect/turf_decal/weather/sand,
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "LW" = (
 /obj/structure/flora/bush/sparsegrass/style_2{
 	pixel_x = 2;
@@ -2126,7 +2126,7 @@
 	pixel_y = -11
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "LX" = (
 /obj/structure/flora/bush/large{
 	pixel_y = -7;
@@ -2140,7 +2140,7 @@
 	dir = 5
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Mk" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -2154,7 +2154,7 @@
 	pixel_x = 2
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Mo" = (
 /obj/structure/flora/bush/reed/style_4{
 	pixel_y = 12;
@@ -2168,7 +2168,7 @@
 	icon_state = "beach-corner";
 	dir = 8
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Mt" = (
 /obj/structure/flora/grass/jungle/b{
 	pixel_y = 8;
@@ -2179,7 +2179,7 @@
 	pixel_y = -10
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Mw" = (
 /obj/structure/flora/rock{
 	color = "#FFD8AA";
@@ -2193,7 +2193,7 @@
 	dir = 6
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "My" = (
 /obj/effect/turf_decal/weather/sand,
 /obj/structure/closet/crate/wooden/storage_barrel{
@@ -2205,7 +2205,7 @@
 	icon_state = "beach-corner";
 	dir = 4
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "MC" = (
 /obj/item/stack/rods{
 	pixel_x = -1;
@@ -2215,7 +2215,7 @@
 	dir = 8
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "MH" = (
 /obj/structure/flora/rock/style_2{
 	color = "#FFD8AA";
@@ -2225,7 +2225,7 @@
 /turf/closed/mineral/strange_rock/volcanic{
 	color = "#FFD8AA"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Na" = (
 /obj/structure/flora/rock/pile/jungle/style_3{
 	pixel_y = -4;
@@ -2252,7 +2252,7 @@
 /obj/effect/turf_decal/weather/sand,
 /obj/item/clothing/underwear/briefs/swimsuit_onepiece,
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ni" = (
 /obj/item/grown/log/tree{
 	pixel_x = 0;
@@ -2263,7 +2263,7 @@
 	dir = 1
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Nw" = (
 /obj/structure/wargame_hologram/ship_marker{
 	desc = "Occupied.";
@@ -2277,16 +2277,16 @@
 	icon_state = "fake_door";
 	icon = 'icons/obj/doors/airlocks/centcom/centcom.dmi'
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Nx" = (
 /obj/structure/chair/plastic{
 	dir = 8
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "NG" = (
 /turf/closed/wall/mineral/wood/nonmetal,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "NH" = (
 /obj/structure/flora/rock/pile/style_3{
 	color = "#FFD8AA"
@@ -2295,14 +2295,14 @@
 	density = 1
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "NY" = (
 /obj/structure/flora/bush/jungle/c/style_3{
 	pixel_y = -9;
 	pixel_x = 3
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Oa" = (
 /obj/structure/flora/rock/pile/jungle/style_3{
 	pixel_x = 25;
@@ -2313,7 +2313,7 @@
 	pixel_y = 7
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Of" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 1
@@ -2325,7 +2325,7 @@
 /turf/open/indestructible/rockyground{
 	color = "#FFD8AA"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "OB" = (
 /obj/structure/flora/rock/style_4{
 	color = "#FFD8AA";
@@ -2344,7 +2344,7 @@
 	dir = 1
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "OS" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 5
@@ -2371,14 +2371,14 @@
 	},
 /obj/structure/platform/bamboo,
 /turf/open/floor/wood/parquet,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "PA" = (
 /obj/structure/flora/bush/fullgrass{
 	pixel_y = 5;
 	pixel_x = 6
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "PI" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -2392,7 +2392,7 @@
 	pixel_x = 0
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "PU" = (
 /obj/structure/flora/grass/jungle/b/style_4,
 /obj/effect/light_emitter/interlink{
@@ -2400,14 +2400,14 @@
 	color = "#3e3a57"
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "PY" = (
 /obj/structure/flora/rock/pile/jungle/style_3{
 	pixel_x = -6;
 	pixel_y = 1
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Qf" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 1
@@ -2424,7 +2424,7 @@
 /turf/open/indestructible/rockyground{
 	color = "#FFD8AA"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Qo" = (
 /obj/structure/flora/rock{
 	color = "#FFD8AA";
@@ -2438,7 +2438,7 @@
 	dir = 9
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Qs" = (
 /obj/structure/flora/bush/sparsegrass/style_2{
 	pixel_x = 8;
@@ -2453,7 +2453,7 @@
 	pixel_y = -8
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "QJ" = (
 /obj/structure/decorative{
 	icon_state = "cactus1";
@@ -2466,7 +2466,7 @@
 	pixel_x = -9
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "QQ" = (
 /obj/effect/turf_decal/weather/dirt,
 /obj/effect/turf_decal/weather/sand{
@@ -2475,7 +2475,7 @@
 /turf/open/indestructible/rockyground{
 	color = "#FFD8AA"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "QS" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -2484,7 +2484,7 @@
 	dir = 9
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Rf" = (
 /obj/structure/flora/rock/pile/icy{
 	color = "#FFD8AA";
@@ -2505,7 +2505,7 @@
 	pixel_y = -10
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Rv" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 4
@@ -2515,7 +2515,7 @@
 	pixel_x = 2
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "RG" = (
 /obj/structure/flora/grass/jungle/a/style_3{
 	pixel_y = -2;
@@ -2529,13 +2529,13 @@
 	dir = 8
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "RM" = (
 /turf/open/water/beach{
 	icon_state = "beach";
 	dir = 5
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "RS" = (
 /obj/structure/flora/bush/fullgrass{
 	pixel_y = -6
@@ -2544,7 +2544,7 @@
 	dir = 10
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "RT" = (
 /obj/structure/flora/rock/style_2{
 	pixel_y = -1;
@@ -2558,7 +2558,7 @@
 	density = 1
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "RX" = (
 /obj/structure/flora/bush/ferny{
 	pixel_y = -2;
@@ -2566,14 +2566,14 @@
 	},
 /obj/effect/turf_decal/weather/sand,
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Sa" = (
 /obj/structure/flora/bush/ferny{
 	pixel_x = 7;
 	pixel_y = 8
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Sq" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 6
@@ -2584,7 +2584,7 @@
 /obj/machinery/vending/boozeomat,
 /obj/structure/marker_beacon/teal,
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "SC" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 10
@@ -2597,7 +2597,7 @@
 	pixel_y = 3
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "SL" = (
 /obj/structure/flora/grass/jungle/b{
 	pixel_y = 5;
@@ -2607,21 +2607,21 @@
 	dir = 5
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "SO" = (
 /obj/effect/light_emitter/interlink{
 	light_color = "#3e3a57";
 	color = "#3e3a57"
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Tj" = (
 /obj/structure/flora/rock/pile/jungle/style_3,
 /obj/effect/turf_decal/weather/sand{
 	dir = 6
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "To" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 9
@@ -2631,7 +2631,7 @@
 	pixel_y = 11
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "TT" = (
 /obj/structure/flora/bush/reed{
 	pixel_y = 7;
@@ -2648,7 +2648,7 @@
 	icon_state = "beach";
 	dir = 10
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Us" = (
 /obj/structure/flora/grass/jungle/b/style_3{
 	pixel_x = 2;
@@ -2659,7 +2659,7 @@
 	pixel_x = 11
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "UJ" = (
 /obj/structure/flora/bush/jungle/c{
 	pixel_y = 13;
@@ -2669,14 +2669,14 @@
 	icon_state = "beach";
 	dir = 9
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "UR" = (
 /obj/structure/flora/grass/jungle/b{
 	pixel_y = 5;
 	pixel_x = 2
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Vf" = (
 /obj/structure/flora/rock/pile/icy{
 	color = "#FFD8AA";
@@ -2690,7 +2690,7 @@
 	dir = 5
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Vk" = (
 /obj/structure/flora/grass/jungle/b/style_4{
 	pixel_x = -3;
@@ -2701,7 +2701,7 @@
 	pixel_y = -4
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Vn" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 8
@@ -2711,7 +2711,7 @@
 	pixel_y = -1
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Vp" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -2720,7 +2720,7 @@
 	dir = 1
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "VA" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -2733,14 +2733,14 @@
 	dir = 1
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "VG" = (
 /obj/structure/flora/bush/jungle/c/style_3{
 	pixel_y = 12;
 	pixel_x = 1
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "VN" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 10
@@ -2773,7 +2773,7 @@
 	pixel_y = 1
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "VP" = (
 /obj/effect/light_emitter/interlink{
 	light_color = "#3e3a57";
@@ -2788,7 +2788,7 @@
 	pixel_x = -19
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "VU" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 9
@@ -2797,7 +2797,7 @@
 	dir = 5
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Wh" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -2810,7 +2810,7 @@
 	dir = 1
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Wk" = (
 /obj/structure/railing/wrestling{
 	pixel_y = 2;
@@ -2818,7 +2818,7 @@
 	density = 0
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Wr" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -2837,7 +2837,7 @@
 	dir = 6
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Wy" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
@@ -2849,7 +2849,7 @@
 /turf/open/indestructible/rockyground{
 	color = "#FFD8AA"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "WB" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -2858,7 +2858,7 @@
 	dir = 5
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "WI" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -2872,11 +2872,11 @@
 	pixel_y = 7
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Xc" = (
 /obj/structure/flora/bush/sparsegrass/style_3,
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Xe" = (
 /obj/structure/flora/grass/jungle/b/style_4{
 	pixel_x = 3;
@@ -2889,7 +2889,7 @@
 	dir = 1
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Xh" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -2908,7 +2908,7 @@
 	pixel_y = 5
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Xv" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 6
@@ -2931,7 +2931,7 @@
 	pixel_x = 14
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "XE" = (
 /obj/structure/flora/bush/large/style_2{
 	pixel_y = -10;
@@ -2947,7 +2947,7 @@
 	desc = "A scuffed, stuffed toy that resembles a snake. Not to be mistaken for the real thing."
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "XF" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -2958,7 +2958,7 @@
 	pixel_y = 5
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "XM" = (
 /obj/effect/light_emitter/interlink{
 	light_color = "#3e3a57";
@@ -2972,7 +2972,7 @@
 	pixel_x = -5
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "XZ" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 8
@@ -2991,7 +2991,7 @@
 	dir = 4
 	},
 /turf/open/floor/wood/parquet,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Yj" = (
 /obj/structure/flora/rock/pile/jungle/style_2{
 	pixel_x = -9;
@@ -3003,7 +3003,7 @@
 	},
 /obj/effect/turf_decal/weather/sand,
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ym" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -3022,14 +3022,14 @@
 	pixel_y = -2
 	},
 /turf/open/misc/dirt/jungle/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ys" = (
 /obj/structure/flora/bush/large/style_2{
 	pixel_x = -8;
 	pixel_y = 3
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Yt" = (
 /obj/structure/table/wood,
 /obj/structure/towel_bin{
@@ -3041,7 +3041,7 @@
 	pixel_y = -2
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "YQ" = (
 /obj/structure/flora/tree/jungle/small/style_5{
 	pixel_y = -15;
@@ -3057,7 +3057,7 @@
 	dir = 1
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "YT" = (
 /obj/structure/decorative{
 	icon_state = "cactus1";
@@ -3070,14 +3070,14 @@
 	pixel_x = 7
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "YZ" = (
 /obj/structure/flora/grass/jungle/b/style_3{
 	pixel_x = 6;
 	pixel_y = 10
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Zs" = (
 /obj/structure/railing/wooden_fence{
 	dir = 4;
@@ -3085,7 +3085,7 @@
 	density = 0
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ZH" = (
 /obj/structure/flora/rock/pile/jungle{
 	pixel_x = 10;
@@ -3095,17 +3095,17 @@
 /turf/open/indestructible/rockyground{
 	color = "#FFD8AA"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ZK" = (
 /obj/structure/flora/grass/jungle/b{
 	pixel_y = 13;
 	pixel_x = 2
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ZS" = (
 /turf/open/floor/carpet/red,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 
 (1,1,1) = {"
 kp

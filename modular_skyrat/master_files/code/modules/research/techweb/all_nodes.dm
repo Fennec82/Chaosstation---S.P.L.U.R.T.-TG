@@ -293,7 +293,8 @@
 
 /datum/techweb_node/borg_engi/New()
 	design_ids += list(
-		"advanced_materials"
+		"advanced_materials",
+		"borg_upgrade_welding",
 	)
 	return ..()
 

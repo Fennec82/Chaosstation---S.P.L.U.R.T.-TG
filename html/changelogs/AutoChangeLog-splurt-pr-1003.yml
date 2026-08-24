@@ -1,4 +1,0 @@
-author: "UvvU"
-delete-after: True
-changes:
-  - rscdel: "Removed the concept of children"

@@ -282,10 +282,6 @@
 	name = "Teshari Regular"
 	icon_state = "teshari_regular"
 
-/datum/sprite_accessory/ears/mutant/teshari/regularalt
-	name = "Teshari Regular Alt"
-	icon_state = "teshari_feathers_regalt"
-
 /datum/sprite_accessory/ears/mutant/teshari/feathers_bushy
 	name = "Teshari Feathers Bushy"
 	icon_state = "teshari_feathers_bushy"
@@ -338,6 +334,11 @@
 /datum/sprite_accessory/ears/mutant/teshari/feathers_backstrafe
 	name = "Teshari Feathers Backstrafe"
 	icon_state = "teshari_feathers_backstrafe"
+	color_src = USE_ONE_COLOR
+
+/datum/sprite_accessory/ears/mutant/teshari/feathers_thinmohawk
+	name = "Teshari Feathers Thin Mohawk"
+	icon_state = "teshari_feathers_thinmohawk"
 	color_src = USE_ONE_COLOR
 
 /datum/sprite_accessory/ears/mutant/teshari/feathers_thin

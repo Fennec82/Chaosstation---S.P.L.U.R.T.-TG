@@ -17,8 +17,6 @@
 	disabling_threshold_percentage = 1
 	bodypart_flags = BODYPART_UNHUSKABLE
 	biological_state = (BIO_WOOD|BIO_JOINTED)
-	custom_materials = list(/datum/material/wood = SHEET_MATERIAL_AMOUNT * 2)
-	butcher_replacement = null
 
 /obj/item/bodypart/arm/left/ghetto/Initialize(mapload, ...)
 	. = ..()
@@ -43,8 +41,6 @@
 	disabling_threshold_percentage = 1
 	bodypart_flags = BODYPART_UNHUSKABLE
 	biological_state = (BIO_WOOD|BIO_JOINTED)
-	custom_materials = list(/datum/material/wood = SHEET_MATERIAL_AMOUNT * 2)
-	butcher_replacement = null
 
 /obj/item/bodypart/arm/right/ghetto/Initialize(mapload, ...)
 	. = ..()
@@ -67,8 +63,6 @@
 	disabling_threshold_percentage = 1
 	bodypart_flags = BODYPART_UNHUSKABLE
 	biological_state = (BIO_WOOD|BIO_JOINTED)
-	custom_materials = list(/datum/material/wood = SHEET_MATERIAL_AMOUNT * 2)
-	butcher_replacement = null
 
 /obj/item/bodypart/leg/left/ghetto/Initialize(mapload, ...)
 	. = ..()
@@ -91,8 +85,6 @@
 	disabling_threshold_percentage = 1
 	bodypart_flags = BODYPART_UNHUSKABLE
 	biological_state = (BIO_WOOD|BIO_JOINTED)
-	custom_materials = list(/datum/material/wood = SHEET_MATERIAL_AMOUNT * 2)
-	butcher_replacement = null
 
 /obj/item/bodypart/leg/right/ghetto/Initialize(mapload, ...)
 	. = ..()

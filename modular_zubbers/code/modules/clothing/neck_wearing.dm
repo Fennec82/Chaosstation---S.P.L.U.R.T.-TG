@@ -31,7 +31,6 @@ Use CTRL + SHIFT + LEFT CLICK to turn them on and off.
 	if(!iscarbon(user))
 		return NONE
 	if(only_functional)
-		to_chat(user, span_danger("[src] does not have a non-functional mode!"))
 		return NONE
 	var/mob/living/carbon/char = user
 	if((char.get_item_by_slot(ITEM_SLOT_NECK) == src) || (char.get_item_by_slot(ITEM_SLOT_OCLOTHING) == src))
@@ -103,7 +102,4 @@ Use CTRL + SHIFT + LEFT CLICK to turn them on and off.
 	only_functional = TRUE
 
 /obj/item/clothing/suit/armor/abductor/vest
-	only_functional = TRUE
-
-/obj/item/clothing/suit/hooded/cultrobes/eldritch
 	only_functional = TRUE

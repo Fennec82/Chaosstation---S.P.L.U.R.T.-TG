@@ -3,7 +3,6 @@
 	desc = "A fun way to get around."
 	icon_state = "scooter"
 	are_legs_exposed = TRUE
-	custom_materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT * 11)
 
 /obj/vehicle/ridden/scooter/Initialize(mapload)
 	. = ..()
@@ -40,9 +39,8 @@
 	desc = "An old, battered skateboard. It's still rideable, but probably unsafe."
 	icon_state = "skateboard"
 	density = FALSE
-	custom_materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT * 10)
 	///Sparks datum for when we grind on tables
-	var/datum/effect_system/basic/spark_spread/sparks
+	var/datum/effect_system/spark_spread/sparks
 	///Whether the board is currently grinding
 	var/grinding = FALSE
 	///Stores the time of the last crash plus a short cooldown, affects availability and outcome of certain actions
@@ -53,23 +51,19 @@
 	var/instability = 10
 	///If true, riding the skateboard with walk intent on will prevent crashing.
 	var/can_slow_down = TRUE
-	///The actual item for the skateboard
-	var/obj/item/melee/skateboard/board_item
 
-/obj/vehicle/ridden/scooter/skateboard/Initialize(mapload, obj/item/melee/skateboard/board_item)
+/obj/vehicle/ridden/scooter/skateboard/Initialize(mapload)
 	. = ..()
-	sparks = new(src, 1, FALSE)
+	sparks = new
+	sparks.set_up(1, 0, src)
 	sparks.attach(src)
-	if(!istype(board_item))
-		src.board_item = new board_item_type(src)
-	else
-		src.board_item = board_item
 
 /obj/vehicle/ridden/scooter/skateboard/make_ridable()
 	AddElement(/datum/element/ridable, /datum/component/riding/vehicle/scooter/skateboard)
 
 /obj/vehicle/ridden/scooter/skateboard/Destroy()
-	QDEL_NULL(sparks)
+	if(sparks)
+		QDEL_NULL(sparks)
 	return ..()
 
 /obj/vehicle/ridden/scooter/skateboard/relaymove(mob/living/user, direction)
@@ -180,7 +174,7 @@
 	if(has_buckled_mobs())
 		to_chat(skater, span_warning("You can't lift this up when somebody's on it."))
 		return
-	skater.put_in_hands(board_item)
+	skater.put_in_hands(new board_item_type(get_turf(skater)))
 	qdel(src)
 
 /obj/vehicle/ridden/scooter/skateboard/pro
@@ -246,7 +240,6 @@
 	icon = 'icons/mob/rideables/vehicles.dmi'
 	icon_state = "scooter_frame"
 	w_class = WEIGHT_CLASS_NORMAL
-	custom_materials = list(/datum/material/iron = SHEET_MATERIAL_AMOUNT * 5)
 
 /obj/item/scooter_frame/attackby(obj/item/I, mob/user, list/modifiers, list/attack_modifiers)
 	if(!istype(I, /obj/item/stack/sheet/iron))

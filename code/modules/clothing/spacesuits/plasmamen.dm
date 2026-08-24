@@ -181,16 +181,12 @@
 /obj/item/clothing/head/helmet/space/plasmaman/worn_overlays(mutable_appearance/standing, isinhands)
 	. = ..()
 	if(!isinhands && !up)
-		// BUBBER EDIT START
-		. += mutable_appearance(worn_icon, visor_icon)
-		// BUBBER EDIT END
+		. += mutable_appearance('icons/mob/clothing/head/plasmaman_head.dmi', visor_icon)
 
 /obj/item/clothing/head/helmet/space/plasmaman/separate_worn_overlays(mutable_appearance/standing, mutable_appearance/draw_target, isinhands = FALSE, icon_file)
 	. = ..()
 	if(!isinhands && smile)
-		// BUBBER EDIT START
-		var/mutable_appearance/smiley = mutable_appearance(worn_icon, smile_state)
-		// BUBBER EDIT END
+		var/mutable_appearance/smiley = mutable_appearance('icons/mob/clothing/head/plasmaman_head.dmi', smile_state)
 		smiley.color = smile_color
 		. += smiley
 
@@ -210,10 +206,6 @@
 		if(!up)
 			to_chat(user, span_notice("Your helmet's torch can't pass through your welding visor!"))
 			set_light_on(FALSE)
-			// BUBBER EDIT ADDITION START
-			helmet_on = FALSE
-			update_appearance()
-			// BUBBER EDIT ADDITION END
 		else
 			set_light_on(TRUE)
 	else

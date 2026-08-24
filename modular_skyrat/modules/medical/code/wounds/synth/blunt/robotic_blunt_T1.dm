@@ -11,7 +11,6 @@
 	homemade_treat_text = "In a pinch, <b>percussive maintenance</b> can reset the screws - the chance of which is increased if done by <b>someone else</b> or \
 	with a <b>diagnostic HUD</b>!"
 	status_effect_type = /datum/status_effect/wound/blunt/robotic/moderate
-	treat_text_short = "Apply screwdriver or percussive maintenance"
 	treatable_tools = list(TOOL_SCREWDRIVER)
 	interaction_efficiency_penalty = 1.2
 	limp_slowdown = 2.5

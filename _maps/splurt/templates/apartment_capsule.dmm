@@ -2,73 +2,73 @@
 "ap" = (
 /obj/structure/flora/tree/jungle,
 /turf/open/misc/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "aK" = (
 /obj/machinery/light/directional,
 /obj/structure/table/reinforced,
 /obj/effect/spawner/random/food_or_drink/three_course_meal,
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bl" = (
 /obj/structure/chair/sofa/bench/right,
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bD" = (
 /obj/structure/chair/office{
 	dir = 8
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bL" = (
 /obj/structure/fans,
 /obj/effect/mapping_helpers/broken_machine,
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bP" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/item/kirbyplants,
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cA" = (
 /turf/closed/wall/mineral/titanium/survival/pod,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "eg" = (
 /obj/structure/flora/rock,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "eH" = (
 /obj/structure/flora/rock/pile/icy,
 /turf/open/misc/dirt/dark/station,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "fj" = (
 /obj/item/bikehorn/rubberducky{
 	pixel_y = -7
 	},
 /turf/open/water/jungle,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "fX" = (
 /turf/open/misc/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hj" = (
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jg" = (
 /obj/structure/flora/biolumi/mine,
 /turf/open/water/jungle,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jv" = (
 /obj/structure/flora/grass/jungle,
 /turf/open/misc/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jy" = (
 /obj/effect/turf_decal/box,
 /obj/structure/ore_box,
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jE" = (
 /obj/item/toy/beach_ball,
 /turf/open/water/jungle,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "kd" = (
 /obj/effect/turf_decal{
 	dir = 4
@@ -78,19 +78,19 @@
 	pixel_x = 0;
 	pixel_y = 0
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ln" = (
 /obj/structure/flora/rock/pile,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "lw" = (
 /obj/structure/fans/tiny/invisible,
 /obj/machinery/door/airlock/survival_pod/glass,
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mo" = (
 /turf/closed/indestructible/rock,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mC" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
@@ -99,17 +99,17 @@
 /obj/item/paper_bin,
 /obj/item/pen/red,
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nl" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ns" = (
 /obj/structure/dresser,
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oh" = (
 /obj/structure/rack,
 /obj/item/shovel{
@@ -132,7 +132,7 @@
 	dir = 4
 	},
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "os" = (
 /obj/item/storage/box/donkpockets{
 	pixel_y = 7;
@@ -141,86 +141,86 @@
 /obj/machinery/light/directional,
 /obj/structure/table/survival_pod,
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oO" = (
 /obj/structure/table/reinforced,
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oP" = (
 /obj/structure/flora/rock/pile/jungle/style_random,
 /turf/open/misc/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "rK" = (
 /turf/open/water/jungle,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "sf" = (
 /obj/structure/flora/rock/pile/icy,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "sw" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
 /obj/machinery/vending/dorms,
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tq" = (
 /obj/machinery/telecomms/relay/preset/auto,
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tU" = (
 /obj/machinery/door/airlock/survival_pod,
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "uD" = (
 /obj/structure/fans/tiny/invisible,
 /obj/effect/spawner/structure/window/survival_pod,
 /turf/open/floor/plating,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "va" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "wC" = (
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "wD" = (
 /obj/effect/turf_decal{
 	dir = 4
 	},
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "wO" = (
 /obj/structure/flora/rock/pile/jungle/style_random,
 /turf/open/misc/dirt/dark/station,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xo" = (
 /obj/structure/curtain,
 /obj/item/soap/nanotrasen,
 /obj/machinery/shower/directional/north,
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yq" = (
 /obj/effect/spawner/structure/window/survival_pod,
 /obj/structure/fans/tiny/invisible,
 /turf/open/floor/plating,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yP" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/tree/jungle/small,
 /turf/open/misc/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ad" = (
 /obj/structure/closet/cabinet,
 /obj/structure/sign/poster/contraband/random/directional/west,
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Bo" = (
 /obj/effect/turf_decal/vg_decals/department/mining,
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "BP" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
@@ -229,13 +229,13 @@
 	dir = 9
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Cd" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Cy" = (
 /obj/effect/turf_decal/bot_white,
 /obj/machinery/light/directional{
@@ -246,55 +246,55 @@
 	pixel_y = 0
 	},
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "CC" = (
 /obj/machinery/room_controller/directional/west,
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "CQ" = (
 /obj/item/toy/plush/bubbleplush,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Eg" = (
 /turf/closed/wall/mineral/titanium/survival/nodiagonal,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "EA" = (
 /obj/machinery/light_switch/directional/north,
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "EL" = (
 /turf/open/misc/dirt/dark/station,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "EU" = (
 /obj/structure/flora/grass/jungle,
 /turf/open/misc/dirt/dark/station,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "GI" = (
 /obj/structure/mecha_wreckage/ripley,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "GU" = (
 /obj/structure/flora/rock/pile/jungle/style_random,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "IM" = (
 /obj/machinery/smartfridge/survival_pod,
 /obj/structure/sign/poster/contraband/random/directional/north,
 /obj/effect/mapping_helpers/broken_machine,
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "JL" = (
 /turf/closed/indestructible/hoteldoor{
 	icon_state = "door_closed";
 	icon = 'icons/obj/doors/puzzledoor/default.dmi'
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ke" = (
 /obj/effect/turf_decal/arrows{
 	dir = 1
 	},
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "KW" = (
 /obj/structure/rack{
 	pixel_x = 0;
@@ -321,12 +321,12 @@
 	dir = 1
 	},
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "KZ" = (
 /obj/machinery/microwave,
 /obj/machinery/light_switch/directional/west,
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Lz" = (
 /obj/structure/bed/double/pod{
 	dir = 1
@@ -335,22 +335,22 @@
 	dir = 1
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "LS" = (
 /obj/machinery/door/airlock/survival_pod/glass,
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "MA" = (
 /obj/structure/flora/grass/jungle/b,
 /turf/open/misc/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ne" = (
 /turf/open/space/bluespace,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "NF" = (
 /obj/machinery/light/small,
 /turf/open/water/jungle,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ox" = (
 /obj/structure/toilet{
 	pixel_x = -4;
@@ -363,7 +363,7 @@
 	dir = 8
 	},
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Pl" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -373,7 +373,7 @@
 	},
 /obj/machinery/computer,
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "PF" = (
 /obj/machinery/light/directional,
 /obj/structure/table/wood,
@@ -381,31 +381,31 @@
 	pixel_y = 5
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Qi" = (
 /obj/machinery/light/small/blacklight/directional/west,
 /obj/machinery/portable_atmospherics/canister/air,
 /turf/open/misc/dirt/dark/station,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "QJ" = (
 /obj/item/gps/computer,
 /obj/effect/mapping_helpers/broken_machine,
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Rc" = (
 /turf/closed/mineral/volcanic,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Rl" = (
 /obj/structure/mirror/directional/east,
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "TM" = (
 /obj/structure/chair/sofa/bench/left,
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Vd" = (
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "WG" = (
 /obj/effect/turf_decal{
 	dir = 4
@@ -416,11 +416,11 @@
 /obj/structure/ore_box,
 /obj/effect/turf_decal/box,
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Yb" = (
 /obj/structure/bonfire/dense,
 /turf/open/misc/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "YN" = (
 /obj/structure/rack/shelf,
 /obj/item/clothing/shoes/sandal{
@@ -437,11 +437,11 @@
 	},
 /obj/effect/turf_decal/bot_white,
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Zr" = (
 /obj/effect/turf_decal/box/white,
 /turf/open/floor/pod/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 
 (1,1,1) = {"
 Ne

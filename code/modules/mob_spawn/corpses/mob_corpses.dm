@@ -301,7 +301,6 @@
 	shoes = /obj/item/clothing/shoes/sandal/magic
 	head = /obj/item/clothing/head/collectable/paper
 
-/* SPLURT REMOVAL. Modular Private Security.
 /obj/effect/mob_spawn/corpse/human/nanotrasensoldier
 	name = "\improper Nanotrasen Private Security Officer"
 	outfit = /datum/outfit/nanotrasensoldiercorpse
@@ -339,7 +338,6 @@
 	back = /obj/item/storage/backpack/security
 	id = /obj/item/card/id/advanced/centcom
 	id_trim = /datum/id_trim/centcom/corpse/assault
-*/
 
 /obj/effect/mob_spawn/corpse/human/nanotrasenelitesoldier
 	name = "\improper Nanotrasen Elite Assault Officer Corpse"

@@ -27,7 +27,7 @@
 					break
 
 			if(!already_exists)
-				product_categories += list(category)
+				product_categories += category
 
 	if(zzplurt_premium)
 		// We need this, because duplicates screw up the spritesheet!

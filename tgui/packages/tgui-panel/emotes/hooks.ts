@@ -1,12 +1,13 @@
-import { useAtomValue, useSetAtom } from 'jotai';
-import { emotesAtom, emotesVisibleAtom } from './atoms';
+import { useDispatch, useSelector } from 'tgui/backend';
+
+import { toggleEmotes } from './actions';
+import { selectEmotes } from './selectors';
 
 export const useEmotes = () => {
-  const emotes = useAtomValue(emotesAtom);
-  const setEmotesVisible = useSetAtom(emotesVisibleAtom);
-
+  const emotes = useSelector(selectEmotes);
+  const dispatch = useDispatch();
   return {
     ...emotes,
-    toggle: () => setEmotesVisible((visible) => !visible),
+    toggle: () => dispatch(toggleEmotes()),
   };
 };

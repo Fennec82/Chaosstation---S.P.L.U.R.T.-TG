@@ -13,7 +13,7 @@
 	pixel_y = 4
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "al" = (
 /obj/effect/turf_decal/stripes{
 	dir = 8
@@ -34,7 +34,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 4
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "am" = (
 /obj/structure/decorative{
 	name = "phoronic crystal";
@@ -105,7 +105,7 @@
 	pixel_y = 1
 	},
 /turf/open/floor/engine,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ap" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 5
@@ -116,7 +116,7 @@
 	pixel_y = -3
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "aw" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 10
@@ -124,7 +124,7 @@
 /turf/open/floor/iron/dark/corner{
 	dir = 4
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "az" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/kirbyplants/organic/plant22{
@@ -132,7 +132,7 @@
 	},
 /obj/structure/marker_beacon/fuchsia,
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "aE" = (
 /obj/effect/turf_decal/box/corners{
 	dir = 8
@@ -149,7 +149,7 @@
 	},
 /obj/effect/turf_decal/siding/dark/corner,
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "aH" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -163,7 +163,7 @@
 	pixel_y = 8
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "aJ" = (
 /obj/effect/turf_decal/stripes{
 	dir = 8
@@ -180,7 +180,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 4
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "aM" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 1
@@ -201,20 +201,20 @@
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "aP" = (
 /obj/structure/chair/sofa/bench/left{
 	dir = 4
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bh" = (
 /turf/open/indestructible/hoteltile{
 	icon_state = "black";
 	desc = null;
 	name = "void"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bi" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
@@ -227,7 +227,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 10
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bk" = (
 /obj/structure/broken_flooring/plating/always_floorplane/directional/west{
 	color = "#000000";
@@ -263,7 +263,7 @@
 	name = "floor binding"
 	},
 /turf/open/floor/iron/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bu" = (
 /obj/effect/turf_decal/trimline/dark/filled/line{
 	dir = 5
@@ -294,7 +294,7 @@
 /turf/open/floor/iron/white/textured_corner{
 	dir = 8
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bv" = (
 /obj/structure/decorative{
 	icon_state = "siding_wood";
@@ -320,13 +320,13 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "by" = (
 /turf/closed/indestructible/hotelwall{
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bE" = (
 /obj/structure/closet/secure_closet/freezer/meat{
 	color = "#9d9ddd";
@@ -335,10 +335,10 @@
 	req_access = null
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bF" = (
 /turf/closed/wall/mineral/wood/nonmetal,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bT" = (
 /obj/structure/decorative{
 	icon_state = "sand_side";
@@ -356,7 +356,7 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bW" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 6
@@ -375,7 +375,7 @@
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ca" = (
 /obj/structure/fluff/metalpole/end/left{
 	dir = 2;
@@ -386,7 +386,7 @@
 	desc = null;
 	name = "void"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cg" = (
 /obj/effect/overlay/water/top{
 	icon_state = "OLD_top";
@@ -402,7 +402,7 @@
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "co" = (
 /obj/effect/turf_decal/trimline/dark/filled/mid_joiner{
 	dir = 1
@@ -417,7 +417,7 @@
 	dir = 1
 	},
 /turf/open/floor/iron/white/smooth_half,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cp" = (
 /obj/structure/chair/pew/right,
 /obj/structure/railing/wooden_fencing{
@@ -428,7 +428,7 @@
 	color = "#634f33"
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cq" = (
 /obj/effect/turf_decal/box/white/corners{
 	dir = 1;
@@ -475,7 +475,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 6
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cu" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 9
@@ -485,7 +485,7 @@
 	color = "#3e3a57"
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cw" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 8
@@ -504,7 +504,7 @@
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cx" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 8
@@ -512,13 +512,13 @@
 /turf/open/floor/iron/dark/side{
 	dir = 4
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cy" = (
 /obj/effect/turf_decal/caution/stand_clear/white,
 /turf/open/indestructible/hoteltile{
 	icon_state = "podfloor"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cA" = (
 /obj/structure/decorative{
 	icon_state = "siding_plain_corner";
@@ -556,13 +556,13 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cF" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/end,
 /obj/effect/turf_decal/siding/wood/end,
 /obj/machinery/jukebox/no_access,
 /turf/open/floor/wood/large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cO" = (
 /obj/structure/decorative{
 	name = "void";
@@ -585,7 +585,7 @@
 	blocks_air = 0;
 	init_air = 1
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cR" = (
 /obj/effect/turf_decal/weather/sand,
 /obj/effect/overlay/water{
@@ -609,7 +609,7 @@
 	icon_state = "black";
 	fishing_datum = /datum/fish_source/river
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cU" = (
 /obj/machinery/jukebox/no_access{
 	pixel_x = 2
@@ -624,7 +624,7 @@
 	desc = null;
 	name = "void"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cY" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner,
 /obj/effect/turf_decal/siding/wood/corner{
@@ -632,7 +632,7 @@
 	color = "#634f33"
 	},
 /turf/open/floor/wood/tile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cZ" = (
 /obj/structure/decorative{
 	icon_state = "siding_plain_corner";
@@ -668,7 +668,7 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "db" = (
 /obj/effect/turf_decal/siding/dark/corner{
 	dir = 4
@@ -677,7 +677,7 @@
 	dir = 10
 	},
 /turf/open/indestructible/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "dt" = (
 /obj/structure/railing/corner/end/flip{
 	dir = 8;
@@ -698,7 +698,7 @@
 	dir = 8
 	},
 /turf/open/floor/wood/large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "dX" = (
 /obj/structure/decorative{
 	icon_state = "siding_plain";
@@ -724,11 +724,11 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ed" = (
 /obj/machinery/vending/autodrobe,
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "el" = (
 /obj/effect/turf_decal/siding/dark/corner{
 	dir = 4;
@@ -751,7 +751,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "podfloor"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ev" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 4
@@ -770,7 +770,7 @@
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "eD" = (
 /obj/structure/decorative{
 	icon_state = "siding_wood";
@@ -796,14 +796,14 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "eO" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 9;
 	color = "#634f33"
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "eV" = (
 /obj/structure/marker_beacon/yellow{
 	color = "#FFFFFF";
@@ -826,7 +826,7 @@
 	dir = 8
 	},
 /turf/open/floor/wood/large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ff" = (
 /obj/structure/chair/pew/right{
 	dir = 1
@@ -837,7 +837,7 @@
 	color = "#634f33"
 	},
 /turf/open/floor/wood/large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "fs" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 1
@@ -846,13 +846,13 @@
 	dir = 6
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "fu" = (
 /obj/effect/turf_decal/siding/wood/end{
 	dir = 8
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "fz" = (
 /obj/effect/turf_decal/tile/neutral/half{
 	alpha = 255;
@@ -873,7 +873,7 @@
 	dir = 1
 	},
 /turf/open/floor/wood/tile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "fB" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/reagent_containers/cup/glass/drinkingglass{
@@ -893,7 +893,7 @@
 	},
 /obj/structure/marker_beacon/bronze,
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "fF" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 1
@@ -913,7 +913,7 @@
 	color = "#634f33"
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "fH" = (
 /obj/structure/mop_bucket/janitorialcart{
 	dir = 8
@@ -931,11 +931,11 @@
 	pixel_y = 1
 	},
 /turf/open/floor/iron/dark/herringbone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "fI" = (
 /obj/machinery/telecomms/relay/preset/auto,
 /turf/open/floor/catwalk_floor,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "fV" = (
 /obj/structure/decorative{
 	name = "void";
@@ -954,7 +954,7 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "fZ" = (
 /obj/machinery/griddle{
 	color = "#9d9ddd";
@@ -962,7 +962,7 @@
 	light_color = "#9d9ddd"
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gf" = (
 /turf/closed/wall/mineral/titanium/shuttle_wall/window/evac{
 	icon_state = "15,16";
@@ -970,7 +970,7 @@
 	name = "window";
 	desc = null
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gu" = (
 /obj/effect/turf_decal/trimline/dark/filled/line{
 	dir = 5
@@ -996,14 +996,14 @@
 /turf/open/floor/iron/white/textured_corner{
 	dir = 8
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gx" = (
 /obj/structure/broken_flooring/plating/always_floorplane/directional/west{
 	color = "#000000";
 	dir = 4
 	},
 /turf/open/floor/engine,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gy" = (
 /obj/structure/decorative{
 	name = "void";
@@ -1039,11 +1039,11 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gC" = (
 /obj/machinery/vending/imported,
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gF" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 9
@@ -1062,7 +1062,7 @@
 	pixel_y = 15
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gH" = (
 /obj/structure/flora/bush/reed/style_4{
 	pixel_x = -7;
@@ -1077,7 +1077,7 @@
 	pixel_y = -3
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gM" = (
 /obj/structure/decorative{
 	icon_state = "siding_wood_end";
@@ -1093,7 +1093,7 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gY" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 4
@@ -1117,7 +1117,7 @@
 	dir = 4
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hg" = (
 /obj/effect/turf_decal/tile/dark/half{
 	alpha = 200;
@@ -1129,7 +1129,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "podfloor"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hk" = (
 /obj/effect/turf_decal/siding/wood,
 /obj/effect/turf_decal/siding/wood{
@@ -1150,7 +1150,7 @@
 	pixel_y = 0
 	},
 /turf/open/floor/iron/dark/smooth_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hl" = (
 /obj/structure/decorative{
 	icon_state = "siding_wood_end";
@@ -1166,7 +1166,7 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ho" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 5
@@ -1185,7 +1185,7 @@
 	pixel_y = 25
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hD" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 6
@@ -1204,7 +1204,7 @@
 	alpha = 155
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hF" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
 /obj/effect/turf_decal/siding/wood/end{
@@ -1216,7 +1216,7 @@
 	desc = null;
 	name = "void"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hJ" = (
 /obj/effect/turf_decal/caution{
 	dir = 8
@@ -1239,7 +1239,7 @@
 	dir = 1
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hK" = (
 /obj/effect/turf_decal/stripes{
 	dir = 1
@@ -1284,7 +1284,7 @@
 	pixel_x = 16
 	},
 /turf/open/floor/iron/dark/side,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hN" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner{
 	dir = 1
@@ -1302,11 +1302,11 @@
 	icon_state = "carpet_royalblack-9"
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hQ" = (
 /obj/machinery/vending/imported/yangyu,
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hV" = (
 /obj/effect/overlay/water/top{
 	icon_state = "OLD_top";
@@ -1323,7 +1323,7 @@
 	icon_state = "black";
 	fishing_datum = /datum/fish_source/river
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "iB" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark,
 /obj/effect/turf_decal/siding/wood{
@@ -1331,14 +1331,14 @@
 	color = "#634f33"
 	},
 /turf/open/floor/wood/large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "iG" = (
 /obj/effect/turf_decal/siding/wood/corner,
 /obj/effect/turf_decal/siding/wood{
 	dir = 9
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "iI" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 10
@@ -1360,7 +1360,7 @@
 	icon_state = "black";
 	fishing_datum = /datum/fish_source/portal/syndicate
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "iQ" = (
 /obj/structure/table/reinforced,
 /obj/item/book/manual/wiki/engineering_construction{
@@ -1375,7 +1375,7 @@
 	pixel_y = 6
 	},
 /turf/open/floor/iron/dark/herringbone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jg" = (
 /obj/structure/decorative{
 	icon_state = "sand_side";
@@ -1387,7 +1387,7 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jk" = (
 /obj/effect/turf_decal/siding/dark,
 /obj/effect/turf_decal/siding/dark{
@@ -1401,13 +1401,13 @@
 	},
 /obj/structure/sign/departments/evac/directional/north,
 /turf/open/indestructible/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jl" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 1
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jm" = (
 /obj/structure/table{
 	icon = 'icons/obj/smooth_structures/alien_table.dmi';
@@ -1426,7 +1426,7 @@
 	pixel_y = 4
 	},
 /turf/open/floor/iron/dark/smooth_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jn" = (
 /obj/effect/turf_decal/stripes{
 	dir = 8
@@ -1465,7 +1465,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 4
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "js" = (
 /obj/effect/turf_decal/stripes{
 	dir = 10
@@ -1484,7 +1484,7 @@
 /turf/open/floor/iron/dark/corner{
 	dir = 4
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jz" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner{
 	dir = 4
@@ -1510,14 +1510,14 @@
 	pixel_y = -31
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jB" = (
 /obj/effect/light_emitter/interlink{
 	light_color = "#3e3a57";
 	color = "#3e3a57"
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jD" = (
 /obj/structure/decorative{
 	icon_state = "borgmat";
@@ -1529,7 +1529,7 @@
 	name = "yoga mat"
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jK" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 6
@@ -1538,7 +1538,7 @@
 	dir = 6
 	},
 /turf/open/floor/wood/tile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jO" = (
 /obj/effect/overlay/water/top{
 	icon_state = "OLD_top";
@@ -1566,10 +1566,10 @@
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jQ" = (
 /turf/closed/indestructible/binary,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jS" = (
 /obj/effect/light_emitter/interlink{
 	light_color = "#3e3a57";
@@ -1581,7 +1581,7 @@
 	pixel_x = -1
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jT" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 10
@@ -1613,7 +1613,7 @@
 	},
 /obj/structure/marker_beacon/violet,
 /turf/open/floor/wood/tile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jV" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 10
@@ -1634,7 +1634,7 @@
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jX" = (
 /obj/structure/fireplace,
 /obj/structure/railing{
@@ -1650,7 +1650,7 @@
 	pixel_y = -8
 	},
 /turf/open/indestructible/cobble,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ki" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 6
@@ -1672,13 +1672,13 @@
 	icon_state = "black";
 	fishing_datum = /datum/fish_source/lunar
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "kt" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 8
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ku" = (
 /obj/machinery/light/floor{
 	color = "#ff66ff";
@@ -1686,7 +1686,7 @@
 	bulb_power = 0.5
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "kH" = (
 /obj/structure/broken_flooring/plating/always_floorplane/directional/west{
 	color = "#000000";
@@ -1700,13 +1700,13 @@
 	pixel_y = 1
 	},
 /turf/open/floor/engine,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "kK" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 10
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "kL" = (
 /obj/effect/turf_decal/siding/dark/corner{
 	dir = 1
@@ -1753,14 +1753,14 @@
 /turf/open/floor/iron/dark/side{
 	dir = 6
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "kP" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 2;
 	color = "#634f33"
 	},
 /turf/open/floor/wood/large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "kS" = (
 /obj/structure/marker_beacon/yellow{
 	color = "#FFFFFF";
@@ -1774,7 +1774,7 @@
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "kU" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 1
@@ -1783,7 +1783,7 @@
 	dir = 1
 	},
 /turf/open/floor/wood/large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "kZ" = (
 /obj/structure/closet/shuttle/medical{
 	pixel_y = 32;
@@ -1813,7 +1813,7 @@
 	},
 /obj/item/storage/medkit/regular,
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "la" = (
 /obj/effect/turf_decal/weather/sand,
 /obj/structure/closet/crate/wooden/storage_barrel{
@@ -1821,7 +1821,7 @@
 	pixel_y = 1
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "lb" = (
 /obj/effect/overlay/water/top{
 	icon_state = "OLD_top";
@@ -1845,7 +1845,7 @@
 	icon_state = "black";
 	fishing_datum = /datum/fish_source/river
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "le" = (
 /obj/structure/chair/stool/bar/directional/south{
 	dir = 8;
@@ -1855,7 +1855,7 @@
 	dir = 1
 	},
 /turf/open/floor/carpet/black,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "lA" = (
 /obj/effect/turf_decal/stripes,
 /obj/effect/turf_decal/stripes/white/line{
@@ -1879,7 +1879,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 1
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "lB" = (
 /obj/effect/turf_decal/stripes{
 	dir = 5
@@ -1898,7 +1898,7 @@
 /turf/open/floor/iron/dark/corner{
 	dir = 8
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "lO" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 4
@@ -1906,14 +1906,14 @@
 /turf/open/floor/iron/dark/side{
 	dir = 8
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "lS" = (
 /obj/structure/flora/grass/jungle/b{
 	pixel_x = -8;
 	pixel_y = -2
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "lV" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 2;
@@ -1924,14 +1924,14 @@
 	color = "#634f33"
 	},
 /turf/open/floor/wood/tile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "lX" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 2;
 	color = "#634f33"
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mo" = (
 /obj/effect/turf_decal/box/white/corners{
 	dir = 8;
@@ -1986,7 +1986,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 5
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ms" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner,
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner{
@@ -2004,7 +2004,7 @@
 	pixel_y = 9
 	},
 /turf/open/floor/engine,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mv" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 9
@@ -2021,7 +2021,7 @@
 	color = "#222222"
 	},
 /turf/open/floor/wood/large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mD" = (
 /obj/effect/turf_decal/stripes{
 	dir = 1
@@ -2043,14 +2043,14 @@
 	pixel_x = 6
 	},
 /turf/open/floor/iron/dark/corner,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mE" = (
 /obj/effect/turf_decal/siding/dark/corner,
 /obj/effect/turf_decal/siding/dark{
 	dir = 9
 	},
 /turf/open/indestructible/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mF" = (
 /obj/effect/turf_decal/box/white/corners{
 	dir = 8;
@@ -2072,7 +2072,7 @@
 	},
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner,
 /turf/open/floor/iron/dark/corner,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mL" = (
 /obj/effect/turf_decal/trimline/dark/filled/line{
 	dir = 4
@@ -2095,7 +2095,7 @@
 /turf/open/floor/iron/white/smooth_half{
 	dir = 1
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mM" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
@@ -2115,7 +2115,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 5
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mN" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/kitchen/rollingpin{
@@ -2127,7 +2127,7 @@
 	pixel_y = 2
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mQ" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark,
 /obj/effect/turf_decal/siding/wood,
@@ -2143,7 +2143,7 @@
 	dir = 4
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mS" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 4
@@ -2160,7 +2160,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 8
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mT" = (
 /obj/structure/table/reinforced,
 /obj/item/geiger_counter{
@@ -2187,7 +2187,7 @@
 	},
 /obj/structure/marker_beacon/cerulean,
 /turf/open/floor/iron/dark/herringbone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mW" = (
 /obj/effect/turf_decal/box/white/corners{
 	dir = 1;
@@ -2213,7 +2213,7 @@
 /turf/open/floor/iron/dark/corner{
 	dir = 4
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nk" = (
 /obj/structure/decorative{
 	icon_state = "siding_plain_corner";
@@ -2249,7 +2249,7 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nn" = (
 /obj/structure/hedge,
 /obj/structure/decorative{
@@ -2266,7 +2266,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "np" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 6
@@ -2286,7 +2286,7 @@
 	icon_state = "black";
 	fishing_datum = /datum/fish_source/lunar
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nq" = (
 /obj/effect/turf_decal/trimline/dark/filled/line{
 	dir = 4
@@ -2312,7 +2312,7 @@
 /turf/open/floor/iron/white/smooth_half{
 	dir = 1
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nz" = (
 /obj/structure/decorative{
 	anchored = 1;
@@ -2325,7 +2325,7 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nA" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 6
@@ -2335,7 +2335,7 @@
 	color = "#634f33"
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nK" = (
 /obj/effect/turf_decal/siding/dark/corner{
 	dir = 2;
@@ -2357,7 +2357,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "podfloor"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nN" = (
 /obj/structure/medieval/bed_2x2{
 	dir = 8;
@@ -2373,11 +2373,11 @@
 	desc = null;
 	name = "void"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nO" = (
 /obj/machinery/vending/hotdog,
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nX" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/end,
 /obj/effect/turf_decal/siding/wideplating_new/dark/end{
@@ -2389,7 +2389,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "podfloor"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oa" = (
 /obj/effect/turf_decal/stripes{
 	dir = 1
@@ -2404,7 +2404,7 @@
 	},
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner,
 /turf/open/floor/iron/dark/side,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "od" = (
 /obj/effect/overlay/water/top{
 	icon_state = "OLD_top";
@@ -2432,19 +2432,19 @@
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "on" = (
 /obj/structure/hedge/opaque,
 /obj/structure/window/reinforced/tinted/spawner/directional/north,
 /obj/structure/window/reinforced/tinted/spawner/directional/south,
 /turf/open/floor/iron/dark/smooth_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oo" = (
 /obj/structure/chair/sofa/bench/left{
 	dir = 1
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "op" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 4
@@ -2458,14 +2458,14 @@
 	color = "#FFFFFF"
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "or" = (
 /obj/structure/flora/grass/jungle/b{
 	pixel_x = -22;
 	pixel_y = 21
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ou" = (
 /obj/structure/fermenting_barrel{
 	pixel_x = -10;
@@ -2473,7 +2473,7 @@
 	},
 /obj/effect/turf_decal/weather/sand,
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ox" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 9
@@ -2484,7 +2484,7 @@
 	pixel_y = 8
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oB" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 6
@@ -2508,7 +2508,7 @@
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oD" = (
 /obj/effect/turf_decal/tile/dark/half{
 	alpha = 200
@@ -2518,7 +2518,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "podfloor"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oI" = (
 /obj/structure/hedge,
 /obj/structure/decorative{
@@ -2534,7 +2534,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oO" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 4
@@ -2554,7 +2554,7 @@
 	icon_state = "black";
 	fishing_datum = /datum/fish_source/lunar
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oP" = (
 /obj/structure/decorative{
 	icon_state = "siding_plain";
@@ -2580,7 +2580,7 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oQ" = (
 /obj/effect/turf_decal/stripes,
 /obj/effect/turf_decal/stripes/white/line{
@@ -2597,7 +2597,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 1
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oR" = (
 /obj/effect/turf_decal/trimline/dark/filled/line{
 	dir = 6
@@ -2619,14 +2619,14 @@
 /turf/open/floor/iron/white/textured_corner{
 	dir = 1
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oS" = (
 /obj/item/storage/cans/sixbeer{
 	pixel_x = 0;
 	pixel_y = 4
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oU" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/end,
 /obj/effect/turf_decal/siding/wood/end,
@@ -2636,7 +2636,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "podfloor"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oV" = (
 /obj/effect/turf_decal/siding/dark/corner{
 	dir = 4;
@@ -2648,7 +2648,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "podfloor"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oX" = (
 /obj/effect/turf_decal/siding/dark/corner{
 	dir = 4
@@ -2679,19 +2679,19 @@
 /turf/open/floor/iron/dark/side{
 	dir = 10
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "pi" = (
 /turf/closed/indestructible/hotelwall{
 	color = "#000000"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "pj" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "po" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 4
@@ -2713,13 +2713,13 @@
 	icon_state = "black";
 	fishing_datum = /datum/fish_source/lunar
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "pq" = (
 /obj/effect/turf_decal/siding/dark,
 /turf/open/floor/iron/dark/side{
 	dir = 1
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "pu" = (
 /obj/effect/turf_decal/stripes{
 	dir = 4
@@ -2745,7 +2745,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 8
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "pB" = (
 /obj/structure/decorative{
 	icon_state = "siding_plain_end";
@@ -2780,7 +2780,7 @@
 	name = "wall binding"
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "pH" = (
 /obj/structure/decorative{
 	icon_state = "drain";
@@ -2826,7 +2826,7 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/iron/freezer,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "pI" = (
 /obj/effect/turf_decal/weather/sand,
 /obj/effect/overlay/water/top{
@@ -2844,7 +2844,7 @@
 	icon_state = "black";
 	fishing_datum = /datum/fish_source/portal/syndicate
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "pS" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 1
@@ -2881,7 +2881,7 @@
 	pixel_x = 16
 	},
 /turf/open/floor/iron/dark/side,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "pY" = (
 /obj/effect/turf_decal/siding/dark/corner{
 	dir = 8;
@@ -2890,7 +2890,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "podfloor"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "qd" = (
 /obj/structure/decorative{
 	icon_state = "siding_wood";
@@ -2916,7 +2916,7 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "qh" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark,
 /obj/effect/turf_decal/siding/wideplating_new/dark{
@@ -2933,7 +2933,7 @@
 	dir = 4
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "qq" = (
 /obj/structure/hedge,
 /obj/structure/decorative{
@@ -2949,7 +2949,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "qs" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 8
@@ -2958,7 +2958,7 @@
 	dir = 4
 	},
 /turf/open/indestructible/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "qz" = (
 /obj/structure/decorative{
 	icon_state = "siding_plain_end";
@@ -2972,7 +2972,7 @@
 	density = 1
 	},
 /turf/closed/indestructible/steel,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "qW" = (
 /obj/structure/decorative{
 	name = "void";
@@ -3008,14 +3008,14 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ri" = (
 /obj/effect/turf_decal/siding/wood/end{
 	dir = 8
 	},
 /obj/structure/railing/wooden_fencing,
 /turf/open/floor/carpet/black,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "rm" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 6
@@ -3035,7 +3035,7 @@
 	icon_state = "shell3"
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "rx" = (
 /obj/structure/chair/sofa/corp/left{
 	dir = 1
@@ -3044,7 +3044,7 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark,
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "rI" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 5
@@ -3070,7 +3070,7 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/iron/freezer,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "rM" = (
 /obj/effect/turf_decal/siding/dark/corner,
 /obj/machinery/light/floor{
@@ -3086,7 +3086,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 9
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "sg" = (
 /obj/effect/turf_decal/trimline/dark/filled/line{
 	dir = 10
@@ -3110,7 +3110,7 @@
 /turf/open/floor/iron/white/textured_corner{
 	dir = 4
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "sh" = (
 /obj/effect/turf_decal/siding/wood/end{
 	dir = 8
@@ -3126,7 +3126,7 @@
 	desc = null;
 	name = "void"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "sk" = (
 /obj/structure/marker_beacon/cerulean{
 	color = "#FFFFFF";
@@ -3136,20 +3136,20 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "sm" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 9
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "sp" = (
 /obj/structure/flora/grass/jungle/b/style_5{
 	pixel_x = -4;
 	pixel_y = 6
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ss" = (
 /obj/structure/reagent_dispensers/watertank,
 /obj/item/reagent_containers/cup/bucket{
@@ -3165,11 +3165,11 @@
 /obj/structure/railing,
 /obj/structure/marker_beacon/indigo,
 /turf/open/floor/iron/dark/herringbone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "sC" = (
 /obj/machinery/vending/imported/mothic,
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "sF" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner{
 	dir = 1
@@ -3183,7 +3183,7 @@
 	dir = 4
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "sJ" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 1
@@ -3203,7 +3203,7 @@
 	dir = 8
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tf" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 4
@@ -3215,7 +3215,7 @@
 	dir = 8
 	},
 /turf/open/floor/wood/large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tg" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 5
@@ -3223,7 +3223,7 @@
 /turf/open/floor/iron/dark/corner{
 	dir = 8
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tv" = (
 /obj/effect/turf_decal/box/white/corners{
 	dir = 4
@@ -3236,7 +3236,7 @@
 	dir = 10
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tx" = (
 /obj/effect/turf_decal/weather/sand,
 /obj/effect/light_emitter/interlink{
@@ -3248,7 +3248,7 @@
 	pixel_y = 3
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tA" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 9
@@ -3266,14 +3266,14 @@
 	pixel_y = 21
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tB" = (
 /obj/structure/flora/grass/jungle/b/style_3{
 	pixel_x = 6;
 	pixel_y = 15
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tG" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/machinery/processor{
@@ -3285,7 +3285,7 @@
 	},
 /obj/structure/marker_beacon/indigo,
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tL" = (
 /obj/structure/closet/secure_closet/freezer/kitchen{
 	req_access = null;
@@ -3295,7 +3295,7 @@
 	},
 /obj/structure/marker_beacon/indigo,
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tO" = (
 /obj/effect/turf_decal/siding/wood/end,
 /obj/structure/railing/corner/end{
@@ -3303,7 +3303,7 @@
 	color = "#5d341f"
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tS" = (
 /obj/effect/turf_decal/weather/sand,
 /obj/effect/overlay/water/top{
@@ -3322,7 +3322,7 @@
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tT" = (
 /obj/structure/decorative{
 	icon_state = "siding_wood";
@@ -3348,7 +3348,7 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tU" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 4
@@ -3382,7 +3382,7 @@
 	pixel_y = 6
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ub" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 1
@@ -3391,7 +3391,7 @@
 	dir = 1
 	},
 /turf/open/floor/iron/dark/side,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "uf" = (
 /obj/effect/overlay/water/top{
 	icon_state = "OLD_top";
@@ -3417,7 +3417,7 @@
 	icon_state = "black";
 	fishing_datum = /datum/fish_source/lunar
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ui" = (
 /obj/structure/railing{
 	color = "#5d341f";
@@ -3429,7 +3429,7 @@
 	color = "#634f33"
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ul" = (
 /obj/effect/overlay/water/top{
 	icon_state = "OLD_top";
@@ -3447,7 +3447,7 @@
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "us" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 9
@@ -3461,7 +3461,7 @@
 	pixel_y = -12
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "uE" = (
 /obj/structure/reagent_dispensers/water_cooler{
 	pixel_y = 20;
@@ -3483,7 +3483,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "podfloor"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "uL" = (
 /obj/structure/railing/wooden_fencing{
 	dir = 8
@@ -3515,7 +3515,7 @@
 	pixel_y = -3
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "uO" = (
 /obj/effect/turf_decal/stripes/corner,
 /obj/effect/turf_decal/stripes/white/corner{
@@ -3530,7 +3530,7 @@
 /turf/open/floor/iron/dark/corner{
 	dir = 4
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "uQ" = (
 /turf/closed/wall/mineral/titanium/shuttle_wall/window/evac{
 	icon_state = "15,14";
@@ -3538,7 +3538,7 @@
 	name = "window";
 	desc = "A window into the nothingness."
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vA" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
@@ -3560,7 +3560,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 5
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vC" = (
 /obj/structure/hedge,
 /obj/structure/decorative{
@@ -3586,7 +3586,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vF" = (
 /obj/structure/marker_beacon/burgundy,
 /obj/machinery/oven/range{
@@ -3595,7 +3595,7 @@
 	light_color = "#9d9ddd"
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vI" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 1
@@ -3615,7 +3615,7 @@
 	dir = 8
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vQ" = (
 /obj/effect/turf_decal/siding/dark/corner{
 	dir = 8
@@ -3646,13 +3646,13 @@
 /turf/open/floor/iron/dark/side{
 	dir = 5
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vV" = (
 /obj/structure/chair/plastic{
 	dir = 8
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vW" = (
 /obj/structure/decorative{
 	icon_state = "siding_wood_end";
@@ -3668,14 +3668,14 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vX" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 10;
 	color = "#634f33"
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "wx" = (
 /obj/structure/table/bronze,
 /obj/item/towel{
@@ -3691,7 +3691,7 @@
 	pixel_y = 0
 	},
 /turf/open/floor/iron/dark/smooth_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "wB" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 9
@@ -3709,7 +3709,7 @@
 	icon_state = "carpet_royalblack-6"
 	},
 /turf/open/floor/wood/tile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "wF" = (
 /obj/structure/decorative{
 	name = "phoronic crystal";
@@ -3775,7 +3775,7 @@
 	color = "ff9fe5"
 	},
 /turf/open/floor/engine,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "wJ" = (
 /obj/structure/table/bronze,
 /obj/structure/decorative{
@@ -3801,7 +3801,7 @@
 	},
 /obj/structure/mirror/directional/east,
 /turf/open/floor/iron/dark/smooth_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "wP" = (
 /obj/effect/turf_decal/box/white/corners{
 	dir = 4;
@@ -3832,7 +3832,7 @@
 /turf/open/floor/iron/dark/corner{
 	dir = 1
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "wU" = (
 /obj/structure/table/wood/fancy/black,
 /obj/structure/decorative{
@@ -3861,7 +3861,7 @@
 	icon_state = "twitch"
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "wV" = (
 /obj/effect/overlay/water{
 	icon_state = "OLD_bottom"
@@ -3871,14 +3871,14 @@
 	},
 /obj/effect/turf_decal/siding/wideplating_new/dark,
 /turf/open/floor/iron/freezer,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "wZ" = (
 /obj/structure/flora/grass/jungle/b/style_5{
 	pixel_x = 2;
 	pixel_y = 3
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xc" = (
 /obj/effect/turf_decal/box/white/corners{
 	dir = 1;
@@ -3933,7 +3933,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 6
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xh" = (
 /obj/effect/turf_decal/tile/dark/half{
 	alpha = 200;
@@ -3952,7 +3952,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "podfloor"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xn" = (
 /obj/effect/turf_decal/siding/wood/end{
 	dir = 8
@@ -3968,7 +3968,7 @@
 	desc = null;
 	name = "void"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xo" = (
 /obj/effect/turf_decal/box/white/corners{
 	dir = 8;
@@ -3999,11 +3999,11 @@
 /turf/open/floor/iron/dark/corner{
 	dir = 1
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xp" = (
 /obj/machinery/vending/vendcation,
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xq" = (
 /obj/effect/turf_decal/weather/sand,
 /obj/structure/flora/grass/jungle/b/style_2{
@@ -4011,7 +4011,7 @@
 	pixel_y = -6
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xr" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 10
@@ -4028,7 +4028,7 @@
 /turf/open/floor/iron/dark/corner{
 	dir = 4
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xA" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 5
@@ -4049,7 +4049,7 @@
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xJ" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/chair/stool/bar{
@@ -4070,7 +4070,7 @@
 	},
 /obj/structure/marker_beacon/purple,
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xM" = (
 /obj/effect/turf_decal/box/corners{
 	dir = 4
@@ -4090,7 +4090,7 @@
 	dir = 1
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xQ" = (
 /obj/effect/turf_decal/box/white/corners{
 	dir = 2;
@@ -4116,7 +4116,7 @@
 /turf/open/floor/iron/dark/corner{
 	dir = 8
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xS" = (
 /obj/effect/light_emitter/interlink{
 	light_color = "#3e3a57";
@@ -4132,7 +4132,7 @@
 	color = "#634f33"
 	},
 /turf/open/floor/wood/large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xU" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner{
 	dir = 4
@@ -4153,7 +4153,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "podfloor"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xV" = (
 /obj/structure/hedge,
 /obj/structure/decorative{
@@ -4170,7 +4170,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xW" = (
 /obj/effect/overlay/water/top{
 	icon_state = "OLD_top"
@@ -4182,7 +4182,7 @@
 	icon_state = "OLD_bottom"
 	},
 /turf/open/floor/iron/freezer,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ya" = (
 /obj/structure/decorative{
 	name = "phoronic crystal";
@@ -4262,7 +4262,7 @@
 	pixel_y = 1
 	},
 /turf/open/floor/engine,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yc" = (
 /obj/effect/turf_decal/trimline/dark/filled/line,
 /obj/effect/turf_decal/trimline/dark/filled/line{
@@ -4277,7 +4277,7 @@
 	dir = 1
 	},
 /turf/open/floor/iron/white/smooth_half,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yd" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 6
@@ -4304,11 +4304,11 @@
 	dir = 1
 	},
 /turf/open/floor/wood/tile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yf" = (
 /obj/machinery/vending/cola/starkist,
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yl" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/end{
 	dir = 1
@@ -4317,7 +4317,7 @@
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yn" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 2;
@@ -4343,13 +4343,13 @@
 	name = "yoga mat"
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yo" = (
 /obj/structure/chair/sofa/bench/right{
 	dir = 4
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ys" = (
 /obj/effect/turf_decal/siding/dark/corner{
 	dir = 2;
@@ -4361,7 +4361,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "podfloor"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yw" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/end{
 	dir = 4
@@ -4376,10 +4376,10 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "podfloor"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yF" = (
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yY" = (
 /obj/structure/table/reinforced,
 /obj/item/screwdriver{
@@ -4390,7 +4390,7 @@
 	},
 /obj/item/wirecutters,
 /turf/open/floor/iron/dark/herringbone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "zc" = (
 /obj/effect/turf_decal/trimline/dark/filled/line{
 	dir = 4
@@ -4416,7 +4416,7 @@
 /turf/open/floor/iron/white/textured_edge{
 	dir = 4
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "zd" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/rag{
@@ -4436,7 +4436,7 @@
 	},
 /obj/structure/marker_beacon/bronze,
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "zs" = (
 /obj/machinery/door/airlock/grunge{
 	name = "Custodial Closet"
@@ -4450,7 +4450,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "podfloor"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "zx" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 9
@@ -4479,7 +4479,7 @@
 	desc = "its name is moldb"
 	},
 /turf/open/floor/wood/large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "zD" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 1
@@ -4489,7 +4489,7 @@
 	},
 /obj/structure/railing/wooden_fencing,
 /turf/open/floor/carpet/black,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "zF" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 8
@@ -4510,7 +4510,7 @@
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "zG" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 5
@@ -4519,7 +4519,7 @@
 /turf/open/floor/iron/dark/corner{
 	dir = 8
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "zM" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner{
 	dir = 1
@@ -4533,11 +4533,11 @@
 	dir = 8
 	},
 /turf/open/floor/wood/large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "zQ" = (
 /obj/machinery/vending/snack,
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "zY" = (
 /obj/structure/decorative{
 	icon_state = "siding_plain_end";
@@ -4553,7 +4553,7 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ae" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 1
@@ -4575,13 +4575,13 @@
 	icon_state = "carpet_royalblack-8"
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Au" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 9
 	},
 /turf/open/floor/iron/dark/corner,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ay" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 6
@@ -4599,7 +4599,7 @@
 	pixel_x = 2
 	},
 /turf/open/floor/wood/tile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "AL" = (
 /obj/effect/turf_decal/box/white/corners{
 	dir = 4;
@@ -4655,7 +4655,7 @@
 	pixel_y = -16
 	},
 /turf/open/floor/iron/checker,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "AM" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
@@ -4670,7 +4670,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 6
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "AR" = (
 /obj/effect/turf_decal/weather/sand,
 /obj/effect/turf_decal/weather/sand{
@@ -4692,7 +4692,7 @@
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "AV" = (
 /obj/structure/decorative{
 	name = "void";
@@ -4728,7 +4728,7 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "AW" = (
 /obj/effect/turf_decal/box/white/corners{
 	dir = 2;
@@ -4741,7 +4741,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 9
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "AY" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 8
@@ -4781,14 +4781,14 @@
 	dir = 8
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Bd" = (
 /obj/structure/fluff/fake_vent,
 /obj/machinery/light/floor{
 	color = "#ff66ff"
 	},
 /turf/open/floor/engine,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Be" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 5
@@ -4814,7 +4814,7 @@
 	color = "#222222"
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Bf" = (
 /obj/item/toy/plush/suspicious_protogen{
 	pixel_x = -21;
@@ -4829,11 +4829,11 @@
 	desc = null;
 	name = "void"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Bh" = (
 /obj/machinery/vending/donksofttoyvendor,
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Bj" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -4846,7 +4846,7 @@
 	pixel_y = 1
 	},
 /turf/open/floor/engine,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Bm" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner{
 	dir = 1
@@ -4867,7 +4867,7 @@
 	pixel_x = -9
 	},
 /turf/open/floor/engine,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Br" = (
 /obj/structure/chair/sofa/corp/right{
 	dir = 1
@@ -4883,14 +4883,14 @@
 	},
 /obj/structure/marker_beacon/purple,
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Bs" = (
 /obj/structure/broken_flooring/plating/always_floorplane/directional/west{
 	color = "#000000";
 	dir = 1
 	},
 /turf/open/floor/engine,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "BI" = (
 /obj/machinery/vending/wardrobe/jani_wardrobe,
 /obj/effect/turf_decal/siding/dark{
@@ -4905,7 +4905,7 @@
 	},
 /obj/structure/marker_beacon/purple,
 /turf/open/floor/iron/dark/smooth_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "BR" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 4
@@ -4936,7 +4936,7 @@
 /turf/open/floor/iron/dark/corner{
 	dir = 1
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ca" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 5
@@ -4951,7 +4951,7 @@
 	pixel_y = -2
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ch" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 1
@@ -4993,7 +4993,7 @@
 	pixel_x = 16
 	},
 /turf/open/floor/iron/dark/side,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ck" = (
 /obj/effect/turf_decal/stripes,
 /obj/effect/turf_decal/stripes/white/line{
@@ -5010,7 +5010,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 1
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Cp" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 8
@@ -5024,7 +5024,7 @@
 	pixel_y = -12
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Cq" = (
 /obj/structure/decorative{
 	icon_state = "siding_plain_end";
@@ -5040,7 +5040,7 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Cu" = (
 /obj/effect/turf_decal/tile/dark_blue/diagonal_edge,
 /obj/structure/toilet{
@@ -5050,7 +5050,7 @@
 	dir = 8
 	},
 /turf/open/floor/iron/white/diagonal,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "CL" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 2;
@@ -5061,7 +5061,7 @@
 	desc = null;
 	name = "void"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "CM" = (
 /obj/effect/overlay/water/top{
 	icon_state = "OLD_top";
@@ -5079,7 +5079,7 @@
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "CO" = (
 /obj/machinery/vending/boozeomat,
 /obj/item/reagent_containers/cup/glass/drinkingglass/shotglass{
@@ -5095,7 +5095,7 @@
 	pixel_y = 18
 	},
 /turf/closed/indestructible/steel,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Da" = (
 /obj/structure/broken_flooring/plating/always_floorplane/directional/west{
 	color = "#000000"
@@ -5105,7 +5105,7 @@
 	pixel_x = 8
 	},
 /turf/open/floor/engine,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Dc" = (
 /obj/structure/chair/sofa/corp/left,
 /obj/structure/railing/wooden_fencing{
@@ -5125,7 +5125,7 @@
 	dir = 1
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Dm" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner,
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner{
@@ -5144,7 +5144,7 @@
 	pixel_x = -9
 	},
 /turf/open/floor/engine,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Dz" = (
 /obj/structure/decorative{
 	icon_state = "sand_side";
@@ -5156,7 +5156,7 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "DB" = (
 /obj/effect/turf_decal/weather/sand,
 /obj/effect/overlay/water/top{
@@ -5176,7 +5176,7 @@
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "DG" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 4
@@ -5212,7 +5212,7 @@
 	dir = 4
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "DI" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 1
@@ -5226,7 +5226,7 @@
 	pixel_y = 16
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "DM" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/end{
 	dir = 8
@@ -5241,7 +5241,7 @@
 /obj/structure/table/wood,
 /obj/structure/marker_beacon/purple,
 /turf/open/floor/wood/large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "DO" = (
 /obj/structure/decorative{
 	name = "phoronic crystal";
@@ -5263,7 +5263,7 @@
 	color = "#cd72f5"
 	},
 /turf/open/floor/engine,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ec" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 1
@@ -5281,11 +5281,11 @@
 	icon_state = "carpet_royalblack-4"
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ee" = (
 /obj/machinery/vending/games,
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ei" = (
 /obj/structure/hedge,
 /obj/structure/decorative{
@@ -5302,7 +5302,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "El" = (
 /obj/machinery/shower/directional/north{
 	reagent_capacity = 90000;
@@ -5333,7 +5333,7 @@
 	icon_state = "OLD_bottom"
 	},
 /turf/open/floor/iron/freezer,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ex" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 1
@@ -5346,7 +5346,7 @@
 	dir = 8
 	},
 /turf/open/indestructible/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "EK" = (
 /obj/structure/decorative{
 	icon_state = "siding_wood";
@@ -5376,14 +5376,14 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "EM" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 5;
 	color = "#634f33"
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "EY" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 8
@@ -5393,7 +5393,7 @@
 	},
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner,
 /turf/open/floor/wood/tile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Fh" = (
 /obj/structure/decorative{
 	icon_state = "siding_plain";
@@ -5419,7 +5419,7 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Fk" = (
 /obj/effect/light_emitter/interlink{
 	light_color = "#3e3a57";
@@ -5429,13 +5429,13 @@
 	dir = 4
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Fn" = (
 /obj/structure/chair/sofa/bench/right{
 	dir = 1
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Fu" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 5
@@ -5445,7 +5445,7 @@
 	color = "#3e3a57"
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Fz" = (
 /obj/structure/flora/bush/reed/style_3{
 	pixel_x = 10;
@@ -5455,7 +5455,7 @@
 	dir = 8
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "FB" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 9
@@ -5464,7 +5464,7 @@
 	dir = 5
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "FC" = (
 /obj/structure/chair/pew/left{
 	dir = 1
@@ -5479,10 +5479,10 @@
 	color = "#634f33"
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "FK" = (
 /turf/closed/indestructible/steel,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "FR" = (
 /obj/structure/decorative{
 	name = "void";
@@ -5495,7 +5495,7 @@
 	desc = null;
 	name = "void"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "FZ" = (
 /obj/item/reagent_containers/spray/cleaner{
 	pixel_x = -7;
@@ -5526,7 +5526,7 @@
 	pixel_y = -5
 	},
 /turf/open/floor/iron/dark/smooth_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Gm" = (
 /obj/effect/turf_decal/tile/dark/half{
 	alpha = 200;
@@ -5538,7 +5538,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "podfloor"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Go" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 9
@@ -5555,7 +5555,7 @@
 	color = "#FFFFFF"
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Gu" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/end{
 	dir = 8
@@ -5570,7 +5570,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "podfloor"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Gx" = (
 /obj/structure/decorative{
 	name = "void";
@@ -5606,7 +5606,7 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Gy" = (
 /obj/effect/turf_decal/siding/wood/end{
 	color = "#634f33";
@@ -5618,14 +5618,14 @@
 	desc = null;
 	name = "void"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "GJ" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 9
 	},
 /obj/item/toy/seashell,
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "GM" = (
 /obj/structure/decorative{
 	name = "void";
@@ -5649,7 +5649,7 @@
 	desc = null;
 	name = "void"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "GN" = (
 /obj/effect/turf_decal/siding/dark/corner{
 	dir = 4
@@ -5688,7 +5688,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 10
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "GQ" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner{
 	dir = 8
@@ -5705,7 +5705,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "podfloor"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Hd" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/structure/desk_bell{
@@ -5720,7 +5720,7 @@
 	pixel_y = 8
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Hl" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 9
@@ -5738,7 +5738,7 @@
 	},
 /obj/item/toy/seashell,
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Hn" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 6
@@ -5753,7 +5753,7 @@
 	dir = 6
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Hw" = (
 /obj/structure/hedge,
 /obj/structure/decorative{
@@ -5769,7 +5769,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "HB" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner,
 /obj/effect/turf_decal/siding/wideplating_new/dark{
@@ -5782,7 +5782,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "podfloor"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "HW" = (
 /obj/structure/decorative{
 	icon_state = "siding_plain_corner";
@@ -5817,7 +5817,7 @@
 /turf/closed/indestructible/hotelwall{
 	color = "#000000"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "HX" = (
 /obj/structure/table/wood,
 /obj/item/food/kebab/tail{
@@ -5839,7 +5839,7 @@
 	icon_state = "twitch"
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "HZ" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner{
 	dir = 8
@@ -5859,7 +5859,7 @@
 	pixel_y = 9
 	},
 /turf/open/floor/engine,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ib" = (
 /obj/effect/turf_decal/trimline/dark/filled/line{
 	dir = 8
@@ -5881,7 +5881,7 @@
 /turf/open/floor/iron/white/textured_edge{
 	dir = 8
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Iq" = (
 /obj/structure/marker_beacon/purple{
 	pixel_x = 16;
@@ -5894,7 +5894,7 @@
 	desc = null;
 	name = "void"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ix" = (
 /obj/structure/chair/sofa/corp/corner{
 	dir = 4
@@ -5912,7 +5912,7 @@
 	},
 /obj/structure/marker_beacon/purple,
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "IG" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 8
@@ -5921,7 +5921,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 4
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "II" = (
 /obj/effect/overlay/water/top{
 	icon_state = "OLD_top";
@@ -5944,7 +5944,7 @@
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "IQ" = (
 /obj/structure/decorative{
 	icon_state = "siding_wood_end";
@@ -5960,7 +5960,7 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "IW" = (
 /obj/structure/chair/sofa/corp,
 /obj/structure/railing/wooden_fencing{
@@ -5975,7 +5975,7 @@
 	dir = 1
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "IX" = (
 /obj/effect/turf_decal/trimline/dark/filled/line{
 	dir = 1
@@ -5990,7 +5990,7 @@
 	dir = 1
 	},
 /turf/open/floor/iron/white/smooth_half,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Jf" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 4
@@ -6007,7 +6007,7 @@
 	color = "#5d341f"
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Jl" = (
 /obj/effect/turf_decal/stripes{
 	dir = 9
@@ -6055,7 +6055,7 @@
 	pixel_x = 16
 	},
 /turf/open/floor/iron/dark/corner,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Jp" = (
 /obj/structure/decorative{
 	name = "void";
@@ -6073,7 +6073,7 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Jq" = (
 /obj/structure/decorative{
 	icon_state = "siding_wood_corner";
@@ -6109,7 +6109,7 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Jx" = (
 /obj/effect/turf_decal/siding/wood/end{
 	dir = 1
@@ -6126,7 +6126,7 @@
 	icon_state = "8,2";
 	dir = 2
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Jy" = (
 /obj/structure/railing{
 	color = "#5d341f";
@@ -6139,7 +6139,7 @@
 	color = "#634f33"
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "JB" = (
 /obj/item/toy/seashell{
 	icon_state = "shell3";
@@ -6155,7 +6155,7 @@
 	pixel_y = 5
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "JC" = (
 /obj/structure/decorative{
 	icon_state = "sand_side";
@@ -6167,7 +6167,7 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "JE" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 1
@@ -6177,11 +6177,11 @@
 	pixel_y = 7
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "JO" = (
 /obj/structure/railing/wooden_fencing,
 /turf/open/floor/wood/parquet,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "JP" = (
 /obj/structure/rack/shelf{
 	desc = "A sturdy wooden shelf to store a variety of items on.";
@@ -6223,7 +6223,7 @@
 	desc = null;
 	name = "void"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "JT" = (
 /obj/structure/decorative{
 	icon_state = "siding_plain_end";
@@ -6239,7 +6239,7 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ka" = (
 /turf/closed/wall/mineral/titanium/shuttle_wall/window/evac{
 	icon_state = "15,16";
@@ -6247,7 +6247,7 @@
 	name = "window";
 	desc = null
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Km" = (
 /obj/effect/turf_decal/siding/dark/corner{
 	dir = 1
@@ -6256,7 +6256,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 6
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Kn" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 1
@@ -6266,7 +6266,7 @@
 	},
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner,
 /turf/open/floor/wood/tile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Kq" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 10
@@ -6284,7 +6284,7 @@
 	pixel_x = 2
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ku" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/machinery/microwave{
@@ -6296,7 +6296,7 @@
 	},
 /obj/structure/marker_beacon/cerulean,
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Kv" = (
 /obj/structure/broken_flooring/plating/always_floorplane/directional/west{
 	color = "#000000";
@@ -6306,7 +6306,7 @@
 	density = 1
 	},
 /turf/open/floor/engine,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "KB" = (
 /obj/machinery/deepfryer{
 	color = "#adadcd";
@@ -6314,7 +6314,7 @@
 	light_color = "#adadcd"
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "KR" = (
 /turf/closed/wall/mineral/titanium/shuttle_wall/window/evac{
 	icon_state = "1,12";
@@ -6322,7 +6322,7 @@
 	name = "window";
 	desc = "A window into the nothingness."
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "KT" = (
 /obj/effect/turf_decal/box/white/corners{
 	dir = 4;
@@ -6344,7 +6344,7 @@
 	},
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner,
 /turf/open/floor/iron/dark/corner,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Le" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 1
@@ -6358,7 +6358,7 @@
 	color = "#222222"
 	},
 /turf/open/floor/iron/dark/side,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Lg" = (
 /obj/structure/hedge,
 /obj/structure/decorative{
@@ -6375,14 +6375,14 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Lk" = (
 /obj/structure/flora/grass/jungle/b/style_3{
 	pixel_x = -12;
 	pixel_y = -10
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ll" = (
 /obj/effect/turf_decal/trimline/dark/filled/mid_joiner{
 	dir = 1
@@ -6397,7 +6397,7 @@
 	},
 /obj/effect/turf_decal/siding/dark,
 /turf/open/floor/iron/white/smooth_half,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Lp" = (
 /obj/structure/flora/rock/style_2{
 	pixel_x = 9;
@@ -6408,7 +6408,7 @@
 	dir = 1
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Lq" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 6
@@ -6418,7 +6418,7 @@
 	color = "#634f33"
 	},
 /turf/open/floor/wood/large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Lr" = (
 /obj/structure/chair/sofa/corp/right{
 	dir = 4
@@ -6430,7 +6430,7 @@
 	dir = 8
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "LB" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 9
@@ -6470,7 +6470,7 @@
 	pixel_x = 1
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "LF" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 6
@@ -6495,7 +6495,7 @@
 	icon_state = "black";
 	fishing_datum = /datum/fish_source/lunar
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "LM" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 9
@@ -6532,7 +6532,7 @@
 	pixel_x = 16
 	},
 /turf/open/floor/iron/dark/corner,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "LN" = (
 /obj/item/clothing/suit/hooded/cloak/determinations_cloak{
 	pixel_x = -4;
@@ -6559,7 +6559,7 @@
 	color = "#634f33"
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "LV" = (
 /turf/open/water/beach{
 	name = "void";
@@ -6567,7 +6567,7 @@
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "LW" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 9
@@ -6607,7 +6607,7 @@
 	pixel_y = 6
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Md" = (
 /obj/effect/turf_decal/siding/dark/corner{
 	dir = 8
@@ -6616,21 +6616,21 @@
 	dir = 5
 	},
 /turf/open/indestructible/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Mh" = (
 /obj/structure/flora/grass/jungle/b{
 	pixel_x = 13;
 	pixel_y = 10
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Mr" = (
 /obj/structure/flora/grass/jungle/b/style_3{
 	pixel_x = -14;
 	pixel_y = -1
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Mv" = (
 /obj/effect/turf_decal/siding/dark/corner{
 	dir = 4;
@@ -6652,7 +6652,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "podfloor"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "MC" = (
 /obj/effect/overlay/water/top{
 	icon_state = "OLD_top";
@@ -6678,7 +6678,7 @@
 	icon_state = "black";
 	fishing_datum = /datum/fish_source/lunar
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "MT" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 8
@@ -6720,7 +6720,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 4
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "MY" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/end{
 	dir = 1
@@ -6735,11 +6735,11 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "podfloor"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Na" = (
 /obj/structure/fake_stairs/wood/directional/north,
 /turf/open/floor/wood/large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Nm" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/toolbox/mechanical{
@@ -6759,7 +6759,7 @@
 	pixel_y = -1
 	},
 /turf/open/floor/iron/dark/herringbone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Nr" = (
 /obj/effect/turf_decal/stripes/corner,
 /obj/effect/turf_decal/stripes/white/corner{
@@ -6771,7 +6771,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 9
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ns" = (
 /obj/machinery/door/airlock/public/glass,
 /obj/effect/turf_decal/siding/wideplating_new/dark/end{
@@ -6783,7 +6783,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "podfloor"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ny" = (
 /obj/structure/hedge,
 /obj/structure/decorative{
@@ -6810,13 +6810,13 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "NA" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 1
 	},
 /turf/open/floor/wood/stairs/down,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "NC" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner{
 	dir = 4
@@ -6892,7 +6892,7 @@
 	color = "ff9fe5"
 	},
 /turf/open/floor/engine,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "NF" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/structure/marker_beacon/cerulean,
@@ -6905,14 +6905,14 @@
 	pixel_y = 3
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "NH" = (
 /obj/structure/flora/bush/reed/style_3{
 	pixel_x = 20;
 	pixel_y = 21
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "NP" = (
 /obj/effect/turf_decal/weather/sand,
 /obj/structure/closet/crate/wooden/storage_barrel{
@@ -6924,7 +6924,7 @@
 	color = "#3e3a57"
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "NQ" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 5
@@ -6934,7 +6934,7 @@
 	color = "#634f33"
 	},
 /turf/open/floor/wood/parquet,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "NR" = (
 /obj/structure/table/wood,
 /obj/item/food/kebab/monkey{
@@ -6946,7 +6946,7 @@
 	pixel_y = 4
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "NZ" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 6
@@ -6967,7 +6967,7 @@
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Oh" = (
 /obj/effect/overlay/water/top{
 	icon_state = "OLD_top";
@@ -6996,14 +6996,14 @@
 	icon_state = "black";
 	fishing_datum = /datum/fish_source/lunar
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ok" = (
 /obj/effect/turf_decal/siding/dark,
 /obj/effect/turf_decal/arrows/white,
 /turf/open/floor/iron/dark/side{
 	dir = 1
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "On" = (
 /obj/effect/overlay/water/top{
 	icon_state = "OLD_top";
@@ -7020,7 +7020,7 @@
 	icon_state = "black";
 	fishing_datum = /datum/fish_source/portal/syndicate
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Op" = (
 /obj/structure/railing/corner{
 	dir = 1;
@@ -7044,7 +7044,7 @@
 	pixel_y = -4
 	},
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "OI" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 6
@@ -7052,7 +7052,7 @@
 /turf/open/floor/iron/dark/corner{
 	dir = 1
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "OP" = (
 /obj/effect/turf_decal/box/white/corners{
 	dir = 4;
@@ -7088,7 +7088,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 10
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "OQ" = (
 /obj/effect/turf_decal/siding/dark/corner{
 	dir = 1;
@@ -7113,7 +7113,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "podfloor"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "OS" = (
 /obj/structure/aquarium/prefilled,
 /obj/structure/marker_beacon/teal{
@@ -7144,21 +7144,21 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "OT" = (
 /obj/machinery/vending/coffee,
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "OU" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 1
 	},
 /turf/open/floor/iron/dark/side,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "OW" = (
 /obj/structure/railing/corner,
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "OX" = (
 /obj/structure/decorative{
 	icon_state = "siding_plain";
@@ -7184,7 +7184,7 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Pg" = (
 /obj/structure/decorative{
 	icon_state = "siding_plain";
@@ -7210,7 +7210,7 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Pm" = (
 /obj/effect/overlay/water/top{
 	icon_state = "OLD_top";
@@ -7229,7 +7229,7 @@
 	icon_state = "black";
 	fishing_datum = /datum/fish_source/lunar
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Pn" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 9
@@ -7284,7 +7284,7 @@
 	pixel_x = 16
 	},
 /turf/open/floor/iron/dark/corner,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Pp" = (
 /obj/effect/turf_decal/siding/dark/corner{
 	dir = 1
@@ -7293,7 +7293,7 @@
 	dir = 6
 	},
 /turf/open/indestructible/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "PA" = (
 /obj/structure/flora/grass/jungle/b{
 	pixel_x = -20;
@@ -7312,7 +7312,7 @@
 	},
 /obj/effect/turf_decal/weather/sand,
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "PJ" = (
 /turf/closed/wall/mineral/titanium/shuttle_wall/window/evac{
 	icon_state = "15,11";
@@ -7320,7 +7320,7 @@
 	name = "window";
 	desc = "A window into the nothingness."
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "PK" = (
 /obj/effect/turf_decal/trimline/dark/filled/line{
 	dir = 9
@@ -7340,7 +7340,7 @@
 	dir = 1
 	},
 /turf/open/floor/iron/white/textured_corner,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "PM" = (
 /obj/effect/turf_decal/siding/dark,
 /obj/structure/decorative{
@@ -7357,7 +7357,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 1
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Qd" = (
 /obj/effect/turf_decal/siding/dark/corner{
 	dir = 4;
@@ -7366,7 +7366,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "podfloor"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Qf" = (
 /obj/effect/turf_decal/box/white/corners{
 	dir = 2;
@@ -7392,7 +7392,7 @@
 /turf/open/floor/iron/dark/corner{
 	dir = 4
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Qs" = (
 /obj/structure/hedge,
 /obj/structure/decorative{
@@ -7418,7 +7418,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Qx" = (
 /obj/effect/turf_decal/stripes{
 	dir = 4
@@ -7442,7 +7442,7 @@
 /turf/open/floor/iron/dark/corner{
 	dir = 8
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "QB" = (
 /obj/structure/hedge,
 /obj/structure/decorative{
@@ -7469,11 +7469,11 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "QE" = (
 /obj/machinery/vending/clothing,
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "QX" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 5
@@ -7512,12 +7512,12 @@
 	icon_type = "curtain_apartments_right"
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Rd" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/machinery/chem_dispenser/drinks,
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ri" = (
 /obj/effect/overlay/water/top{
 	icon_state = "OLD_top";
@@ -7537,7 +7537,7 @@
 	icon_state = "black";
 	fishing_datum = /datum/fish_source/portal/syndicate
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Rj" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 8
@@ -7584,7 +7584,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 4
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Rk" = (
 /obj/structure/fake_stairs/wood/directional/west,
 /obj/structure/railing{
@@ -7593,13 +7593,13 @@
 	dir = 1
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Rm" = (
 /obj/structure/broken_flooring/plating/always_floorplane/directional/west{
 	color = "#000000"
 	},
 /turf/open/floor/engine,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ru" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 8
@@ -7616,7 +7616,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 4
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Rv" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 4
@@ -7625,10 +7625,10 @@
 	dir = 8
 	},
 /turf/open/indestructible/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Rx" = (
 /turf/closed/indestructible/reinforced,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "RC" = (
 /obj/effect/turf_decal/trimline/dark/filled/end{
 	dir = 8
@@ -7650,7 +7650,7 @@
 	dir = 8
 	},
 /turf/open/floor/iron/white/smooth_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "RG" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner{
 	dir = 1
@@ -7661,7 +7661,7 @@
 	},
 /obj/effect/turf_decal/siding/wood/corner,
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "RH" = (
 /obj/effect/overlay/water/top{
 	icon_state = "OLD_top"
@@ -7673,7 +7673,7 @@
 	icon_state = "OLD_bottom"
 	},
 /turf/open/floor/iron/freezer,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "RN" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 1
@@ -7684,7 +7684,7 @@
 	pixel_y = 8
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "RV" = (
 /obj/structure/marker_beacon/teal,
 /obj/structure/table/reinforced/plastitaniumglass,
@@ -7708,7 +7708,7 @@
 /obj/item/sharpener,
 /obj/structure/marker_beacon/indigo,
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "RW" = (
 /obj/effect/overlay/water/top{
 	icon_state = "OLD_top";
@@ -7727,7 +7727,7 @@
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Sd" = (
 /obj/structure/marker_beacon/violet{
 	pixel_x = 16
@@ -7758,7 +7758,7 @@
 	color = "#634f33"
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Se" = (
 /obj/effect/turf_decal/caution{
 	dir = 4
@@ -7779,7 +7779,7 @@
 	},
 /obj/effect/turf_decal/trimline/yellow/corner,
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Sf" = (
 /obj/effect/overlay/water/top{
 	icon_state = "OLD_top";
@@ -7808,7 +7808,7 @@
 	icon_state = "black";
 	fishing_datum = /datum/fish_source/river
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Sj" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner{
 	dir = 4
@@ -7833,7 +7833,7 @@
 	icon_state = "carpet_royalblack-12"
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Sn" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 1;
@@ -7850,7 +7850,7 @@
 /obj/structure/sign/warning/no_smoking/directional/north,
 /obj/effect/turf_decal/trimline/yellow/corner,
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Sq" = (
 /obj/effect/turf_decal/box/white/corners{
 	dir = 1;
@@ -7876,7 +7876,7 @@
 /turf/open/floor/iron/dark/corner{
 	dir = 8
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Sw" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 6
@@ -7897,7 +7897,7 @@
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "SD" = (
 /obj/structure/flora/rock/style_3{
 	pixel_x = -1;
@@ -7908,7 +7908,7 @@
 	},
 /obj/effect/turf_decal/weather/sand,
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "SE" = (
 /obj/effect/turf_decal/box/white/corners{
 	dir = 8;
@@ -7944,7 +7944,7 @@
 /turf/open/floor/iron/dark/side{
 	dir = 5
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "SK" = (
 /obj/structure/reagent_dispensers/fueltank,
 /obj/effect/decal/cleanable/dirt,
@@ -7954,7 +7954,7 @@
 	},
 /obj/structure/marker_beacon/bronze,
 /turf/open/floor/iron/dark,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "SR" = (
 /obj/structure/decorative{
 	icon_state = "siding_plain_end";
@@ -7970,7 +7970,7 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "SS" = (
 /obj/effect/turf_decal/weather/sand,
 /obj/effect/overlay/water/top{
@@ -7994,14 +7994,14 @@
 	icon_state = "black";
 	fishing_datum = /datum/fish_source/portal/syndicate
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "SW" = (
 /obj/structure/flora/grass/jungle/b{
 	pixel_x = 16;
 	pixel_y = 6
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Tf" = (
 /obj/effect/overlay/water/top{
 	icon_state = "OLD_top";
@@ -8028,7 +8028,7 @@
 	icon_state = "black";
 	fishing_datum = /datum/fish_source/lunar
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "TM" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 6
@@ -8044,7 +8044,7 @@
 	color = "#222222"
 	},
 /turf/open/floor/wood/tile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "TR" = (
 /obj/effect/turf_decal/siding/dark/corner{
 	dir = 1;
@@ -8053,7 +8053,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "podfloor"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "TS" = (
 /obj/structure/decorative{
 	icon_state = "siding_plain";
@@ -8079,7 +8079,7 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "TZ" = (
 /obj/structure/sink/directional/south,
 /obj/structure/mirror/directional/north,
@@ -8097,7 +8097,7 @@
 /obj/effect/turf_decal/trimline/purple/filled/corner,
 /obj/effect/turf_decal/trimline/red/corner,
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Uc" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark,
 /obj/effect/turf_decal/siding/wood{
@@ -8105,14 +8105,14 @@
 	color = "#634f33"
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ui" = (
 /turf/closed/indestructible/hoteldoor{
 	name = "Exit To Outside";
 	icon_state = "fake_door";
 	icon = 'icons/obj/doors/airlocks/external/external.dmi'
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Up" = (
 /obj/structure/hedge/opaque,
 /obj/structure/decorative{
@@ -8161,7 +8161,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "UB" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/cup/bowl/ceramic{
@@ -8173,7 +8173,7 @@
 	pixel_y = 6
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "UE" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner{
 	dir = 1
@@ -8190,7 +8190,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "podfloor"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "UP" = (
 /obj/effect/turf_decal/weather/sand,
 /obj/effect/overlay/water/top{
@@ -8210,7 +8210,7 @@
 	icon_state = "black";
 	fishing_datum = /datum/fish_source/river
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "UU" = (
 /obj/effect/overlay/water/top{
 	icon_state = "OLD_top";
@@ -8236,7 +8236,7 @@
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "UY" = (
 /obj/effect/turf_decal/stripes{
 	dir = 4
@@ -8255,13 +8255,13 @@
 /turf/open/floor/iron/dark/side{
 	dir = 8
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Vd" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 5
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Vk" = (
 /obj/effect/turf_decal/siding/dark/corner{
 	dir = 4
@@ -8272,12 +8272,12 @@
 /turf/open/floor/iron/dark/side{
 	dir = 10
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Vq" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark,
 /obj/effect/turf_decal/siding/wood,
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Vw" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 5
@@ -8296,7 +8296,7 @@
 	pixel_y = 22
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "VF" = (
 /obj/effect/turf_decal/weather/sand,
 /obj/structure/flora/grass/jungle/b{
@@ -8316,7 +8316,7 @@
 	pixel_y = 2
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "VG" = (
 /obj/structure/table/wood,
 /obj/structure/railing/wooden_fencing{
@@ -8335,11 +8335,11 @@
 	color = "#634f33"
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "VQ" = (
 /obj/structure/sign/departments/custodian,
 /turf/closed/indestructible/steel,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "VR" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 9
@@ -8348,7 +8348,7 @@
 	dir = 9
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "VS" = (
 /obj/structure/fluff/metalpole/end/left{
 	dir = 8;
@@ -8359,7 +8359,7 @@
 	desc = null;
 	name = "void"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "VZ" = (
 /obj/effect/light_emitter/interlink{
 	light_color = "#3e3a57";
@@ -8370,13 +8370,13 @@
 	pixel_y = 1
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Wb" = (
 /obj/effect/turf_decal/siding/dark/corner,
 /turf/open/floor/iron/dark/side{
 	dir = 9
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Wm" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/food/energybar{
@@ -8384,7 +8384,7 @@
 	pixel_y = 13
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Wt" = (
 /obj/structure/fans/tiny/invisible{
 	density = 1
@@ -8393,7 +8393,7 @@
 	color = "#cd72f5"
 	},
 /turf/open/floor/engine,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "WA" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 1
@@ -8416,7 +8416,7 @@
 	pixel_y = 7
 	},
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "WB" = (
 /obj/structure/broken_flooring/plating/always_floorplane/directional/west{
 	color = "#000000";
@@ -8426,7 +8426,7 @@
 	pixel_y = 9
 	},
 /turf/open/floor/engine,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "WK" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 9
@@ -8435,13 +8435,13 @@
 	dir = 9
 	},
 /turf/open/floor/wood/large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "WW" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 4
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "WZ" = (
 /obj/structure/railing/corner/end{
 	dir = 8;
@@ -8467,13 +8467,13 @@
 /obj/effect/turf_decal/siding/dark/end,
 /obj/structure/marker_beacon/jade,
 /turf/open/floor/grass,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Xa" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/machinery/chem_dispenser/drinks/beer,
 /obj/structure/marker_beacon/purple,
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Xb" = (
 /obj/effect/turf_decal/box/corners{
 	dir = 1
@@ -8514,7 +8514,7 @@
 	name = "access point"
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Xd" = (
 /obj/structure/railing/wooden_fencing{
 	dir = 4
@@ -8526,7 +8526,7 @@
 /obj/machinery/vending/dorms,
 /obj/structure/marker_beacon/purple,
 /turf/open/floor/wood,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Xf" = (
 /obj/effect/overlay/water/top{
 	icon_state = "OLD_top";
@@ -8551,13 +8551,13 @@
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Xj" = (
 /obj/effect/turf_decal/siding/wood/end{
 	dir = 4
 	},
 /turf/open/floor/carpet/royalblack,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Xn" = (
 /obj/item/toy/seashell{
 	icon_state = "shell2";
@@ -8565,13 +8565,13 @@
 	pixel_y = 8
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Xx" = (
 /obj/structure/chair/sofa/bench/solo{
 	dir = 4
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "XF" = (
 /obj/structure/decorative{
 	name = "void";
@@ -8601,7 +8601,7 @@
 	desc = null;
 	name = "void"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "XJ" = (
 /obj/effect/overlay/water/top{
 	icon_state = "OLD_top";
@@ -8618,7 +8618,7 @@
 	icon_state = "black";
 	fishing_datum = /datum/fish_source/lunar
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "XX" = (
 /obj/structure/flora/rock/style_4,
 /obj/structure/flora/rock/style_3{
@@ -8629,7 +8629,7 @@
 	dir = 8
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "XZ" = (
 /obj/effect/overlay/water/top{
 	icon_state = "OLD_top";
@@ -8648,7 +8648,7 @@
 	icon_state = "black";
 	fishing_datum = /datum/fish_source/portal/syndicate
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Yd" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 6
@@ -8658,7 +8658,7 @@
 	pixel_y = 3
 	},
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ye" = (
 /obj/effect/turf_decal/siding/dark{
 	dir = 10
@@ -8671,7 +8671,7 @@
 /turf/open/floor/iron/dark/corner{
 	dir = 4
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Yk" = (
 /obj/structure/extinguisher_cabinet/directional/north,
 /obj/effect/turf_decal/siding/wideplating_new/dark/end{
@@ -8681,7 +8681,7 @@
 	dir = 4
 	},
 /turf/open/floor/wood/tile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Yn" = (
 /obj/effect/overlay/water/top{
 	icon_state = "OLD_top";
@@ -8707,7 +8707,7 @@
 	icon_state = "black";
 	fishing_datum = /datum/fish_source/portal/syndicate
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Yy" = (
 /obj/effect/turf_decal/siding/wood/end{
 	color = "#634f33"
@@ -8718,14 +8718,14 @@
 	desc = null;
 	name = "void"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Yz" = (
 /obj/structure/railing/corner{
 	dir = 8
 	},
 /obj/structure/bonfire/dense/prelit,
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "YC" = (
 /obj/effect/turf_decal/weather/sand{
 	dir = 10
@@ -8746,7 +8746,7 @@
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "YK" = (
 /obj/effect/overlay/water/top{
 	icon_state = "OLD_top";
@@ -8766,7 +8766,7 @@
 	icon_state = "black";
 	fishing_datum = /datum/fish_source/river
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "YP" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
@@ -8781,16 +8781,16 @@
 /turf/open/floor/iron/dark/side{
 	dir = 6
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "YY" = (
 /obj/machinery/vending/assist,
 /obj/structure/marker_beacon/bronze,
 /turf/open/floor/iron/dark/smooth_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Zb" = (
 /obj/effect/turf_decal/weather/sand,
 /turf/open/misc/beach/sand,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Zh" = (
 /obj/effect/overlay/water/top{
 	icon_state = "OLD_top";
@@ -8818,7 +8818,7 @@
 	icon = 'icons/turf/floors.dmi';
 	icon_state = "black"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Zs" = (
 /obj/structure/decorative{
 	icon_state = "siding_wood";
@@ -8854,7 +8854,7 @@
 	color = "#000000";
 	name = "darkness"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Zt" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner,
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner{
@@ -8883,7 +8883,7 @@
 	pixel_y = 0
 	},
 /turf/open/floor/wood/large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Zv" = (
 /obj/effect/turf_decal/siding/dark/corner{
 	dir = 2;
@@ -8892,7 +8892,7 @@
 /turf/open/indestructible/hoteltile{
 	icon_state = "podfloor"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ZE" = (
 /obj/effect/turf_decal/stripes{
 	dir = 6
@@ -8909,7 +8909,7 @@
 /turf/open/floor/iron/dark/corner{
 	dir = 1
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ZH" = (
 /obj/effect/mapping_helpers/broken_floor,
 /obj/effect/turf_decal/siding/wood{
@@ -8917,7 +8917,7 @@
 	color = "#634f33"
 	},
 /turf/open/floor/wood/large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ZM" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark{
 	dir = 1;
@@ -8935,7 +8935,7 @@
 	dir = 1
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 
 (1,1,1) = {"
 fI

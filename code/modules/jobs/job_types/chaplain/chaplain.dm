@@ -2,6 +2,7 @@
 	title = JOB_CHAPLAIN
 	description = "Hold services and funerals, cremate people, preach your \
 		religion, protect the crew against cults."
+	department_head = list(JOB_HEAD_OF_PERSONNEL)
 	faction = FACTION_STATION
 	total_positions = 1
 	spawn_positions = 1
@@ -12,8 +13,7 @@
 	outfit = /datum/outfit/job/chaplain
 	plasmaman_outfit = /datum/outfit/plasmaman/chaplain
 
-	mind_traits = list(TRAIT_SPIRITUAL)
-	desensitized_base = DESENSITIZED_THRESHOLD
+	mind_traits = list(TRAIT_SPIRITUAL, TRAIT_DESENSITIZED)
 
 	paycheck = PAYCHECK_CREW
 	paycheck_department = ACCOUNT_SRV

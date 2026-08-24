@@ -113,7 +113,7 @@
 	name = "Admirals Office"
 
 /area/ruin/space/has_grav/bubbers/dauntless/command/liason
-	name = "Syndicate Liaison Office"
+	name = "Syndicate Liason Office"
 
 /area/ruin/space/has_grav/bubbers/dauntless/command/vault
 	name = "High Security Vault"

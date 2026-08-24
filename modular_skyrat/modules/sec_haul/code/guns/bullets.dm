@@ -33,7 +33,6 @@
 	name = "9x19mm Murphy bullet"
 	damage = 20
 	wound_bonus = -20
-	armour_penetration = 10
 
 /obj/projectile/bullet/c9mm
 	damage = 25

@@ -16,7 +16,7 @@
 					/obj/item/disk/data,
 					/obj/item/disk/design_disk,
 					/obj/item/disk/tech_disk,
-					/obj/item/disk/computer,//ordinance
+					/obj/item/computer_disk,//ordinance
 					/obj/item/disk/nanite_program,
 					/obj/item/stock_parts,
 					/obj/item/reagent_containers/cup/beaker,
@@ -58,8 +58,14 @@
 					/obj/item/usb_cable,
 					/obj/item/healthanalyzer, //To build medibots
 					/obj/item/electronics,
-					/obj/item/assembly,
-					/obj/item/assembly_holder,
+					/obj/item/assembly/igniter,
+					/obj/item/assembly/infra,
+					/obj/item/assembly/prox_sensor,
+					/obj/item/assembly/timer,
+					/obj/item/assembly/signaler,
+					/obj/item/assembly/trapdoor,
+					/obj/item/assembly/voice,
+					/obj/item/assembly/wiremod,
 					)
 
 /obj/item/borg/apparatus/circuit_sci/examine()
@@ -74,22 +80,20 @@
 	return ..()
 
 //Illegal gripper to allow research cyborgs when hacked to do further robotics work
-//TODO: Add more functionality for them to interact with more this is an "illegal item"!
 /obj/item/borg/apparatus/illegal
 	name = "Sketchy looking gripper"
 	desc = "A tool used to expanded robotics work"
 	icon_state = "connector"
 	storable = list(
 					/obj/item/mmi,
+					/obj/item/assembly, //unrestricted assembly building
 					/obj/item/bodypart/arm/left/robot,
 					/obj/item/bodypart/arm/right/robot,
 					/obj/item/bodypart/leg/left/robot,
 					/obj/item/bodypart/leg/right/robot,
 					/obj/item/bodypart/chest/robot,
 					/obj/item/bodypart/head/robot,
-					/obj/item/borg/upgrade,
-					/obj/item/assembly,
-					/obj/item/assembly_holder,
+					/obj/item/borg/upgrade/ai, //Shell making
 					)
 
 /obj/item/borg/apparatus/illegal/examine()
@@ -153,30 +157,35 @@
 	// Adds Crowbars to borg models which do not have them so they do not get stuck behind unpowered doors
 
 /obj/item/robot_model/clown/Initialize(mapload)
+	name = "Clown"
 	basic_modules += list(
 		/obj/item/crowbar/cyborg,
 	)
 	. = ..()
 
 /obj/item/robot_model/medical/Initialize(mapload)
+	name = "Medical"
 	basic_modules += list(
 		/obj/item/crowbar/cyborg,
 	)
 	. = ..()
 
 /obj/item/robot_model/peacekeeper/Initialize(mapload)
+	name = "Peacekeeper"
 	basic_modules += list(
 		/obj/item/crowbar/cyborg,
 	)
 	. = ..()
 
 /obj/item/robot_model/security/Initialize(mapload)
+	name = "Security"
 	basic_modules += list(
 		/obj/item/crowbar/cyborg,
 	)
 	. = ..()
 
 /obj/item/robot_model/service/Initialize(mapload)
+	name = "Service"
 	basic_modules += list(
 		/obj/item/crowbar/cyborg,
 	)
@@ -186,8 +195,8 @@
 
 //Engineering cyborg apparatus
 /obj/item/borg/apparatus/engineering
-	name = "Engineering manipulation gripper"
-	desc = "A simple grasping tool for interacting with various engineering related items, such as circuits, gas tanks, conveyor belts and more."
+	name = "engineering manipulation gripper" // SPLURT EDIT
+	desc = "A simple grasping tool for interacting with various engineering related items, such as circuits, gas tanks, conveyer belts and more."
 	icon = 'modular_zubbers/icons/mob/silicon/robot_items.dmi'
 	icon_state = "gripper"
 	storable = list(
@@ -200,8 +209,7 @@
 					/obj/item/tank,
 					/obj/item/stock_parts,
 					/obj/item/assembly/control,
-					/obj/item/electronics,
-					/obj/item/circuitboard,
+					/obj/item/electronics/airlock
 					)
 
 //Mining cyborg apparatus
@@ -223,6 +231,7 @@
 					)
 
 /obj/item/robot_model/miner/Initialize(mapload)
+	name = "Miner"
 	basic_modules += list(
 		/obj/item/borg/apparatus/mining/,
 	)

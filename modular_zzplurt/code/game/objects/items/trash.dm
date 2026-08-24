@@ -2,6 +2,7 @@
 	name = "tib-bits bag"
 	icon = 'modular_zzplurt/icons/obj/service/janitor.dmi'
 	icon_state = "tibbits"
+	grind_results = list(/datum/reagent/aluminium = 1)
 
 /obj/item/trash/toasties
 	name = "toasties box"

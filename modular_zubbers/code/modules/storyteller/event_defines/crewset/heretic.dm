@@ -4,9 +4,8 @@
 
 	antag_flag = ROLE_HERETIC
 	antag_datum = /datum/antagonist/heretic
-	weight = 0 //Disabled, but people can still opfor.
-	max_occurrences = 0
-	min_players = 30
+	weight = 10 //SPLURT EDIT - No Heretic (upstream weight = 5) //Chaosstation edit - Renables with lower spawn requirement and higher weight
+	min_players = 3
 
 	maximum_antags_global = 2
 
@@ -19,10 +18,3 @@
 /datum/round_event_control/antagonist/solo/heretic/midround
 	name = "Midround Heretics"
 	roundstart = FALSE
-
-/datum/round_event_control/antagonist/solo/heretic/event
-	name = "Event Generated Heretic"
-	roundstart = FALSE
-	tags = list(TAG_ANTAG_REROLL)
-	max_occurrences = 0
-	maximum_antags = 1

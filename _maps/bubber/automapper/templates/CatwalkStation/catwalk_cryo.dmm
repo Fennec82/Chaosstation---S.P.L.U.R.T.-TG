@@ -186,9 +186,6 @@
 /obj/machinery/light/cold/directional/west,
 /turf/open/floor/iron,
 /area/station/common/cryopods)
-"N" = (
-/turf/open/floor/iron,
-/area/station/commons/dorms)
 "O" = (
 /obj/structure/flora/bush/flowers_pp{
 	name = "skyyblossoms"
@@ -220,9 +217,6 @@
 "S" = (
 /turf/closed/wall,
 /area/station/common/cryopods)
-"T" = (
-/turf/template_noop,
-/area/template_noop)
 "W" = (
 /obj/effect/spawner/structure/window,
 /turf/open/floor/plating,
@@ -253,14 +247,6 @@
 /area/station/common/cryopods)
 
 (1,1,1) = {"
-T
-T
-T
-T
-N
-T
-"}
-(2,1,1) = {"
 i
 r
 l
@@ -268,7 +254,7 @@ S
 b
 S
 "}
-(3,1,1) = {"
+(2,1,1) = {"
 z
 O
 W
@@ -276,7 +262,7 @@ L
 s
 Z
 "}
-(4,1,1) = {"
+(3,1,1) = {"
 H
 E
 W
@@ -284,7 +270,7 @@ C
 K
 G
 "}
-(5,1,1) = {"
+(4,1,1) = {"
 J
 O
 W
@@ -292,7 +278,7 @@ F
 j
 o
 "}
-(6,1,1) = {"
+(5,1,1) = {"
 J
 g
 W
@@ -300,7 +286,7 @@ F
 R
 o
 "}
-(7,1,1) = {"
+(6,1,1) = {"
 X
 h
 a
@@ -308,7 +294,7 @@ P
 j
 o
 "}
-(8,1,1) = {"
+(7,1,1) = {"
 f
 d
 S
@@ -316,7 +302,7 @@ n
 k
 D
 "}
-(9,1,1) = {"
+(8,1,1) = {"
 q
 Q
 A

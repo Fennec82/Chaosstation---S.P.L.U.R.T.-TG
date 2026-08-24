@@ -131,7 +131,7 @@
 /area/station/security/medical)
 "Be" = (
 /obj/machinery/door/airlock/security/glass{
-	name = "Infirmary"
+	name = "Security Equipment Room"
 	},
 /obj/machinery/door/firedoor,
 /obj/effect/mapping_helpers/airlock/access/any/medical/general,

@@ -3,7 +3,7 @@
 
 	if(!panel_open)
 		balloon_alert(user, "open the panel first!")
-		return ITEM_INTERACT_FAILURE
+		return TRUE
 
 	wires.interact(user)
 	return TRUE
@@ -12,75 +12,69 @@
 
 	if(!panel_open)
 		balloon_alert(user, "open the panel first!")
-		return ITEM_INTERACT_FAILURE
+		return TRUE
 
 	wires.interact(user)
-	return ITEM_INTERACT_SUCCESS
+	return TRUE
 
 //Deconstruct.
 /obj/machinery/power/rbmk2/crowbar_act(mob/living/user, obj/item/attack_item)
 	if(jammed)
 		force_unjam(attack_item,user,25)
-		return ITEM_INTERACT_SUCCESS
+		return TRUE
 	if(stored_rod)
 		balloon_alert(user, "remove the rod first!")
-		return ITEM_INTERACT_FAILURE
+		return TRUE
 	if(!meltdown && default_deconstruction_crowbar(attack_item))
 		if(user)
 			var/turf/T = get_turf(user)
 			message_admins("[src] was deconstructed by [ADMIN_LOOKUPFLW(user)] at [ADMIN_VERBOSEJMP(T)].")
 			user.log_message("deconstructed [src]", LOG_GAME)
 			investigate_log("was deconstructed by [key_name(user)] at [AREACOORD(src)].", INVESTIGATE_ENGINE)
-	return ITEM_INTERACT_SUCCESS
+	return TRUE
 
 //Open the panel.
 /obj/machinery/power/rbmk2/screwdriver_act(mob/living/user, obj/item/attack_item)
-
 	if(default_deconstruction_screwdriver(user, icon_state, icon_state, attack_item))
-		return ITEM_INTERACT_SUCCESS
-
-	return ITEM_INTERACT_FAILURE
-
+		return TRUE
 
 //Toggle the reactor on/off.
 /obj/machinery/power/rbmk2/wrench_act(mob/living/user, obj/item/attack_item)
 
 	if(jammed)
 		balloon_alert(user, "refuses to budge!")
-		return ITEM_INTERACT_FAILURE
+		return TRUE
 
 	toggle_active(user)
 
-	return ITEM_INTERACT_SUCCESS
+	return TRUE
 
 
 /obj/machinery/power/rbmk2/welder_act(mob/living/user, obj/item/attack_item)
 
 	if(atom_integrity >= max_integrity)
 		balloon_alert(user, "already repaired!")
-		return ITEM_INTERACT_FAILURE
+		return TRUE
 	if (machine_stat & BROKEN)
 		balloon_alert(user, "too damaged to repair!")
-		return ITEM_INTERACT_FAILURE
+		return TRUE
 	if(!attack_item.tool_start_check(user, amount=1))
-		return ITEM_INTERACT_FAILURE
+		return TRUE
 
 	balloon_alert(user, "repairing...")
 	if(attack_item.use_tool(src, user, 4 SECONDS, volume = 50))
 		update_integrity(min(atom_integrity + 50,max_integrity))
+
 		if(atom_integrity >= max_integrity)
 			balloon_alert(user, "fully repaired!")
 		else
 			balloon_alert(user, "partially repaired!")
 
-	return ITEM_INTERACT_SUCCESS
+	return TRUE
 
 /obj/machinery/power/rbmk2/plunger_act(obj/item/plunger/attacking_plunger, mob/living/user, reinforced)
-
 	if(jammed && force_unjam(attacking_plunger,user,25))
-		return ITEM_INTERACT_SUCCESS
-
-	return ITEM_INTERACT_FAILURE
+		return TRUE
 
 /obj/machinery/power/rbmk2/emp_act(severity)
 

@@ -123,7 +123,7 @@
 	name = "Persistence Quarter Master Quarters"
 
 /area/ruin/space/has_grav/bubbers/persistance/service/dorms/liason
-	name = "Persistence Corporate Liaison Quarters"
+	name = "Persistence Corporate Liason Quarters"
 
 /area/ruin/space/has_grav/bubbers/persistance/service/dorms/assistant
 	name = "Persistence Assistant"
@@ -187,7 +187,7 @@
 	name = "Persistence Office"
 
 /area/ruin/space/has_grav/bubbers/persistance/command/liason
-	name = "Corporate Liaison Office"
+	name = "Corporate Liason Office"
 
 /area/ruin/space/has_grav/bubbers/persistance/command/vault
 	name = "High Security Vault"

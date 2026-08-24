@@ -9,7 +9,7 @@
 	desc = "It's generally considered impolite to stab a dragoness in her lair."
 	},
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ak" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
@@ -18,14 +18,14 @@
 	dir = 10
 	},
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "aD" = (
 /obj/effect/turf_decal/weather/dirt,
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "aE" = (
 /obj/structure/decorative/fluff{
 	icon_state = "pillowpile_small_pink";
@@ -36,7 +36,7 @@
 	},
 /obj/structure/bed/pillow_large,
 /turf/open/floor/carpet/purple,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "aZ" = (
 /obj/effect/turf_decal/trimline/dark/corner{
 	alpha = 255;
@@ -44,7 +44,7 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bd" = (
 /obj/structure/rack/wooden,
 /obj/item/reagent_containers/cup/bucket/wooden{
@@ -61,7 +61,7 @@
 	color = "#FFFFFF"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bf" = (
 /obj/effect/turf_decal/weather/dirt,
 /obj/effect/turf_decal/weather/dirt{
@@ -72,7 +72,7 @@
 	pixel_y = -3
 	},
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bi" = (
 /obj/structure/stone_tile/slab/burnt,
 /obj/structure/railing{
@@ -99,7 +99,7 @@
 	pixel_y = 6
 	},
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bn" = (
 /obj/structure/flora/bush/sparsegrass,
 /obj/structure/marker_beacon/bronze{
@@ -107,7 +107,7 @@
 	color = "#FFFFFF"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bz" = (
 /obj/effect/turf_decal/trimline/dark/line{
 	alpha = 255;
@@ -125,7 +125,7 @@
 	pixel_y = -13
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bG" = (
 /obj/effect/turf_decal/siding/wideplating_new/dark/corner{
 	dir = 4;
@@ -135,7 +135,7 @@
 	name = "decorative pattern"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bH" = (
 /obj/effect/light_emitter/interlink{
 	light_color = "#3e3a57";
@@ -146,7 +146,7 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bV" = (
 /obj/effect/turf_decal/trimline/dark/corner{
 	alpha = 255
@@ -175,7 +175,7 @@
 	pixel_x = 3
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cc" = (
 /obj/item/fancy_pillow{
 	pixel_x = 11;
@@ -198,7 +198,7 @@
 	name = "yoga mat"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cm" = (
 /obj/structure/table/wood,
 /obj/item/towel{
@@ -206,7 +206,7 @@
 	pixel_y = 9
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cq" = (
 /obj/structure/barricade/wooden{
 	uses_integrity = 0
@@ -228,11 +228,11 @@
 	icon_state = "lava-255";
 	icon = 'icons/turf/floors/lava.dmi'
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cF" = (
 /obj/structure/millstone,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cS" = (
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 8
@@ -248,7 +248,7 @@
 	pixel_y = 4
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cU" = (
 /obj/structure/fake_stairs/directional/south{
 	icon_state = "stairs-old";
@@ -257,7 +257,7 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "db" = (
 /obj/structure/flora/rock/style_3{
 	pixel_x = -6;
@@ -265,7 +265,7 @@
 	},
 /obj/structure/spacevine,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "dg" = (
 /obj/machinery/cauldron{
 	pixel_y = 6;
@@ -275,7 +275,7 @@
 	pixel_x = 4
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "dF" = (
 /obj/effect/turf_decal/trimline/dark/line{
 	alpha = 255;
@@ -283,20 +283,20 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "dG" = (
 /obj/structure/stone_tile/block{
 	dir = 4
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "dU" = (
 /obj/structure/stone_tile/slab,
 /obj/structure/flora/rock/style_4{
 	pixel_y = -3
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ed" = (
 /obj/effect/turf_decal/trimline/dark/line{
 	alpha = 255;
@@ -307,7 +307,7 @@
 	dir = 8
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ef" = (
 /obj/structure/curtain/cloth{
 	color = "#555555"
@@ -317,7 +317,7 @@
 	},
 /obj/structure/stone_tile,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "eq" = (
 /obj/structure/decorative/fluff{
 	icon_state = "pillowpile_large_pink";
@@ -346,7 +346,7 @@
 	pixel_y = -8
 	},
 /turf/open/floor/carpet/purple,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "eA" = (
 /obj/structure/stone_tile/slab/cracked,
 /obj/structure/decorative{
@@ -361,7 +361,7 @@
 /obj/structure/table/wood/fancy,
 /obj/structure/marker_beacon/bronze,
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "eD" = (
 /obj/structure/decorative/fluff{
 	icon_state = "pillowpile_large_pink";
@@ -387,7 +387,7 @@
 	},
 /obj/structure/marker_beacon/violet,
 /turf/open/floor/carpet/purple,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "eG" = (
 /obj/structure/broken_flooring/pile{
 	color = "#666666";
@@ -395,7 +395,7 @@
 	name = "rectangular rocks"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "eP" = (
 /obj/structure/broken_flooring/pile{
 	color = "#666666";
@@ -403,7 +403,7 @@
 	name = "rectangular rocks"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "fa" = (
 /obj/structure/stone_tile/block{
 	dir = 8
@@ -412,7 +412,7 @@
 	dir = 1
 	},
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "fe" = (
 /obj/effect/turf_decal/trimline/dark/line{
 	alpha = 255;
@@ -423,7 +423,7 @@
 	dir = 4
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "fn" = (
 /obj/structure/stone_tile/block,
 /obj/structure/decorative/fluff{
@@ -464,14 +464,14 @@
 	dir = 1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "fJ" = (
 /obj/structure/flora/rock/style_4{
 	pixel_x = 8;
 	pixel_y = -2
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "fP" = (
 /obj/structure/flora/rock/style_4{
 	pixel_x = 8;
@@ -479,7 +479,7 @@
 	},
 /obj/structure/stone_tile/surrounding/cracked,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gf" = (
 /obj/structure/decorative/fluff{
 	icon_state = "coin_tails";
@@ -506,7 +506,7 @@
 	color = "#FFFFFF"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gk" = (
 /obj/structure/decorative/fluff{
 	icon_state = "pillowpile_large_pink";
@@ -527,7 +527,7 @@
 	anchored = 1
 	},
 /turf/open/floor/carpet/purple,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "go" = (
 /obj/structure/stone_tile/block/burnt{
 	dir = 8
@@ -541,7 +541,7 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gv" = (
 /obj/effect/turf_decal/siding/yellow{
 	dir = 9
@@ -580,7 +580,7 @@
 	pixel_y = 29
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gx" = (
 /obj/structure/stone_tile/slab,
 /obj/machinery/vending/dorms{
@@ -606,7 +606,7 @@
 	pixel_y = 1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gE" = (
 /obj/structure/stone_tile/block{
 	dir = 1
@@ -619,10 +619,10 @@
 	color = "#3e3a57"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gI" = (
 /turf/open/space/bluespace,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gM" = (
 /obj/structure/broken_flooring/pile{
 	color = "#666666";
@@ -632,7 +632,7 @@
 	pixel_y = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hz" = (
 /obj/structure/table/wood,
 /obj/structure/marker_beacon/bronze{
@@ -642,14 +642,14 @@
 	dir = 1
 	},
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hC" = (
 /obj/structure/stone_tile/block{
 	dir = 8
 	},
 /obj/structure/stone_tile,
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hU" = (
 /obj/effect/light_emitter/interlink{
 	light_color = "#3e3a57";
@@ -659,7 +659,7 @@
 	dir = 8
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "iA" = (
 /obj/structure/decorative/fluff{
 	icon_state = "coin_heads";
@@ -682,7 +682,7 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "iK" = (
 /obj/structure/stone_tile/surrounding/cracked{
 	dir = 8;
@@ -697,7 +697,7 @@
 	icon_state = "lava-255";
 	icon = 'icons/turf/floors/lava.dmi'
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "iW" = (
 /obj/effect/turf_decal/trimline/dark/corner{
 	alpha = 255;
@@ -727,7 +727,7 @@
 	pixel_x = -3
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jf" = (
 /obj/structure/stone_tile/block{
 	dir = 1
@@ -736,7 +736,7 @@
 	dir = 8
 	},
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jk" = (
 /obj/structure/stone_tile/block{
 	dir = 4
@@ -745,20 +745,20 @@
 	dir = 8
 	},
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jw" = (
 /obj/structure/stone_tile/block,
 /obj/structure/stone_tile{
 	dir = 1
 	},
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jP" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jR" = (
 /obj/effect/turf_decal/trimline/dark/line{
 	alpha = 255;
@@ -771,7 +771,7 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jX" = (
 /obj/structure/fake_stairs/directional/south{
 	icon_state = "stairs-old";
@@ -791,7 +791,7 @@
 	desc = "Basic railing meant to protect idiots like you from falling."
 	},
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jY" = (
 /obj/structure/chair/pew/right{
 	dir = 4
@@ -806,7 +806,7 @@
 	desc = "A big book used to store photos and mementos. It's empty."
 	},
 /turf/open/floor/bamboo,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ks" = (
 /obj/structure/flora/rock/style_3{
 	pixel_y = -3
@@ -821,7 +821,7 @@
 	color = "#777777"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "kw" = (
 /obj/structure/flora/bush/fullgrass/style_2,
 /obj/structure/flora/grass/jungle/b/style_4,
@@ -830,13 +830,13 @@
 	pixel_y = 23
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "kL" = (
 /obj/structure/stone_tile/block/cracked{
 	dir = 8
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "kP" = (
 /obj/structure/stone_tile/block{
 	dir = 8
@@ -845,7 +845,7 @@
 	dir = 4
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "kV" = (
 /obj/structure/broken_flooring/pile{
 	color = "#666666";
@@ -863,14 +863,14 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "lc" = (
 /obj/structure/stone_tile/block,
 /obj/structure/stone_tile{
 	dir = 4
 	},
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "lm" = (
 /obj/structure/fake_stairs/directional/south{
 	icon_state = "stairs-old";
@@ -888,7 +888,7 @@
 	pixel_x = -13
 	},
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "lr" = (
 /obj/structure/stone_tile/block/cracked{
 	dir = 1;
@@ -912,18 +912,18 @@
 	icon_state = "lava-255";
 	icon = 'icons/turf/floors/lava.dmi'
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "lC" = (
 /obj/structure/stone_tile/block/cracked,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "lG" = (
 /obj/effect/light_emitter/interlink{
 	light_color = "#3e3a57";
 	color = "#3e3a57"
 	},
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "lM" = (
 /obj/structure/stone_tile/block{
 	dir = 4
@@ -934,7 +934,7 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "md" = (
 /obj/structure/stone_tile/slab,
 /obj/structure/railing{
@@ -951,7 +951,7 @@
 	color = "#777777"
 	},
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ml" = (
 /obj/structure/decorative/fluff{
 	icon_state = "pillowpile_large_pink";
@@ -970,7 +970,7 @@
 	pixel_y = 14
 	},
 /turf/open/floor/carpet/purple,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mq" = (
 /obj/effect/turf_decal/siding/yellow{
 	dir = 4
@@ -994,10 +994,10 @@
 	desc = "Basic railing meant to protect idiots like you from falling."
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mz" = (
 /turf/closed/indestructible/reinforced,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mH" = (
 /obj/structure/stone_tile/surrounding_tile,
 /obj/structure/stone_tile/surrounding/cracked{
@@ -1023,7 +1023,7 @@
 	pixel_y = 12
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mI" = (
 /obj/structure/decorative/fluff{
 	icon_state = "pillowpile_large_pink";
@@ -1045,14 +1045,14 @@
 	},
 /obj/structure/marker_beacon/violet,
 /turf/open/floor/carpet/purple,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mM" = (
 /obj/structure/flora/bush/reed{
 	pixel_x = -15;
 	pixel_y = 24
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mN" = (
 /obj/structure/flora/bush/reed/style_2{
 	pixel_x = -13;
@@ -1063,7 +1063,7 @@
 	color = "#3e3a57"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mO" = (
 /obj/structure/stone_tile/slab/cracked,
 /obj/structure/railing{
@@ -1085,7 +1085,7 @@
 	color = "#8f2727"
 	},
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mT" = (
 /obj/structure/decorative/fluff{
 	icon_state = "coin_heads";
@@ -1098,14 +1098,14 @@
 	pixel_y = -2
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nb" = (
 /obj/effect/light_emitter/interlink{
 	light_color = "#3e3a57";
 	color = "#3e3a57"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nw" = (
 /obj/structure/decorative/fluff{
 	icon_state = "pillowpile_small_pink";
@@ -1120,7 +1120,7 @@
 	pixel_y = 7
 	},
 /turf/open/floor/carpet/purple,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nC" = (
 /obj/effect/turf_decal/trimline/dark/line{
 	alpha = 255;
@@ -1133,7 +1133,7 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nF" = (
 /obj/structure/stone_tile/block{
 	dir = 8
@@ -1145,7 +1145,7 @@
 /obj/effect/turf_decal/siding/yellow/end,
 /obj/structure/dresser,
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nM" = (
 /obj/effect/turf_decal/siding/yellow/corner{
 	dir = 4
@@ -1166,13 +1166,13 @@
 	dir = 8
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nY" = (
 /obj/structure/stone_tile/surrounding_tile/burnt{
 	dir = 1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ob" = (
 /obj/structure/broken_flooring/pile{
 	color = "#666666";
@@ -1185,7 +1185,7 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oh" = (
 /obj/structure/decorative/fluff{
 	icon_state = "pillowpile_large_pink";
@@ -1205,14 +1205,14 @@
 	},
 /obj/structure/bed/pillow_large,
 /turf/open/floor/carpet/purple,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ol" = (
 /obj/structure/flora/rock/style_4{
 	pixel_x = -8;
 	pixel_y = 10
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "op" = (
 /obj/structure/stone_tile/surrounding_tile/cracked{
 	dir = 1
@@ -1223,7 +1223,7 @@
 	dir = 8
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oN" = (
 /obj/structure/fake_stairs/directional/south{
 	icon_state = "stairs-old";
@@ -1243,11 +1243,11 @@
 	pixel_x = 8
 	},
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "pE" = (
 /obj/effect/turf_decal/weather/dirt,
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "qb" = (
 /obj/structure/stone_tile/block{
 	dir = 8;
@@ -1263,7 +1263,7 @@
 	icon_state = "lava-255";
 	icon = 'icons/turf/floors/lava.dmi'
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "qf" = (
 /obj/structure/fake_stairs/directional/south{
 	icon_state = "stairs-old";
@@ -1283,14 +1283,14 @@
 	pixel_x = -6
 	},
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "qv" = (
 /obj/structure/stone_tile/block/cracked{
 	dir = 1
 	},
 /obj/effect/turf_decal/siding/yellow,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "qD" = (
 /obj/structure/fluff/drake_statue,
 /obj/structure/marker_beacon/bronze,
@@ -1299,7 +1299,7 @@
 	color = "#3e3a57"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "qG" = (
 /obj/structure/marker_beacon/olive{
 	pixel_x = 16;
@@ -1309,11 +1309,11 @@
 	dir = 1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "qZ" = (
 /obj/structure/ore_box,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ro" = (
 /obj/structure/dresser{
 	pixel_x = -2
@@ -1321,14 +1321,14 @@
 /obj/structure/stone_tile/slab,
 /obj/structure/marker_beacon/bronze,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "rJ" = (
 /obj/structure/marker_beacon/cerulean{
 	color = "#FFFFFF";
 	alpha = 10
 	},
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "sC" = (
 /obj/structure/stone_tile/block{
 	dir = 4
@@ -1343,11 +1343,11 @@
 	dir = 1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "sP" = (
 /obj/structure/table/wood,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "sX" = (
 /obj/effect/turf_decal/trimline/dark/line{
 	alpha = 255;
@@ -1360,7 +1360,7 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tm" = (
 /obj/structure/ore_vein/gold{
 	density = 0
@@ -1371,7 +1371,7 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tq" = (
 /obj/effect/turf_decal/trimline/dark/line{
 	alpha = 255;
@@ -1379,7 +1379,7 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ty" = (
 /obj/structure/medieval/wine_barrel{
 	pixel_x = 1;
@@ -1408,7 +1408,7 @@
 	uses_integrity = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tB" = (
 /obj/structure/flora/rock/style_4{
 	pixel_x = 8;
@@ -1418,7 +1418,7 @@
 	dir = 1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ua" = (
 /obj/structure/broken_flooring/pile{
 	color = "#666666";
@@ -1438,7 +1438,7 @@
 	pixel_y = 6
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "uc" = (
 /obj/structure/stone_tile/block{
 	dir = 4;
@@ -1463,7 +1463,7 @@
 	desc = "Basic railing meant to protect idiots like you from falling."
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ue" = (
 /obj/structure/flora/rock/style_3{
 	pixel_x = -14;
@@ -1481,7 +1481,7 @@
 	name = "Cave Entrance";
 	desc = "You came through this! Click this to exit."
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "un" = (
 /obj/structure/stone_tile/slab/cracked,
 /obj/effect/turf_decal/siding/yellow{
@@ -1492,11 +1492,11 @@
 	color = "#3e3a57"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ur" = (
 /obj/structure/stone_tile/surrounding_tile/burnt,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "us" = (
 /obj/structure/decorative/fluff{
 	icon_state = "pillowpile_large_pink";
@@ -1521,7 +1521,7 @@
 	pixel_y = 8
 	},
 /turf/open/floor/carpet/purple,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ux" = (
 /obj/effect/turf_decal/siding/yellow/corner{
 	dir = 4
@@ -1542,7 +1542,7 @@
 	dir = 8
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "va" = (
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 4
@@ -1556,7 +1556,7 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vh" = (
 /obj/effect/turf_decal/trimline/dark/end{
 	alpha = 255;
@@ -1567,7 +1567,7 @@
 	color = "#3e3a57"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vi" = (
 /obj/structure/stone_tile/block,
 /obj/effect/light_emitter/interlink{
@@ -1575,7 +1575,7 @@
 	color = "#3e3a57"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vs" = (
 /obj/structure/ore_vein/gold{
 	density = 0
@@ -1585,7 +1585,7 @@
 	color = "#3e3a57"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vE" = (
 /obj/structure/fake_stairs/directional/south{
 	icon_state = "stairs-old";
@@ -1604,7 +1604,7 @@
 	desc = "Basic railing meant to protect idiots like you from falling."
 	},
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "vV" = (
 /obj/structure/stone_tile/block,
 /obj/effect/turf_decal/siding/yellow{
@@ -1636,14 +1636,14 @@
 	pixel_y = 12
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "wA" = (
 /obj/structure/wall_torch/spawns_lit/directional/south,
 /obj/structure/stone_tile/block{
 	dir = 1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "wE" = (
 /obj/structure/broken_flooring/pile{
 	color = "#666666";
@@ -1661,7 +1661,7 @@
 	pixel_x = -5
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "wG" = (
 /obj/structure/decorative{
 	anchored = 1;
@@ -1681,7 +1681,7 @@
 	opacity = 0;
 	blocks_air = 0
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xf" = (
 /obj/structure/flora/rock/style_4{
 	pixel_x = 14;
@@ -1699,7 +1699,7 @@
 	name = "Cave Entrance";
 	desc = "You came through this! Click this to exit."
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xq" = (
 /obj/structure/stone_tile/block,
 /obj/structure/rack/wooden,
@@ -1734,13 +1734,13 @@
 	pixel_y = -1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xF" = (
 /obj/structure/chair/pew/left{
 	dir = 4
 	},
 /turf/open/floor/bamboo,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xG" = (
 /obj/structure/stone_tile/block/burnt{
 	dir = 4;
@@ -1755,12 +1755,12 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xR" = (
 /obj/structure/flora/bush/fullgrass,
 /obj/structure/spacevine,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yk" = (
 /obj/structure/stone_tile/block{
 	dir = 4;
@@ -1780,7 +1780,7 @@
 	icon_state = "lava-255";
 	icon = 'icons/turf/floors/lava.dmi'
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yt" = (
 /obj/structure/stone_tile/surrounding_tile/burnt{
 	dir = 1
@@ -1818,7 +1818,7 @@
 	icon_state = "lava-255";
 	icon = 'icons/turf/floors/lava.dmi'
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yy" = (
 /obj/structure/chair/pew/right{
 	dir = 4
@@ -1827,7 +1827,7 @@
 	dir = 4
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yQ" = (
 /obj/effect/turf_decal/tile/yellow/half{
 	dir = 8;
@@ -1844,7 +1844,7 @@
 	dir = 4
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yX" = (
 /obj/structure/railing/wooden_fencing{
 	dir = 1
@@ -1868,7 +1868,7 @@
 	pixel_y = 3
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yZ" = (
 /obj/structure/stone_tile/surrounding/cracked,
 /obj/structure/stone_tile/center/cracked,
@@ -1885,7 +1885,7 @@
 	color = "#3e3a57"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "zj" = (
 /obj/structure/flora/rock/style_4{
 	pixel_x = -8;
@@ -1898,17 +1898,17 @@
 	dir = 8
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "zn" = (
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "zo" = (
 /obj/structure/barricade/wooden,
 /obj/structure/marker_beacon/bronze{
 	pixel_y = -16
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "zt" = (
 /obj/structure/stone_tile/surrounding_tile/burnt{
 	dir = 1
@@ -1945,13 +1945,13 @@
 	icon_state = "lava-255";
 	icon = 'icons/turf/floors/lava.dmi'
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "zu" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "zJ" = (
 /obj/structure/decorative/fluff{
 	icon_state = "coin_heads";
@@ -1964,19 +1964,19 @@
 	pixel_y = 6
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Aq" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "AW" = (
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Bo" = (
 /obj/structure/railing/corner/end{
 	dir = 4;
@@ -1993,7 +1993,7 @@
 	pixel_y = 4
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Bp" = (
 /obj/structure/stone_tile/slab,
 /obj/structure/decorative/fluff{
@@ -2064,7 +2064,7 @@
 	pixel_y = 9
 	},
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Bt" = (
 /obj/structure/stone_tile/block{
 	dir = 8;
@@ -2080,7 +2080,7 @@
 	icon_state = "lava-255";
 	icon = 'icons/turf/floors/lava.dmi'
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Bx" = (
 /obj/structure/stone_tile/slab,
 /obj/structure/decorative/fluff{
@@ -2098,7 +2098,7 @@
 	color = "#3e3a57"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "BF" = (
 /obj/structure/stone_tile/slab,
 /obj/effect/light_emitter/interlink{
@@ -2106,7 +2106,7 @@
 	color = "#3e3a57"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "BK" = (
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 1
@@ -2122,12 +2122,12 @@
 	pixel_y = -1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "BO" = (
 /turf/open/floor/fakebasalt{
 	icon_state = "basalt_dug"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "BY" = (
 /obj/structure/stone_tile/block{
 	dir = 8
@@ -2138,10 +2138,10 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ct" = (
 /turf/closed/indestructible/riveted/boss,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "CN" = (
 /obj/structure/stone_tile/block,
 /obj/structure/decorative/fluff{
@@ -2202,7 +2202,7 @@
 	dir = 1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "CT" = (
 /obj/structure/stone_tile/slab/cracked{
 	dir = 2
@@ -2216,13 +2216,13 @@
 	color = "#683d21"
 	},
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Do" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "DB" = (
 /obj/structure/stone_tile/block,
 /obj/structure/marker_beacon/bronze{
@@ -2230,13 +2230,13 @@
 	color = "#FFFFFF"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "DL" = (
 /obj/structure/stone_tile/slab/cracked{
 	dir = 2
 	},
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "DM" = (
 /obj/structure/broken_flooring/pile{
 	color = "#666666";
@@ -2256,7 +2256,7 @@
 	dir = 8
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "DR" = (
 /obj/structure/stone_tile/block,
 /obj/structure/flora/bush/sparsegrass/style_3{
@@ -2268,17 +2268,17 @@
 	color = "#FFFFFF"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ep" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Er" = (
 /obj/structure/stone_tile/slab/burnt,
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "EC" = (
 /obj/structure/stone_tile/surrounding_tile/cracked{
 	dir = 4
@@ -2288,7 +2288,7 @@
 	pixel_y = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ED" = (
 /obj/structure/stone_tile/block/cracked,
 /obj/effect/turf_decal/siding/yellow{
@@ -2314,10 +2314,10 @@
 	desc = "A large plate made for the professional catering industry but also apppreciated by mukbangers and other persons of considerable size and heft."
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "EF" = (
 /turf/closed/mineral/strange_rock/volcanic,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "EI" = (
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 4
@@ -2365,7 +2365,7 @@
 	color = "#3e3a57"
 	},
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "EJ" = (
 /obj/effect/light_emitter/interlink{
 	light_color = "#3e3a57";
@@ -2382,7 +2382,7 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Fe" = (
 /obj/structure/chair/pew/left{
 	dir = 4
@@ -2391,7 +2391,7 @@
 	dir = 4
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Fi" = (
 /obj/structure/decorative/fluff{
 	anchored = 1;
@@ -2402,11 +2402,11 @@
 	pixel_x = 4
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Fl" = (
 /obj/structure/flora/bush/lavendergrass/style_3,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Fx" = (
 /obj/structure/stone_tile/block{
 	dir = 8
@@ -2421,13 +2421,13 @@
 	dir = 1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "FA" = (
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 4
 	},
 /turf/open/floor/carpet/purple,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "FU" = (
 /obj/structure/decorative/fluff{
 	icon_state = "coin_heads";
@@ -2444,11 +2444,11 @@
 	color = "#FFFFFF"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Gl" = (
 /obj/structure/bed/pillow_large,
 /turf/open/floor/mineral/plasma,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Gm" = (
 /obj/structure/flora/bush/sparsegrass/style_2,
 /obj/effect/light_emitter/interlink{
@@ -2456,7 +2456,7 @@
 	color = "#3e3a57"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Gs" = (
 /obj/structure/stone_tile/slab,
 /obj/structure/decorative/fluff{
@@ -2474,17 +2474,17 @@
 	color = "#3e3a57"
 	},
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "GP" = (
 /obj/structure/stone_tile/surrounding/cracked{
 	dir = 4
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "GU" = (
 /obj/structure/flora/bush/fullgrass/style_3,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Hy" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
@@ -2493,14 +2493,14 @@
 	dir = 4
 	},
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "HJ" = (
 /obj/structure/flora/rock/style_4{
 	pixel_x = 6;
 	pixel_y = 9
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "HO" = (
 /obj/item/fancy_pillow{
 	pixel_x = 14;
@@ -2554,13 +2554,13 @@
 	dir = 1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "In" = (
 /obj/structure/flora/bush/fullgrass,
 /obj/structure/flora/tree/jungle/small/style_4,
 /obj/structure/marker_beacon/indigo,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Iy" = (
 /obj/structure/broken_flooring/pile{
 	color = "#666666";
@@ -2568,14 +2568,14 @@
 	name = "rectangular rocks"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "II" = (
 /obj/structure/stone_tile/block{
 	dir = 1
 	},
 /obj/structure/stone_tile,
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "IT" = (
 /obj/structure/stone_tile/block,
 /obj/structure/stone_tile{
@@ -2619,14 +2619,14 @@
 	pixel_x = -8
 	},
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Jd" = (
 /obj/structure/table/wood,
 /obj/structure/marker_beacon/bronze{
 	pixel_y = -16
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Jl" = (
 /obj/effect/turf_decal/siding/yellow/corner{
 	dir = 1
@@ -2645,11 +2645,11 @@
 	},
 /obj/structure/stone_tile/surrounding_tile/cracked,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Jq" = (
 /obj/structure/barricade/wooden,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Js" = (
 /obj/structure/sign/directions/evac/directional/south{
 	pixel_x = 0;
@@ -2664,7 +2664,7 @@
 	name = "mr moldb himself"
 	},
 /turf/open/floor/iron/dark/textured_large,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "JB" = (
 /obj/structure/decorative/fluff{
 	icon_state = "coin_heads";
@@ -2680,7 +2680,7 @@
 	color = "#555555"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "JE" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
@@ -2688,7 +2688,7 @@
 /obj/structure/spacevine,
 /obj/structure/marker_beacon/indigo,
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "JH" = (
 /obj/structure/flora/rock/style_2{
 	pixel_x = -9;
@@ -2708,18 +2708,18 @@
 	pixel_y = 9
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Kj" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
 /obj/structure/spacevine,
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Kp" = (
 /obj/structure/spacevine,
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "KC" = (
 /obj/structure/decorative/fluff{
 	icon_state = "coin_tails";
@@ -2742,19 +2742,19 @@
 	desc = "Basic railing meant to protect idiots like you from falling."
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "KD" = (
 /obj/structure/flora/bush/fullgrass/style_3,
 /obj/structure/flora/tree/jungle/small/style_5,
 /obj/structure/marker_beacon/indigo,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "KG" = (
 /obj/structure/curtain/cloth{
 	color = "#555555"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "KH" = (
 /obj/structure/stone_tile/surrounding_tile/burnt{
 	dir = 1
@@ -2769,20 +2769,20 @@
 	dir = 10
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "KJ" = (
 /obj/structure/railing/corner/end/flip{
 	dir = 8;
 	color = "#683d21"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "KY" = (
 /obj/structure/stone_tile/surrounding/cracked{
 	dir = 1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Lv" = (
 /obj/structure/stone_tile{
 	dir = 4
@@ -2794,7 +2794,7 @@
 	dir = 8
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "LP" = (
 /obj/structure/flora/rock/style_4{
 	pixel_x = 6;
@@ -2805,7 +2805,7 @@
 	pixel_y = -6
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "LX" = (
 /obj/structure/stone_tile/slab/cracked{
 	dir = 6
@@ -2824,7 +2824,7 @@
 	color = "#777777"
 	},
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Mk" = (
 /obj/structure/stone_tile/surrounding_tile/burnt{
 	dir = 4
@@ -2851,11 +2851,11 @@
 	},
 /obj/structure/marker_beacon/bronze,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ml" = (
 /obj/structure/stone_tile/surrounding_tile/cracked,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Mz" = (
 /obj/effect/turf_decal/siding/yellow,
 /obj/structure/stone_tile/block{
@@ -2864,7 +2864,7 @@
 	pixel_x = -1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "MD" = (
 /obj/structure/stone_tile/surrounding_tile/burnt{
 	dir = 1
@@ -2902,7 +2902,7 @@
 	icon_state = "lava-255";
 	icon = 'icons/turf/floors/lava.dmi'
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Nf" = (
 /obj/item/fancy_pillow{
 	pixel_x = 18;
@@ -2951,7 +2951,7 @@
 	amount = 10
 	},
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "NH" = (
 /obj/structure/curtain/cloth{
 	color = "#555555"
@@ -2960,7 +2960,7 @@
 	dir = 4
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Oj" = (
 /obj/structure/stone_tile/surrounding_tile/burnt{
 	dir = 8;
@@ -3001,7 +3001,7 @@
 	icon_state = "lava-255";
 	icon = 'icons/turf/floors/lava.dmi'
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Oo" = (
 /obj/structure/stone_tile/block,
 /obj/effect/turf_decal/siding/yellow{
@@ -3012,7 +3012,7 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Or" = (
 /obj/structure/stone_tile/surrounding/cracked{
 	dir = 1
@@ -3028,7 +3028,7 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "OR" = (
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 8
@@ -3044,7 +3044,7 @@
 	dir = 9
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Pb" = (
 /obj/effect/turf_decal/siding/yellow/corner{
 	dir = 1
@@ -3063,7 +3063,7 @@
 	},
 /obj/structure/stone_tile/surrounding_tile,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Pi" = (
 /obj/structure/decorative/fluff{
 	icon_state = "coin_heads";
@@ -3202,7 +3202,7 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Pl" = (
 /obj/structure/stone_tile/block{
 	dir = 8
@@ -3215,11 +3215,11 @@
 	dir = 1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Po" = (
 /obj/structure/stone_tile/slab,
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Pt" = (
 /obj/structure/flora/rock/style_4{
 	pixel_x = 6;
@@ -3230,7 +3230,7 @@
 	pixel_y = -3
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "PV" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
@@ -3240,7 +3240,7 @@
 	pixel_y = -1
 	},
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "PX" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
@@ -3249,11 +3249,11 @@
 	dir = 9
 	},
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Qf" = (
 /obj/structure/flora/bush/sparsegrass/style_2,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Qn" = (
 /obj/structure/stone_tile/slab,
 /obj/structure/decorative/fluff{
@@ -3318,7 +3318,7 @@
 	},
 /obj/structure/marker_beacon/yellow,
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Qv" = (
 /obj/structure/medieval/wine_barrel{
 	pixel_x = 5;
@@ -3362,7 +3362,7 @@
 	pixel_x = 3
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "QG" = (
 /obj/structure/stone_tile/block{
 	dir = 8;
@@ -3378,14 +3378,14 @@
 	icon_state = "lava-255";
 	icon = 'icons/turf/floors/lava.dmi'
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Rb" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
 /obj/structure/spacevine,
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Rg" = (
 /obj/structure/bed/pillow_large,
 /obj/structure/decorative/fluff{
@@ -3401,7 +3401,7 @@
 	pixel_y = -12
 	},
 /turf/open/floor/carpet/purple,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Rh" = (
 /obj/structure/broken_flooring/pile{
 	color = "#666666";
@@ -3414,7 +3414,7 @@
 	dir = 8
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Rt" = (
 /obj/structure/stone_tile/slab/burnt,
 /obj/structure/railing/corner/end{
@@ -3446,7 +3446,7 @@
 	pixel_x = 8
 	},
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ry" = (
 /obj/structure/stone_tile/block{
 	dir = 4
@@ -3462,18 +3462,18 @@
 	dir = 1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "RB" = (
 /obj/structure/flora/rock/pile/style_2,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Se" = (
 /obj/structure/flora/rock{
 	pixel_x = 6;
 	pixel_y = 2
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Sh" = (
 /obj/structure/decorative/fluff{
 	icon_state = "coin_tails";
@@ -3491,7 +3491,7 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Sm" = (
 /obj/structure/barricade/wooden/crude,
 /obj/structure/flora/rock{
@@ -3499,12 +3499,12 @@
 	pixel_y = 2
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Sq" = (
 /obj/structure/barricade/wooden,
 /obj/structure/railing/wooden_fencing,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "SA" = (
 /obj/structure/stone_tile/surrounding_tile/cracked{
 	dir = 8
@@ -3520,7 +3520,7 @@
 	pixel_x = -5
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "SB" = (
 /obj/structure/decorative/fluff{
 	icon_state = "coin_heads";
@@ -3583,7 +3583,7 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "SJ" = (
 /obj/structure/stone_tile/block{
 	dir = 8
@@ -3596,10 +3596,10 @@
 	pixel_y = -1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "SQ" = (
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Tl" = (
 /obj/structure/decorative/fluff{
 	icon_state = "coin_tails";
@@ -3652,7 +3652,7 @@
 	pixel_y = 1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Tm" = (
 /obj/effect/turf_decal/trimline/dark/corner{
 	alpha = 255;
@@ -3660,14 +3660,14 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Tp" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
 /obj/structure/spacevine,
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ts" = (
 /obj/effect/turf_decal/trimline/dark/end{
 	alpha = 255;
@@ -3692,7 +3692,7 @@
 	dir = 1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Tu" = (
 /obj/machinery/room_controller/directional/west,
 /obj/structure/sign/directions/evac/directional/south{
@@ -3704,14 +3704,14 @@
 	dir = 1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "TN" = (
 /obj/structure/flora/rock/style_3{
 	pixel_x = -6;
 	pixel_y = -2
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ua" = (
 /obj/effect/turf_decal/trimline/dark/line{
 	alpha = 255;
@@ -3720,7 +3720,7 @@
 	},
 /obj/structure/stone_tile/surrounding_tile/burnt,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ue" = (
 /obj/structure/stone_tile/block,
 /obj/structure/rack/wooden,
@@ -3745,7 +3745,7 @@
 	pixel_y = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Uf" = (
 /obj/structure/stone_tile/slab,
 /obj/structure/decorative/fluff{
@@ -3803,7 +3803,7 @@
 	pixel_y = 6
 	},
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Uo" = (
 /obj/structure/stone_tile/block/cracked{
 	dir = 1
@@ -3814,7 +3814,7 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Us" = (
 /obj/structure/stone_tile/slab,
 /obj/structure/decorative/fluff{
@@ -3897,7 +3897,7 @@
 	},
 /obj/structure/marker_beacon/yellow,
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "UA" = (
 /obj/structure/stone_tile/block{
 	dir = 4
@@ -3906,7 +3906,7 @@
 	dir = 4
 	},
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "UD" = (
 /obj/structure/decorative{
 	anchored = 1;
@@ -3919,7 +3919,7 @@
 	desc = "Basic railing meant to protect idiots like you from falling."
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "UF" = (
 /obj/structure/decorative/fluff{
 	icon_state = "pillowpile_large_pink";
@@ -3940,7 +3940,7 @@
 /obj/structure/bed/pillow_large,
 /obj/structure/marker_beacon/violet,
 /turf/open/floor/carpet/purple,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "UJ" = (
 /obj/structure/flora/rock/style_4{
 	pixel_y = 0
@@ -3956,7 +3956,7 @@
 	},
 /obj/structure/stone_tile,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "UT" = (
 /obj/structure/broken_flooring/pile{
 	color = "#666666";
@@ -3969,7 +3969,7 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "UZ" = (
 /obj/structure/stone_tile/block{
 	dir = 4
@@ -3978,14 +3978,14 @@
 	dir = 8
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Vi" = (
 /obj/structure/flora/rock/pile/jungle/large/style_3{
 	pixel_x = 0;
 	pixel_y = -32
 	},
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Vl" = (
 /obj/structure/bed/pillow_large,
 /obj/structure/decorative/fluff{
@@ -4001,7 +4001,7 @@
 	},
 /obj/structure/marker_beacon/purple,
 /turf/open/floor/mineral/plasma,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Vq" = (
 /obj/structure/fake_stairs/directional/south{
 	icon_state = "stairs-m";
@@ -4009,7 +4009,7 @@
 	color = "#2d221a"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Vu" = (
 /obj/structure/stone_tile/slab,
 /obj/machinery/smartfridge/drying/rack{
@@ -4021,7 +4021,7 @@
 	pixel_x = -7
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Vy" = (
 /obj/effect/turf_decal/trimline/dark/corner{
 	alpha = 255;
@@ -4033,7 +4033,7 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "VD" = (
 /obj/structure/flora/rock/style_4{
 	pixel_x = 6;
@@ -4045,7 +4045,7 @@
 	},
 /obj/structure/spacevine,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "VI" = (
 /obj/structure/stone_tile/surrounding_tile,
 /obj/structure/stone_tile/surrounding_tile/cracked{
@@ -4056,7 +4056,7 @@
 	dir = 8
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "VO" = (
 /obj/structure/stone_tile/block/burnt{
 	dir = 8;
@@ -4066,7 +4066,7 @@
 	icon_state = "lava-255";
 	icon = 'icons/turf/floors/lava.dmi'
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Wd" = (
 /obj/structure/ore_vein/gold{
 	density = 0
@@ -4077,7 +4077,7 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "WE" = (
 /obj/effect/turf_decal/trimline/dark/line{
 	alpha = 255;
@@ -4095,14 +4095,14 @@
 	pixel_y = -13
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "WG" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
 /obj/structure/spacevine,
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "WK" = (
 /obj/effect/turf_decal/trimline/dark/line{
 	alpha = 255;
@@ -4114,7 +4114,7 @@
 	color = "#3e3a57"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "WL" = (
 /obj/structure/flora/tree/jungle/small/style_6{
 	pixel_x = -33;
@@ -4123,7 +4123,7 @@
 /obj/structure/flora/bush/fullgrass/style_3,
 /obj/structure/marker_beacon/indigo,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "WM" = (
 /obj/structure/stone_tile/block{
 	dir = 1
@@ -4132,7 +4132,7 @@
 	color = "#683d21"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "WS" = (
 /obj/structure/stone_tile/block{
 	dir = 8
@@ -4145,7 +4145,7 @@
 	pixel_y = -1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "WU" = (
 /obj/structure/stone_tile/block/burnt{
 	dir = 2
@@ -4158,7 +4158,7 @@
 	use_holiday_colors = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "WY" = (
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 8
@@ -4207,7 +4207,7 @@
 	pixel_y = 29
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Xg" = (
 /obj/effect/turf_decal/tile/yellow/half{
 	dir = 8;
@@ -4224,7 +4224,7 @@
 	dir = 4
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "XF" = (
 /obj/structure/decorative/fluff{
 	anchored = 1;
@@ -4247,7 +4247,7 @@
 	pixel_x = 16
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "XL" = (
 /obj/effect/turf_decal/siding/yellow,
 /obj/structure/stone_tile/block{
@@ -4260,7 +4260,7 @@
 	anchored = 1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "XW" = (
 /obj/structure/stone_tile/block/burnt{
 	dir = 4
@@ -4269,7 +4269,7 @@
 	icon_state = "lava-255";
 	icon = 'icons/turf/floors/lava.dmi'
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Yf" = (
 /obj/structure/broken_flooring/pile{
 	color = "#666666";
@@ -4280,7 +4280,7 @@
 	},
 /obj/structure/stone_tile/surrounding_tile,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "YM" = (
 /obj/effect/turf_decal/trimline/dark/line{
 	alpha = 255;
@@ -4303,13 +4303,13 @@
 	pixel_x = 5
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ze" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
 	},
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Zf" = (
 /obj/structure/flora/bush/fullgrass,
 /obj/structure/flora/grass/jungle/b/style_5,
@@ -4318,7 +4318,7 @@
 	pixel_y = 6
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Zo" = (
 /obj/structure/stone_tile{
 	dir = 4
@@ -4331,7 +4331,7 @@
 	},
 /obj/effect/turf_decal/siding/yellow/end,
 /turf/open/floor/mineral/gold,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Zs" = (
 /obj/structure/bed/pillow_large,
 /obj/item/fancy_pillow{
@@ -4348,16 +4348,16 @@
 	color = "#777777"
 	},
 /turf/open/floor/mineral/plasma,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ZF" = (
 /turf/closed/wall/mineral/stone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ZI" = (
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
 /turf/open/water/hot_spring,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ZQ" = (
 /obj/effect/turf_decal/trimline/dark/end{
 	alpha = 255;
@@ -4382,22 +4382,22 @@
 	dir = 1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ZR" = (
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 4
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ZU" = (
 /turf/closed/indestructible/rock,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ZZ" = (
 /obj/structure/stone_tile/surrounding_tile{
 	dir = 8
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 
 (1,1,1) = {"
 gI

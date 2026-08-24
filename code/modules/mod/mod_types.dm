@@ -36,7 +36,8 @@
 
 /obj/item/mod/control/pre_equipped/uninstall(obj/item/mod/module/old_module, deleting)
 	. = ..()
-	default_pins -= old_module.type
+	if(default_pins[old_module.type])
+		default_pins -= old_module
 
 /obj/item/mod/control/pre_equipped/standard
 	applied_modules = list(
@@ -51,16 +52,6 @@
 		/obj/item/mod/module/storage,
 		/obj/item/mod/module/welding,
 		/obj/item/mod/module/flashlight,
-	)
-
-/obj/item/mod/control/pre_equipped/portable_suit
-	theme = /datum/mod_theme/portable_suit
-	applied_modules = list(
-		/obj/item/mod/module/paper_dispenser,
-		/obj/item/mod/module/stamp,
-	)
-	default_pins = list(
-		/obj/item/mod/module/stamp,
 	)
 
 /obj/item/mod/control/pre_equipped/engineering
@@ -273,7 +264,6 @@
 		/obj/item/mod/module/magnetic_harness,
 		/obj/item/mod/module/jetpack/advanced,
 		/obj/item/mod/module/jump_jet,
-		/obj/item/mod/module/pathfinder,
 		/obj/item/mod/module/flashlight,
 		/obj/item/mod/module/dna_lock,
 		/obj/item/mod/module/hat_stabilizer/syndicate,
@@ -332,7 +322,6 @@
 		/obj/item/mod/module/magnetic_harness,
 		/obj/item/mod/module/jetpack/advanced,
 		/obj/item/mod/module/jump_jet,
-		/obj/item/mod/module/pathfinder,
 		/obj/item/mod/module/flashlight,
 		/obj/item/mod/module/hat_stabilizer/syndicate,
 		/obj/item/mod/module/quick_cuff,

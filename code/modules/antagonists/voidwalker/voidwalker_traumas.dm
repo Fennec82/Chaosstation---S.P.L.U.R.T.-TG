@@ -7,7 +7,6 @@
 	lose_text = ""
 	resilience = TRAUMA_RESILIENCE_LOBOTOMY
 	random_gain = FALSE
-	known_trauma = FALSE
 	/// Type for the bodypart texture we add
 	var/bodypart_overlay_type = /datum/bodypart_overlay/texture/spacey
 	/// Color in which we paint the space texture
@@ -79,14 +78,11 @@
 		untexture_limb(owner, bodypart)
 	owner.update_body()
 
-/datum/brain_trauma/voided/on_life(seconds_per_tick)
+/datum/brain_trauma/voided/on_life(seconds_per_tick, times_fired)
 	. = ..()
 
-	//BUBBER EDIT START - makes nebula vomit not painful to deal with
 	if(prob(vomit_frequency))
-		new /obj/effect/decal/cleanable/vomit/nebula(owner.loc)
-		owner.visible_message(span_notice("a beautifully sparkling liquid drips off of [owner] and forms a puddle"), span_notice("The beautifully sparkling liquid dripping off of you forms a puddle"))
-	//BUBBER EDIT END
+		owner.vomit(MOB_VOMIT_KNOCKDOWN, vomit_type = /obj/effect/decal/cleanable/vomit/nebula, distance = 0)
 
 /// Apply the space texture
 /datum/brain_trauma/voided/proc/texture_limb(atom/source, obj/item/bodypart/limb)

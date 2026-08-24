@@ -55,8 +55,7 @@
 	item_flags = NONE
 	obj_flags = UNIQUE_RENAME
 	weapon_weight = WEAPON_HEAVY
-	max_mod_capacity = 60
-	disabled_modkits = list(/obj/item/borg/upgrade/modkit/aoe) // Should cover all AOE variants
+	max_mod_capacity = 75
 
 /obj/item/gun/energy/recharge/kinetic_accelerator/glock
 	name = "proto-kinetic pistol"
@@ -90,7 +89,6 @@
 	obj_flags = UNIQUE_RENAME
 	weapon_weight = WEAPON_LIGHT
 	max_mod_capacity = 75
-	disabled_modkits = list(/obj/item/borg/upgrade/modkit/aoe) // Should cover all AOE variants
 
 /obj/item/gun/energy/recharge/kinetic_accelerator/shockwave/process_fire(atom/target, mob/living/user, message = TRUE, params = null, zone_override = "", bonus_spread = 0)
 	target = get_edge_target_turf(user, user.dir)
@@ -163,7 +161,7 @@
 /obj/projectile/kinetic/railgun
 	name = "hyper kinetic force"
 	icon_state = null
-	damage = 100 // Slightly less than a crusher marked hit (110 methinks), but ranged and really fast moving, big movement slowdown and bulky.
+	damage = 100
 	damage_type = BRUTE
 	armor_flag = BOMB
 	range = 6
@@ -174,7 +172,7 @@
 /obj/projectile/kinetic/repeater
 	name = "rapid kinetic force"
 	icon_state = null
-	damage = 20 // Half damage, burst fire and a bit more range.
+	damage = 20
 	damage_type = BRUTE
 	armor_flag = BOMB
 	range = 4
@@ -183,20 +181,16 @@
 /obj/projectile/kinetic/shotgun
 	name = "split kinetic force"
 	icon_state = null
-	damage = 20 // 3 projectiles, 60 base damage. Theoretically more if all shots hit.
+	damage = 20
 	damage_type = BRUTE
 	armor_flag = BOMB
 	range = 3
 	log_override = TRUE
 
-/obj/item/borg/upgrade/modkit/indoors/modify_projectile(obj/projectile/kinetic/shotgun/K)
-	..()
-	K.pressure_decrease = min(K.pressure_decrease, 0.5)
-
 /obj/projectile/kinetic/glock
 	name = "light kinetic force"
 	icon_state = null
-	damage = 10 // Low dmg, high modularity. Can be made great, especially when dual wielded.
+	damage = 10
 	damage_type = BRUTE
 	armor_flag = BOMB
 	range = 3
@@ -205,7 +199,7 @@
 /obj/projectile/kinetic/shockwave
 	name = "concussive kinetic force"
 	icon_state = null
-	damage = 40 // 8 projectiles in a 360 around you. Good for CC and rock clearing.
+	damage = 40
 	damage_type = BRUTE
 	armor_flag = BOMB
 	range = 1

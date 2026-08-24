@@ -10,7 +10,7 @@
 	name = "rana"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "aj" = (
 /obj/structure/decorative{
 	anchored = 1;
@@ -22,7 +22,7 @@
 	color = "#4a4951"
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "aH" = (
 /obj/structure/decorative{
 	anchored = 1;
@@ -38,7 +38,7 @@
 	pixel_y = 14
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bg" = (
 /obj/structure/alien/weeds,
 /obj/structure/fake_stairs/directional/north{
@@ -53,7 +53,7 @@
 	color = "#3e3a57"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bB" = (
 /obj/structure/decorative{
 	name = "doors";
@@ -67,16 +67,16 @@
 	name = "Cave Entrance";
 	desc = "You came through this! Click this to exit."
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "bC" = (
 /obj/structure/alien/weeds,
 /obj/structure/bed/nest,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cc" = (
 /obj/structure/alien/resin/wall,
 /turf/closed/indestructible/rock,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "co" = (
 /obj/structure/alien/weeds,
 /obj/structure/decorative{
@@ -111,7 +111,7 @@
 	name = "moff-ra"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cY" = (
 /obj/structure/flora/rock{
 	pixel_x = -12;
@@ -123,14 +123,14 @@
 	density = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "cZ" = (
 /obj/structure/alien/weeds,
 /obj/effect/decal/remains/human{
 	color = "#5d5a66"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "dP" = (
 /obj/structure/fake_stairs/directional/north{
 	base_icon_state = "stairs-r";
@@ -140,7 +140,7 @@
 	color = "#4a4951"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "eg" = (
 /obj/structure/alien/weeds,
 /obj/structure/marker_beacon/cerulean{
@@ -164,7 +164,7 @@
 	pixel_y = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "eY" = (
 /obj/structure/railing{
 	dir = 8;
@@ -175,7 +175,7 @@
 	color = "#4a4951"
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "fC" = (
 /obj/structure/alien/weeds,
 /obj/structure/decorative{
@@ -191,22 +191,22 @@
 	pixel_y = -3
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "gW" = (
 /obj/structure/alien/resin/membrane,
 /obj/structure/alien/weeds,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hl" = (
 /obj/effect/turf_decal/siding/wood/end{
 	dir = 8;
 	color = "#4a4951"
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "hS" = (
 /turf/closed/wall/mineral/stone,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ic" = (
 /obj/structure/alien/resin/membrane,
 /obj/effect/decal/cleanable/cobweb/cobweb2{
@@ -218,7 +218,7 @@
 	name = "alien weeds"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "iC" = (
 /obj/machinery/room_controller/directional/west,
 /obj/structure/decorative{
@@ -231,7 +231,7 @@
 	color = "#4a4951"
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "iH" = (
 /obj/structure/flora/rock{
 	pixel_x = -20;
@@ -242,7 +242,7 @@
 	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
 	color = "#5f5f5f"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "iK" = (
 /obj/structure/decorative{
 	name = "skull";
@@ -262,7 +262,7 @@
 	color = "#5d5a66"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "iV" = (
 /obj/structure/alien/weeds,
 /obj/structure/decorative{
@@ -276,7 +276,7 @@
 	pixel_y = 6
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "jm" = (
 /obj/effect/decal/cleanable/cobweb{
 	color = "#5d5a66";
@@ -287,7 +287,7 @@
 	name = "alien weeds"
 	},
 /turf/closed/indestructible/riveted/boss,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "kx" = (
 /obj/structure/alien/weeds,
 /obj/structure/decorative{
@@ -304,7 +304,7 @@
 	name = "witchwing"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "mq" = (
 /obj/structure/fake_stairs/directional/north{
 	base_icon_state = "grille";
@@ -333,7 +333,7 @@
 	color = "#3e3a57"
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "my" = (
 /obj/structure/alien/weeds,
 /obj/structure/decorative{
@@ -365,7 +365,7 @@
 	name = "alien weeds"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nb" = (
 /obj/structure/barricade/wooden{
 	uses_integrity = 0
@@ -382,7 +382,7 @@
 	name = "alien weeds"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nD" = (
 /obj/structure/railing{
 	dir = 8;
@@ -398,7 +398,7 @@
 	color = "#4a4951"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "nF" = (
 /obj/structure/alien/weeds,
 /obj/structure/decorative{
@@ -426,12 +426,12 @@
 	name = "alien weeds"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "op" = (
 /turf/closed/indestructible/rock{
 	color = "#000000"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oI" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2{
 	color = "#5d5a66";
@@ -442,7 +442,7 @@
 	name = "alien weeds"
 	},
 /turf/closed/indestructible/riveted/boss,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "oV" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 5;
@@ -457,7 +457,7 @@
 	color = "#5d5a66"
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "pL" = (
 /obj/structure/alien/weeds,
 /obj/structure/spider/cocoon{
@@ -489,7 +489,7 @@
 	pixel_y = -3
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "pN" = (
 /obj/structure/marker_beacon/bronze{
 	pixel_x = 16;
@@ -505,7 +505,7 @@
 	color = "#4a4951"
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "qO" = (
 /obj/structure/alien/weeds,
 /obj/structure/decorative{
@@ -551,7 +551,7 @@
 	name = "alien weeds"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "qS" = (
 /obj/effect/turf_decal/siding/wood/end{
 	dir = 8;
@@ -582,7 +582,7 @@
 	name = "alien weeds"
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "rz" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#4a4951"
@@ -593,7 +593,7 @@
 	},
 /obj/structure/bed/nest,
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "se" = (
 /obj/structure/decorative{
 	name = "resin floor";
@@ -613,7 +613,7 @@
 	name = "saracen"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tm" = (
 /obj/structure/railing{
 	dir = 8;
@@ -630,7 +630,7 @@
 	color = "#4a4951"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tK" = (
 /obj/structure/railing{
 	dir = 4;
@@ -646,7 +646,7 @@
 	color = "#4a4951"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tL" = (
 /obj/structure/fake_stairs/directional/north{
 	base_icon_state = "grille";
@@ -680,10 +680,10 @@
 	color = "#4a4951"
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "tY" = (
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "wc" = (
 /obj/structure/decorative{
 	name = "resin floor";
@@ -698,7 +698,7 @@
 	pixel_y = -3
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "wm" = (
 /obj/structure/decorative{
 	anchored = 1;
@@ -732,7 +732,7 @@
 	pixel_x = -16
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "xO" = (
 /obj/structure/decorative{
 	anchored = 1;
@@ -766,12 +766,12 @@
 	pixel_x = -16
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yl" = (
 /obj/structure/alien/weeds,
 /obj/structure/alien/resin/membrane,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yt" = (
 /turf/closed/indestructible/hoteldoor{
 	icon = 'modular_zubbers/icons/turf/floors/floors.dmi';
@@ -779,7 +779,7 @@
 	name = "Cave Entrance";
 	desc = "You came through this! Click this to exit."
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yI" = (
 /obj/structure/decorative{
 	anchored = 1;
@@ -813,7 +813,7 @@
 	pixel_x = -16
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "yM" = (
 /obj/effect/light_emitter/interlink{
 	light_color = "#3e3a57";
@@ -829,14 +829,14 @@
 	color = "#4a4951"
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "AO" = (
 /obj/structure/flora/rock/style_3{
 	pixel_x = -6;
 	pixel_y = 9
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Bj" = (
 /obj/structure/decorative{
 	anchored = 1;
@@ -853,10 +853,10 @@
 	color = "#5d5a66"
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "By" = (
 /turf/closed/indestructible/rock,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "De" = (
 /obj/structure/decorative{
 	name = "resin floor";
@@ -871,7 +871,7 @@
 	pixel_y = -4
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Df" = (
 /obj/structure/decorative{
 	anchored = 1;
@@ -892,11 +892,11 @@
 	color = "#5d5a66"
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "EB" = (
 /obj/structure/alien/resin,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "EM" = (
 /obj/structure/decorative{
 	name = "resin floor";
@@ -911,7 +911,7 @@
 	pixel_y = -1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "EX" = (
 /obj/effect/turf_decal/siding/wood/end{
 	dir = 4;
@@ -952,7 +952,7 @@
 	name = "alien weeds"
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "FB" = (
 /obj/structure/alien/weeds,
 /obj/effect/light_emitter/interlink{
@@ -961,7 +961,7 @@
 	},
 /obj/structure/bed/nest,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Gx" = (
 /obj/structure/alien/weeds,
 /obj/structure/decorative{
@@ -999,13 +999,13 @@
 	anchored = 1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "GS" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#4a4951"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Hi" = (
 /obj/structure/barricade/wooden,
 /obj/structure/railing/wooden_fencing,
@@ -1018,7 +1018,7 @@
 	name = "alien weeds"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "If" = (
 /obj/structure/alien/weeds,
 /obj/structure/fake_stairs/directional/north{
@@ -1033,7 +1033,7 @@
 	dir = 2
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Is" = (
 /obj/structure/alien/weeds,
 /obj/structure/fake_stairs/directional/north{
@@ -1048,7 +1048,7 @@
 	dir = 1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Jk" = (
 /obj/effect/mapping_helpers/broken_floor,
 /obj/effect/turf_decal/siding/wood{
@@ -1084,7 +1084,7 @@
 	color = "#5d5a66"
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "JJ" = (
 /obj/structure/alien/weeds,
 /obj/structure/decorative{
@@ -1106,7 +1106,7 @@
 	color = "#5d5a66"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "JR" = (
 /obj/item/flashlight/flare{
 	start_on = 1;
@@ -1117,24 +1117,24 @@
 	},
 /obj/structure/alien/weeds,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Kc" = (
 /turf/closed/indestructible/titanium,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Kq" = (
 /obj/structure/flora/rock{
 	pixel_x = -10;
 	pixel_y = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Kw" = (
 /obj/structure/alien/weeds,
 /obj/effect/decal/remains/xeno{
 	color = "#5d5a66"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "KR" = (
 /obj/structure/bed/nest,
 /obj/structure/decorative{
@@ -1163,7 +1163,7 @@
 	},
 /obj/structure/alien/weeds,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "LY" = (
 /obj/structure/alien/weeds,
 /obj/structure/decorative{
@@ -1191,7 +1191,7 @@
 	name = "alien weeds"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Mt" = (
 /obj/structure/decorative{
 	anchored = 1;
@@ -1203,7 +1203,7 @@
 	color = "#4a4951"
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "MQ" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#4a4951"
@@ -1219,7 +1219,7 @@
 	},
 /obj/effect/mapping_helpers/broken_floor,
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "NE" = (
 /obj/structure/decorative{
 	anchored = 1;
@@ -1236,23 +1236,23 @@
 	color = "#5d5a66"
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Oh" = (
 /obj/structure/closet/shuttle/engivent,
 /turf/closed/indestructible/titanium,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ou" = (
 /obj/structure/flora/rock/style_4{
 	pixel_x = 1;
 	pixel_y = 10
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "OD" = (
 /obj/structure/alien/weeds,
 /obj/structure/alien/resin/wall,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "OX" = (
 /obj/structure/flora/rock/style_3{
 	pixel_y = 8;
@@ -1263,7 +1263,7 @@
 	pixel_y = -8
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Pu" = (
 /obj/structure/ore_vein/stone{
 	pixel_x = 0;
@@ -1271,7 +1271,7 @@
 	density = 0
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "PV" = (
 /obj/structure/railing{
 	dir = 8;
@@ -1287,7 +1287,7 @@
 	pixel_x = 4
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Qn" = (
 /obj/effect/mapping_helpers/broken_floor,
 /obj/effect/turf_decal/siding/wood{
@@ -1318,21 +1318,21 @@
 	anchored = 1
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "QA" = (
 /obj/structure/alien/resin/wall,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Rw" = (
 /turf/closed/indestructible/reinforced,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Sm" = (
 /obj/structure/railing{
 	color = "#37363d"
 	},
 /obj/structure/alien/resin/wall,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ug" = (
 /obj/structure/alien/weeds,
 /obj/structure/decorative{
@@ -1361,7 +1361,7 @@
 	anchored = 1
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Uj" = (
 /obj/effect/decal/cleanable/cobweb{
 	color = "#5d5a66";
@@ -1379,7 +1379,7 @@
 	color = "#5d5a66"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "UC" = (
 /obj/structure/alien/weeds,
 /obj/structure/decorative{
@@ -1415,7 +1415,7 @@
 	name = "alien weeds"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "UJ" = (
 /obj/structure/alien/weeds,
 /obj/structure/decorative{
@@ -1452,11 +1452,11 @@
 	color = "#5d5a66"
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Vj" = (
 /obj/structure/alien/weeds,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Wa" = (
 /obj/structure/decorative{
 	name = "skull";
@@ -1472,7 +1472,7 @@
 	pixel_x = 3
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Xi" = (
 /obj/structure/decorative{
 	anchored = 1;
@@ -1484,31 +1484,31 @@
 	color = "#4a4951"
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Ye" = (
 /obj/structure/alien/resin/membrane,
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Yk" = (
 /turf/closed/mineral/random/volcanic{
 	initial_gas_mix = "o2=22;n2=82;TEMP=293.15";
 	color = "#5f5f5f"
 	},
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Yl" = (
 /obj/structure/flora/rock/style_4{
 	pixel_x = 3;
 	pixel_y = 10
 	},
 /turf/open/floor/fakebasalt,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "Zn" = (
 /obj/structure/sign/directions/evac/directional/north{
 	pixel_y = -7;
 	dir = 8
 	},
 /turf/closed/indestructible/titanium,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ZA" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#4a4951"
@@ -1522,7 +1522,7 @@
 	color = "#3e3a57"
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 "ZW" = (
 /obj/effect/turf_decal/siding/wood/end{
 	dir = 4;
@@ -1546,7 +1546,7 @@
 	pixel_y = 2
 	},
 /turf/open/floor/iron/shuttle/exploration/blanktile,
-/area/misc/condo)
+/area/misc/hilbertshotel)
 
 (1,1,1) = {"
 By

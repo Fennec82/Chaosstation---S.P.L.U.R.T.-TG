@@ -14,15 +14,15 @@
 #define CHANNEL_WEATHER 1012
 //THIS SHOULD ALWAYS BE THE LOWEST ONE!
 //KEEP IT UPDATED
-#define CHANNEL_HIGHEST_AVAILABLE 1011
+#define CHANNEL_HIGHEST_AVAILABLE 1009 // Splurt Edited for CHANNEL_HEV and CHANNEL_HEADPHONES
 
 #define MAX_INSTRUMENT_CHANNELS (128 * 6)
 
 // SKYRAT EDIT START
-#define CHANNEL_HEV 1005
+#define CHANNEL_HEV 1011 //Splurt Edited to 1011 to align with upstream changes
 //SKYRAT EDIT CHANGE END
 // SPLURT EDIT ADDITION BEGIN
-#define CHANNEL_HEADPHONES 1004
+#define CHANNEL_HEADPHONES 1010
 // SPLURT EDIT ADDITION END
 
 /// This is the lowest volume that can be used by playsound otherwise it gets ignored
@@ -51,7 +51,7 @@
 
 /* Calculates the volume of a sound based on distance
  *
- * https://www.desmos.com/calculator/sqdfl8ipgf
+ * https://www.desmos.com/calculator/shjpmz3ck7
  *
  * Arguments:
  * * volume: The initial volume of the sound being played
@@ -425,6 +425,7 @@ GLOBAL_LIST_EMPTY(sfx_datum_by_key)
 #define SFX_HARD_HAT_PICKUP "hard_hat_pickup"
 #define SFX_HARD_HAT_DROP "hard_hat_drop"
 #define SFX_HARD_HAT_EQUIP "hard_hat_equip"
+#define SFX_ALIEN_SPIT_ACID "alien_split_acid"
 
 // Standard is 44.1khz
 #define MIN_EMOTE_PITCH 40000

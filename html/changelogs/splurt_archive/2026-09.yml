@@ -33,3 +33,20 @@
   - bugfix: Bedsheet doesn't hover high up when covering anymore
   - bugfix: Denied opfor stat not showing all the denied apps
   - bugfix: Fixes secborg sync bugs and ninja being able to hack them
+2026-09-16:
+  JackSage:
+  - rscadd: HOS alt job title for Chief Engineer
+  - rscadd: HOS alt job title for Research Director
+  - rscadd: HOS alt job title for AI
+  - rscadd: HOS alt job title for Captain
+  - rscadd: HOS alt job title for Head of Personnel
+  - rscadd: HOS alt job title for Chief Medical Officer
+  legumesan:
+  - rscadd: Added spaniel ear sprites for those loppy puppies...
+  thegrb93:
+  - bugfix: Jukebox requiring access in some infinidorms no longer requires access.
+  - bugfix: Pain moans use erp sounds setting
+  - qol: Made freeform not voteable after a calm round
+  - balance: Undead quirk is less beneficial and not free now
+  - bugfix: Fixes broken admin msg
+  - bugfix: Resist binding no longer conflicts with pixel-shift

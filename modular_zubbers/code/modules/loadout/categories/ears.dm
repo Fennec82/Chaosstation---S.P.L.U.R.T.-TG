@@ -25,7 +25,7 @@
 /datum/loadout_item/ears/kinkphone_sharkenning
 	name = "Suspiciously Glossy Headphones"
 	item_path = /obj/item/clothing/ears/kinky_headphones/sharkenning
-	ckeywhitelist = list("thesharkenning")
+	//ckeywhitelist = list("thesharkenning")
 
 /datum/loadout_item/ears/headset_frontier_colonist
 	name = "Frontier Radio Headset"

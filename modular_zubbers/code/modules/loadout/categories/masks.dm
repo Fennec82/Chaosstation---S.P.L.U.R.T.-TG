@@ -139,22 +139,22 @@
 /datum/loadout_item/mask/gas/nightlight_mask
 	name = "'Royez' Half-Face Rebreather"
 	item_path = /obj/item/clothing/mask/gas/nightlight
-//	ckeywhitelist = list("farsightednightlight", "raxraus", "1ceres", "marcoalbaredaa", "itzshift_yt", "drifter7371", "AvianAviator", "Katty Kat", "Investigator77", "Dalao Azure", "Socialistion", "ChillyLobster", "Sylvara", "AmZee", "Tf4", "rb303", "Kay_Nite", "whataboutism", "taac", "Halkyon", "Lupo_di_rosa", "Merek2", "lowpowermia", "RyeanBread", "Jesterz7", "Saund_Minah", "Ruediger4")
+//	//ckeywhitelist = list("farsightednightlight", "raxraus", "1ceres", "marcoalbaredaa", "itzshift_yt", "drifter7371", "AvianAviator", "Katty Kat", "Investigator77", "Dalao Azure", "Socialistion", "ChillyLobster", "Sylvara", "AmZee", "Tf4", "rb303", "Kay_Nite", "whataboutism", "taac", "Halkyon", "Lupo_di_rosa", "Merek2", "lowpowermia", "RyeanBread", "Jesterz7", "Saund_Minah", "Ruediger4")
 
 /datum/loadout_item/mask/gas/fir22
 	name = "'Kimball' Rebreather"
 	item_path = /obj/item/clothing/mask/gas/nightlight/fir22
-//	ckeywhitelist = list("farsightednightlight", "raxraus", "1ceres", "marcoalbaredaa", "itzshift_yt", "drifter7371", "AvianAviator", "Katty Kat", "Investigator77", "Dalao Azure", "Socialistion", "ChillyLobster", "Sylvara", "AmZee", "Tf4", "rb303", "Kay_Nite", "whataboutism", "taac", "Halkyon", "Lupo_di_rosa", "Merek2", "lowpowermia", "RyeanBread", "Jesterz7", "Saund_Minah", "Ruediger4")
+//	//ckeywhitelist = list("farsightednightlight", "raxraus", "1ceres", "marcoalbaredaa", "itzshift_yt", "drifter7371", "AvianAviator", "Katty Kat", "Investigator77", "Dalao Azure", "Socialistion", "ChillyLobster", "Sylvara", "AmZee", "Tf4", "rb303", "Kay_Nite", "whataboutism", "taac", "Halkyon", "Lupo_di_rosa", "Merek2", "lowpowermia", "RyeanBread", "Jesterz7", "Saund_Minah", "Ruediger4")
 
 /datum/loadout_item/mask/gas/octusvox
 	name = "Sinister Visor"
 	item_path = /obj/item/clothing/mask/breath/vox/octus
-	//ckeywhitelist = list("octus")
+	////ckeywhitelist = list("octus")
 
 /datum/loadout_item/mask/gas/larpswat
 	name = "Foam Force SWAT Mask"
 	item_path = /obj/item/clothing/mask/gas/larpswat
-	//ckeywhitelist = list("erdinyobarboza")
+	////ckeywhitelist = list("erdinyobarboza")
 
 /*
 *	MASQUERADE MASKS
@@ -187,7 +187,7 @@
 /datum/loadout_item/mask/masquerade/hheart //sans undertale
 	name = "The Hollow Heart"
 	item_path = /obj/item/clothing/mask/hheart
-	//ckeywhitelist = list("inferno707")
+	////ckeywhitelist = list("inferno707")
 
 /*
 *	MISC
@@ -261,7 +261,7 @@
 /datum/loadout_item/mask/costume/britches_mask
 	name = "Britches' mask"
 	item_path = /obj/item/clothing/mask/gas/britches
-	//ckeywhitelist = list("bloodrite")
+	////ckeywhitelist = list("bloodrite")
 	restricted_roles = list(JOB_CLOWN)
 
 /datum/loadout_item/mask/costume/clown/recolour
@@ -272,9 +272,9 @@
 /datum/loadout_item/mask/costume/luchador_mask
 	name = "Mask of El Red Templar"
 	item_path = /obj/item/clothing/mask/luchador/enzo
-	//ckeywhitelist = list("enzoman")
+	////ckeywhitelist = list("enzoman")
 
 /datum/loadout_item/mask/costume/wolf_mask
 	name = "Wolf mask"
 	item_path = /obj/item/clothing/mask/animal/wolf
-	//ckeywhitelist = list("theooz")
+	////ckeywhitelist = list("theooz")

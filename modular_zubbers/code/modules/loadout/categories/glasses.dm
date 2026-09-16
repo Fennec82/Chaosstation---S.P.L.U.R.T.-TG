@@ -27,7 +27,7 @@
 /datum/loadout_item/glasses/roseglasses
 	name = "Rose-Colored Glasses"
 	item_path = /obj/item/clothing/glasses/rosecolored
-	//ckeywhitelist = list("1ceres", "irrigoimport", "zeskorion", "wizardlywoz", "duckymomo", "samarai1000", "funkyfetusstrikesback", "m97screwsyourparents", "lynxqueen", "kaynite", "mahalia", "sapphoqueer", "emmakisst", "ceasethebridge", "valorthix" )
+	////ckeywhitelist = list("1ceres", "irrigoimport", "zeskorion", "wizardlywoz", "duckymomo", "samarai1000", "funkyfetusstrikesback", "m97screwsyourparents", "lynxqueen", "kaynite", "mahalia", "sapphoqueer", "emmakisst", "ceasethebridge", "valorthix" )
 
 /*
 *	GOGGLES
@@ -77,7 +77,7 @@
 /datum/loadout_item/glasses/eyepatch/rose
 	name = "Rose-Colored Eyepatch"
 	item_path = /obj/item/clothing/glasses/eyepatch/rosecolored
-	//ckeywhitelist = list("kaynite")
+	////ckeywhitelist = list("kaynite")
 
 /datum/loadout_item/glasses/eyepatch/medical
 	name = "Medical Eyepatch (Skyrat)"
@@ -187,7 +187,7 @@
 /datum/loadout_item/glasses/hud/redgigagar
 	name = "Red-tinted Giga HUD Gar Glasses"
 	item_path = /obj/item/clothing/glasses/hud/security/sunglasses/gars/giga/roselia
-	//ckeywhitelist = list("ultimarifox")
+	////ckeywhitelist = list("ultimarifox")
 	restricted_roles = list(JOB_HEAD_OF_SECURITY, JOB_SECURITY_OFFICER)
 
 /*
@@ -201,7 +201,7 @@
 /datum/loadout_item/glasses/shades/aviator/gold
 	name = "Purple and Gold Aviators"
 	item_path = /obj/item/clothing/glasses/gold_aviators
-	//ckeywhitelist = list("nikohyena")
+	////ckeywhitelist = list("nikohyena")
 
 /datum/loadout_item/glasses/shades/osi
 	name = "OSI Glasses"

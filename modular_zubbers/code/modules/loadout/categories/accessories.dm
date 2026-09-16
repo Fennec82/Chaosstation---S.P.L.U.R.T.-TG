@@ -69,7 +69,7 @@
 /datum/loadout_item/accessory/heirloom/mercbadge
 	name = "Jade Badge"
 	item_path = /obj/item/clothing/accessory/badge/holo/jade
-	//ckeywhitelist = list("konstyantyn")
+	////ckeywhitelist = list("konstyantyn")
 
 /*
 *
@@ -176,7 +176,7 @@
 /datum/loadout_item/accessory/medal/kiara
 	name = "Insignia of Steele"
 	item_path = /obj/item/clothing/accessory/medal/steele
-	//ckeywhitelist = list("inferno707")
+	////ckeywhitelist = list("inferno707")
 
 /*
 * Special Pins

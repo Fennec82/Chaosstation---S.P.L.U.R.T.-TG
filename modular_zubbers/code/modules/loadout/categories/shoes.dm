@@ -31,7 +31,7 @@
 /datum/loadout_item/shoes/boots/metra_boots
 	name = "Polished Jackboots"
 	item_path = /obj/item/clothing/shoes/jackboots/netra
-	//ckeywhitelist = list("netrakyram")
+	////ckeywhitelist = list("netrakyram")
 
 /datum/loadout_item/shoes/boots/jackboots/sec
 	name = "Security Jackboots"
@@ -46,7 +46,7 @@
 /datum/loadout_item/shoes/boots/jackboots/rax_armadyne_boots
 	name = "Tactical Boots"
 	item_path = /obj/item/clothing/shoes/jackboots/peacekeeper/armadyne/rax
-	//ckeywhitelist = list("raxraus")
+	////ckeywhitelist = list("raxraus")
 	restricted_roles = list(ALL_JOBS_SEC)
 
 /datum/loadout_item/shoes/boots/jackboots/kneeboots
@@ -90,7 +90,7 @@
 /datum/loadout_item/shoes/boots/elofy
 	name = "Solar Admiral Boots"
 	item_path = /obj/item/clothing/shoes/jackboots/elofy
-//	ckeywhitelist = list("october23")
+//	//ckeywhitelist = list("october23")
 
 /datum/loadout_item/shoes/boots/jackboots/colonial_boots
 	name = "Colonial Half-Boots"
@@ -147,7 +147,7 @@
 /datum/loadout_item/shoes/boots/noble_boots
 	name = "Noble Boots"
 	item_path = /obj/item/clothing/shoes/jackboots/noble
-	//ckeywhitelist = list("grasshand")
+	////ckeywhitelist = list("grasshand")
 
 /*
 *	COWBOY
@@ -230,7 +230,7 @@
 /datum/loadout_item/shoes/formal/dragheels
 	name = "Fancy Heels (dragmeme)"
 	item_path = /obj/item/clothing/shoes/fancy_heels/drag
-	//ckeywhitelist = list("thedragmeme")
+	////ckeywhitelist = list("thedragmeme")
 
 /datum/loadout_item/shoes/formal/bubber/clown/pink/mute //Less silly = Unrestricted
 	name = "Pink Heels"
@@ -278,7 +278,7 @@
 /datum/loadout_item/shoes/fun/mikulegging
 	name = "Starlight Singer Bikini"
 	item_path = /obj/item/clothing/shoes/sneakers/mikuleggings
-	//ckeywhitelist = list("grandvegeta")
+	////ckeywhitelist = list("grandvegeta")
 
 /datum/loadout_item/shoes/fun/rollerskates
 	name = "Roller Skates"
@@ -347,7 +347,7 @@
 	name = "Britches' Shoes"
 	item_path = /obj/item/clothing/shoes/clown_shoes/britches
 	restricted_roles = list(JOB_CLOWN)
-	//ckeywhitelist = list("bloodrite")
+	////ckeywhitelist = list("bloodrite")
 
 /datum/loadout_item/shoes/ba_cheerleader
 	name = "NT Cheerleading Sneakers"

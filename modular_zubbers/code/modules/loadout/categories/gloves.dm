@@ -131,27 +131,27 @@
 /datum/loadout_item/gloves/blutigen_wraps
 	name = "Blutigen Wraps"
 	item_path = /obj/item/clothing/gloves/fingerless/blutigen_wraps
-	//ckeywhitelist = list("random516")
+	////ckeywhitelist = list("random516")
 
 /datum/loadout_item/gloves/netra_gloves
 	name = "Black and Silver Gloves"
 	item_path = /obj/item/clothing/gloves/netra
-	//ckeywhitelist = list("netrakyram")
+	////ckeywhitelist = list("netrakyram")
 
 /datum/loadout_item/gloves/mikugloves
 	name = "Starlight Singer Gloves"
 	item_path = /obj/item/clothing/gloves/mikugloves
-	//ckeywhitelist = list("grandvegeta")
+	////ckeywhitelist = list("grandvegeta")
 
 /datum/loadout_item/gloves/elofy
 	name = "Solar Admiral Gloves"
 	item_path = /obj/item/clothing/gloves/elofy
-//	ckeywhitelist = list("october23")
+//	//ckeywhitelist = list("october23")
 
 /datum/loadout_item/gloves/hypnoring_sharkenning
 	name = "Suspiciously Glossy Ring"
 	item_path = /obj/item/clothing/gloves/ring/hypno/sharkenning
-	ckeywhitelist = list("thesharkenning", "tecktonic")
+	//ckeywhitelist = list("thesharkenning", "tecktonic")
 
 /datum/loadout_item/gloves/lt3_gloves
 	name = "Charcoal Fingerless Gloves"
@@ -184,12 +184,12 @@
 /datum/loadout_item/gloves/hypnoring_coffee
 	name = "Hypnodemon's Ring"
 	item_path = /obj/item/clothing/gloves/ring/hypno/coffeepot
-	//ckeywhitelist = list("coffeepot")
+	////ckeywhitelist = list("coffeepot")
 
 /datum/loadout_item/gloves/hypnoring_bippy
 	name = "Hypnodemon's Ring"
 	item_path = /obj/item/clothing/gloves/ring/hypno/bippys
-	ckeywhitelist = list("bippys")
+	//ckeywhitelist = list("bippys")
 
 /datum/loadout_item/gloves/ba_cheerleader
 	name = "NT Cheerleading Gloves"

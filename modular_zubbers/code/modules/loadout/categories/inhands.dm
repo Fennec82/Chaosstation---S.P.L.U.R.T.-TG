@@ -12,7 +12,7 @@
 /datum/loadout_item/inhand/pet/mrfluff_mothroach
 	name = "Mr. Fluff"
 	item_path = /obj/item/mob_holder/pet/donator/centralsmith
-	ckeywhitelist = list("centralsmith")
+	//ckeywhitelist = list("centralsmith")
 
 /// ckeywhitelist above means only I can take him, so befriending whoever equips him is safe.
 /datum/loadout_item/inhand/pet/mrfluff_mothroach/on_equip_item(obj/item/equipped_item, list/item_details, mob/living/carbon/human/equipper, datum/outfit/outfit, visuals_only = FALSE)
